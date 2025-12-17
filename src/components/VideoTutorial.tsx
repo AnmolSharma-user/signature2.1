@@ -47,7 +47,7 @@ const VideoTutorial = () => {
             ) : (
               <iframe
                 className="h-full w-full"
-                src="https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j?autoplay=1"
+                src="https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j"
                 title="How to Resize Signature for Government Exams"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -64,8 +64,8 @@ const VideoTutorial = () => {
                 "thumbnailUrl": "https://signatureresize.in/video-thumbnail.jpg",
                 "uploadDate": "2024-01-01",
                 "duration": "PT2M",
-                "contentUrl": "https://www.youtube.com/watch?v=example",
-                "embedUrl": "https://www.youtube.com/embed/example"
+                "contentUrl": "https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j",
+                "embedUrl": "https://www.youtube.com/embed/TdZ59g5TDpM?si=yLpRKfyjB2nFglfd"
               })
             }} />
           </div>
