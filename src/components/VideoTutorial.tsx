@@ -62,7 +62,7 @@ const VideoTutorial = () => {
                 "name": "How to Resize Signature for Government Exams",
                 "description": "Step-by-step tutorial on how to resize signature and photo for GATE, SSC, NTPC, and other government exam applications.",
                 "thumbnailUrl": "https://signatureresize.in/video-thumbnail.jpg",
-                "uploadDate": "2024-01-01",
+                "uploadDate": "2025-17-12",
                 "duration": "PT2M",
                 "contentUrl": "https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j",
                 "embedUrl": "https://www.youtube.com/embed/TdZ59g5TDpM?si=yLpRKfyjB2nFglfd"
