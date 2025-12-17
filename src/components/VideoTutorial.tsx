@@ -4,6 +4,8 @@ import { useState } from "react";
 const VideoTutorial = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const YOUTUBE_VIDEO_ID = "TdZ59g5TDpM";
+
   const steps = [
     "Open SignatureResize.in in your browser",
     "Click 'Browse Files' or drag & drop your signature",
@@ -19,7 +21,7 @@ const VideoTutorial = () => {
           <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
             VIDEO TUTORIAL
           </span>
-          <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
             How to Resize & Compress Your Signature and Photo?
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
@@ -28,17 +30,17 @@ const VideoTutorial = () => {
         </div>
 
         <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
-          {/* Video Placeholder */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl border-2 border-border bg-gradient-to-br from-primary/20 to-accent shadow-xl">
+          {/* Video Section */}
+          <div className="relative aspect-video overflow-hidden rounded-2xl border bg-gradient-to-br from-primary/20 to-accent shadow-xl">
             {!isPlaying ? (
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 <button
                   onClick={() => setIsPlaying(true)}
-                  className="group mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-110 hover:shadow-xl"
+                  className="group mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white shadow-lg transition hover:scale-110"
                 >
                   <Play className="h-8 w-8 translate-x-0.5" fill="currentColor" />
                 </button>
-                <p className="font-semibold text-foreground">Watch Tutorial</p>
+                <p className="font-semibold">Watch Tutorial</p>
                 <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
                   <Clock className="h-4 w-4" />
                   <span>2 min video</span>
@@ -47,46 +49,50 @@ const VideoTutorial = () => {
             ) : (
               <iframe
                 className="h-full w-full"
-                src="https://www.youtube.com/embed/TdZ59g5TDpM?si=yLpRKfyjB2nFglfd"
+                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&rel=0&modestbranding=1`}
                 title="How to Resize Signature for Government Exams"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
               />
             )}
 
-            {/* Schema markup for video */}
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "VideoObject",
-                "name": "How to Resize Signature for Government Exams",
-                "description": "Step-by-step tutorial on how to resize signature and photo for GATE, SSC, NTPC, and other government exam applications.",
-                "thumbnailUrl": "https://signatureresize.in/video-thumbnail.jpg",
-                "uploadDate": "2025-17-12",
-                "duration": "PT2M",
-                "contentUrl": "https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j",
-                "embedUrl": "https://www.youtube.com/embed/TdZ59g5TDpM?si=yLpRKfyjB2nFglfd"
-              })
-            }} />
+            {/* ✅ Video Schema Markup */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "VideoObject",
+                  name: "How to Resize Signature for Government Exams",
+                  description:
+                    "Step-by-step tutorial on how to resize signature and photo for GATE, SSC, NTPC, and other government exam applications.",
+                  thumbnailUrl: `https://img.youtube.com/vi/${YOUTUBE_VIDEO_ID}/hqdefault.jpg`,
+                  uploadDate: "2025-12-17",
+                  duration: "PT2M",
+                  contentUrl: `https://www.youtube.com/watch?v=${YOUTUBE_VIDEO_ID}`,
+                  embedUrl: `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}`,
+                }),
+              }}
+            />
           </div>
 
-          {/* Steps List */}
+          {/* Steps */}
           <div className="flex flex-col justify-center">
-            <h3 className="mb-6 text-xl font-bold text-foreground">
+            <h3 className="mb-6 text-xl font-bold">
               Quick Steps to Resize Your Signature
             </h3>
+
             <div className="space-y-4">
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-4 rounded-lg border border-border bg-card p-4 transition-all hover:border-primary hover:shadow-md"
+                  className="flex items-start gap-4 rounded-lg border bg-card p-4 transition hover:border-primary hover:shadow-md"
                 >
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
                     {index + 1}
                   </div>
-                  <div>
-                    <p className="font-medium text-foreground">{step}</p>
-                  </div>
+                  <p className="font-medium">{step}</p>
                 </div>
               ))}
             </div>
@@ -105,3 +111,4 @@ const VideoTutorial = () => {
 };
 
 export default VideoTutorial;
+
