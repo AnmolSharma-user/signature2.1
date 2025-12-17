@@ -47,7 +47,7 @@ const VideoTutorial = () => {
             ) : (
               <iframe
                 className="h-full w-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://youtu.be/TdZ59g5TDpM?si=JBjEU-hRlLqtmj3j?autoplay=1"
                 title="How to Resize Signature for Government Exams"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
