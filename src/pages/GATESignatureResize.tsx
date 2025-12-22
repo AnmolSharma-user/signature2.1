@@ -53,7 +53,7 @@ const GATESignatureResize = () => {
     <>
       <SEOHead
         title="GATE Signature Resize Online | 4KB-30KB Free Tool"
-        description="Resize signature for GATE 2024 exam to 4KB-30KB. Free tool with exact dimensions. Instant, secure & GATE compliant."
+        description="Resize signature for GATE 2025 exam to 4KB-30KB. Free tool with exact dimensions. Instant, secure & GATE compliant."
         canonicalUrl="https://signatureresize.in/gate-signature-resize"
         keywords="GATE signature resize, GATE signature size, GATE 2024 signature"
       />
@@ -77,7 +77,7 @@ const GATESignatureResize = () => {
             />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-                GATE 2024 READY
+                GATE 2025 READY
               </span>
               <h1 className="mb-4 text-2xl sm:text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                 <span className="text-primary underline decoration-primary decoration-wavy underline-offset-4">GATE Signature Resize</span> Online Free
