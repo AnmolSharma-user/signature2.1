@@ -105,7 +105,7 @@ const GATESignatureResize = () => {
               {/* Requirements Box */}
               <div className="mt-6 sm:mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-4 sm:p-6">
                 <h2 className="mb-4 text-lg sm:text-xl font-bold text-foreground">
-                  GATE 2024 Signature Requirements
+                  GATE 2025 Signature Requirements
                 </h2>
                 <div className="grid gap-2 sm:gap-3 sm:grid-cols-2">
                   {requirements.map((req, index) => (
@@ -125,7 +125,7 @@ const GATESignatureResize = () => {
                   GATE Signature Resizer Tool Features
                 </h2>
                 <p className="text-muted-foreground text-sm sm:text-base">
-                  Resize Your Signature for GATE 2024 Application in Just a Few Clicks!
+                  Resize Your Signature for GATE 2025 Application in Just a Few Clicks!
                 </p>
               </div>
               <FeatureGrid examName="GATE" />
@@ -149,7 +149,7 @@ const GATESignatureResize = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base">
                   <p>
-                    For GATE 2024 application, your signature must be scanned clearly on white paper. 
+                    For GATE 2025 application, your signature must be scanned clearly on white paper. 
                     Sign with blue or black ink pen, scan at 200 DPI, and use our tool to resize 
                     to the required 4KB-30KB range.
                   </p>
