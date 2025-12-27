@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
@@ -67,14 +68,9 @@ const GATESignatureResize = () => {
       <div className="min-h-screen bg-background">
         <Header />
 
-        {/* Hero Section */}
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-8 sm:py-12">
           <div className="container mx-auto px-4">
-            <Breadcrumbs
-              items={[
-                { name: "GATE Signature Resize" },
-              ]}
-            />
+            <Breadcrumbs items={[{ name: "GATE Signature Resize" }]} />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 GATE 2025 READY
@@ -102,7 +98,6 @@ const GATESignatureResize = () => {
                 defaultPreset="gate"
               />
 
-              {/* Requirements Box */}
               <div className="mt-6 sm:mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-4 sm:p-6">
                 <h2 className="mb-4 text-lg sm:text-xl font-bold text-foreground">
                   GATE 2025 Signature Requirements
@@ -117,23 +112,30 @@ const GATESignatureResize = () => {
                 </div>
               </div>
 
-              {/* Attractive Responsive Banner Section (Vite Compatible) */}
-              <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-white shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-full">
-                  <img
-                    src="/gate-size.png" 
-                    alt="GATE Signature Resize Dimensions and Process Guide"
-                    className="h-auto w-full object-contain p-2 sm:p-4"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="bg-muted/30 py-2 text-center text-[10px] sm:text-xs font-medium text-muted-foreground italic">
-                  Visual Guide: Step-by-step GATE signature resizing process.
+              {/* Attractive "Cute" Responsive Banner Section */}
+              <div className="mt-8 flex justify-center px-4">
+                <div className="group relative max-w-md overflow-hidden rounded-2xl border border-primary/10 bg-white p-2 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+                  <div className="absolute -right-2 -top-2 h-8 w-8 rounded-full bg-primary/10 blur-xl" />
+                  <div className="relative overflow-hidden rounded-xl bg-muted/5">
+                    <img
+                      src="/gate-size.png" 
+                      alt="GATE Signature Resize Dimensions Guide"
+                      className="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="mt-2 text-center">
+                    <span className="inline-block rounded-full bg-primary/5 px-3 py-1 text-[10px] font-semibold tracking-wide text-primary uppercase">
+                      Visual Guide
+                    </span>
+                    <p className="mt-1 text-[11px] text-muted-foreground italic">
+                      Step-by-step resizing for GATE 2025
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Features Section */}
             <div className="mx-auto mt-12 sm:mt-16 max-w-6xl">
               <div className="mb-8 sm:mb-10 text-center">
                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
@@ -146,17 +148,14 @@ const GATESignatureResize = () => {
               <FeatureGrid examName="GATE" />
             </div>
 
-            {/* Processing Section */}
             <div className="mx-auto mt-12 sm:mt-16 max-w-3xl">
               <ProcessingFeatures />
             </div>
 
-            {/* Trust Badges */}
             <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
               <TrustBadges />
             </div>
-
-            {/* SEO Content */}
+            
             <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
               <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
@@ -168,7 +167,6 @@ const GATESignatureResize = () => {
                     Sign with blue or black ink pen, scan at 200 DPI, and use our tool to resize 
                     to the required 4KB-30KB range.
                   </p>
-                  
                   <h3 className="text-lg sm:text-xl font-semibold text-foreground">GATE Signature Guidelines</h3>
                   <ul className="ml-6 list-disc space-y-2">
                     <li>Use white unruled paper for signing</li>
