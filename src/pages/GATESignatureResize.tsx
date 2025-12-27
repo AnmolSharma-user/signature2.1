@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
@@ -9,6 +10,7 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 const GATESignatureResize = () => {
   const faqs = [
@@ -114,6 +116,23 @@ const GATESignatureResize = () => {
                       <span className="text-sm sm:text-base text-muted-foreground">{req}</span>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Attractive Responsive Banner Section */}
+              <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-white shadow-sm hover:shadow-md transition-shadow">
+                <div className="relative aspect-[16/9] w-full">
+                  <Image
+                    src="/gate-size.png" 
+                    alt="GATE Signature Resize Dimensions and Process Guide"
+                    fill
+                    priority
+                    className="object-contain p-2 sm:p-4"
+                    sizes="(max-width: 768px) 100vw, 800px"
+                  />
+                </div>
+                <div className="bg-muted/30 py-2 text-center text-[10px] sm:text-xs font-medium text-muted-foreground italic">
+                  Visual Guide: Step-by-step GATE signature resizing process.
                 </div>
               </div>
             </div>
