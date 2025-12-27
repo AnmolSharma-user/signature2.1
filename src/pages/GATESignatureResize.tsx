@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
@@ -10,7 +9,6 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
-import Image from "next/image";
 
 const GATESignatureResize = () => {
   const faqs = [
@@ -119,16 +117,14 @@ const GATESignatureResize = () => {
                 </div>
               </div>
 
-              {/* Attractive Responsive Banner Section */}
+              {/* Attractive Responsive Banner Section (Vite Compatible) */}
               <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-white shadow-sm hover:shadow-md transition-shadow">
-                <div className="relative aspect-[16/9] w-full">
-                  <Image
+                <div className="w-full">
+                  <img
                     src="/gate-size.png" 
                     alt="GATE Signature Resize Dimensions and Process Guide"
-                    fill
-                    priority
-                    className="object-contain p-2 sm:p-4"
-                    sizes="(max-width: 768px) 100vw, 800px"
+                    className="h-auto w-full object-contain p-2 sm:p-4"
+                    loading="lazy"
                   />
                 </div>
                 <div className="bg-muted/30 py-2 text-center text-[10px] sm:text-xs font-medium text-muted-foreground italic">
