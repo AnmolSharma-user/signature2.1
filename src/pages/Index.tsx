@@ -154,7 +154,7 @@ const Index = () => {
               <div className="mb-4 sm:mb-6 inline-flex animate-pulse items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-sm">
                 <span className="h-2 w-2 animate-ping rounded-full bg-green-400" />
                 <span className="text-xs sm:text-sm font-medium text-white">
-                  #1 Free Signature Resize Tool in India • Trusted by 50,000+ Users
+                  #1 Free <strong> Signature Resize</strong> Tool in India • Trusted by 50,000+ Users
                 </span>
               </div>
               
