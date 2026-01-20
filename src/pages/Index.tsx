@@ -188,7 +188,7 @@ const Index = () => {
                   className="w-full sm:w-auto border-white/30 bg-white/10 text-white hover:bg-white/20 dark:border-white/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 text-base sm:text-lg backdrop-blur-sm transition-all hover:scale-105"
                 >
                   <Link to="/gate-signature-resize">
-                    GATE 2025 Tool
+                    GATE 2026 Tool
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
@@ -267,7 +267,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="mb-10 text-center">
               <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                WHY CHOOSE US
+                WHY CHOOSE SIGNATURERESIZE.IN
               </span>
               <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
                 Features That Make Us #1
@@ -338,7 +338,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
               <h2 className="mb-6 text-2xl font-bold text-foreground md:text-3xl">
-                How to Resize Signature Online for Government Exams
+                How to Resize Signature Online for Free
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
