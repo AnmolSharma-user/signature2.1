@@ -159,7 +159,7 @@ const Index = () => {
               </div>
               
               <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white">
-                Resize Your Signature{" "}
+               Signature Resize Online Free{" "}
                 <span className="block sm:inline">to Exact KB Size</span>
               </h1>
               
