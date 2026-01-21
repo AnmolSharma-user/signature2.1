@@ -73,7 +73,7 @@ const GATESignatureResize = () => {
             <Breadcrumbs items={[{ name: "GATE Signature Resize" }]} />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-                GATE 2025 READY
+                GATE 2026 READY
               </span>
               <h1 className="mb-4 text-2xl sm:text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
                 <span className="text-primary underline decoration-primary decoration-wavy underline-offset-4">GATE Signature Resize</span> Online Free
