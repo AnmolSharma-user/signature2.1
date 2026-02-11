@@ -12,6 +12,7 @@ const Footer = () => {
     { href: "/gate-photo-resize", label: "GATE Photo Resize" },
     { href: "/uti-pan-resize", label: "UTI PAN Resize" },
     { href: "/50kb-signature-size", label: "50KB Signature" },
+    { href: "/gds-photo-signature-resize", label: "GDS Photo & Signature" },
   ];
 
   return (
@@ -24,8 +25,8 @@ const Footer = () => {
               <span className="text-xl font-bold text-foreground transition-colors group-hover:text-primary">SignatureResize</span>
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
-              Free online signature and photo resize tool for government exams. 
-              Resize your signature to exact KB size for GATE, SSC, NTPC, UTI PAN, 
+              Free online signature and photo resize tool for government exams.
+              Resize your signature to exact KB size for GATE, SSC, NTPC, UTI PAN,
               and other competitive exams.
             </p>
             <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
@@ -82,7 +83,7 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} SignatureResize.in. All rights reserved. 
+            © {new Date().getFullYear()} SignatureResize.in. All rights reserved.
             Free signature resize tool for Indian government exams.
           </p>
           <div className="mt-2 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">

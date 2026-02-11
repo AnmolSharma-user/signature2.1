@@ -35,6 +35,8 @@ export const examPresets: ExamPreset[] = [
   { name: "uti-pan", label: "UTI PAN Card", targetSizeKB: 20, maxWidth: 160, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 160×60 px" },
   { name: "ibps", label: "IBPS Bank Exams", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px" },
   { name: "jee", label: "JEE Main/Advanced", targetSizeKB: 50, maxWidth: 230, maxHeight: 60, minKB: 10, maxKB: 100, description: "10KB - 100KB, 230×60 px" },
+  { name: "gds-photo", label: "GDS Photo (India Post)", targetSizeKB: 60, maxWidth: 320, maxHeight: 400, minKB: 30, maxKB: 100, description: "30KB - 100KB, 320×400 px" },
+  { name: "gds-signature", label: "GDS Signature (India Post)", targetSizeKB: 50, maxWidth: 300, maxHeight: 120, minKB: 20, maxKB: 100, description: "20KB - 100KB, 300×120 px" },
   { name: "custom", label: "Custom Size", targetSizeKB: 20, maxWidth: 400, maxHeight: 200, minKB: 5, maxKB: 100, description: "Set your own parameters" }
 ];
 
@@ -85,7 +87,7 @@ export async function resizeImageToTargetSize(
   for (let i = 0; i < 10; i++) {
     const quality = (minQuality + maxQuality) / 2;
     const blob = await new Promise<Blob>((resolve) => { canvas.toBlob((b) => resolve(b!), mimeType, quality); });
-    if (blob.size <= targetBytes) { bestBlob = blob; bestQuality = quality; minQuality = quality; } 
+    if (blob.size <= targetBytes) { bestBlob = blob; bestQuality = quality; minQuality = quality; }
     else { maxQuality = quality; }
   }
 
