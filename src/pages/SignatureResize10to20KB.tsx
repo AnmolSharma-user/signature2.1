@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
 import FAQSection from "@/components/FAQSection";
 import SEOHead from "@/components/SEOHead";
+import SEOSchema from "@/components/SEOSchema";
 import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
-import { CheckCircle } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import { CheckCircle, Info } from "lucide-react";
 
 const SignatureResize10to20KB = () => {
   const faqs = [
@@ -45,11 +49,28 @@ const SignatureResize10to20KB = () => {
         keywords="resize signature 10kb, signature resize 20kb, 10-20kb signature"
       />
 
+      <SEOSchema
+        type="HowTo"
+        howToName="How to Resize Signature to 10-20KB for Government Exams"
+        howToSteps={[
+          { text: "Upload your scanned signature image (JPG, PNG, or JPEG)" },
+          { text: "Set the target file size between 10KB and 20KB using the slider" },
+          { text: "Click 'Resize Now' to process your signature" },
+          { text: "Download the resized signature and upload to the exam portal" },
+        ]}
+      />
+
+      <SEOSchema
+        type="FAQPage"
+        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
+      />
+
       <div className="min-h-screen bg-background">
         <Header />
 
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-12">
           <div className="container mx-auto px-4">
+            <Breadcrumbs items={[{ name: "Resize Signature 10-20KB" }]} />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 10KB - 20KB RANGE
@@ -113,10 +134,55 @@ const SignatureResize10to20KB = () => {
             <div className="mx-auto mt-16 max-w-4xl">
               <TrustBadges />
             </div>
+
+            {/* Unique Content */}
+            <div className="mx-auto mt-16 max-w-4xl">
+              <article className="space-y-8">
+                <section>
+                  <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Why 10-20KB Is the Most Common Signature Size Range</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The 10KB to 20KB range is the sweet spot used by most Indian government exam portals.
+                    This size ensures signatures are clear enough to be legible when printed on admit cards
+                    and hall tickets, yet small enough to process quickly on recruitment websites that handle
+                    millions of applications. Exams like RRB NTPC, RRB Group D, various State PSC exams,
+                    and several bank recruitment processes (IBPS PO, Clerk, SO) all fall within this range.
+                  </p>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
+                    Our tool uses an intelligent binary search algorithm to hit your exact KB target —
+                    whether it's 10KB, 12KB, 15KB, or any value up to 20KB. Most online tools only offer
+                    rough compression, but ours guarantees the output file size is within ±0.5KB of your
+                    target, so you never have to guess or retry.
+                  </p>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Info className="h-5 w-5 text-primary" />
+                    <h3 className="font-semibold text-foreground">Related Tools & Guides</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Link to="/ntpc-signature-resize" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">RRB NTPC Resize</Link>
+                    <Link to="/how-to-scan-signature-for-online-forms" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">How to Scan Signature</Link>
+                    <Link to="/exam-photo-signature-requirements-2026" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">All Exam Requirements</Link>
+                    <Link to="/ibps-photo-signature-resize" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">IBPS Resize</Link>
+                  </div>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <h3 className="mb-2 font-bold text-foreground">About This Tool</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Built by <strong className="text-foreground">SignatureResize.in</strong> — trusted by 50,000+ students.
+                    All processing happens in your browser. No images uploaded to servers.
+                  </p>
+                </section>
+              </article>
+            </div>
+
           </div>
         </main>
 
         <FAQSection faqs={faqs} />
+        <AdSenseDisclaimer />
         <Footer />
       </div>
     </>

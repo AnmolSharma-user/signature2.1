@@ -73,6 +73,17 @@ const Footer = () => {
           </div>
 
           <div>
+            <h3 className="mb-4 font-semibold text-foreground">Resources</h3>
+            <ul className="space-y-2">
+              <li><Link to="/how-to-scan-signature-for-online-forms" className="text-sm text-muted-foreground transition-colors hover:text-primary">How to Scan Signature</Link></li>
+              <li><Link to="/exam-photo-signature-requirements-2026" className="text-sm text-muted-foreground transition-colors hover:text-primary">Exam Requirements 2026</Link></li>
+              <li><Link to="/signature-upload-errors-and-fixes" className="text-sm text-muted-foreground transition-colors hover:text-primary">Upload Error Fixes</Link></li>
+              <li><Link to="/upsc-triple-signature-guide" className="text-sm text-muted-foreground transition-colors hover:text-primary">UPSC Triple Signature</Link></li>
+              <li><Link to="/how-to-take-passport-photo-at-home-for-exams" className="text-sm text-muted-foreground transition-colors hover:text-primary">Passport Photo at Home</Link></li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="mb-4 font-semibold text-foreground">Company</h3>
             <ul className="space-y-2">
               <li><Link to="/about-us" className="text-sm text-muted-foreground transition-colors hover:text-primary">About Us</Link></li>

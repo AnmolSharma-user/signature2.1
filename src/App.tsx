@@ -19,6 +19,11 @@ import GDSPhotoSignatureResize from "./pages/GDSPhotoSignatureResize";
 import NEETPhotoSignatureResize from "./pages/NEETPhotoSignatureResize";
 import IBPSPhotoSignatureResize from "./pages/IBPSPhotoSignatureResize";
 import ThumbImpressionResize from "./pages/ThumbImpressionResize";
+import HowToScanSignature from "./pages/HowToScanSignature";
+import ExamPhotoSignatureGuide from "./pages/ExamPhotoSignatureGuide";
+import SignatureUploadErrors from "./pages/SignatureUploadErrors";
+import UPSCTripleSignatureGuide from "./pages/UPSCTripleSignatureGuide";
+import PassportPhotoAtHome from "./pages/PassportPhotoAtHome";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -55,6 +60,11 @@ const App = () => (
           <Route path="/neet-photo-signature-resize" element={<NEETPhotoSignatureResize />} />
           <Route path="/ibps-photo-signature-resize" element={<IBPSPhotoSignatureResize />} />
           <Route path="/thumb-impression-resize" element={<ThumbImpressionResize />} />
+          <Route path="/how-to-scan-signature-for-online-forms" element={<HowToScanSignature />} />
+          <Route path="/exam-photo-signature-requirements-2026" element={<ExamPhotoSignatureGuide />} />
+          <Route path="/signature-upload-errors-and-fixes" element={<SignatureUploadErrors />} />
+          <Route path="/upsc-triple-signature-guide" element={<UPSCTripleSignatureGuide />} />
+          <Route path="/how-to-take-passport-photo-at-home-for-exams" element={<PassportPhotoAtHome />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
@@ -8,7 +9,8 @@ import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { CheckCircle } from "lucide-react";
+import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import { CheckCircle, AlertTriangle, Info } from "lucide-react";
 
 const NTPCSignatureResize = () => {
   const faqs = [
@@ -58,6 +60,11 @@ const NTPCSignatureResize = () => {
         type="HowTo"
         howToName="How to Resize Signature for RRB NTPC Exam"
         howToSteps={howToSteps}
+      />
+
+      <SEOSchema
+        type="FAQPage"
+        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
       />
 
       <div className="min-h-screen bg-background">
@@ -128,10 +135,80 @@ const NTPCSignatureResize = () => {
             <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
               <TrustBadges />
             </div>
+
+            {/* Unique NTPC Content */}
+            <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
+              <article className="space-y-8">
+                <section>
+                  <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Understanding RRB NTPC & Group D Application Process</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    The Railway Recruitment Board (RRB) conducts NTPC and Group D exams for recruiting Non-Technical
+                    Popular Categories (NTPC) and Level 1 posts across Indian Railways. During the online application,
+                    candidates must upload a scanned signature and photograph that meet specific file size and dimension
+                    requirements. Failing to meet these requirements results in immediate rejection of the uploaded file.
+                  </p>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
+                    RRB NTPC and Group D share similar signature requirements: <strong className="text-foreground">10KB to 20KB</strong> in
+                    JPG format with approximate dimensions of 140×60 pixels. The signature must be made with black or blue ink on white
+                    paper. Our tool is pre-configured with these exact specifications so you don't have to guess.
+                  </p>
+                </section>
+
+                <section className="rounded-xl border-2 border-yellow-500/20 bg-yellow-500/5 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <AlertTriangle className="h-5 w-5 text-yellow-600" />
+                    <h3 className="font-semibold text-foreground">Common Rejection Reasons</h3>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold shrink-0">✕</span>
+                      <span>Signature file size exceeds 20KB — use our tool&apos;s slider to hit the exact target</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold shrink-0">✕</span>
+                      <span>File not in JPG format — our tool auto-converts PNG/HEIC to JPG</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold shrink-0">✕</span>
+                      <span>Signature on ruled/lined paper — always use plain white paper</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 font-bold shrink-0">✕</span>
+                      <span>Using digital/typed signature — RRB requires a handwritten signature</span>
+                    </li>
+                  </ul>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Info className="h-5 w-5 text-primary" />
+                    <h3 className="font-semibold text-foreground">Related Tools</h3>
+                  </div>
+                  <p className="text-muted-foreground mb-3">Need help with other exam documents?</p>
+                  <div className="flex flex-wrap gap-2">
+                    <Link to="/how-to-scan-signature-for-online-forms" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">How to Scan Signature</Link>
+                    <Link to="/exam-photo-signature-requirements-2026" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">All Exam Requirements</Link>
+                    <Link to="/signature-resize-10-to-20-kb" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">10-20KB Resize Tool</Link>
+                    <Link to="/thumb-impression-resize" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">Thumb Impression</Link>
+                  </div>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <h3 className="mb-2 font-bold text-foreground">About This Tool</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Built by <strong className="text-foreground">SignatureResize.in</strong> — trusted by 50,000+ students.
+                    Our RRB NTPC preset is configured based on the official RRB recruitment notification guidelines.
+                    All processing is done locally in your browser — no images are uploaded to any server.
+                  </p>
+                </section>
+              </article>
+            </div>
+
           </div>
         </main>
 
         <FAQSection faqs={faqs} />
+        <AdSenseDisclaimer />
         <Footer />
       </div>
     </>
