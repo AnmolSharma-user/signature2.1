@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
                 Privacy Policy
               </h1>
               <p className="text-muted-foreground">
-                Last Updated: December 2024
+                Last Updated: February 2026
               </p>
             </div>
           </div>
@@ -33,50 +33,50 @@ const PrivacyPolicy = () => {
         <section className="py-12">
           <div className="container mx-auto px-4">
             <article className="prose prose-lg mx-auto max-w-4xl text-foreground prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-foreground">
-              
+
               <p>
-                At SignatureResize.in, we take your privacy seriously. This Privacy Policy explains 
+                At SignatureResize.in, we take your privacy seriously. This Privacy Policy explains
                 how we handle your information when you use our signature resize tool and website.
               </p>
 
               <h2>Our Privacy Commitment</h2>
               <p>
-                <strong>We do not collect, store, or transmit your images.</strong> This is the 
-                most important thing you need to know about our service. When you upload a signature 
-                or photo to resize, the entire process happens locally in your web browser using 
+                <strong>We do not collect, store, or transmit your images.</strong> This is the
+                most important thing you need to know about our service. When you upload a signature
+                or photo to resize, the entire process happens locally in your web browser using
                 JavaScript. Your images never leave your device.
               </p>
 
               <h2>How Our Tool Works</h2>
               <p>
-                Our signature resize tool uses client-side image processing. Here's what that means 
+                Our signature resize tool uses client-side image processing. Here's what that means
                 for your privacy:
               </p>
               <ul>
                 <li>
-                  <strong>No Server Uploads:</strong> Your signature images are processed entirely 
+                  <strong>No Server Uploads:</strong> Your signature images are processed entirely
                   within your browser. We don't have servers that receive or store your images.
                 </li>
                 <li>
-                  <strong>No Cloud Storage:</strong> Your files are not saved to any cloud service 
+                  <strong>No Cloud Storage:</strong> Your files are not saved to any cloud service
                   or external database.
                 </li>
                 <li>
-                  <strong>Immediate Deletion:</strong> Once you close the browser tab or navigate 
+                  <strong>Immediate Deletion:</strong> Once you close the browser tab or navigate
                   away, your uploaded images are automatically cleared from browser memory.
                 </li>
                 <li>
-                  <strong>No Tracking of Image Content:</strong> We cannot see, access, or analyze 
+                  <strong>No Tracking of Image Content:</strong> We cannot see, access, or analyze
                   the content of your signatures or photos.
                 </li>
               </ul>
 
               <h2>Information We Collect</h2>
               <p>
-                While we don't collect your images, we may collect limited information to improve 
+                While we don't collect your images, we may collect limited information to improve
                 our service:
               </p>
-              
+
               <h3>Analytics Data</h3>
               <p>
                 We use Google Analytics to understand how visitors use our website. This includes:
@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
                 <li>Referral sources (how you found our website)</li>
               </ul>
               <p>
-                This data is anonymized and aggregated. We cannot identify individual users from 
+                This data is anonymized and aggregated. We cannot identify individual users from
                 this information.
               </p>
 
@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                 <li>Message content</li>
               </ul>
               <p>
-                This information is used solely to respond to your inquiries and is not shared 
+                This information is used solely to respond to your inquiries and is not shared
                 with third parties.
               </p>
 
@@ -115,16 +115,16 @@ const PrivacyPolicy = () => {
                   <strong>Essential Cookies:</strong> Required for basic website functionality
                 </li>
                 <li>
-                  <strong>Analytics Cookies:</strong> Used by Google Analytics to understand 
+                  <strong>Analytics Cookies:</strong> Used by Google Analytics to understand
                   website usage patterns
                 </li>
                 <li>
-                  <strong>Preference Cookies:</strong> To remember your settings like dark/light 
+                  <strong>Preference Cookies:</strong> To remember your settings like dark/light
                   mode preference
                 </li>
               </ul>
               <p>
-                You can disable cookies in your browser settings, though this may affect some 
+                You can disable cookies in your browser settings, though this may affect some
                 website functionality.
               </p>
 
@@ -134,30 +134,30 @@ const PrivacyPolicy = () => {
               </p>
               <ul>
                 <li>
-                  <strong>Google Analytics:</strong> For website traffic analysis. Google's 
+                  <strong>Google Analytics:</strong> For website traffic analysis. Google's
                   privacy policy applies to data they collect.
                 </li>
                 <li>
-                  <strong>Google AdSense:</strong> For displaying advertisements. These ads may 
+                  <strong>Google AdSense:</strong> For displaying advertisements. These ads may
                   use cookies to serve personalized content based on your browsing history.
                 </li>
               </ul>
               <p>
-                You can opt out of personalized advertising through Google's Ad Settings or by 
+                You can opt out of personalized advertising through Google's Ad Settings or by
                 using browser extensions that block tracking.
               </p>
 
               <h2>Children's Privacy</h2>
               <p>
-                Our service is not directed to children under 13 years of age. We do not knowingly 
-                collect personal information from children. If you are a parent and believe your 
+                Our service is not directed to children under 13 years of age. We do not knowingly
+                collect personal information from children. If you are a parent and believe your
                 child has provided us with personal information, please contact us.
               </p>
 
               <h2>Data Security</h2>
               <p>
-                Since we don't store your signature images, there is no risk of your images being 
-                exposed through a data breach on our end. For the limited data we do collect 
+                Since we don't store your signature images, there is no risk of your images being
+                exposed through a data breach on our end. For the limited data we do collect
                 (analytics, contact form submissions), we use industry-standard security measures.
               </p>
 
@@ -174,14 +174,14 @@ const PrivacyPolicy = () => {
 
               <h2>Changes to This Policy</h2>
               <p>
-                We may update this Privacy Policy from time to time. We will notify you of any 
-                significant changes by posting the new policy on this page with an updated 
+                We may update this Privacy Policy from time to time. We will notify you of any
+                significant changes by posting the new policy on this page with an updated
                 revision date.
               </p>
 
               <h2>Contact Us</h2>
               <p>
-                If you have questions about this Privacy Policy or our privacy practices, 
+                If you have questions about this Privacy Policy or our privacy practices,
                 please contact us at:
               </p>
               <p>

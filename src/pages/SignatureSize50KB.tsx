@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
 import FAQSection from "@/components/FAQSection";
 import SEOHead from "@/components/SEOHead";
+import SEOSchema from "@/components/SEOSchema";
 import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
-import { CheckCircle } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import { CheckCircle, Info } from "lucide-react";
 
 const SignatureSize50KB = () => {
   const faqs = [
@@ -45,11 +49,17 @@ const SignatureSize50KB = () => {
         keywords="50kb signature size, resize signature 50kb, signature to 50kb"
       />
 
+      <SEOSchema
+        type="FAQPage"
+        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
+      />
+
       <div className="min-h-screen bg-background">
         <Header />
 
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-12">
           <div className="container mx-auto px-4">
+            <Breadcrumbs items={[{ name: "Resize Signature to 50KB" }]} />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 50KB TARGET
@@ -115,10 +125,55 @@ const SignatureSize50KB = () => {
             <div className="mx-auto mt-16 max-w-4xl">
               <TrustBadges />
             </div>
+
+            {/* Unique Content */}
+            <div className="mx-auto mt-16 max-w-4xl">
+              <article className="space-y-8">
+                <section>
+                  <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">When Do You Need a 50KB Signature?</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    While most competitive exams require signatures under 30KB, some applications — university
+                    admissions, state scholarship portals, private sector HR systems, and certain e-governance
+                    platforms — allow or require up to <strong className="text-foreground">50KB</strong>.
+                    The 50KB limit gives more room for detail, which is useful when your signature is complex
+                    or you need a higher resolution version for document verification.
+                  </p>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
+                    If you're unsure about the exact KB requirement, start with our
+                    <Link to="/exam-photo-signature-requirements-2026" className="text-primary hover:underline mx-1">exam requirements guide</Link>
+                    to find the specific limit for your application. For government exams, use our exam-specific tools
+                    with pre-configured presets.
+                  </p>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Info className="h-5 w-5 text-primary" />
+                    <h3 className="font-semibold text-foreground">Related Tools & Guides</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Link to="/signature-resize-10-to-20-kb" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">10-20KB Resize</Link>
+                    <Link to="/how-to-scan-signature-for-online-forms" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">How to Scan Signature</Link>
+                    <Link to="/gate-signature-resize" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">GATE Resize</Link>
+                    <Link to="/exam-photo-signature-requirements-2026" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">All Exam Requirements</Link>
+                  </div>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <h3 className="mb-2 font-bold text-foreground">About This Tool</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Built by <strong className="text-foreground">SignatureResize.in</strong> — trusted by 50,000+ students.
+                    All processing happens in your browser. No images uploaded to servers.
+                  </p>
+                </section>
+              </article>
+            </div>
+
           </div>
         </main>
 
         <FAQSection faqs={faqs} />
+        <AdSenseDisclaimer />
         <Footer />
       </div>
     </>

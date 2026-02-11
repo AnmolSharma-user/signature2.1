@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SignatureResizer from "@/components/SignatureResizer";
 import FAQSection from "@/components/FAQSection";
 import SEOHead from "@/components/SEOHead";
+import SEOSchema from "@/components/SEOSchema";
 import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
-import { CheckCircle } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import { CheckCircle, Info } from "lucide-react";
 
 const UTIPANResize = () => {
   const faqs = [
@@ -45,11 +49,17 @@ const UTIPANResize = () => {
         keywords="UTI PAN signature resize, PAN card signature size, UTI PAN signature"
       />
 
+      <SEOSchema
+        type="FAQPage"
+        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
+      />
+
       <div className="min-h-screen bg-background">
         <Header />
 
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-12">
           <div className="container mx-auto px-4">
+            <Breadcrumbs items={[{ name: "UTI PAN Signature Resize" }]} />
             <div className="mx-auto max-w-4xl text-center">
               <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 UTI PAN CARD
@@ -108,10 +118,55 @@ const UTIPANResize = () => {
             <div className="mx-auto mt-16 max-w-4xl">
               <TrustBadges />
             </div>
+
+            {/* Unique PAN Content */}
+            <div className="mx-auto mt-16 max-w-4xl">
+              <article className="space-y-8">
+                <section>
+                  <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Understanding UTI PAN Card Application Signature Requirements</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    UTIITSL (UTI Infrastructure Technology and Services Limited) is one of the two agencies
+                    authorized to process PAN card applications in India (the other being NSDL/Protean).
+                    When applying for a new PAN card or making corrections online through
+                    <a href="https://www.utiitsl.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline mx-1">utiitsl.com</a>,
+                    you must upload a scanned signature that meets strict specifications: <strong className="text-foreground">2KB to 20KB</strong> in
+                    JPG format at approximately 140×60 pixels.
+                  </p>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">
+                    The UTI PAN portal is particularly strict about file size limits — even 1KB over will be rejected.
+                    Our tool uses precise compression to ensure your signature file lands exactly within the 2-20KB range.
+                    The signature you upload will appear on your PAN card, so clarity matters.
+                  </p>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Info className="h-5 w-5 text-primary" />
+                    <h3 className="font-semibold text-foreground">Related Tools & Guides</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <Link to="/how-to-scan-signature-for-online-forms" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">How to Scan Signature</Link>
+                    <Link to="/signature-resize-10-to-20-kb" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">10-20KB Resize</Link>
+                    <Link to="/exam-photo-signature-requirements-2026" className="rounded-lg bg-primary/10 px-3 py-1.5 text-sm font-medium text-primary hover:bg-primary/20 transition-colors">All Exam Requirements</Link>
+                  </div>
+                </section>
+
+                <section className="rounded-xl border border-border bg-muted/30 p-5">
+                  <h3 className="mb-2 font-bold text-foreground">About This Tool</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Built by <strong className="text-foreground">SignatureResize.in</strong> — trusted by 50,000+ students.
+                    Our UTI PAN preset matches the official UTIITSL specifications exactly.
+                    All processing is done locally in your browser — no images are uploaded to any server.
+                  </p>
+                </section>
+              </article>
+            </div>
+
           </div>
         </main>
 
         <FAQSection faqs={faqs} />
+        <AdSenseDisclaimer />
         <Footer />
       </div>
     </>

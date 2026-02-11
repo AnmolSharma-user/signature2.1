@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FileImage, Pen, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award } from "lucide-react";
+import { FileImage, Pen, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen } from "lucide-react";
 import SignatureResizer from "@/components/SignatureResizer";
 import AdContainer from "@/components/AdContainer";
 import { Button } from "@/components/ui/button";
@@ -86,12 +86,12 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Signature Resize Online Free | GATE, SSC, UPSC Tool"
-        description="Free signature resize tool for GATE, SSC, NTPC, UPSC exams. Resize to exact KB size instantly. Secure, fast & trusted by 50,000+ users."
+        title="Signature Resize | Free Online Signature Resizer for Exams"
+        description="Resize signature to exact KB for GATE, SSC, NTPC, UPSC exams. Free online signature resizer trusted by 50,000+ students. Instant, secure, no signup."
         canonicalUrl="https://signatureresize.in/"
-        keywords="signature resize, signature resize online, resize signature to 10kb, GATE signature resize"
+        keywords="signature resize, signature resizer, resize signature online, signature resize for exam, resize signature to 10kb"
       />
-      
+
       {/* Schema.org markup for website */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
@@ -115,13 +115,13 @@ const Index = () => {
           }
         })
       }} />
-      
+
       {/* Organization Schema */}
       <SEOSchema type="Organization" />
-      
+
       {/* HowTo Schema */}
-      <SEOSchema 
-        type="HowTo" 
+      <SEOSchema
+        type="HowTo"
         howToName="How to Resize Signature for Government Exams"
         howToSteps={[
           { text: "Upload your signature image (JPG, JPEG, or PNG format)" },
@@ -130,17 +130,23 @@ const Index = () => {
           { text: "Download the resized signature and upload to exam portal" }
         ]}
       />
-      
+
+      {/* FAQPage Schema for rich snippets */}
+      <SEOSchema
+        type="FAQPage"
+        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
+      />
+
       <div className="min-h-screen bg-background">
         <MouseFollower />
         <AnimatedBackground />
         <Header />
 
         {/* Hero Section */}
-        <section 
+        <section
           className="relative overflow-hidden py-12 sm:py-16 md:py-24 bg-gradient-to-br from-primary via-primary/90 to-primary/80 dark:from-primary/90 dark:via-primary/80 dark:to-primary/70"
         >
-          <div 
+          <div
             className="absolute inset-0 opacity-20 dark:opacity-10"
             style={{
               backgroundImage: `url(${heroBg})`,
@@ -157,22 +163,22 @@ const Index = () => {
                   #1 Free <strong> Signature Resize</strong> Tool in India • Trusted by 50,000+ Users
                 </span>
               </div>
-              
+
               <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white">
-               Signature Resize Online Free{" "}
+                Signature Resize Online Free{" "}
                 <span className="block sm:inline">to Exact KB Size</span>
               </h1>
-              
+
               <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto">
-                Struggling with signature file size for your GATE, SSC, or NTPC application? 
-                Our tool resizes your signature to the exact KB requirement in seconds. 
+                Struggling with signature file size for your GATE, SSC, or NTPC application?
+                Our tool resizes your signature to the exact KB requirement in seconds.
                 Trusted by over 50,000 students across India.
               </p>
-              
+
               <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 sm:flex-row">
-                <Button 
-                  asChild 
-                  size="lg" 
+                <Button
+                  asChild
+                  size="lg"
                   className="group w-full sm:w-auto bg-white text-primary hover:bg-white/90 dark:bg-white dark:text-primary dark:hover:bg-white/90 text-base sm:text-lg shadow-xl transition-all hover:scale-105 hover:shadow-2xl"
                 >
                   <Link to="/signature-resize">
@@ -181,10 +187,10 @@ const Index = () => {
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button 
-                  asChild 
-                  size="lg" 
-                  variant="outline" 
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
                   className="w-full sm:w-auto border-white/30 bg-white/10 text-white hover:bg-white/20 dark:border-white/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 text-base sm:text-lg backdrop-blur-sm transition-all hover:scale-105"
                 >
                   <Link to="/gate-signature-resize">
@@ -226,7 +232,7 @@ const Index = () => {
                   Resize Your Signature Instantly
                 </h2>
                 <p className="text-muted-foreground">
-                  Upload your signature image below and resize it to your desired file size. 
+                  Upload your signature image below and resize it to your desired file size.
                   Works for GATE, SSC, NTPC, and all other government exams.
                 </p>
               </div>
@@ -333,46 +339,91 @@ const Index = () => {
         {/* Testimonials Section */}
         <TestimonialsSection />
 
+        {/* Guides & Resources Section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="mb-10 text-center">
+              <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                GUIDES & RESOURCES
+              </span>
+              <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
+                Learn Before You Upload
+              </h2>
+              <p className="mx-auto max-w-2xl text-muted-foreground">
+                Practical guides written from experience — how to scan, crop, resize, and avoid rejection.
+              </p>
+            </div>
+            <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                { href: "/how-to-scan-signature-for-online-forms", title: "How to Scan Your Signature", desc: "Step-by-step: phone scanning, flatbed scanning, and getting a clean image for upload." },
+                { href: "/exam-photo-signature-requirements-2026", title: "Exam Requirements 2026", desc: "Photo and signature specs for GATE, SSC, UPSC, NEET, IBPS, GDS — all in one table." },
+                { href: "/signature-upload-errors-and-fixes", title: "Upload Errors & Fixes", desc: "The 6 most common portal errors and how to fix each one in under a minute." },
+                { href: "/upsc-triple-signature-guide", title: "UPSC Triple Signature", desc: "UPSC wants 3 signatures in one image. Here is exactly how to write, scan, and crop it." },
+                { href: "/how-to-take-passport-photo-at-home-for-exams", title: "Passport Photo at Home", desc: "No studio needed. Take an exam-ready passport photo with your phone and a white wall." },
+              ].map((blog) => (
+                <Link
+                  key={blog.href}
+                  to={blog.href}
+                  className="group flex flex-col rounded-xl border border-border bg-card p-5 transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1"
+                >
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    <BookOpen className="h-5 w-5" />
+                  </div>
+                  <h3 className="mb-2 font-semibold text-foreground group-hover:text-primary transition-colors">{blog.title}</h3>
+                  <p className="text-sm text-muted-foreground flex-1">{blog.desc}</p>
+                  <span className="mt-3 inline-flex items-center text-sm font-medium text-primary">
+                    Read guide <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* SEO Content Section */}
         <section className="border-t border-border bg-card py-12">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
               <h2 className="mb-6 text-2xl font-bold text-foreground md:text-3xl">
-                How to Resize Signature Online for Free
+                What Is Signature Resize and Why Does It Matter?
               </h2>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">SignatureResize.in</strong> is India's most trusted free online 
-                  signature resize tool. Whether you need to resize your signature for GATE, SSC CGL, SSC MTS, 
-                  RRB NTPC, UPSC, or any other government examination, our tool helps you achieve the exact 
-                  file size requirements instantly.
+                  Every government exam portal in India — GATE, SSC, UPSC, NEET, IBPS, RRB NTPC — asks you to
+                  upload a scanned signature during the application process. And every portal has its own rules:
+                  a specific KB range, specific pixel dimensions, and always JPG format. If your file does not
+                  match, the portal rejects it. No explanation, just a red error.
+                </p>
+                <p>
+                  That is what <strong className="text-foreground">signature resize</strong> means in practice:
+                  taking your scanned signature image and compressing it to the exact kilobyte size that the
+                  portal expects. It sounds simple, but standard image editors do not let you target a specific
+                  KB value. They let you change dimensions or quality percentage — but you are left guessing
+                  whether the output will be 18KB or 25KB. You end up saving, checking, adjusting, saving again.
+                </p>
+                <p>
+                  We built this <strong className="text-foreground">signature resizer</strong> to skip that loop
+                  entirely. You set a target KB (say 20KB for SSC, or 30KB for GATE), upload your image, and the
+                  tool uses a binary search algorithm to find the exact compression level that lands your file at
+                  that size. The whole thing takes about 2 seconds, it runs inside your browser so nothing gets
+                  uploaded to any server, and the output is a proper JPG file ready for the portal.
                 </p>
                 <h3 className="text-xl font-semibold text-foreground">
-                  Why Signature Size Matters for Government Exams
+                  What Makes This Different From Other Resize Tools?
                 </h3>
                 <p>
-                  Government exams like GATE, SSC, and NTPC have strict requirements for signature image size. 
-                  Most exams require signatures between 4KB to 30KB with specific dimensions. Submitting a 
-                  signature that doesn't meet these requirements can lead to application rejection.
+                  General-purpose image resizers (Canva, Adobe, TinyPNG) are built for web developers and
+                  designers. They optimize for visual quality or page load speed. They do not care about hitting
+                  exactly 19KB or matching 140×60 pixel dimensions for a PAN card signature. Our tool was built
+                  specifically for Indian exam applicants. Each exam has a pre-configured preset with the right KB
+                  range and pixel dimensions, so you do not need to look up the specs yourself.
                 </p>
-                <h3 className="text-xl font-semibold text-foreground">
-                  Key Features of Our Signature Resize Tool
-                </h3>
-                <ul className="ml-6 list-disc space-y-2">
-                  <li>Resize signature to exact KB size (10KB, 20KB, 50KB, etc.)</li>
-                  <li>Maintain signature quality while reducing file size</li>
-                  <li>Support for JPG, JPEG, and PNG formats</li>
-                  <li>100% free with no registration required</li>
-                  <li>Works on mobile, tablet, and desktop</li>
-                  <li>Secure - images processed locally in your browser</li>
-                </ul>
-                <h3 className="text-xl font-semibold text-foreground">
-                  Supported Exams and Applications
-                </h3>
                 <p>
-                  Our tool supports signature requirements for GATE, SSC CGL, SSC CHSL, SSC MTS, RRB NTPC, 
-                  RRB Group D, UPSC, Bank PO, Bank Clerk, UTI PAN Card, IBPS, and many more government 
-                  examinations and applications.
+                  Over 50,000 students have used this tool during GATE, SSC, and UPSC application seasons. If
+                  you are not sure about your exam's requirements, check our
+                  <Link to="/exam-photo-signature-requirements-2026" className="text-primary hover:underline mx-1">exam requirements guide</Link>
+                  or read the <Link to="/signature-upload-errors-and-fixes" className="text-primary hover:underline mx-1">common upload errors page</Link>
+                  to troubleshoot issues.
                 </p>
               </div>
             </div>
