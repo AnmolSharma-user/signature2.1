@@ -13,6 +13,9 @@ const Footer = () => {
     { href: "/uti-pan-resize", label: "UTI PAN Resize" },
     { href: "/50kb-signature-size", label: "50KB Signature" },
     { href: "/gds-photo-signature-resize", label: "GDS Photo & Signature" },
+    { href: "/neet-photo-signature-resize", label: "NEET Photo & Signature" },
+    { href: "/ibps-photo-signature-resize", label: "IBPS Photo & Signature" },
+    { href: "/thumb-impression-resize", label: "Thumb Impression" },
   ];
 
   return (
