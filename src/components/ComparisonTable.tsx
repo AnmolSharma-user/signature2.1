@@ -64,6 +64,16 @@ const ComparisonTable = () => {
       link: "/signature-resize-10-to-20-kb",
       popular: false,
     },
+    {
+      name: "India Post GDS",
+      signatureSize: "20KB - 100KB",
+      photoSize: "30KB - 100KB",
+      signatureDimensions: "300×120 px",
+      photoDimensions: "320×400 px",
+      format: "JPG/JPEG",
+      link: "/gds-photo-signature-resize",
+      popular: true,
+    },
   ];
 
   return (

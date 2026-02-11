@@ -15,6 +15,7 @@ import SignatureSize50KB from "./pages/SignatureSize50KB";
 import UPSCSignatureResize from "./pages/UPSCSignatureResize";
 import JEESignatureResize from "./pages/JEESignatureResize";
 import BulkResize from "./pages/BulkResize";
+import GDSPhotoSignatureResize from "./pages/GDSPhotoSignatureResize";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/upsc-signature-resize" element={<UPSCSignatureResize />} />
           <Route path="/jee-signature-resize" element={<JEESignatureResize />} />
           <Route path="/bulk-resize" element={<BulkResize />} />
+          <Route path="/gds-photo-signature-resize" element={<GDSPhotoSignatureResize />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
