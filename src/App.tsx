@@ -16,6 +16,9 @@ import UPSCSignatureResize from "./pages/UPSCSignatureResize";
 import JEESignatureResize from "./pages/JEESignatureResize";
 import BulkResize from "./pages/BulkResize";
 import GDSPhotoSignatureResize from "./pages/GDSPhotoSignatureResize";
+import NEETPhotoSignatureResize from "./pages/NEETPhotoSignatureResize";
+import IBPSPhotoSignatureResize from "./pages/IBPSPhotoSignatureResize";
+import ThumbImpressionResize from "./pages/ThumbImpressionResize";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -49,6 +52,9 @@ const App = () => (
           <Route path="/jee-signature-resize" element={<JEESignatureResize />} />
           <Route path="/bulk-resize" element={<BulkResize />} />
           <Route path="/gds-photo-signature-resize" element={<GDSPhotoSignatureResize />} />
+          <Route path="/neet-photo-signature-resize" element={<NEETPhotoSignatureResize />} />
+          <Route path="/ibps-photo-signature-resize" element={<IBPSPhotoSignatureResize />} />
+          <Route path="/thumb-impression-resize" element={<ThumbImpressionResize />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

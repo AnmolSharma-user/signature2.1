@@ -74,6 +74,36 @@ const ComparisonTable = () => {
       link: "/gds-photo-signature-resize",
       popular: true,
     },
+    {
+      name: "NEET UG",
+      signatureSize: "4KB - 30KB",
+      photoSize: "10KB - 200KB",
+      signatureDimensions: "140×60 px",
+      photoDimensions: "200×230 px",
+      format: "JPG/JPEG",
+      link: "/neet-photo-signature-resize",
+      popular: true,
+    },
+    {
+      name: "IBPS PO/Clerk",
+      signatureSize: "10KB - 20KB",
+      photoSize: "20KB - 50KB",
+      signatureDimensions: "140×60 px",
+      photoDimensions: "200×230 px",
+      format: "JPG/JPEG",
+      link: "/ibps-photo-signature-resize",
+      popular: true,
+    },
+    {
+      name: "Thumb Impression",
+      signatureSize: "10KB - 50KB",
+      photoSize: "—",
+      signatureDimensions: "240×240 px",
+      photoDimensions: "—",
+      format: "JPG/JPEG",
+      link: "/thumb-impression-resize",
+      popular: false,
+    },
   ];
 
   return (
