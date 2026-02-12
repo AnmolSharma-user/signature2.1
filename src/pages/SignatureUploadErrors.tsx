@@ -152,6 +152,22 @@ const SignatureUploadErrors = () => {
                                 </p>
                             </section>
 
+                            {/* Featured Article Image */}
+                            <figure className="mb-12">
+                                <img
+                                    src="/assest/Signature-Upload-Errors-How-to-Fix-Them.png"
+                                    alt="Signature upload errors and how to fix them — file size, format, dimensions troubleshooting guide"
+                                    className="w-full rounded-xl border border-border shadow-lg"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1200"
+                                    height="630"
+                                />
+                                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                    Common signature upload errors on exam portals and how to fix each one
+                                </figcaption>
+                            </figure>
+
                             {/* Error Cards */}
                             <section className="mb-12 space-y-6">
                                 {errors.map((error, index) => {

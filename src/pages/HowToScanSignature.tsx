@@ -123,6 +123,22 @@ const HowToScanSignature = () => {
                                 </p>
                             </section>
 
+                            {/* Featured Article Image */}
+                            <figure className="mb-12">
+                                <img
+                                    src="/assest/How-to-Scan-Your-Signature-for-Online-Forms.png"
+                                    alt="How to scan your signature for online forms — step-by-step guide for GATE, SSC, UPSC, NEET exam applications"
+                                    className="w-full rounded-xl border border-border shadow-lg"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1200"
+                                    height="630"
+                                />
+                                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                    Complete guide to scanning, cropping, and resizing your signature for government exam forms
+                                </figcaption>
+                            </figure>
+
                             {/* Method 1: Phone Camera */}
                             <section className="mb-12">
                                 <div className="mb-6 flex items-center gap-3">
