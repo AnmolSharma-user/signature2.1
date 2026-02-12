@@ -11,6 +11,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
 import { CheckCircle, AlertTriangle, Info } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const NTPCSignatureResize = () => {
   const faqs = [
@@ -117,6 +118,8 @@ const NTPCSignatureResize = () => {
                   ))}
                 </div>
               </div>
+
+              <SignatureCreatorBanner />
             </div>
 
             <div className="mx-auto mt-12 sm:mt-16 max-w-6xl">

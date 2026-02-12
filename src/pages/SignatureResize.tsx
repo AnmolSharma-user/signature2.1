@@ -7,6 +7,7 @@ import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import { CheckCircle } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const SignatureResize = () => {
   const faqs = [
@@ -93,6 +94,8 @@ const SignatureResize = () => {
                   ))}
                 </div>
               </div>
+
+              <SignatureCreatorBanner />
             </div>
 
             {/* Features Section */}
@@ -126,18 +129,18 @@ const SignatureResize = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">SignatureResize.in</strong> is India's most trusted free online 
-                    signature resize tool. Whether you need to resize your signature for GATE, SSC, UPSC, RRB, 
+                    <strong className="text-foreground">SignatureResize.in</strong> is India's most trusted free online
+                    signature resize tool. Whether you need to resize your signature for GATE, SSC, UPSC, RRB,
                     or any other government examination, our tool helps you achieve the exact file size requirements instantly.
                   </p>
-                  
+
                   <h3 className="text-xl font-semibold text-foreground">Why Signature Size Matters</h3>
                   <p>
-                    Government exams have strict requirements for signature image size. Most exams require signatures 
-                    between 4KB to 30KB with specific dimensions. Submitting a signature that doesn't meet these 
+                    Government exams have strict requirements for signature image size. Most exams require signatures
+                    between 4KB to 30KB with specific dimensions. Submitting a signature that doesn't meet these
                     requirements can lead to application rejection.
                   </p>
-                  
+
                   <h3 className="text-xl font-semibold text-foreground">Step-by-Step Guide</h3>
                   <ol className="ml-6 list-decimal space-y-2">
                     <li>Upload your signature image (JPG, PNG, or JPEG format)</li>

@@ -9,6 +9,7 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const SSCMTSSignatureResize = () => {
   const faqs = [
@@ -121,6 +122,8 @@ const SSCMTSSignatureResize = () => {
                   ))}
                 </div>
               </div>
+
+              <SignatureCreatorBanner />
             </div>
 
             {/* Features Section */}
@@ -154,17 +157,17 @@ const SSCMTSSignatureResize = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base">
                   <p>
-                    If you're applying for SSC exams like CGL, CHSL, or MTS, uploading your signature correctly is crucial. 
-                    The application process is strict when it comes to the signature size, dimensions, and file format. 
+                    If you're applying for SSC exams like CGL, CHSL, or MTS, uploading your signature correctly is crucial.
+                    The application process is strict when it comes to the signature size, dimensions, and file format.
                     Many applicants face rejection because they don't follow these guidelines properly.
                   </p>
-                  
+
                   <h3 className="text-lg sm:text-xl font-semibold text-foreground">Problems Faced by Applicants</h3>
                   <p>
-                    Despite being a crucial document, the SSC application process remains strict. Many applicants face 
+                    Despite being a crucial document, the SSC application process remains strict. Many applicants face
                     rejection because they upload signatures with incorrect file sizes, wrong dimensions, or unsupported formats.
                   </p>
-                  
+
                   <h3 className="text-lg sm:text-xl font-semibold text-foreground">Tips for Capturing a Perfect SSC Signature</h3>
                   <ul className="ml-6 list-disc space-y-2">
                     <li>Use white blank paper, sign using a black pen, without going outside the boundary</li>

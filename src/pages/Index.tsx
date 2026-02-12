@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FileImage, Pen, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen } from "lucide-react";
+import { FileImage, Pen, PenTool, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen } from "lucide-react";
 import SignatureResizer from "@/components/SignatureResizer";
 import AdContainer from "@/components/AdContainer";
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,7 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
+    { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage, badge: "New" },
     { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS. 4KB to 20KB.", icon: Pen, badge: "UPSC" },

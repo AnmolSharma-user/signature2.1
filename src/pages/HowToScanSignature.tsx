@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Camera, Scan, Scissors, Download, CheckCircle, AlertTriangle, Lightbulb, FileImage, Smartphone, Monitor } from "lucide-react";
 import Header from "@/components/Header";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import SEOSchema from "@/components/SEOSchema";
@@ -138,6 +139,8 @@ const HowToScanSignature = () => {
                                     Complete guide to scanning, cropping, and resizing your signature for government exam forms
                                 </figcaption>
                             </figure>
+
+                            <SignatureCreatorBanner />
 
                             {/* Method 1: Phone Camera */}
                             <section className="mb-12">

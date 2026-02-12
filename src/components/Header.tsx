@@ -74,7 +74,7 @@ const Header = () => {
               {isDarkMode ? <Sun className="h-5 w-5 transition-transform hover:rotate-180" /> : <Moon className="h-5 w-5 transition-transform hover:-rotate-12" />}
             </Button>
             <Button asChild size="sm" className="hover-scale">
-              <Link to="/signature-resize">Try Free Tool</Link>
+              <Link to="/signature-creator">Signature Creator ✨</Link>
             </Button>
           </div>
 
@@ -113,8 +113,8 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild size="sm" className="w-full mt-2">
-              <Link to="/signature-resize" onClick={() => setIsMenuOpen(false)}>
-                Try Free Tool
+              <Link to="/signature-creator" onClick={() => setIsMenuOpen(false)}>
+                Signature Creator ✨
               </Link>
             </Button>
           </div>
