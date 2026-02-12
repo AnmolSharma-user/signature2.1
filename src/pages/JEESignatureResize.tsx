@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, FileImage, Zap, Shield } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const JEESignatureResize = () => {
   const faqs = [
@@ -91,6 +92,8 @@ const JEESignatureResize = () => {
                 maxHeight={60}
                 defaultPreset="jee"
               />
+
+              <SignatureCreatorBanner />
             </div>
           </section>
 

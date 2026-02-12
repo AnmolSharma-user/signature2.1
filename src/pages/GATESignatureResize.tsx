@@ -10,6 +10,7 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const GATESignatureResize = () => {
   const faqs = [
@@ -112,13 +113,15 @@ const GATESignatureResize = () => {
                 </div>
               </div>
 
+              <SignatureCreatorBanner />
+
               {/* Attractive "Cute" Responsive Banner Section */}
               <div className="mt-8 flex justify-center px-4">
                 <div className="group relative max-w-md overflow-hidden rounded-2xl border border-primary/10 bg-white p-2 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                   <div className="absolute -right-2 -top-2 h-8 w-8 rounded-full bg-primary/10 blur-xl" />
                   <div className="relative overflow-hidden rounded-xl bg-muted/5">
                     <img
-                      src="/gate-size.png" 
+                      src="/gate-size.png"
                       alt="GATE Signature Resize Dimensions Guide"
                       className="h-auto w-full object-contain"
                       loading="lazy"
@@ -155,7 +158,7 @@ const GATESignatureResize = () => {
             <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
               <TrustBadges />
             </div>
-            
+
             <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">
               <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
@@ -163,8 +166,8 @@ const GATESignatureResize = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base">
                   <p>
-                    For GATE 2025 application, your signature must be scanned clearly on white paper. 
-                    Sign with blue or black ink pen, scan at 200 DPI, and use our tool to resize 
+                    For GATE 2025 application, your signature must be scanned clearly on white paper.
+                    Sign with blue or black ink pen, scan at 200 DPI, and use our tool to resize
                     to the required 4KB-30KB range.
                   </p>
                   <h3 className="text-lg sm:text-xl font-semibold text-foreground">GATE Signature Guidelines</h3>

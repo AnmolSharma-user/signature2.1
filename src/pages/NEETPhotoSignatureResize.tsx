@@ -11,6 +11,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle, Camera, PenTool } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 import { Link } from "react-router-dom";
 
 const NEETPhotoSignatureResize = () => {
@@ -192,6 +193,8 @@ const NEETPhotoSignatureResize = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <SignatureCreatorBanner />
                         </div>
 
                         {/* About NEET Section — E-E-A-T SEO Content */}

@@ -6,6 +6,7 @@ import SEOSchema from "@/components/SEOSchema";
 import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle, AlertCircle, Info } from "lucide-react";
+import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 
 const UPSCSignatureResize = () => {
   const faqs = [
@@ -123,6 +124,8 @@ const UPSCSignatureResize = () => {
                 maxHeight={50}
                 defaultPreset="upsc"
               />
+
+              <SignatureCreatorBanner />
             </div>
           </div>
         </section>

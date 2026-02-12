@@ -24,6 +24,7 @@ import ExamPhotoSignatureGuide from "./pages/ExamPhotoSignatureGuide";
 import SignatureUploadErrors from "./pages/SignatureUploadErrors";
 import UPSCTripleSignatureGuide from "./pages/UPSCTripleSignatureGuide";
 import PassportPhotoAtHome from "./pages/PassportPhotoAtHome";
+import SignatureCreatorPage from "./pages/SignatureCreatorPage";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -65,6 +66,7 @@ const App = () => (
           <Route path="/signature-upload-errors-and-fixes" element={<SignatureUploadErrors />} />
           <Route path="/upsc-triple-signature-guide" element={<UPSCTripleSignatureGuide />} />
           <Route path="/how-to-take-passport-photo-at-home-for-exams" element={<PassportPhotoAtHome />} />
+          <Route path="/signature-creator" element={<SignatureCreatorPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
