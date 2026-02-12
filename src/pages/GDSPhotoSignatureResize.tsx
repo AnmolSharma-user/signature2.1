@@ -199,6 +199,20 @@ const GDSPhotoSignatureResize = () => {
                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
                   About GDS Photo & Signature Upload Requirements
                 </h2>
+                <figure className="mb-6">
+                  <img
+                    src="/assest/GDS-Photo-Signature-Resize-Online-Free.png"
+                    alt="GDS Photo and Signature Resize Online Free — India Post Gramin Dak Sevak photo 30-100KB, signature 20-100KB resize tool"
+                    className="w-full rounded-lg border border-border shadow-md"
+                    loading="lazy"
+                    decoding="async"
+                    width="1200"
+                    height="630"
+                  />
+                  <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                    Resize photo & signature for India Post GDS application — free online tool
+                  </figcaption>
+                </figure>
                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base">
                   <p>
                     India Post's <strong>Gramin Dak Sevak (GDS)</strong> recruitment is one of the largest government

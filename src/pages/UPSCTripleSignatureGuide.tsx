@@ -135,6 +135,22 @@ const UPSCTripleSignatureGuide = () => {
                                 </p>
                             </section>
 
+                            {/* Featured Article Image */}
+                            <figure className="mb-12">
+                                <img
+                                    src="/assest/UPSC-Triple-Signature-Step-by-Step.png"
+                                    alt="UPSC triple signature step-by-step guide — how to write, scan, and resize 3 signatures in one image"
+                                    className="w-full rounded-xl border border-border shadow-lg"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1200"
+                                    height="630"
+                                />
+                                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                    Step-by-step guide to creating UPSC's required triple signature image
+                                </figcaption>
+                            </figure>
+
                             {/* Step-by-Step */}
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">

@@ -200,6 +200,20 @@ const NEETPhotoSignatureResize = () => {
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
                                     About NEET UG Photo & Signature Upload Requirements
                                 </h2>
+                                <figure className="mb-6">
+                                    <img
+                                        src="/assest/NEET-Photo-Signature-Resize-Online-Free.png"
+                                        alt="NEET Photo and Signature Resize Online Free — NTA NEET UG photo 10-200KB, signature 4-30KB resize tool"
+                                        className="w-full rounded-lg border border-border shadow-md"
+                                        loading="lazy"
+                                        decoding="async"
+                                        width="1200"
+                                        height="630"
+                                    />
+                                    <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                        Resize photo & signature for NEET UG 2026 application — free online tool
+                                    </figcaption>
+                                </figure>
                                 <div className="space-y-4 text-muted-foreground text-sm sm:text-base">
                                     <p>
                                         The <strong>National Eligibility cum Entrance Test (NEET UG)</strong>, conducted by NTA (National Testing Agency),

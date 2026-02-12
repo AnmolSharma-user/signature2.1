@@ -120,6 +120,22 @@ const ExamPhotoSignatureGuide = () => {
                                 </p>
                             </section>
 
+                            {/* Featured Article Image */}
+                            <figure className="mb-12">
+                                <img
+                                    src="/assest/All-Exam-Photo-Signature-Requirements-2026.png"
+                                    alt="All exam photo and signature requirements 2026 — GATE, SSC, UPSC, NEET, IBPS, GDS comparison chart"
+                                    className="w-full rounded-xl border border-border shadow-lg"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1200"
+                                    height="630"
+                                />
+                                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                    Complete comparison of photo & signature requirements for all major government exams in 2026
+                                </figcaption>
+                            </figure>
+
                             {/* Master Comparison Table - Signature */}
                             <section className="mb-12">
                                 <div className="mb-6 flex items-center gap-3">

@@ -116,6 +116,22 @@ const PassportPhotoAtHome = () => {
                                 </p>
                             </section>
 
+                            {/* Featured Article Image */}
+                            <figure className="mb-12">
+                                <img
+                                    src="/assest/Take-a-Passport-Photo-at-Home-for-Exam-Forms.webp"
+                                    alt="Take a passport photo at home for exam forms — DIY passport-size photo guide using phone camera"
+                                    className="w-full rounded-xl border border-border shadow-lg"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="1200"
+                                    height="630"
+                                />
+                                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                                    How to take a professional passport-size photo at home using your phone camera
+                                </figcaption>
+                            </figure>
+
                             {/* Setup Section */}
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">

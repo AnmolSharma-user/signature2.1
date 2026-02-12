@@ -387,6 +387,20 @@ const Index = () => {
               <h2 className="mb-6 text-2xl font-bold text-foreground md:text-3xl">
                 What Is Signature Resize and Why Does It Matter?
               </h2>
+              <figure className="mb-8">
+                <img
+                  src="/assest/signature-resize-landing-page-image.png"
+                  alt="Signature Resize Online Free Tool — Resize signature to exact KB size for GATE, SSC, UPSC, NEET exams"
+                  className="w-full rounded-xl border border-border shadow-lg"
+                  loading="lazy"
+                  decoding="async"
+                  width="1200"
+                  height="630"
+                />
+                <figcaption className="mt-2 text-center text-sm text-muted-foreground">
+                  SignatureResize.in — Free online signature resize tool trusted by 50,000+ students
+                </figcaption>
+              </figure>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Every government exam portal in India — GATE, SSC, UPSC, NEET, IBPS, RRB NTPC — asks you to
