@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 Measurement ID
-const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_MEASUREMENT_ID = "G-J5TXQVL2T8";
 
 declare global {
   interface Window {
-    gtag: (...args: unknown[]) => void;
-    dataLayer: unknown[];
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
   }
 }
 
@@ -15,28 +14,29 @@ const GoogleAnalytics = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Load Google Analytics script
-    const script1 = document.createElement("script");
-    script1.async = true;
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(script1);
+    // Prevent duplicate script loading
+    if (document.getElementById("ga-script")) return;
 
-    // Initialize gtag
+    // Load GA script
+    const script = document.createElement("script");
+    script.id = "ga-script";
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+
+    // Initialize GA
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function gtag(...args: unknown[]) {
+    function gtag(...args: any[]) {
       window.dataLayer.push(args);
-    };
-    window.gtag("js", new Date());
-    window.gtag("config", GA_MEASUREMENT_ID, {
-      page_path: location.pathname,
-    });
+    }
+    window.gtag = gtag;
 
-    return () => {
-      // Cleanup if needed
-    };
+    window.gtag("js", new Date());
+    window.gtag("config", GA_MEASUREMENT_ID);
+
   }, []);
 
-  // Track page views on route change
+  // Track page views when route changes
   useEffect(() => {
     if (window.gtag) {
       window.gtag("config", GA_MEASUREMENT_ID, {
