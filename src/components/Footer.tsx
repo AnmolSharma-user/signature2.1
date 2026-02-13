@@ -38,6 +38,9 @@ const Footer = () => {
                 signatureresize.in@gmail.com
               </a>
             </div>
+            <a href="https://launchigniter.com/product/signature-resizer?ref=badge-signature-resizer" target="_blank">
+  <img src="https://launchigniter.com/api/badge/signature-resizer?theme=dark" alt="Featured on LaunchIgniter" width="212" height="55" />
+</a>
           </div>
 
           <div>
