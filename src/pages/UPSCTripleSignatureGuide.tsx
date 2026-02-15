@@ -83,11 +83,6 @@ const UPSCTripleSignatureGuide = () => {
                 howToSteps={howToSteps}
             />
 
-            <SEOSchema
-                type="FAQPage"
-                faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
-            />
-
             <div className="min-h-screen bg-background">
                 <Header />
 

@@ -36,9 +36,8 @@ const Header = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/signature-resize", label: "Signature Resize" },
-    { href: "/gate-signature-resize", label: "GATE" },
-    { href: "/ssc-mts-signature-resize", label: "SSC MTS" },
+    { href: "/signature-creator", label: "Signature Creator" },
+    { href: "/blog", label: "Blog" },
     { href: "/about-us", label: "About" },
     { href: "/contact", label: "Contact" },
   ];

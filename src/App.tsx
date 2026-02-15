@@ -31,6 +31,19 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
+import DigitalSignatureWithoutScanner from "./pages/DigitalSignatureWithoutScanner";
+import SSCCGLPhotoSignatureGuide from "./pages/SSCCGLPhotoSignatureGuide";
+import JPGvsPNGForExams from "./pages/JPGvsPNGForExams";
+import PhotoResizeForAdmitCard from "./pages/PhotoResizeForAdmitCard";
+import CropSignatureFromScan from "./pages/CropSignatureFromScan";
+import SBIPOClerkPhotoSignatureGuide from "./pages/SBIPOClerkPhotoSignatureGuide";
+import PhotoRejectionReasons from "./pages/PhotoRejectionReasons";
+import NTAExamPhotoGuidelines from "./pages/NTAExamPhotoGuidelines";
+import SignatureWhiteBackgroundPhone from "./pages/SignatureWhiteBackgroundPhone";
+import PANCardPhotoResize from "./pages/PANCardPhotoResize";
+import SafeToResizeOnline from "./pages/SafeToResizeOnline";
+import ImageDPIvsKB from "./pages/ImageDPIvsKB";
+import BlogPage from "./pages/BlogPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import PWAInstallPrompt from "./components/PWAInstallPrompt";
 
@@ -67,6 +80,19 @@ const App = () => (
           <Route path="/upsc-triple-signature-guide" element={<UPSCTripleSignatureGuide />} />
           <Route path="/how-to-take-passport-photo-at-home-for-exams" element={<PassportPhotoAtHome />} />
           <Route path="/signature-creator" element={<SignatureCreatorPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/create-digital-signature-without-scanner" element={<DigitalSignatureWithoutScanner />} />
+          <Route path="/ssc-cgl-photo-signature-upload-guide-2026" element={<SSCCGLPhotoSignatureGuide />} />
+          <Route path="/jpg-vs-png-for-government-exam-forms" element={<JPGvsPNGForExams />} />
+          <Route path="/photo-resize-for-admit-card-mark-sheet" element={<PhotoResizeForAdmitCard />} />
+          <Route path="/crop-signature-from-full-page-scan" element={<CropSignatureFromScan />} />
+          <Route path="/sbi-po-clerk-photo-signature-resize-guide-2026" element={<SBIPOClerkPhotoSignatureGuide />} />
+          <Route path="/why-exam-portal-rejecting-photo-10-reasons" element={<PhotoRejectionReasons />} />
+          <Route path="/nta-exam-photo-signature-guidelines-2026" element={<NTAExamPhotoGuidelines />} />
+          <Route path="/signature-photo-white-background-phone" element={<SignatureWhiteBackgroundPhone />} />
+          <Route path="/pan-card-photo-signature-resize" element={<PANCardPhotoResize />} />
+          <Route path="/is-it-safe-to-resize-signature-online" element={<SafeToResizeOnline />} />
+          <Route path="/image-dpi-vs-kb-vs-pixels-exam-portals" element={<ImageDPIvsKB />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
