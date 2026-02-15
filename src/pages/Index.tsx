@@ -132,12 +132,6 @@ const Index = () => {
         ]}
       />
 
-      {/* FAQPage Schema for rich snippets */}
-      <SEOSchema
-        type="FAQPage"
-        faqs={faqs.map(faq => ({ question: faq.question, answer: faq.answer }))}
-      />
-
       <div className="min-h-screen bg-background">
         <MouseFollower />
         <AnimatedBackground />
@@ -446,6 +440,38 @@ const Index = () => {
         </section>
 
         {/* FAQ Section */}
+        {/* Latest Guides Section */}
+        <section className="py-12 md:py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="mb-10 text-center">
+              <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                LATEST GUIDES
+              </span>
+              <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
+                Expert Tips for Exam Aspirants
+              </h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {[
+                { title: "SSC CGL 2026 Photo Guide", link: "/ssc-cgl-photo-signature-upload-guide-2026", desc: "Exact size and specs for SSC CGL application." },
+                { title: "Create Digital Signature", link: "/create-digital-signature-without-scanner", desc: "No scanner? Use your phone effectively." },
+                { title: "Why Photos Get Rejected", link: "/why-exam-portal-rejecting-photo-10-reasons", desc: "10 common mistakes and how to fix them." },
+              ].map((post, i) => (
+                <Link key={i} to={post.link} className="group block rounded-xl border border-border bg-card p-6 transition-all hover:border-primary hover:shadow-lg">
+                  <h3 className="mb-2 text-lg font-bold group-hover:text-primary">{post.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-4">{post.desc}</p>
+                  <span className="text-sm font-medium text-primary flex items-center">Read More <ArrowRight className="ml-1 h-3 w-3" /></span>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Button asChild variant="outline">
+                <Link to="/blog">View All Guides</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         <FAQSection faqs={faqs} />
 
         {/* AdSense Disclaimer */}

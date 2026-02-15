@@ -95,11 +95,6 @@ const NEETPhotoSignatureResize = () => {
                 howToSteps={howToSteps}
             />
 
-            <SEOSchema
-                type="FAQPage"
-                faqs={faqs}
-            />
-
             <div className="min-h-screen bg-background">
                 <Header />
 
