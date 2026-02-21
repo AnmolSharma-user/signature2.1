@@ -8,6 +8,7 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import { CheckCircle } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const SignatureResize = () => {
   const faqs = [
@@ -72,6 +73,9 @@ const SignatureResize = () => {
 
         <main className="py-8 md:py-12">
           <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-3xl mb-8">
+              <AdContainer slot="tool-above" format="auto" />
+            </div>
             <div className="mx-auto max-w-3xl">
               <SignatureResizer
                 title="Upload Your Image"
@@ -96,6 +100,10 @@ const SignatureResize = () => {
               </div>
 
               <SignatureCreatorBanner />
+
+              <div className="mt-8">
+                <AdContainer slot="tool-below" format="auto" />
+              </div>
             </div>
 
             {/* Features Section */}

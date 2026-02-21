@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface AdContainerProps {
   slot: string;
   format?: "auto" | "horizontal" | "vertical" | "rectangle";
@@ -5,33 +7,48 @@ interface AdContainerProps {
 }
 
 const AdContainer = ({ slot, format = "auto", className = "" }: AdContainerProps) => {
-  // This component provides a placeholder for AdSense ads
-  // Replace the placeholder with actual AdSense code after approval
-  
+  useEffect(() => {
+    try {
+      // @ts-ignore
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error("AdSense error:", e);
+    }
+  }, [slot]);
+
   const formatStyles: Record<string, string> = {
     auto: "min-h-[100px]",
     horizontal: "min-h-[90px] max-h-[90px]",
-    vertical: "min-h-[600px] w-[160px]",
-    rectangle: "min-h-[250px] w-[300px]",
+    vertical: "min-h-[600px] w-full max-w-[160px]",
+    rectangle: "min-h-[250px] w-full max-w-[300px]",
   };
 
   return (
-    <div 
-      className={`ad-container bg-muted/20 border border-dashed border-border rounded-lg flex items-center justify-center ${formatStyles[format]} ${className}`}
-      data-ad-slot={slot}
-      data-ad-format={format}
+    <div
+      className={`ad-container-wrapper my-6 overflow-hidden transition-all duration-300 ${className}`}
     >
-      {/* AdSense code will go here after approval */}
-      {/* 
-      <ins className="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-        data-ad-slot={slot}
-        data-ad-format={format}
-        data-full-width-responsive="true">
-      </ins>
-      */}
-      <span className="text-xs text-muted-foreground">Advertisement</span>
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-[10px] uppercase tracking-wider text-muted-foreground/60 font-medium">Advertisement</span>
+        <div className="h-[1px] flex-1 bg-border/40 ml-4"></div>
+      </div>
+
+      <div
+        className={`ad-content-area bg-muted/5 rounded-xl border border-border/30 flex items-center justify-center relative overflow-hidden ${formatStyles[format]}`}
+      >
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block", width: "100%" }}
+          data-ad-client="ca-pub-3488894749741987"
+          data-ad-slot={slot}
+          data-ad-format={format}
+          data-full-width-responsive="true"
+        />
+
+        {/* Fallback/Loading state styling */}
+        <div className="absolute inset-0 -z-10 flex items-center justify-center opacity-10">
+          <div className="w-full h-full bg-gradient-to-br from-primary/5 to-transparent animate-pulse" />
+        </div>
+      </div>
     </div>
   );
 };

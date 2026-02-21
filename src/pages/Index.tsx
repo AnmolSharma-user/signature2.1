@@ -236,8 +236,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Ad Container */}
-        <div className="container mx-auto px-4 py-4">
+        {/* Ad Container - Below Hero */}
+        <div className="container mx-auto px-4 py-8">
           <AdContainer slot="home-banner-1" format="horizontal" className="mx-auto max-w-4xl" />
         </div>
 
@@ -471,6 +471,11 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Ad Container - Above Footer */}
+        <div className="container mx-auto px-4 py-8">
+          <AdContainer slot="home-banner-2" format="auto" className="mx-auto max-w-4xl" />
+        </div>
 
         <FAQSection faqs={faqs} />
 
