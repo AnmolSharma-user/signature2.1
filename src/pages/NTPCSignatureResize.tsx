@@ -12,6 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
 import { CheckCircle, AlertTriangle, Info } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const NTPCSignatureResize = () => {
   const faqs = [
@@ -115,6 +116,9 @@ const NTPCSignatureResize = () => {
               </div>
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
             </div>
 
             <div className="mx-auto mt-12 sm:mt-16 max-w-6xl">

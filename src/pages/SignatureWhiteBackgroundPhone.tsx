@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const SignatureWhiteBackgroundPhone = () => {
     const faqs = [
@@ -119,6 +120,8 @@ const SignatureWhiteBackgroundPhone = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Method 2: Use a Scanner App</h2>
                                 <p className="mb-4 text-muted-foreground">Apps like <strong>Adobe Scan</strong>, <strong>Microsoft Lens</strong>, or <strong>CamScanner</strong> have a specialized "Document" or "Whiteboard" mode.</p>
@@ -169,6 +172,7 @@ const SignatureWhiteBackgroundPhone = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

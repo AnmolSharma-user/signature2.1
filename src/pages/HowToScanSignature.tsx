@@ -8,6 +8,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const HowToScanSignature = () => {
     const faqs = [
@@ -304,6 +305,9 @@ const HowToScanSignature = () => {
                                 </div>
                             </section>
 
+                            {/* In-Article Ad — mid-content */}
+                            <AdContainer type="inarticle" className="my-8" />
+
                             {/* Resizing Section */}
                             <section className="mb-12">
                                 <div className="mb-6 flex items-center gap-3">
@@ -455,6 +459,7 @@ const HowToScanSignature = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

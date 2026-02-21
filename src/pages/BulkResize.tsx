@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import FAQSection from "@/components/FAQSection";
+import AdContainer from "@/components/AdContainer";
 import { CheckCircle, Layers, Zap, Download } from "lucide-react";
 
 const BulkResize = () => {
@@ -70,7 +71,7 @@ const BulkResize = () => {
                 Bulk Signature Resize Tool
               </h1>
               <p className="text-muted-foreground">
-                Need to resize multiple signatures? Upload all your images at once and resize them 
+                Need to resize multiple signatures? Upload all your images at once and resize them
                 with the same configuration. Perfect for batch processing exam applications.
               </p>
             </div>
@@ -103,6 +104,7 @@ const BulkResize = () => {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl">
               <BulkSignatureResizer />
+              <AdContainer type="display" className="mt-8" />
             </div>
           </div>
         </section>

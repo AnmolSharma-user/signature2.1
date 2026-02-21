@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const PhotoResizeForAdmitCard = () => {
     const faqs = [
@@ -131,6 +132,8 @@ const PhotoResizeForAdmitCard = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Tips for the Best Result</h2>
                                 <div className="grid gap-4 md:grid-cols-2">
@@ -173,6 +176,7 @@ const PhotoResizeForAdmitCard = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

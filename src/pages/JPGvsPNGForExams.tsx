@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const JPGvsPNGForExams = () => {
     const faqs = [
@@ -168,6 +169,8 @@ const JPGvsPNGForExams = () => {
                                     </div>
                                 </div>
                             </section>
+
+                            <AdContainer type="inarticle" className="my-8" />
 
                             {/* JPG vs JPEG */}
                             <section className="mb-12">
@@ -474,6 +477,7 @@ const JPGvsPNGForExams = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

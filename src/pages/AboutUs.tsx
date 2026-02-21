@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const AboutUs = () => {
   return (
@@ -25,7 +26,7 @@ const AboutUs = () => {
                 About SignatureResize.in
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
-                We are a team of developers and designers passionate about making government exam 
+                We are a team of developers and designers passionate about making government exam
                 applications easier for millions of Indian students.
               </p>
             </div>
@@ -47,19 +48,19 @@ const AboutUs = () => {
                   </h2>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      SignatureResize.in started in 2023 when our founder, a GATE aspirant himself, 
-                      faced the frustrating challenge of resizing his signature to meet exam requirements. 
-                      After spending hours trying different tools and failing multiple times, he decided 
+                      SignatureResize.in started in 2023 when our founder, a GATE aspirant himself,
+                      faced the frustrating challenge of resizing his signature to meet exam requirements.
+                      After spending hours trying different tools and failing multiple times, he decided
                       to build something better.
                     </p>
                     <p>
-                      What began as a simple personal project has grown into India's most trusted 
-                      signature resize tool, helping over 50,000 students and professionals prepare 
+                      What began as a simple personal project has grown into India's most trusted
+                      signature resize tool, helping over 50,000 students and professionals prepare
                       their documents for government exams and applications.
                     </p>
                     <p>
-                      We understand the pressure of exam applications. Missing a deadline because your 
-                      signature file is 2KB over the limit is not just annoying—it can delay your 
+                      We understand the pressure of exam applications. Missing a deadline because your
+                      signature file is 2KB over the limit is not just annoying—it can delay your
                       career by an entire year. That's why we built a tool that works every single time.
                     </p>
                   </div>
@@ -102,8 +103,8 @@ const AboutUs = () => {
                   Making Exam Applications Stress-Free
                 </h2>
                 <p className="mx-auto max-w-2xl text-muted-foreground">
-                  Our mission is simple: ensure no student misses an exam deadline because of 
-                  technical document requirements. We believe technology should simplify your life, 
+                  Our mission is simple: ensure no student misses an exam deadline because of
+                  technical document requirements. We believe technology should simplify your life,
                   not complicate it.
                 </p>
               </div>
@@ -115,7 +116,7 @@ const AboutUs = () => {
                   </div>
                   <h3 className="mb-2 text-lg font-semibold text-foreground">Speed & Efficiency</h3>
                   <p className="text-sm text-muted-foreground">
-                    We value your time. Our tool delivers results in seconds, not minutes. 
+                    We value your time. Our tool delivers results in seconds, not minutes.
                     Quick processing means you can focus on what matters—your exam preparation.
                   </p>
                 </div>
@@ -125,7 +126,7 @@ const AboutUs = () => {
                   </div>
                   <h3 className="mb-2 text-lg font-semibold text-foreground">Privacy First</h3>
                   <p className="text-sm text-muted-foreground">
-                    Your signature is personal. We process everything in your browser—your images 
+                    Your signature is personal. We process everything in your browser—your images
                     never leave your device. No uploads, no storage, complete privacy.
                   </p>
                 </div>
@@ -135,7 +136,7 @@ const AboutUs = () => {
                   </div>
                   <h3 className="mb-2 text-lg font-semibold text-foreground">Free Forever</h3>
                   <p className="text-sm text-muted-foreground">
-                    Education tools should be accessible to everyone. We committed to keeping 
+                    Education tools should be accessible to everyone. We committed to keeping
                     our core features free forever—no hidden fees, no premium tiers for basic needs.
                   </p>
                 </div>
@@ -164,8 +165,8 @@ const AboutUs = () => {
                   <div>
                     <h3 className="mb-2 font-semibold text-foreground">Advanced Image Processing</h3>
                     <p className="text-muted-foreground">
-                      Our proprietary binary search algorithm adjusts image quality to achieve exact 
-                      file sizes. Unlike basic compressors, we maintain image clarity while hitting 
+                      Our proprietary binary search algorithm adjusts image quality to achieve exact
+                      file sizes. Unlike basic compressors, we maintain image clarity while hitting
                       precise KB targets required by exam portals.
                     </p>
                   </div>
@@ -175,8 +176,8 @@ const AboutUs = () => {
                   <div>
                     <h3 className="mb-2 font-semibold text-foreground">Exam-Specific Optimization</h3>
                     <p className="text-muted-foreground">
-                      We've studied requirements for every major Indian exam—GATE, SSC, UPSC, NTPC, 
-                      and more. Our exam-specific tools are pre-configured with correct dimensions 
+                      We've studied requirements for every major Indian exam—GATE, SSC, UPSC, NTPC,
+                      and more. Our exam-specific tools are pre-configured with correct dimensions
                       and size limits, eliminating guesswork.
                     </p>
                   </div>
@@ -186,8 +187,8 @@ const AboutUs = () => {
                   <div>
                     <h3 className="mb-2 font-semibold text-foreground">Browser-Based Security</h3>
                     <p className="text-muted-foreground">
-                      All processing happens locally using modern JavaScript APIs. We don't run 
-                      servers that handle your images—everything stays on your computer. This 
+                      All processing happens locally using modern JavaScript APIs. We don't run
+                      servers that handle your images—everything stays on your computer. This
                       architecture ensures both speed and privacy.
                     </p>
                   </div>
@@ -209,18 +210,22 @@ const AboutUs = () => {
                 Built by Students, for Students
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                Our team comprises engineers, designers, and former exam aspirants who understand 
-                the challenges you face. We've been in your shoes—filling out applications at midnight, 
-                panicking over file size errors, and counting down to deadlines. That experience drives 
+                Our team comprises engineers, designers, and former exam aspirants who understand
+                the challenges you face. We've been in your shoes—filling out applications at midnight,
+                panicking over file size errors, and counting down to deadlines. That experience drives
                 everything we build.
               </p>
               <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-                Based in India, we're committed to supporting the millions of students who appear for 
+                Based in India, we're committed to supporting the millions of students who appear for
                 government exams each year. Your success is our success.
               </p>
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4 mb-8">
+          <AdContainer type="display" />
+        </div>
 
         <AdSenseDisclaimer />
         <Footer />

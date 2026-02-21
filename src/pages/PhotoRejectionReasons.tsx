@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const PhotoRejectionReasons = () => {
     const faqs = [
@@ -94,6 +95,8 @@ const PhotoRejectionReasons = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Quick Self-Check Before Uploading</h2>
                                 <div className="rounded-xl border-2 border-green-500/20 bg-green-500/5 p-5">
@@ -135,6 +138,7 @@ const PhotoRejectionReasons = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

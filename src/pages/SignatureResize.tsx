@@ -73,9 +73,6 @@ const SignatureResize = () => {
 
         <main className="py-8 md:py-12">
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-3xl mb-8">
-              <AdContainer slot="tool-above" format="auto" />
-            </div>
             <div className="mx-auto max-w-3xl">
               <SignatureResizer
                 title="Upload Your Image"
@@ -101,9 +98,8 @@ const SignatureResize = () => {
 
               <SignatureCreatorBanner />
 
-              <div className="mt-8">
-                <AdContainer slot="tool-below" format="auto" />
-              </div>
+              {/* Display ad below tool — never above to avoid blocking main action */}
+              <AdContainer type="display" />
             </div>
 
             {/* Features Section */}

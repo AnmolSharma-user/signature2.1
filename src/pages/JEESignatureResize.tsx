@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, FileImage, Zap, Shield } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const JEESignatureResize = () => {
   const faqs = [
@@ -94,6 +95,9 @@ const JEESignatureResize = () => {
               />
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
             </div>
           </section>
 

@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const ExamPhotoSignatureGuide = () => {
     const faqs = [
@@ -295,6 +296,9 @@ const ExamPhotoSignatureGuide = () => {
                                 </div>
                             </section>
 
+                            {/* In-Article Ad — mid-content */}
+                            <AdContainer type="inarticle" className="my-8" />
+
                             {/* Key Takeaways */}
                             <section className="mb-12">
                                 <div className="mb-6 flex items-center gap-3">
@@ -459,6 +463,7 @@ const ExamPhotoSignatureGuide = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const BlogPage = () => {
     const posts = [
@@ -131,6 +132,8 @@ const BlogPage = () => {
                 <section className="py-12 md:py-20">
                     <div className="container mx-auto px-4">
                         <Breadcrumbs items={[{ name: "Blog" }]} />
+
+                        <AdContainer type="infeed" className="my-8" />
 
                         <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                             {posts.map((post, i) => (

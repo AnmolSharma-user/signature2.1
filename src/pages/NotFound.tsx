@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import AdContainer from "@/components/AdContainer";
 
 const NotFound = () => {
   const location = useLocation();
@@ -50,7 +51,7 @@ const NotFound = () => {
               Page Not Found
             </h1>
             <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-              The page you're looking for doesn't exist or has been moved. 
+              The page you're looking for doesn't exist or has been moved.
               Don't worry, you can find our signature resize tools below.
             </p>
 
@@ -68,6 +69,10 @@ const NotFound = () => {
                   Resize Signature
                 </Link>
               </Button>
+            </div>
+
+            <div className="mb-12 max-w-md mx-auto">
+              <AdContainer type="display" />
             </div>
 
             {/* Popular Tools */}

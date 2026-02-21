@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const SSCCGLPhotoSignatureGuide = () => {
     const faqs = [
@@ -199,6 +200,8 @@ const SSCCGLPhotoSignatureGuide = () => {
                                     </div>
                                 </div>
                             </section>
+
+                            <AdContainer type="inarticle" className="my-8" />
 
                             {/* Common Errors */}
                             <section className="mb-12">
@@ -408,6 +411,7 @@ const SSCCGLPhotoSignatureGuide = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

@@ -12,6 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle, Camera, PenTool } from "lucide-react";
 import { Link } from "react-router-dom";
+import AdContainer from "@/components/AdContainer";
 
 const IBPSPhotoSignatureResize = () => {
     const faqs = [
@@ -188,6 +189,9 @@ const IBPSPhotoSignatureResize = () => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Display ad below tool */}
+                        <AdContainer type="display" />
 
                         {/* About IBPS Section — E-E-A-T SEO Content */}
                         <div className="mx-auto mt-12 sm:mt-16 max-w-4xl">

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle, AlertCircle, Info } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const UPSCSignatureResize = () => {
   const faqs = [
@@ -126,6 +127,9 @@ const UPSCSignatureResize = () => {
               />
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
             </div>
           </div>
         </section>

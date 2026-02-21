@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const DigitalSignatureWithoutScanner = () => {
     const faqs = [
@@ -311,6 +312,9 @@ const DigitalSignatureWithoutScanner = () => {
                                 </div>
                             </section>
 
+                            {/* In-Article Ad — mid-content */}
+                            <AdContainer type="inarticle" className="my-8" />
+
                             {/* Comparison Table */}
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">
@@ -497,6 +501,7 @@ const DigitalSignatureWithoutScanner = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

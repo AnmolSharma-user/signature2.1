@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const SignatureUploadErrors = () => {
     const faqs = [
@@ -214,6 +215,9 @@ const SignatureUploadErrors = () => {
                                 })}
                             </section>
 
+                            {/* In-Article Ad — mid-content */}
+                            <AdContainer type="inarticle" className="my-8" />
+
                             {/* Quick Reference Table */}
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Quick Reference: Error → Fix</h2>
@@ -325,6 +329,7 @@ const SignatureUploadErrors = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

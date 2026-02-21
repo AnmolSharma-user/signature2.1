@@ -10,6 +10,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const SSCMTSSignatureResize = () => {
   const faqs = [
@@ -124,6 +125,9 @@ const SSCMTSSignatureResize = () => {
               </div>
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
             </div>
 
             {/* Features Section */}

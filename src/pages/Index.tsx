@@ -236,9 +236,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Ad Container - Below Hero */}
-        <div className="container mx-auto px-4 py-8">
-          <AdContainer slot="home-banner-1" format="horizontal" className="mx-auto max-w-4xl" />
+        {/* Ad — Display below main tool */}
+        <div className="container mx-auto px-4 pb-4">
+          <AdContainer type="display" className="mx-auto max-w-4xl" />
         </div>
 
         {/* Stats Section */}
@@ -472,9 +472,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Ad Container - Above Footer */}
-        <div className="container mx-auto px-4 py-8">
-          <AdContainer slot="home-banner-2" format="auto" className="mx-auto max-w-4xl" />
+        {/* Ad — In-Feed before FAQ */}
+        <div className="container mx-auto px-4 pb-4">
+          <AdContainer type="infeed" className="mx-auto max-w-4xl" />
         </div>
 
         <FAQSection faqs={faqs} />

@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -58,7 +59,7 @@ const Contact = () => {
                 Get in Touch
               </h1>
               <p className="text-lg text-muted-foreground md:text-xl">
-                Have a question, suggestion, or need help? We're here to assist you. 
+                Have a question, suggestion, or need help? We're here to assist you.
                 Drop us a message and we'll respond as quickly as possible.
               </p>
             </div>
@@ -73,7 +74,7 @@ const Contact = () => {
                 {/* Contact Info */}
                 <div className="md:col-span-2">
                   <h2 className="mb-6 text-xl font-bold text-foreground">Contact Information</h2>
-                  
+
                   <div className="space-y-6">
                     <div className="flex gap-4">
                       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
@@ -136,7 +137,7 @@ const Contact = () => {
                 <div className="md:col-span-3">
                   <div className="rounded-xl border border-border bg-card p-6 md:p-8">
                     <h2 className="mb-6 text-xl font-bold text-foreground">Send us a Message</h2>
-                    
+
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid gap-4 sm:grid-cols-2">
                         <div>
@@ -214,6 +215,10 @@ const Contact = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4 mb-8">
+          <AdContainer type="display" />
+        </div>
 
         <AdSenseDisclaimer />
         <Footer />

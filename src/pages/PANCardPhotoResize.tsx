@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const PANCardPhotoResize = () => {
     const faqs = [
@@ -107,6 +108,7 @@ const PANCardPhotoResize = () => {
                                         Resize for PAN Card Now →
                                     </Link>
                                 </div>
+                                <AdContainer type="display" className="mt-8" />
                             </section>
 
                             <section className="mb-12">

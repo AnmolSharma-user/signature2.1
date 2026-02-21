@@ -7,6 +7,7 @@ import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import { CheckCircle } from "lucide-react";
+import AdContainer from "@/components/AdContainer";
 
 const GATEPhotoResize = () => {
   const faqs = [
@@ -91,6 +92,9 @@ const GATEPhotoResize = () => {
                 </div>
               </div>
             </div>
+
+            {/* Display ad below tool */}
+            <AdContainer type="display" className="mx-auto max-w-3xl" />
 
             <div className="mx-auto mt-16 max-w-6xl">
               <div className="mb-10 text-center">

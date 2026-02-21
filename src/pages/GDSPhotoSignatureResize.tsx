@@ -12,6 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle, Camera, PenTool } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const GDSPhotoSignatureResize = () => {
   const faqs = [
@@ -189,6 +190,9 @@ const GDSPhotoSignatureResize = () => {
               </div>
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
             </div>
 
             {/* About GDS Section — E-E-A-T SEO Content */}

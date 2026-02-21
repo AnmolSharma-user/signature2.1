@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import AdContainer from "@/components/AdContainer";
 import { AlertTriangle } from "lucide-react";
 
 const Disclaimer = () => {
@@ -40,20 +41,20 @@ const Disclaimer = () => {
                 <div>
                   <h2 className="mb-2 text-lg font-semibold text-foreground">Important Notice</h2>
                   <p className="text-muted-foreground">
-                    Please read this disclaimer carefully before using our signature resize tool. 
-                    By using SignatureResize.in, you acknowledge that you have read and understood 
+                    Please read this disclaimer carefully before using our signature resize tool.
+                    By using SignatureResize.in, you acknowledge that you have read and understood
                     this disclaimer.
                   </p>
                 </div>
               </div>
 
               <article className="prose prose-lg text-foreground prose-headings:text-foreground prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-foreground">
-                
+
                 <h2>No Affiliation with Government Bodies</h2>
                 <p>
-                  SignatureResize.in is an independent, privately-operated website. We are 
-                  <strong> not affiliated with, endorsed by, sponsored by, or in any way 
-                  officially connected to</strong> any government examination authority, 
+                  SignatureResize.in is an independent, privately-operated website. We are
+                  <strong> not affiliated with, endorsed by, sponsored by, or in any way
+                    officially connected to</strong> any government examination authority,
                   recruitment board, or government agency, including but not limited to:
                 </p>
                 <ul>
@@ -68,20 +69,20 @@ const Disclaimer = () => {
                   <li>Any central or state government department</li>
                 </ul>
                 <p>
-                  All exam names, logos, trademarks, and requirements mentioned on this website 
-                  are the property of their respective owners and are used here solely for 
+                  All exam names, logos, trademarks, and requirements mentioned on this website
+                  are the property of their respective owners and are used here solely for
                   identification and informational purposes.
                 </p>
 
                 <h2>Information Accuracy</h2>
                 <p>
-                  While we make every effort to provide accurate and up-to-date information 
-                  about exam requirements, we cannot guarantee that all information on this 
+                  While we make every effort to provide accurate and up-to-date information
+                  about exam requirements, we cannot guarantee that all information on this
                   website is current, complete, or accurate at all times.
                 </p>
                 <p>
-                  <strong>Exam requirements change frequently.</strong> Always verify the latest 
-                  signature and photo requirements directly from official exam websites before 
+                  <strong>Exam requirements change frequently.</strong> Always verify the latest
+                  signature and photo requirements directly from official exam websites before
                   submitting your application. We recommend checking:
                 </p>
                 <ul>
@@ -92,8 +93,8 @@ const Disclaimer = () => {
 
                 <h2>No Guarantee of Acceptance</h2>
                 <p>
-                  Using our tool does not guarantee that your signature or photo will be 
-                  accepted by exam portals or other applications. Acceptance depends on many 
+                  Using our tool does not guarantee that your signature or photo will be
+                  accepted by exam portals or other applications. Acceptance depends on many
                   factors beyond file size, including:
                 </p>
                 <ul>
@@ -104,15 +105,15 @@ const Disclaimer = () => {
                   <li>Current requirements that may have changed</li>
                 </ul>
                 <p>
-                  If your application is rejected due to signature or photo issues, we cannot 
-                  be held responsible. We strongly recommend testing your resized images well 
+                  If your application is rejected due to signature or photo issues, we cannot
+                  be held responsible. We strongly recommend testing your resized images well
                   before the application deadline.
                 </p>
 
                 <h2>Use at Your Own Risk</h2>
                 <p>
-                  The signature resize service is provided free of charge, and you use it at 
-                  your own risk. We shall not be liable for any direct, indirect, incidental, 
+                  The signature resize service is provided free of charge, and you use it at
+                  your own risk. We shall not be liable for any direct, indirect, incidental,
                   special, consequential, or exemplary damages resulting from:
                 </p>
                 <ul>
@@ -124,7 +125,7 @@ const Disclaimer = () => {
 
                 <h2>Technical Limitations</h2>
                 <p>
-                  Our tool processes images entirely in your browser using JavaScript. While 
+                  Our tool processes images entirely in your browser using JavaScript. While
                   this approach ensures privacy, it also means:
                 </p>
                 <ul>
@@ -136,37 +137,37 @@ const Disclaimer = () => {
 
                 <h2>External Links</h2>
                 <p>
-                  Our website may contain links to third-party websites. These links are 
-                  provided for your convenience and reference only. We do not control and 
-                  are not responsible for the content, privacy policies, or practices of 
+                  Our website may contain links to third-party websites. These links are
+                  provided for your convenience and reference only. We do not control and
+                  are not responsible for the content, privacy policies, or practices of
                   any third-party websites.
                 </p>
 
                 <h2>Advertising</h2>
                 <p>
-                  This website may display advertisements from third-party advertising networks. 
-                  We do not endorse any products or services advertised on our website. Any 
-                  dealings you have with advertisers found on this site are between you and 
+                  This website may display advertisements from third-party advertising networks.
+                  We do not endorse any products or services advertised on our website. Any
+                  dealings you have with advertisers found on this site are between you and
                   the advertiser.
                 </p>
 
                 <h2>Keep Original Images</h2>
                 <p>
-                  <strong>Always keep backup copies of your original signature and photo images.</strong> 
-                  Our tool only produces resized versions. If you need to try different settings 
+                  <strong>Always keep backup copies of your original signature and photo images.</strong>
+                  Our tool only produces resized versions. If you need to try different settings
                   or sizes, you'll need your original high-quality images.
                 </p>
 
                 <h2>Changes to This Disclaimer</h2>
                 <p>
-                  We reserve the right to update or change this disclaimer at any time. Changes 
-                  will be posted on this page with an updated date. Your continued use of the 
+                  We reserve the right to update or change this disclaimer at any time. Changes
+                  will be posted on this page with an updated date. Your continued use of the
                   website after any changes indicates your acceptance of the updated disclaimer.
                 </p>
 
                 <h2>Contact</h2>
                 <p>
-                  If you have any questions about this disclaimer, please contact us at 
+                  If you have any questions about this disclaimer, please contact us at
                   support@signatureresize.in.
                 </p>
 
@@ -175,6 +176,9 @@ const Disclaimer = () => {
           </div>
         </section>
 
+        <div className="container mx-auto px-4 mb-8 text-center uppercase text-[10px] tracking-widest text-muted-foreground/50">
+          <AdContainer type="display" />
+        </div>
         <Footer />
       </div>
     </>

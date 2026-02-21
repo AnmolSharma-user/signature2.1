@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const PassportPhotoAtHome = () => {
     const faqs = [
@@ -126,6 +127,8 @@ const PassportPhotoAtHome = () => {
                                     How to take a professional passport-size photo at home using your phone camera
                                 </figcaption>
                             </figure>
+
+                            <AdContainer type="inarticle" className="my-8" />
 
                             {/* Setup Section */}
                             <section className="mb-12">
@@ -326,6 +329,7 @@ const PassportPhotoAtHome = () => {
                     </div>
                 </article>
 
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

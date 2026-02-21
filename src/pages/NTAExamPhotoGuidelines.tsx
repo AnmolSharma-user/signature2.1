@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const NTAExamPhotoGuidelines = () => {
     const faqs = [
@@ -166,6 +167,8 @@ const NTAExamPhotoGuidelines = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Essential Rules for NTA Photos</h2>
                                 <div className="space-y-3">
@@ -203,6 +206,7 @@ const NTAExamPhotoGuidelines = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

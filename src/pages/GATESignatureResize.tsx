@@ -11,6 +11,7 @@ import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { CheckCircle } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
+import AdContainer from "@/components/AdContainer";
 
 const GATESignatureResize = () => {
   const faqs = [
@@ -114,6 +115,9 @@ const GATESignatureResize = () => {
               </div>
 
               <SignatureCreatorBanner />
+
+              {/* Display ad below tool */}
+              <AdContainer type="display" />
 
               {/* Attractive "Cute" Responsive Banner Section */}
               <div className="mt-8 flex justify-center px-4">

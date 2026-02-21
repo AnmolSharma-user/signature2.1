@@ -155,7 +155,7 @@ const SignatureCreatorPage = () => {
 
                         {/* Ad Container */}
                         <div className="mt-8">
-                            <AdContainer slot="signature-creator-mid" />
+                            <AdContainer type="display" />
                         </div>
                     </div>
                 </main>

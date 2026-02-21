@@ -13,6 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle, Camera, PenTool } from "lucide-react";
 import SignatureCreatorBanner from "@/components/SignatureCreatorBanner";
 import { Link } from "react-router-dom";
+import AdContainer from "@/components/AdContainer";
 
 const NEETPhotoSignatureResize = () => {
     const faqs = [
@@ -190,6 +191,9 @@ const NEETPhotoSignatureResize = () => {
                             </div>
 
                             <SignatureCreatorBanner />
+
+                            {/* Display ad below tool */}
+                            <AdContainer type="display" />
                         </div>
 
                         {/* About NEET Section — E-E-A-T SEO Content */}

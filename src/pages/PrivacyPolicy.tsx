@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
+import AdContainer from "@/components/AdContainer";
 
 const PrivacyPolicy = () => {
   return (
@@ -192,6 +193,9 @@ const PrivacyPolicy = () => {
           </div>
         </section>
 
+        <div className="container mx-auto px-4 mb-8 text-center">
+          <AdContainer type="display" />
+        </div>
         <Footer />
       </div>
     </>

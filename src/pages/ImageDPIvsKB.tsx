@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const ImageDPIvsKB = () => {
     const faqs = [
@@ -82,6 +83,8 @@ const ImageDPIvsKB = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">When Does DPI Actually Matter?</h2>
                                 <p className="mb-4 text-muted-foreground">For 95% of exams (SSC, IBPS, GATE), the portal ignores DPI. You can upload 72 DPI or 300 DPI, and as long as Pixels and KB are correct, it will work.</p>
@@ -119,6 +122,7 @@ const ImageDPIvsKB = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

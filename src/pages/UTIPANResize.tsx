@@ -10,6 +10,7 @@ import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 import { CheckCircle, Info } from "lucide-react";
 
 const UTIPANResize = () => {
@@ -86,6 +87,8 @@ const UTIPANResize = () => {
                 maxHeight={80}
                 defaultPreset="uti-pan"
               />
+
+              <AdContainer type="display" className="mt-8" />
 
               <div className="mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-6">
                 <h2 className="mb-4 text-xl font-bold text-foreground">

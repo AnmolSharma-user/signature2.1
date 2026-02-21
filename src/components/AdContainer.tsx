@@ -1,54 +1,102 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
+export type AdType = "display" | "infeed" | "inarticle" | "multiplex";
 
 interface AdContainerProps {
-  slot: string;
-  format?: "auto" | "horizontal" | "vertical" | "rectangle";
+  type?: AdType;
   className?: string;
 }
 
-const AdContainer = ({ slot, format = "auto", className = "" }: AdContainerProps) => {
-  useEffect(() => {
-    try {
-      // @ts-ignore
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      console.error("AdSense error:", e);
-    }
-  }, [slot]);
+const AD_CONFIG: Record<AdType, {
+  slot: string;
+  style: React.CSSProperties;
+  extra?: Record<string, string>;
+}> = {
+  display: {
+    slot: "5029933266",
+    style: { display: "block" },
+    extra: { "data-ad-format": "auto", "data-full-width-responsive": "true" },
+  },
+  infeed: {
+    slot: "1900014100",
+    style: { display: "block" },
+    extra: {
+      "data-ad-format": "fluid",
+      "data-ad-layout-key": "-fb+5w+4e-db+86",
+    },
+  },
+  inarticle: {
+    slot: "8273850765",
+    style: { display: "block", textAlign: "center" },
+    extra: {
+      "data-ad-layout": "in-article",
+      "data-ad-format": "fluid",
+    },
+  },
+  multiplex: {
+    slot: "5931263034",
+    style: { display: "block" },
+    extra: { "data-ad-format": "autorelaxed" },
+  },
+};
 
-  const formatStyles: Record<string, string> = {
-    auto: "min-h-[100px]",
-    horizontal: "min-h-[90px] max-h-[90px]",
-    vertical: "min-h-[600px] w-full max-w-[160px]",
-    rectangle: "min-h-[250px] w-full max-w-[300px]",
-  };
+const AdContainer = ({ type = "display", className = "" }: AdContainerProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const pushed = useRef(false);
+
+  // Lazy-load: only push ad when container scrolls into view
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (visible && !pushed.current) {
+      pushed.current = true;
+      try {
+        // @ts-ignore
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {
+        // AdSense not available (dev/localhost)
+      }
+    }
+  }, [visible]);
+
+  const config = AD_CONFIG[type];
 
   return (
-    <div
-      className={`ad-container-wrapper my-6 overflow-hidden transition-all duration-300 ${className}`}
-    >
-      <div className="flex items-center justify-between mb-2">
-        <span className="text-[10px] uppercase tracking-wider text-muted-foreground/60 font-medium">Advertisement</span>
-        <div className="h-[1px] flex-1 bg-border/40 ml-4"></div>
+    <div ref={containerRef} className={`ad-unit my-6 w-full overflow-hidden ${className}`}>
+      {/* Label */}
+      <div className="flex items-center gap-3 mb-1.5">
+        <span className="text-[10px] font-medium uppercase tracking-widest text-muted-foreground/50 select-none">
+          Advertisement
+        </span>
+        <div className="h-px flex-1 bg-border/30" />
       </div>
 
-      <div
-        className={`ad-content-area bg-muted/5 rounded-xl border border-border/30 flex items-center justify-center relative overflow-hidden ${formatStyles[format]}`}
-      >
+      {/* Ad slot */}
+      {visible && (
         <ins
           className="adsbygoogle"
-          style={{ display: "block", width: "100%" }}
+          style={config.style}
           data-ad-client="ca-pub-3488894749741987"
-          data-ad-slot={slot}
-          data-ad-format={format}
-          data-full-width-responsive="true"
+          data-ad-slot={config.slot}
+          {...config.extra}
         />
-
-        {/* Fallback/Loading state styling */}
-        <div className="absolute inset-0 -z-10 flex items-center justify-center opacity-10">
-          <div className="w-full h-full bg-gradient-to-br from-primary/5 to-transparent animate-pulse" />
-        </div>
-      </div>
+      )}
     </div>
   );
 };

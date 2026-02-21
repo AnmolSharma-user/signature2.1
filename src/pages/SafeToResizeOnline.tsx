@@ -7,6 +7,7 @@ import SEOSchema from "@/components/SEOSchema";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection from "@/components/FAQSection";
 import AdSenseDisclaimer from "@/components/AdSenseDisclaimer";
+import AdContainer from "@/components/AdContainer";
 
 const SafeToResizeOnline = () => {
     const faqs = [
@@ -84,6 +85,8 @@ const SafeToResizeOnline = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">Red Flags: When NOT to Upload</h2>
                                 <p className="mb-4 text-muted-foreground">While our tool is safe, be careful elsewhere. Avoid tools that:</p>
@@ -122,6 +125,7 @@ const SafeToResizeOnline = () => {
                         </div>
                     </div>
                 </article>
+                <AdContainer type="multiplex" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

@@ -5,6 +5,7 @@ import SignatureResizer from "@/components/SignatureResizer";
 import FAQSection from "@/components/FAQSection";
 import SEOHead from "@/components/SEOHead";
 import SEOSchema from "@/components/SEOSchema";
+import AdContainer from "@/components/AdContainer";
 import ProcessingFeatures from "@/components/ProcessingFeatures";
 import TrustBadges from "@/components/TrustBadges";
 import FeatureGrid from "@/components/FeatureGrid";
@@ -126,6 +127,8 @@ const ThumbImpressionResize = () => {
                                 maxHeight={240}
                                 defaultPreset="thumb-impression"
                             />
+
+                            <AdContainer type="display" className="mt-8" />
 
                             {/* Requirements Section */}
                             <div className="mt-6 sm:mt-8">
