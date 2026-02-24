@@ -46,6 +46,13 @@ import ImageDPIvsKB from "./pages/ImageDPIvsKB";
 import BlogPage from "./pages/BlogPage";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import PWAInstallPrompt from "./components/PWAInstallPrompt";
+import AgniveerPhotoSignatureGuide from "./pages/AgniveerPhotoSignatureGuide";
+import CUETPhotoSignatureGuide from "./pages/CUETPhotoSignatureGuide";
+import DigitalVsWetSignatureGuide from "./pages/DigitalVsWetSignatureGuide";
+import USVisaPhotoResize from "./pages/USVisaPhotoResize";
+import USCISPhotoSignatureGuide from "./pages/USCISPhotoSignatureGuide";
+import ExamPhotoCheckerTool from "./pages/ExamPhotoCheckerTool";
+import PassportPhotoMakerTool from "./pages/PassportPhotoMakerTool";
 
 const queryClient = new QueryClient();
 
@@ -93,6 +100,13 @@ const App = () => (
           <Route path="/pan-card-photo-signature-resize" element={<PANCardPhotoResize />} />
           <Route path="/is-it-safe-to-resize-signature-online" element={<SafeToResizeOnline />} />
           <Route path="/image-dpi-vs-kb-vs-pixels-exam-portals" element={<ImageDPIvsKB />} />
+          <Route path="/agniveer-agnipath-photo-signature-requirements-2026" element={<AgniveerPhotoSignatureGuide />} />
+          <Route path="/cuet-ug-photo-signature-upload-guide-2026" element={<CUETPhotoSignatureGuide />} />
+          <Route path="/digital-signature-vs-wet-signature-government-portals" element={<DigitalVsWetSignatureGuide />} />
+          <Route path="/resize-passport-photo-us-visa-ds-160" element={<USVisaPhotoResize />} />
+          <Route path="/resize-photo-signature-uscis-immigration-forms" element={<USCISPhotoSignatureGuide />} />
+          <Route path="/exam-photo-checker" element={<ExamPhotoCheckerTool />} />
+          <Route path="/passport-photo-maker" element={<PassportPhotoMakerTool />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

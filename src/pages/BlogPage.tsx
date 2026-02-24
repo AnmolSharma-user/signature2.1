@@ -105,6 +105,46 @@ const BlogPage = () => {
             readTime: "4 min read",
             category: "Technical",
         },
+        {
+            title: "Agniveer Agnipath Photo & Signature Requirements 2026",
+            slug: "/agniveer-agnipath-photo-signature-requirements-2026",
+            desc: "Exact photo (10–40 KB, 200×230 px) and signature (4–30 KB, 140×60 px) specifications for the Agniveer online application form. Avoid rejection.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "CUET UG 2026 Photo & Signature Upload Guide",
+            slug: "/cuet-ug-photo-signature-upload-guide-2026",
+            desc: "Exact photo and signature specifications for NTA's CUET UG portal. 15 lakh+ students apply — don't let a file size error cost you your spot.",
+            date: "Mar 2026",
+            readTime: "7 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "Digital Signature vs Wet Signature: What Government Portals Accept",
+            slug: "/digital-signature-vs-wet-signature-government-portals",
+            desc: "Aadhaar eSign, DSC, or scanned JPG? Find out exactly which signature type each Indian government portal and exam accepts in 2026.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Guide",
+        },
+        {
+            title: "How to Resize Passport Photo for US Visa DS-160 (2×2 inch, <240 KB)",
+            slug: "/resize-passport-photo-us-visa-ds-160",
+            desc: "DS-160 photo requirements: 600×600 px, JPEG, under 240 KB, white background. Step-by-step guide to resize your photo for free.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "US Visa",
+        },
+        {
+            title: "USCIS Photo Requirements for I-485, N-400 & Immigration Forms",
+            slug: "/resize-photo-signature-uscis-immigration-forms",
+            desc: "2×2 inch (600×600 px) passport photo for every USCIS immigration form. Complete 2026 guide with form-by-form breakdown.",
+            date: "Mar 2026",
+            readTime: "7 min read",
+            category: "US Immigration",
+        },
     ];
 
     return (

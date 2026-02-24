@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FileImage, Pen, PenTool, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen } from "lucide-react";
+import { FileImage, Pen, PenTool, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen, Camera } from "lucide-react";
 import SignatureResizer from "@/components/SignatureResizer";
 import AdContainer from "@/components/AdContainer";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,9 @@ const Index = () => {
   const tools = [
     { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
-    { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage, badge: "New" },
+    { href: "/exam-photo-checker", title: "Exam Photo Checker", description: "Upload your photo and instantly verify if it meets exam requirements (SSC, IBPS, DS-160 & more).", icon: CheckCircle, badge: "New" },
+    { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera, badge: "New" },
+    { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
     { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
     { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2025" },
     { href: "/ssc-mts-signature-resize", title: "SSC MTS Signature", description: "Resize signature for SSC MTS, CGL, CHSL exams. 1KB to 12KB.", icon: FileImage },
@@ -453,9 +455,12 @@ const Index = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { title: "SSC CGL 2026 Photo Guide", link: "/ssc-cgl-photo-signature-upload-guide-2026", desc: "Exact size and specs for SSC CGL application." },
-                { title: "Create Digital Signature", link: "/create-digital-signature-without-scanner", desc: "No scanner? Use your phone effectively." },
-                { title: "Why Photos Get Rejected", link: "/why-exam-portal-rejecting-photo-10-reasons", desc: "10 common mistakes and how to fix them." },
+                { title: "Agniveer Photo & Signature Guide 2026", link: "/agniveer-agnipath-photo-signature-requirements-2026", desc: "New high-growth exam — exact photo and signature specs for Agnipath applications." },
+                { title: "US Visa DS-160 Photo Guide", link: "/resize-passport-photo-us-visa-ds-160", desc: "2×2 inch, under 240 KB — resize your photo for the US nonimmigrant visa form." },
+                { title: "USCIS Immigration Photo Guide", link: "/resize-photo-signature-uscis-immigration-forms", desc: "Photo requirements for I-485, N-400, I-131 and all major immigration forms." },
+                { title: "CUET UG 2026 Photo Guide", link: "/cuet-ug-photo-signature-upload-guide-2026", desc: "15 lakh+ students apply — exact NTA portal specs for photo and signature." },
+                { title: "Digital vs Wet Signature Guide", link: "/digital-signature-vs-wet-signature-government-portals", desc: "Which signature type does each government portal actually accept in 2026?" },
+                { title: "Why Photos Get Rejected", link: "/why-exam-portal-rejecting-photo-10-reasons", desc: "10 common mistakes and how to fix each one before uploading." },
               ].map((post, i) => (
                 <Link key={i} to={post.link} className="group block rounded-xl border border-border bg-card p-6 transition-all hover:border-primary hover:shadow-lg">
                   <h3 className="mb-2 text-lg font-bold group-hover:text-primary">{post.title}</h3>
