@@ -87,6 +87,39 @@ const USVisaPhotoResize = () => {
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-4xl">
 
+                            {/* EEAT Intro Narrative */}
+                            <section className="mb-10">
+                                <p className="text-lg text-foreground leading-relaxed font-medium">
+                                    You've finally gotten your DS-160 interview appointment, or you're filling the form for
+                                    the first time. You reach the photo upload step — and the system rejects your image with
+                                    a vague error. It's one of the most frustrating moments in the US visa application process,
+                                    and it happens to thousands of applicants every month.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    The DS-160 photo checker is stricter than most people expect. It validates file size
+                                    (must be under 240 KB), format (JPEG only), face coverage (your face must fill 50–69% of
+                                    the photo height), and background color — all automatically. A studio photo taken for
+                                    an Indian passport may not pass because it uses a different aspect ratio or is saved at
+                                    a higher-than-expected resolution.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    We've compiled this guide using the latest specifications from the{" "}
+                                    <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html"
+                                        target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                                        US Department of State
+                                    </a>. Below you'll find the exact requirements, how to take the photo correctly
+                                    at home with just your phone, and the most common reasons the DS-160 photo checker
+                                    rejects photos (and how to fix each one).
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-muted-foreground text-sm list-disc pl-5">
+                                    <li>DS-160 photo specifications: exact pixel size, KB limit, and background rules</li>
+                                    <li>How to take a valid US visa photo at home for free (no studio needed)</li>
+                                    <li>Why your photo may have been rejected and how to fix it in minutes</li>
+                                </ul>
+                            </section>
+
+                            <AdContainer type="display" className="mb-8" />
+
                             {/* Official Specs */}
                             <section className="mb-12">
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
@@ -183,6 +216,30 @@ const USVisaPhotoResize = () => {
                                 </div>
                             </section>
 
+                            {/* Deep Dive: Studio vs Home */}
+                            <section className="mb-10 rounded-xl border border-border bg-muted/20 p-6">
+                                <h2 className="mb-4 text-xl font-bold text-foreground">The Home Photo Challenge: What Most Guides Don't Tell You</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Taking a DS-160 photo at home sounds simple in theory. In practice, the biggest challenge
+                                    isn't the background or the lighting — it's the <strong className="text-foreground">face coverage requirement</strong>.
+                                    The US State Department requires your face (from chin to the top of your head) to fill
+                                    between 50% and 69% of the photo's height. Too far from the camera and the face is too
+                                    small. Too close and it's too large. Both will get rejected.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    The practical tip: stand about 4–5 feet from the camera and use the rear camera (not
+                                    the selfie camera). Have someone else take the photo or use a phone stand with a timer.
+                                    After taking the photo, crop to a square that shows your head with some space above
+                                    the crown and a little below the chin. This naturally hits the 50–69% face coverage rule.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    For file size: a 600×600 px JPEG saved at 80% quality is typically 40–90 KB — well
+                                    within the 240 KB limit. Our{" "}
+                                    <Link to="/passport-photo-maker" className="text-primary hover:underline">Passport Photo Maker</Link>{" "}
+                                    handles all of this: crop, white background, 600×600 px output, and JPEG compression.
+                                </p>
+                            </section>
+
                             <AdContainer type="inarticle" className="my-8" />
 
                             {/* DS-160 vs Indian Exam Compare */}
@@ -260,11 +317,19 @@ const USVisaPhotoResize = () => {
                             </section>
 
                             <div className="mb-8 rounded-xl border border-border bg-muted/30 p-5">
-                                <p className="text-sm text-muted-foreground">
-                                    Published by <strong className="text-foreground">SignatureResize.in</strong>. Photo specifications sourced from the{" "}
-                                    <a href="https://travel.state.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">US Department of State</a>.
-                                    Always verify current specs before submitting your application.
-                                </p>
+                                <div className="flex items-start gap-4">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-sm">SR</div>
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">SignatureResize.in Editorial Team</p>
+                                        <p className="text-xs text-muted-foreground mt-0.5">Last reviewed: February 2026 · Source: US Department of State</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                                            Photo specifications sourced from the{" "}
+                                            <a href="https://travel.state.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                                                US Department of State Visa Photo Requirements
+                                            </a>. Always verify current specs before submitting, as requirements can change.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

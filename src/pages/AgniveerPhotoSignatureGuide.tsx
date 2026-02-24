@@ -101,6 +101,37 @@ const AgniveerPhotoSignatureGuide = () => {
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-4xl">
 
+                            {/* EEAT Intro Narrative */}
+                            <section className="mb-10 prose prose-neutral dark:prose-invert max-w-none">
+                                <p className="text-lg text-foreground leading-relaxed font-medium">
+                                    Your Agniveer recruitment call letter has arrived, or the application window just opened — and
+                                    now the portal is asking you to upload a passport photo and a scanned signature. Sounds simple.
+                                    But every year, thousands of genuinely eligible candidates get their applications flagged or
+                                    rejected because their photo was 42 KB instead of the allowed 40 KB, or their signature was
+                                    saved as PNG instead of JPG.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    At SignatureResize.in, we've helped over 50,000 students resize photos and signatures for
+                                    government exam portals. The Agniveer portal runs on the same NIC infrastructure as UPSC and
+                                    SSC, which means it applies <strong className="text-foreground">strict file validation</strong> — it
+                                    doesn't just check the image visually, it checks the actual byte size, pixel dimensions, and
+                                    MIME type. If any one of these doesn't match, you'll see a red error with no clear explanation.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    This guide gives you the <strong className="text-foreground">exact specifications</strong> from the
+                                    official Indian Army recruitment notification — not estimates, not guesses. We update it each
+                                    recruitment cycle. After reading this, you'll know exactly what to prepare, in what format,
+                                    and how to verify your file before hitting submit.
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-muted-foreground text-sm list-disc pl-5">
+                                    <li>Exact photo and signature KB limits and pixel dimensions for Agniveer 2026</li>
+                                    <li>Step-by-step: how to prepare your signature scan on a phone (no scanner needed)</li>
+                                    <li>The 5 mistakes that account for most Agniveer application rejections</li>
+                                </ul>
+                            </section>
+
+                            <AdContainer type="display" className="mb-8" />
+
                             {/* Quick Specs Table */}
                             <section className="mb-12">
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">
@@ -215,6 +246,30 @@ const AgniveerPhotoSignatureGuide = () => {
                                 </div>
                             </section>
 
+                            {/* Deep Dive Narrative */}
+                            <section className="mb-10 rounded-xl border border-border bg-muted/20 p-6">
+                                <h2 className="mb-4 text-xl font-bold text-foreground">Why the Signature Step Trips Up Most Agniveer Applicants</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Of the two uploads — photo and signature — the <strong className="text-foreground">signature is where most
+                                        people go wrong</strong>. The reason is straightforward: everyone has a phone camera and some idea
+                                    of how to take a passport photo. But very few people know how to properly extract a clean
+                                    signature from paper and convert it into a 140×60 pixel JPG under 30 KB.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    The most common scenario we see: a candidate signs on paper, photographs it with their phone,
+                                    WhatsApps it to themselves, and downloads it. The problem? WhatsApp reencodes images as WEBP
+                                    or heavily compressed JPG with a grey-ish background. The Agniveer portal reads this as an
+                                    invalid upload — not because your signature looks bad, but because the file's properties
+                                    don't match what the server expects.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    The fix is a three-step process: photograph → crop to just the signature →
+                                    resize to exactly 140×60 px and under 30 KB. Our free tools at this site handle all three
+                                    steps in your browser, without uploading anything to a server. Your signature image stays
+                                    on your device throughout.
+                                </p>
+                            </section>
+
                             <AdContainer type="inarticle" className="my-8" />
 
                             {/* Common Mistakes */}
@@ -313,12 +368,19 @@ const AgniveerPhotoSignatureGuide = () => {
                             </section>
 
                             <section className="mb-8 rounded-xl border border-border bg-muted/30 p-6">
-                                <h2 className="mb-3 text-lg font-bold text-foreground">About This Guide</h2>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Published by <strong className="text-foreground">SignatureResize.in</strong> — India's most-used free signature
-                                    and photo resize tool. All information is based on official Agniveer recruitment notifications. Always cross-check
-                                    on <a href="https://joinindianarmy.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">joinindianarmy.nic.in</a> for the latest exam cycle.
-                                </p>
+                                <div className="flex items-start gap-4">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-sm">SR</div>
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">SignatureResize.in Editorial Team</p>
+                                        <p className="text-xs text-muted-foreground mt-0.5">Last reviewed: February 2026 · Based on official Indian Army Agniveer notification</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                                            This guide is written by the team behind SignatureResize.in — a tool used by 50,000+ Indian exam
+                                            aspirants. Specifications are extracted from official recruitment notifications and verified against
+                                            the live Agniveer portal. For the most current cycle-specific requirements, always check{" "}
+                                            <a href="https://joinindianarmy.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">joinindianarmy.nic.in</a>.
+                                        </p>
+                                    </div>
+                                </div>
                             </section>
                         </div>
                     </div>

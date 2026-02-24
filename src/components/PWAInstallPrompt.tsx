@@ -7,6 +7,16 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 }
 
+// Helper to fire GA4 events safely (GA4 may not be loaded yet on first render)
+const trackEvent = (eventName: string, params?: Record<string, string>) => {
+  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+    (window as any).gtag("event", eventName, {
+      event_category: "PWA",
+      ...params,
+    });
+  }
+};
+
 const PWAInstallPrompt = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showPrompt, setShowPrompt] = useState(false);
@@ -16,7 +26,7 @@ const PWAInstallPrompt = () => {
     // Check if already installed or dismissed
     const dismissed = localStorage.getItem("pwa-prompt-dismissed");
     const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
-    
+
     if (dismissed || isStandalone) return;
 
     // Check for iOS
@@ -25,7 +35,10 @@ const PWAInstallPrompt = () => {
 
     // For iOS, show prompt after a delay
     if (isIOSDevice) {
-      const timer = setTimeout(() => setShowPrompt(true), 3000);
+      const timer = setTimeout(() => {
+        setShowPrompt(true);
+        trackEvent("pwa_prompt_shown", { method: "ios" });
+      }, 3000);
       return () => clearTimeout(timer);
     }
 
@@ -33,26 +46,44 @@ const PWAInstallPrompt = () => {
     const handler = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e as BeforeInstallPromptEvent);
-      setTimeout(() => setShowPrompt(true), 3000);
+      setTimeout(() => {
+        setShowPrompt(true);
+        trackEvent("pwa_prompt_shown", { method: "android" });
+      }, 3000);
     };
 
     window.addEventListener("beforeinstallprompt", handler);
-    return () => window.removeEventListener("beforeinstallprompt", handler);
+
+    // Also track when user has already installed (appinstalled fires in that case)
+    const installedHandler = () => {
+      trackEvent("pwa_installed", { method: "browser_native" });
+    };
+    window.addEventListener("appinstalled", installedHandler);
+
+    return () => {
+      window.removeEventListener("beforeinstallprompt", handler);
+      window.removeEventListener("appinstalled", installedHandler);
+    };
   }, []);
 
   const handleInstall = async () => {
     if (!deferredPrompt) return;
 
+    trackEvent("pwa_install_clicked");
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
-    
+
     if (outcome === "accepted") {
+      trackEvent("pwa_installed", { method: "prompt" });
       setShowPrompt(false);
+    } else {
+      trackEvent("pwa_dismissed", { reason: "after_prompt" });
     }
     setDeferredPrompt(null);
   };
 
   const handleDismiss = () => {
+    trackEvent("pwa_dismissed", { reason: "banner_closed" });
     setShowPrompt(false);
     localStorage.setItem("pwa-prompt-dismissed", "true");
   };
@@ -65,7 +96,7 @@ const PWAInstallPrompt = () => {
         <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
           {/* Gradient accent */}
           <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-primary/80 to-primary" />
-          
+
           <button
             onClick={handleDismiss}
             className="absolute right-3 top-3 rounded-full p-1 text-muted-foreground hover:bg-accent hover:text-foreground transition-colors"
@@ -79,13 +110,13 @@ const PWAInstallPrompt = () => {
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 animate-pulse">
                 <Smartphone className="h-6 w-6 text-primary" />
               </div>
-              
+
               <div className="flex-1 pr-6">
                 <h3 className="font-semibold text-foreground">
                   Install SignatureResize App
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {isIOS 
+                  {isIOS
                     ? "Tap the share button and select 'Add to Home Screen' for quick access!"
                     : "Install our app for faster access and offline support. No app store needed!"}
                 </p>

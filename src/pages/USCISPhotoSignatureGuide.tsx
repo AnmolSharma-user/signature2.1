@@ -92,6 +92,38 @@ const USCISPhotoSignatureGuide = () => {
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-4xl">
 
+                            {/* EEAT Intro Narrative */}
+                            <section className="mb-10">
+                                <p className="text-lg text-foreground leading-relaxed font-medium">
+                                    Filing an immigration form with USCIS is one of the highest-stakes document submissions
+                                    most people will ever make. A rejected I-485 photo doesn't just delay your Green Card
+                                    application by a week — it can mean months of waiting, additional biometrics appointments,
+                                    and in some cases, a Request for Evidence (RFE) that stalls the entire case.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    USCIS photo requirements are nearly identical to the US passport and DS-160 standards —
+                                    but with one critically important difference: <strong className="text-foreground">your photo must
+                                        be taken within 30 days of filing</strong>. Not 6 months, not 3 months. 30 days. This
+                                    catches many applicants who reuse a photo they took for their DS-160 visa application
+                                    months earlier.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    This guide covers all the major immigration forms that require photos — I-485, N-400,
+                                    I-131, I-765, and I-90 — with exact specifications from{" "}
+                                    <a href="https://www.uscis.gov/forms/filing-guidance/digital-photo-requirements"
+                                        target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                                        USCIS.gov
+                                    </a>.
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-muted-foreground text-sm list-disc pl-5">
+                                    <li>USCIS photo specs: 2×2 inch, white background, within 30 days of filing</li>
+                                    <li>Form-by-form photo requirements: I-485, N-400, I-131, I-765, I-90</li>
+                                    <li>How to prepare and resize your USCIS photo for free in under 2 minutes</li>
+                                </ul>
+                            </section>
+
+                            <AdContainer type="display" className="mb-8" />
+
                             {/* Official Specs */}
                             <section className="mb-12">
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">USCIS Photo Requirements at a Glance</h2>
@@ -191,6 +223,30 @@ const USCISPhotoSignatureGuide = () => {
                                 </div>
                             </section>
 
+                            {/* Deep Dive: The 30-day rule */}
+                            <section className="mb-10 rounded-xl border border-border bg-muted/20 p-6">
+                                <h2 className="mb-4 text-xl font-bold text-foreground">The 30-Day Rule: USCIS's Most Overlooked Photo Requirement</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    Of all the USCIS photo requirements, the 30-day recency rule is the one that surprises
+                                    applicants most. It comes from USCIS's policy of verifying your current appearance at
+                                    each stage of the immigration process. A biometrics officer reviewing your I-485 needs
+                                    to see what you look like <em>now</em> — not what you looked like when you applied for
+                                    your visa 14 months ago.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    In practice: take your photos on or near the day you plan to mail your application
+                                    (for paper filings) or within 30 days of your online submission date. If you're filing
+                                    jointly with a co-petitioner or family member, everyone needs fresh photos on the same
+                                    timeline.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    For digital filing on myUSCIS, the 30-day rule still applies. Use our{" "}
+                                    <Link to="/passport-photo-maker" className="text-primary hover:underline">Passport Photo Maker</Link>{" "}
+                                    to crop and resize your photo to the correct 600×600 px JPEG format right before
+                                    you file. The whole process takes under two minutes.
+                                </p>
+                            </section>
+
                             <AdContainer type="inarticle" className="my-8" />
 
                             {/* Common Mistakes */}
@@ -258,11 +314,19 @@ const USCISPhotoSignatureGuide = () => {
                             </section>
 
                             <div className="mb-8 rounded-xl border border-border bg-muted/30 p-5">
-                                <p className="text-sm text-muted-foreground">
-                                    Published by <strong className="text-foreground">SignatureResize.in</strong>. Specifications sourced from{" "}
-                                    <a href="https://www.uscis.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">USCIS.gov</a>.
-                                    Always verify with official form instructions before submitting immigration documents.
-                                </p>
+                                <div className="flex items-start gap-4">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-sm">SR</div>
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">SignatureResize.in Editorial Team</p>
+                                        <p className="text-xs text-muted-foreground mt-0.5">Last reviewed: February 2026 · Source: USCIS.gov</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                                            Specifications sourced from{" "}
+                                            <a href="https://www.uscis.gov" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">USCIS.gov</a>.
+                                            Always verify with official form instructions before submitting immigration documents.
+                                            Immigration requirements can change; check USCIS.gov for any form-specific updates.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

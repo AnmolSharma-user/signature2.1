@@ -12,8 +12,14 @@ interface BreadcrumbItem {
   url: string;
 }
 
+interface ArticleData {
+  headline: string;
+  description: string;
+  url: string;
+}
+
 interface SEOSchemaProps {
-  type: "FAQPage" | "HowTo" | "BreadcrumbList" | "Organization" | "WebApplication";
+  type: "FAQPage" | "HowTo" | "BreadcrumbList" | "Organization" | "WebApplication" | "Article";
   faqs?: FAQ[];
   howToSteps?: HowToStep[];
   howToName?: string;
@@ -21,6 +27,7 @@ interface SEOSchemaProps {
   organizationName?: string;
   organizationUrl?: string;
   organizationLogo?: string;
+  data?: ArticleData;
 }
 
 const SEOSchema = ({
@@ -29,6 +36,7 @@ const SEOSchema = ({
   howToSteps,
   howToName,
   breadcrumbs,
+  data,
   organizationName = "SignatureResize.in",
   organizationUrl = "https://signatureresize.in",
   organizationLogo = "https://signatureresize.in/favicon.ico",
@@ -89,6 +97,22 @@ const SEOSchema = ({
             contactType: "customer service",
             availableLanguage: ["English", "Hindi"],
           },
+        };
+
+      case "Article":
+        if (!data) return null;
+        return {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: data.headline,
+          description: data.description,
+          url: data.url,
+          publisher: {
+            "@type": "Organization",
+            name: "SignatureResize.in",
+            url: "https://signatureresize.in",
+          },
+          dateModified: new Date().toISOString().split("T")[0],
         };
 
       default:

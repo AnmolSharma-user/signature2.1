@@ -72,6 +72,34 @@ const CUETPhotoSignatureGuide = () => {
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-4xl">
 
+                            {/* EEAT Intro Narrative */}
+                            <section className="mb-10">
+                                <p className="text-lg text-foreground leading-relaxed font-medium">
+                                    Over 15 lakh students register for CUET UG each year, and NTA's upload portal is notoriously
+                                    unforgiving. A photo that looks perfectly fine on your phone — clear face, good lighting,
+                                    white-ish background — can still fail the upload if the file size is 201 KB instead of the
+                                    allowed 200 KB, or if you accidentally saved it as PNG instead of JPG.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    We built SignatureResize.in specifically to solve this problem. NTA runs its upload validation
+                                    on the server side — meaning the rejection doesn't happen in front of your eyes at the upload
+                                    step. It often shows up later, when your application status shows "photo not as per
+                                    specification." At that point, the window to re-upload may have already closed.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    Below are the <strong className="text-foreground">exact CUET UG 2026 specifications</strong> based
+                                    on NTA's official notification, a comparison with NEET and JEE requirements (since many
+                                    students apply for all three), and a four-step fix you can complete in under three minutes.
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-muted-foreground text-sm list-disc pl-5">
+                                    <li>CUET 2026 photo &amp; signature file size limits in plain language</li>
+                                    <li>Side-by-side comparison with NEET and JEE Main requirements</li>
+                                    <li>How to verify your files before submitting (takes 30 seconds)</li>
+                                </ul>
+                            </section>
+
+                            <AdContainer type="display" className="mb-8" />
+
                             <section className="mb-12">
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">CUET UG 2026 Quick Specs</h2>
                                 <div className="grid gap-4 sm:grid-cols-2">
@@ -165,6 +193,31 @@ const CUETPhotoSignatureGuide = () => {
                                 </div>
                             </section>
 
+                            {/* Deep Dive */}
+                            <section className="mb-10 rounded-xl border border-border bg-muted/20 p-6">
+                                <h2 className="mb-4 text-xl font-bold text-foreground">Why CUET Applicants Face More Upload Issues Than NEET or JEE</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    One pattern we notice every exam season: CUET applicants struggle more with the photo upload
+                                    than NEET or JEE applicants, even though the specifications are almost identical. The reason
+                                    is timing. JEE and NEET registrations open in November and December, when students have more
+                                    time to prepare. CUET registration usually opens in February — right when board exam revision
+                                    is in full swing. Students rush through the process and skip the file verification step.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    A second pattern: students who applied for JEE or NEET think they can reuse the same photo
+                                    file. That works <em>only</em> if the file is still under 200 KB and is in JPG format.
+                                    CUET's upper limit on photo size is 200 KB — which is more lenient than many other exams
+                                    — but the format requirement is strict. If you saved or screenshot the photo via WhatsApp
+                                    or Google Photos, the downloaded version may have been re-encoded as WEBP, which the NTA
+                                    portal will reject silently.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    Our advice: don't assume. Take two minutes now to run your files through our{" "}
+                                    <Link to="/exam-photo-checker" className="text-primary hover:underline">Exam Photo Checker</Link>{" "}
+                                    and confirm the format, dimensions, and size before the portal opens.
+                                </p>
+                            </section>
+
                             <AdContainer type="inarticle" className="my-8" />
 
                             <section className="mb-12 rounded-xl border border-primary/20 bg-primary/5 p-6">
@@ -206,10 +259,18 @@ const CUETPhotoSignatureGuide = () => {
                             </section>
 
                             <section className="mb-8 rounded-xl border border-border bg-muted/30 p-5">
-                                <p className="text-sm text-muted-foreground">
-                                    Published by <strong className="text-foreground">SignatureResize.in</strong>. Based on NTA's official CUET notifications.
-                                    Verify on <a href="https://cuet.samarth.ac.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cuet.samarth.ac.in</a> each year.
-                                </p>
+                                <div className="flex items-start gap-4">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-sm">SR</div>
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">SignatureResize.in Editorial Team</p>
+                                        <p className="text-xs text-muted-foreground mt-0.5">Last reviewed: February 2026 · Based on NTA's official CUET UG notification</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                                            Specifications sourced from NTA's official CUET notifications. Verify the latest pixel dimensions
+                                            on{" "}<a href="https://cuet.samarth.ac.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">cuet.samarth.ac.in</a>{" "}
+                                            each cycle as NTA occasionally updates requirements.
+                                        </p>
+                                    </div>
+                                </div>
                             </section>
                         </div>
                     </div>

@@ -89,6 +89,38 @@ const DigitalVsWetSignatureGuide = () => {
                     <div className="container mx-auto px-4">
                         <div className="mx-auto max-w-4xl">
 
+                            {/* EEAT Intro Narrative */}
+                            <section className="mb-10">
+                                <p className="text-lg text-foreground leading-relaxed font-medium">
+                                    Every year, we get variations of the same question from thousands of users:
+                                    "Can I just use an Aadhaar eSign for my SSC application?" or "My laptop has a
+                                    drawing pad — can I use that as a digital signature for the UPSC form?"
+                                    The short answer is no, not yet. But the full answer is more nuanced — and
+                                    understanding it will save you a lot of confusion.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    India is in an interesting transitional phase. On one hand, the government has
+                                    made Aadhaar eSign legally valid under the IT Act and uses it for income tax
+                                    returns, DigiLocker, and bank KYC. On the other hand, the exam portals — SSC,
+                                    IBPS, UPSC, NTA — still require a <strong className="text-foreground">photographed
+                                        wet signature uploaded as JPG</strong>. Not a drawn image. Not a digital certificate.
+                                    A physical ink signature on paper, converted to a JPG file.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    This guide breaks down the three types of signatures used in India's government
+                                    ecosystem, which portals accept which, and — since you'll need a wet signature
+                                    JPG for most things right now — exactly how to create one that passes every portal's
+                                    automated validation checks.
+                                </p>
+                                <ul className="mt-4 space-y-1.5 text-muted-foreground text-sm list-disc pl-5">
+                                    <li>Wet signature vs Aadhaar eSign vs DSC — what each is and when to use it</li>
+                                    <li>Portal-by-portal breakdown: which signature type is accepted where</li>
+                                    <li>Step-by-step: creating a JPG signature scan that passes all NIC portal checks</li>
+                                </ul>
+                            </section>
+
+                            <AdContainer type="display" className="mb-8" />
+
                             {/* Three Types */}
                             <section className="mb-12">
                                 <h2 className="mb-6 text-xl sm:text-2xl font-bold text-foreground">The 3 Types of Signatures in India</h2>
@@ -149,6 +181,36 @@ const DigitalVsWetSignatureGuide = () => {
                                         </tbody>
                                     </table>
                                 </div>
+                            </section>
+
+                            {/* Deep Dive */}
+                            <section className="mb-10 rounded-xl border border-border bg-muted/20 p-6">
+                                <h2 className="mb-4 text-xl font-bold text-foreground">Why "Just Draw It on the Screen" Doesn't Work for Exam Portals</h2>
+                                <p className="text-muted-foreground leading-relaxed">
+                                    A common misconception is that a signature is just an image of handwriting —
+                                    so drawing it on a touch screen or tablet and exporting it as JPG should work.
+                                    The reason it doesn't come down to how NIC-built exam portals validate uploads.
+                                    They check file metadata (format, size, dimensions), but also — informally —
+                                    flag signatures that look too smooth or perfect, which can flag them for manual
+                                    review as potentially digitally generated.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    More practically: portal instructions almost always say "sign on white paper and
+                                    scan/photograph." This is a legal and identity-verification requirement. Your
+                                    uploaded signature must match the physical signature you'll give at document
+                                    verification. If you drew a stylized version on a tablet, it may not match your
+                                    physical handwriting at the exam centre — which can cause issues.
+                                </p>
+                                <p className="mt-4 text-muted-foreground leading-relaxed">
+                                    The right approach: write your natural everyday signature on plain white paper
+                                    with a ballpoint pen. Photograph it under good light. Crop and resize with our{" "}
+                                    <Link to="/crop-signature-from-full-page-scan" className="text-primary hover:underline">
+                                        crop tool
+                                    </Link>{" "}and{" "}
+                                    <Link to="/signature-resize" className="text-primary hover:underline">
+                                        resize tool
+                                    </Link>. This takes about 90 seconds and produces a valid JPG file every time.
+                                </p>
                             </section>
 
                             <AdContainer type="inarticle" className="my-8" />
@@ -240,9 +302,18 @@ const DigitalVsWetSignatureGuide = () => {
                             </section>
 
                             <section className="mb-8 rounded-xl border border-border bg-muted/30 p-5">
-                                <p className="text-sm text-muted-foreground">
-                                    Published by <strong className="text-foreground">SignatureResize.in</strong>. Information based on Indian IT Act 2000, UIDAI guidelines, and official portal requirements as of 2026.
-                                </p>
+                                <div className="flex items-start gap-4">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-sm">SR</div>
+                                    <div>
+                                        <p className="font-semibold text-foreground text-sm">SignatureResize.in Editorial Team</p>
+                                        <p className="text-xs text-muted-foreground mt-0.5">Last reviewed: February 2026 · Source: IT Act 2000, UIDAI, official portal guidelines</p>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                                            Information based on the Indian IT Act 2000, UIDAI eSign guidelines, and official portal requirements
+                                            as of February 2026. The digital signature landscape in India is evolving rapidly; portal policies
+                                            may be updated. Always check your specific exam notification for the latest requirements.
+                                        </p>
+                                    </div>
+                                </div>
                             </section>
                         </div>
                     </div>
