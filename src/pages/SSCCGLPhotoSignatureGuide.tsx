@@ -62,6 +62,7 @@ const SSCCGLPhotoSignatureGuide = () => {
                 description="Complete SSC CGL 2026 photo and signature size guide. Photo: 20-50KB, 100×120px, JPG. Signature: 1-12KB, 40×60px. Step-by-step upload instructions with free resize tool."
                 canonicalUrl="https://signatureresize.in/ssc-cgl-photo-signature-upload-guide-2026"
                 keywords="SSC CGL 2026 photo size, SSC CGL signature upload, SSC CGL photo upload error, SSC CGL application photo requirement, SSC CGL photo dimensions 2026"
+                ogImage="https://signatureresize.in/assest/ssc-cgl-photo-signature-guide-2026.png"
             />
 
             <SEOSchema
@@ -91,6 +92,21 @@ const SSCCGLPhotoSignatureGuide = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Hero Image Block */}
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/ssc-cgl-photo-signature-guide-2026.png"
+                            alt="SSC CGL 2026 Photo and Signature Guidelines and Error Fixes"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 {/* Main Content */}
                 <article className="py-10 md:py-14">

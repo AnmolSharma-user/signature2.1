@@ -51,6 +51,7 @@ const DigitalVsWetSignatureGuide = () => {
                 description="Understand the difference between wet signature, Aadhaar eSign, and DSC for Indian government portals. Which signature type is valid for exam forms, DigiLocker, and tax filings?"
                 canonicalUrl="https://signatureresize.in/digital-signature-vs-wet-signature-government-portals"
                 keywords="digital signature vs wet signature india, aadhaar esign for exam portal, digital signature for government forms india, esign vs scanned signature, can i use digital signature for rrb application"
+                ogImage="https://signatureresize.in/assest/digital-vs-wet-signature-guide.png"
             />
             <SEOSchema
                 type="Article"
@@ -84,6 +85,20 @@ const DigitalVsWetSignatureGuide = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/digital-vs-wet-signature-guide.png"
+                            alt="Digital Signature vs Wet Signature for Government Portals — Which is accepted where?"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

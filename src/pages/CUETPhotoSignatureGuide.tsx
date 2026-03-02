@@ -40,6 +40,7 @@ const CUETPhotoSignatureGuide = () => {
                 description="CUET UG 2026 photo size (10–200 KB, JPG), signature size (4–30 KB), and step-by-step NTA portal upload guide. Avoid rejection with exact specifications."
                 canonicalUrl="https://signatureresize.in/cuet-ug-photo-signature-upload-guide-2026"
                 keywords="cuet ug photo size kb, cuet signature size 2026, nta cuet application photo requirements, cuet photo format jpg, cuet ug 2026 guide"
+                ogImage="https://signatureresize.in/assest/cuet-ug-2026-photo-signature-guide.png"
             />
             <SEOSchema
                 type="Article"
@@ -67,6 +68,20 @@ const CUETPhotoSignatureGuide = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/cuet-ug-2026-photo-signature-guide.png"
+                            alt="CUET UG 2026 photo and signature upload guide — NTA official requirements, 10–200KB photo, 4–30KB signature"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

@@ -53,6 +53,7 @@ const PhotoRejectionReasons = () => {
                 description="10 exact reasons why your photo gets rejected on SSC, IBPS, SBI, GATE, NEET, UPSC portals — and how to fix each one. Includes file size, format, dimension, and background issues."
                 canonicalUrl="https://signatureresize.in/why-exam-portal-rejecting-photo-10-reasons"
                 keywords="exam portal photo rejected, why photo rejected government exam, photo upload error exam portal, exam photo not accepted, fix photo rejection exam"
+                ogImage="https://signatureresize.in/assest/why-exam-portal-rejecting-photo-10-reasons.png"
             />
 
             <div className="min-h-screen bg-background">
@@ -71,6 +72,20 @@ const PhotoRejectionReasons = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/why-exam-portal-rejecting-photo-10-reasons.png"
+                            alt="10 reasons why your exam portal rejected your photo and how to correctly fix them"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

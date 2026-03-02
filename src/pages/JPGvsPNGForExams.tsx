@@ -56,6 +56,7 @@ const JPGvsPNGForExams = () => {
                 description="JPG vs PNG for government exam applications explained simply. Which format do GATE, SSC, UPSC, NEET portals accept? Why PNG gets rejected? How to convert? Complete guide."
                 canonicalUrl="https://signatureresize.in/jpg-vs-png-for-government-exam-forms"
                 keywords="jpg vs png for exam form, which image format for government exam, jpeg vs jpg difference for exam, PNG not accepted exam portal, convert png to jpg for exam"
+                ogImage="https://signatureresize.in/assest/jpg-vs-png-for-exam-upload.png"
             />
 
             <SEOSchema
@@ -85,6 +86,21 @@ const JPGvsPNGForExams = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Hero Image Block */}
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/jpg-vs-png-for-exam-upload.png"
+                            alt="JPG vs PNG for government exam forms — which format should you use?"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 {/* Main Content */}
                 <article className="py-10 md:py-14">

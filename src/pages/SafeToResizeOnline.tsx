@@ -36,6 +36,7 @@ const SafeToResizeOnline = () => {
                 description="Concerned about uploading your signature online? Learn how SignatureResize.in protects your privacy with auto-deletion, HTTPS encryption, and no data storage."
                 canonicalUrl="https://signatureresize.in/is-it-safe-to-resize-signature-online"
                 keywords="safe to resize signature online, is signatureresize.in safe, upload signature security, online photo resizer privacy, delete photos after resize"
+                ogImage="https://signatureresize.in/assest/is-it-safe-to-resize-signature-online.png"
             />
 
             <div className="min-h-screen bg-background">
@@ -54,6 +55,20 @@ const SafeToResizeOnline = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/is-it-safe-to-resize-signature-online.png"
+                            alt="Is it safe to resize signature and photo online? Learn about privacy."
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

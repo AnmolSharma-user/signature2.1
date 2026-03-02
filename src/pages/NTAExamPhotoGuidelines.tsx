@@ -54,6 +54,7 @@ const NTAExamPhotoGuidelines = () => {
                 description="Complete 2026 photo and signature guide for NTA exams (NEET, JEE Main, CUET). Passport photo (10-200KB), postcard photo, and signature (4-30KB) rules explained."
                 canonicalUrl="https://signatureresize.in/nta-exam-photo-signature-guidelines-2026"
                 keywords="NTA photo requirements 2026, NEET photo size, JEE Main photo size, CUET photo guidelines, NTA signature size 4kb-30kb"
+                ogImage="https://signatureresize.in/assest/nta-exam-photo-signature-guidelines-2026.png"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo and Signature for NTA Exams (NEET, JEE, CUET)" howToSteps={howToSteps} />
 
@@ -75,6 +76,20 @@ const NTAExamPhotoGuidelines = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/nta-exam-photo-signature-guidelines-2026.png"
+                            alt="NTA Exam photo and signature upload guidelines 2026 — dimensions and KB size for NEET, CUET, JEE"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

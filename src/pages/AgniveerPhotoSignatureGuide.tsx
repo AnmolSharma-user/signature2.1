@@ -52,6 +52,7 @@ const AgniveerPhotoSignatureGuide = () => {
                 description="Official Agniveer photo size (10-40 KB, 200×230 px) and signature size (4-30 KB, 140×60 px) requirements for Agnipath online application 2026. Step-by-step resize guide with free tool."
                 canonicalUrl="https://signatureresize.in/agniveer-agnipath-photo-signature-requirements-2026"
                 keywords="agniveer photo size, agnipath photo requirements 2026, agniveer signature size kb, agnipath application photo upload, indian army agniveer photo format"
+                ogImage="https://signatureresize.in/assest/agniveer-agnipath-2026-photo-signature-guide.png"
             />
             <SEOSchema
                 type="Article"
@@ -96,6 +97,21 @@ const AgniveerPhotoSignatureGuide = () => {
                         </div>
                     </div>
                 </section>
+
+                {/* Hero image for Google Discover (min 1200px) */}
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/agniveer-agnipath-2026-photo-signature-guide.png"
+                            alt="Agniveer Agnipath 2026 photo and signature size requirements — JPG format, 10–40KB photo, 4–30KB signature guide"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

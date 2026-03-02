@@ -53,6 +53,7 @@ const PhotoResizeForAdmitCard = () => {
                 description="Resize photos for admit cards, mark sheets, and exam documents. Get your passport photo under 100KB in JPG format. Works for all Indian government exam admit cards."
                 canonicalUrl="https://signatureresize.in/photo-resize-for-admit-card-mark-sheet"
                 keywords="photo resize for admit card, mark sheet photo size, resize photo under 100kb, admit card photo requirement, exam admit card photo size"
+                ogImage="https://signatureresize.in/assest/photo-resize-for-admit-card-guide.png"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo for Admit Card and Mark Sheet" howToSteps={howToSteps} />
 
@@ -72,6 +73,20 @@ const PhotoResizeForAdmitCard = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/photo-resize-for-admit-card-guide.png"
+                            alt="How to resize your photo for admit cards and mark sheets under 100KB"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

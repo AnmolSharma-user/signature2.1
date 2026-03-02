@@ -50,6 +50,7 @@ const SignatureWhiteBackgroundPhone = () => {
                 description="Easy guide to get a clean white background for your signature using just your phone. No scanner needed. Fix grey backgrounds and shadows for exam uploads."
                 canonicalUrl="https://signatureresize.in/signature-photo-white-background-phone"
                 keywords="white background signature phone, clean signature background, remove shadow from signature photo, scan signature with phone, exam signature white background"
+                ogImage="https://signatureresize.in/assest/signature-photo-white-background-phone.png"
             />
             <SEOSchema type="HowTo" howToName="How to Get a White Background for Signature Photo on Phone" howToSteps={howToSteps} />
 
@@ -69,6 +70,20 @@ const SignatureWhiteBackgroundPhone = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/signature-photo-white-background-phone.png"
+                            alt="How to get a white background for your signature photo using your smartphone"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

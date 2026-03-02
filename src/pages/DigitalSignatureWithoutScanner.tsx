@@ -62,6 +62,7 @@ const DigitalSignatureWithoutScanner = () => {
                 description="No scanner? No problem. Create a digital signature for GATE, SSC, UPSC, NEET & other government exam forms using just your phone camera. Step-by-step guide with free resize tool."
                 canonicalUrl="https://signatureresize.in/create-digital-signature-without-scanner"
                 keywords="digital signature without scanner, create signature for exam without scanner, signature for GATE without scanner, phone camera signature for exam form, how to make digital signature at home"
+                ogImage="https://signatureresize.in/assest/digital-signature-without-scanner.png"
             />
 
             <SEOSchema
@@ -91,6 +92,20 @@ const DigitalSignatureWithoutScanner = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/digital-signature-without-scanner.png"
+                            alt="How to create digital signature without scanner — sign on white paper, photograph with phone, crop and resize for exam portals"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 {/* Main Content */}
                 <article className="py-10 md:py-14">

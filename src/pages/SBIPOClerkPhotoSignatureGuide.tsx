@@ -57,6 +57,7 @@ const SBIPOClerkPhotoSignatureGuide = () => {
                 description="SBI PO/Clerk 2026 photo (20-50KB, 200×230px), signature (10-20KB, 140×60px), and thumb impression requirements. Step-by-step upload guide with free resize tool."
                 canonicalUrl="https://signatureresize.in/sbi-po-clerk-photo-signature-resize-guide-2026"
                 keywords="SBI PO photo size 2026, SBI Clerk signature size, SBI PO thumb impression size, SBI photo upload error, SBI PO application photo"
+                ogImage="https://signatureresize.in/assest/sbi-po-clerk-photo-signature-guide-2026.png"
             />
             <SEOSchema type="HowTo" howToName="How to Upload Photo, Signature, and Thumb Impression for SBI PO/Clerk 2026" howToSteps={howToSteps} />
 
@@ -76,6 +77,20 @@ const SBIPOClerkPhotoSignatureGuide = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/sbi-po-clerk-photo-signature-guide-2026.png"
+                            alt="SBI PO and Clerk Photo and Signature Size Requirements 2026"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">

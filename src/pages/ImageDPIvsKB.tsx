@@ -36,6 +36,7 @@ const ImageDPIvsKB = () => {
                 description="Confused by DPI, KB, and Pixels? Learn what matters for government exam uploads. Why PAN card needs 200 DPI but SSC doesn't. Simple guide."
                 canonicalUrl="https://signatureresize.in/image-dpi-vs-kb-vs-pixels-exam-portals"
                 keywords="dpi vs kb vs pixels, what is dpi in photo, 200 dpi photo size converter, image resolution for exam, kb to dpi converter"
+                ogImage="https://signatureresize.in/assest/image-dpi-vs-kb-vs-pixels-guide.png"
             />
 
             <div className="min-h-screen bg-background">
@@ -54,6 +55,20 @@ const ImageDPIvsKB = () => {
                         </div>
                     </div>
                 </section>
+
+                <div className="container mx-auto px-4 pb-2">
+                    <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
+                        <img
+                            src="/assest/image-dpi-vs-kb-vs-pixels-guide.png"
+                            alt="Image DPI vs KB vs Pixels explained — What actually matters for exam portals like SSC and NTA"
+                            className="h-auto w-full object-cover"
+                            width="1200"
+                            height="630"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    </figure>
+                </div>
 
                 <article className="py-10 md:py-14">
                     <div className="container mx-auto px-4">
