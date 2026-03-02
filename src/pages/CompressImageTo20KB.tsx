@@ -103,22 +103,6 @@ const CompressImageTo20KB = () => {
                 }}
             />
 
-            {/* FAQPage Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": faqs.map(faq => ({
-                            "@type": "Question",
-                            "name": faq.question,
-                            "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-                        }))
-                    })
-                }}
-            />
-
             {/* WebApplication Schema */}
             <script
                 type="application/ld+json"
@@ -181,8 +165,8 @@ const CompressImageTo20KB = () => {
                                             key={preset.id}
                                             onClick={() => setSelectedPreset(preset.id)}
                                             className={`rounded-lg border p-3 text-left text-xs transition-all ${selectedPreset === preset.id
-                                                    ? "border-primary bg-primary/10 text-primary font-semibold"
-                                                    : "border-border text-muted-foreground hover:border-primary/50"
+                                                ? "border-primary bg-primary/10 text-primary font-semibold"
+                                                : "border-border text-muted-foreground hover:border-primary/50"
                                                 }`}
                                         >
                                             <div className="font-medium text-foreground">{preset.label}</div>
