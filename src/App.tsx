@@ -53,6 +53,11 @@ import USVisaPhotoResize from "./pages/USVisaPhotoResize";
 import USCISPhotoSignatureGuide from "./pages/USCISPhotoSignatureGuide";
 import ExamPhotoCheckerTool from "./pages/ExamPhotoCheckerTool";
 import PassportPhotoMakerTool from "./pages/PassportPhotoMakerTool";
+import RRBGroupDPhotoSignatureResize from "./pages/RRBGroupDPhotoSignatureResize";
+import AadhaarCardPhotoResize from "./pages/AadhaarCardPhotoResize";
+import CompressImageTo20KB from "./pages/CompressImageTo20KB";
+import RRBNTPCPhotoGuide2026 from "./pages/RRBNTPCPhotoGuide2026";
+import SignatureRejection10KB20KBFix from "./pages/SignatureRejection10KB20KBFix";
 
 const queryClient = new QueryClient();
 
@@ -107,6 +112,11 @@ const App = () => (
           <Route path="/resize-photo-signature-uscis-immigration-forms" element={<USCISPhotoSignatureGuide />} />
           <Route path="/exam-photo-checker" element={<ExamPhotoCheckerTool />} />
           <Route path="/passport-photo-maker" element={<PassportPhotoMakerTool />} />
+          <Route path="/rrb-group-d-photo-signature-resize" element={<RRBGroupDPhotoSignatureResize />} />
+          <Route path="/aadhaar-card-photo-resize" element={<AadhaarCardPhotoResize />} />
+          <Route path="/compress-image-to-20kb-online" element={<CompressImageTo20KB />} />
+          <Route path="/rrb-ntpc-2026-photo-signature-upload-guide" element={<RRBNTPCPhotoGuide2026 />} />
+          <Route path="/why-signature-rejected-10kb-20kb-fix-2026" element={<SignatureRejection10KB20KBFix />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

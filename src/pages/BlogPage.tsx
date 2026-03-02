@@ -10,6 +10,22 @@ import AdContainer from "@/components/AdContainer";
 const BlogPage = () => {
     const posts = [
         {
+            title: "RRB NTPC 2026 Photo & Signature Upload Guide — Exact Specs & Common Errors",
+            slug: "/rrb-ntpc-2026-photo-signature-upload-guide",
+            desc: "Complete guide for RRB NTPC 11th Phase 2026: photo (20–50KB), signature (10–40KB), and thumb impression specs with step-by-step upload instructions.",
+            date: "Mar 2026",
+            readTime: "7 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "Why Your Signature Gets Rejected in 10KB–20KB Range — 7 Causes & Fixes (2026)",
+            slug: "/why-signature-rejected-10kb-20kb-fix-2026",
+            desc: "The 7 real reasons exam portal signatures fail even when file size looks right — wrong format, block letters, grey background, wrong pixels — and the exact fix for each.",
+            date: "Mar 2026",
+            readTime: "5 min read",
+            category: "Troubleshooting",
+        },
+        {
             title: "How to Create Digital Signature for Government Exams Without Scanner",
             slug: "/create-digital-signature-without-scanner",
             desc: "No scanner? No problem. Use your phone camera to create a perfect digital signature for any online application form.",
@@ -153,6 +169,7 @@ const BlogPage = () => {
                 title="Signature & Photo Resize Blog - Guides & Tips 2026"
                 description="Expert guides on resizing photos and signatures for government exams like SSC, IBPS, NEET, JEE, and GATE. Tutorials, troubleshooting, and exam-specific rules."
                 canonicalUrl="https://signatureresize.in/blog"
+                ogImage="https://signatureresize.in/assest/rrb-ntpc-2026-photo-signature-guide.png"
             />
 
             <div className="min-h-screen bg-background text-foreground">

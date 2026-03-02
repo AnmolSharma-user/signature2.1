@@ -56,8 +56,52 @@
   <meta name="twitter:description" content="Free online signature resize tool for government exams. Fast & accurate." />
   <meta name="twitter:image" content="https://signatureresize.in/logo.png" />
 
-  <meta name="robots" content="index, follow" />
-  <meta name="googlebot" content="index, follow" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large" />
+
+  <!-- Author / Organization EEAT JSON-LD (site-wide) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://signatureresize.in/#organization",
+        "name": "SignatureResize.in",
+        "url": "https://signatureresize.in",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://signatureresize.in/favicon/android-chrome-192x192.png",
+          "width": 192,
+          "height": 192
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://signatureresize.in/#website",
+        "url": "https://signatureresize.in",
+        "name": "SignatureResize.in",
+        "description": "Free online signature and photo resize tools for Indian government exams",
+        "publisher": { "@id": "https://signatureresize.in/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://signatureresize.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://signatureresize.in/#author",
+        "name": "SignatureResize Editorial Team",
+        "url": "https://signatureresize.in/about-us",
+        "jobTitle": "Exam Preparation Expert",
+        "knowsAbout": ["Government Exam Applications", "Image Resizing", "SSC Exams", "UPSC", "IBPS Banking Exams", "GATE", "Photo Upload Guidelines"],
+        "worksFor": { "@id": "https://signatureresize.in/#organization" }
+      }
+    ]
+  }
+  </script>
 
   <!-- Google Analytics4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5TXQVL2T8"></script>

@@ -23,6 +23,9 @@ const Index = () => {
   const tools = [
     { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
+    { href: "/rrb-group-d-photo-signature-resize", title: "RRB Group D Resize", description: "Resize photo (20–50KB), signature (10–40KB) and thumb for RRB Group D 2026 recruitment.", icon: FileImage, badge: "2026" },
+    { href: "/aadhaar-card-photo-resize", title: "Aadhaar Photo Resize", description: "Resize your photo to under 35KB for the UIDAI myAadhaar portal. Instant & free.", icon: Camera, badge: "New" },
+    { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", description: "Compress any photo or signature to exactly 20KB for SSC, IBPS, UPSC, RRB exams.", icon: Zap, badge: "Hot" },
     { href: "/exam-photo-checker", title: "Exam Photo Checker", description: "Upload your photo and instantly verify if it meets exam requirements (SSC, IBPS, DS-160 & more).", icon: CheckCircle, badge: "New" },
     { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera, badge: "New" },
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
@@ -455,11 +458,11 @@ const Index = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {[
+                { title: "RRB NTPC 2026 Photo & Signature Upload Guide", link: "/rrb-ntpc-2026-photo-signature-upload-guide", desc: "Complete guide for RRB NTPC 11th Phase 2026: photo (20–50KB), signature specs, and step-by-step upload instructions." },
+                { title: "Why Signature Gets Rejected (10KB–20KB Fix)", link: "/why-signature-rejected-10kb-20kb-fix-2026", desc: "7 real reasons your signature upload fails even at the right KB size — and the exact fix for each error." },
                 { title: "Agniveer Photo & Signature Guide 2026", link: "/agniveer-agnipath-photo-signature-requirements-2026", desc: "New high-growth exam — exact photo and signature specs for Agnipath applications." },
                 { title: "US Visa DS-160 Photo Guide", link: "/resize-passport-photo-us-visa-ds-160", desc: "2×2 inch, under 240 KB — resize your photo for the US nonimmigrant visa form." },
-                { title: "USCIS Immigration Photo Guide", link: "/resize-photo-signature-uscis-immigration-forms", desc: "Photo requirements for I-485, N-400, I-131 and all major immigration forms." },
                 { title: "CUET UG 2026 Photo Guide", link: "/cuet-ug-photo-signature-upload-guide-2026", desc: "15 lakh+ students apply — exact NTA portal specs for photo and signature." },
-                { title: "Digital vs Wet Signature Guide", link: "/digital-signature-vs-wet-signature-government-portals", desc: "Which signature type does each government portal actually accept in 2026?" },
                 { title: "Why Photos Get Rejected", link: "/why-exam-portal-rejecting-photo-10-reasons", desc: "10 common mistakes and how to fix each one before uploading." },
               ].map((post, i) => (
                 <Link key={i} to={post.link} className="group block rounded-xl border border-border bg-card p-6 transition-all hover:border-primary hover:shadow-lg">
