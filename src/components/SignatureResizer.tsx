@@ -209,8 +209,8 @@ const SignatureResizer = ({
               }}
               onDragLeave={() => setIsDragging(false)}
               className={`cursor-pointer rounded-xl border-2 border-dashed p-6 sm:p-8 text-center transition-all duration-300 ${isDragging
-                  ? "border-primary bg-primary/10 scale-[1.02]"
-                  : "border-primary/30 bg-accent/50 hover:border-primary hover:bg-accent"
+                ? "border-primary bg-primary/10 scale-[1.02]"
+                : "border-primary/30 bg-accent/50 hover:border-primary hover:bg-accent"
                 }`}
             >
               <input
@@ -396,25 +396,25 @@ const SignatureResizer = ({
                 </p>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
+              {/* Action Buttons — mobile: primary CTA full-width on bottom */}
+              <div className="space-y-2.5 sm:space-y-0 sm:flex sm:flex-row sm:gap-3">
                 <Button
                   onClick={() => setCurrentStep(1)}
                   variant="outline"
                   size="lg"
-                  className={`flex-1 ${secondaryButtonClass}`}
+                  className={`w-full h-12 sm:flex-1 ${secondaryButtonClass}`}
                 >
-                  <ArrowLeft className="mr-2 h-5 w-5 transition-transform group-hover:-translate-x-1" />
+                  <ArrowLeft className="mr-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-translate-x-1" />
                   Change Image
                 </Button>
                 <Button
                   onClick={() => setCurrentStep(3)}
                   size="lg"
-                  className={`flex-1 ${primaryButtonClass}`}
+                  className={`w-full h-12 text-base sm:flex-1 ${primaryButtonClass}`}
                 >
-                  <Sparkles className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
-                  Preview & Resize
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:rotate-12" />
+                  Preview &amp; Resize
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                 </Button>
               </div>
@@ -492,22 +492,22 @@ const SignatureResizer = ({
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
+              {/* Action Buttons — mobile: primary CTA full-width on bottom */}
+              <div className="space-y-2.5 sm:space-y-0 sm:flex sm:flex-row sm:gap-3">
                 <Button
                   onClick={() => setCurrentStep(2)}
                   variant="outline"
                   size="lg"
-                  className={`flex-1 ${secondaryButtonClass}`}
+                  className={`w-full h-12 sm:flex-1 ${secondaryButtonClass}`}
                 >
-                  <ArrowLeft className="mr-2 h-5 w-5 transition-transform group-hover:-translate-x-1" />
+                  <ArrowLeft className="mr-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-translate-x-1" />
                   Back to Configure
                 </Button>
                 <Button
                   onClick={handleResize}
                   disabled={!preview || isProcessing}
                   size="lg"
-                  className={`flex-1 ${primaryButtonClass} disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100`}
+                  className={`w-full h-12 text-base sm:flex-1 ${primaryButtonClass} disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100`}
                 >
                   {isProcessing ? (
                     <>
@@ -516,7 +516,7 @@ const SignatureResizer = ({
                     </>
                   ) : (
                     <>
-                      <Sparkles className="mr-2 h-5 w-5 transition-transform group-hover:rotate-12" />
+                      <Sparkles className="mr-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:rotate-12" />
                       Resize Now
                       <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                     </>
@@ -605,35 +605,40 @@ const SignatureResizer = ({
                 )}
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
+              {/* Action Buttons — mobile: Download full-width, then 2 secondary side-by-side */}
+              <div className="space-y-2.5 sm:space-y-0 sm:flex sm:flex-row sm:gap-3">
+                {/* PRIMARY — Download */}
                 <Button
                   onClick={handleDownload}
                   size="lg"
-                  className={`flex-1 ${successButtonClass}`}
+                  className={`w-full sm:flex-1 h-12 text-base ${successButtonClass}`}
                 >
                   <Download className="mr-2 h-5 w-5 transition-transform group-hover:-translate-y-0.5" />
                   Download {outputFormat.toUpperCase()}
                   <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                 </Button>
-                <Button
-                  onClick={() => goToStep(2)}
-                  variant="outline"
-                  size="lg"
-                  className={`flex-1 ${secondaryButtonClass}`}
-                >
-                  <Settings className="mr-2 h-5 w-5 transition-transform group-hover:rotate-90" />
-                  Resize Again
-                </Button>
-                <Button
-                  onClick={handleReset}
-                  variant="outline"
-                  size="lg"
-                  className={secondaryButtonClass}
-                >
-                  <RefreshCw className="mr-2 h-5 w-5 transition-transform group-hover:rotate-180" />
-                  New
-                </Button>
+
+                {/* Secondary row — 2 buttons side by side on mobile */}
+                <div className="flex gap-2.5 sm:contents">
+                  <Button
+                    onClick={() => goToStep(2)}
+                    variant="outline"
+                    size="lg"
+                    className={`flex-1 h-12 sm:flex-1 ${secondaryButtonClass}`}
+                  >
+                    <Settings className="mr-1.5 h-4 w-4 sm:mr-2 sm:h-5 sm:w-5 transition-transform group-hover:rotate-90" />
+                    <span className="text-sm sm:text-base">Resize Again</span>
+                  </Button>
+                  <Button
+                    onClick={handleReset}
+                    variant="outline"
+                    size="lg"
+                    className={`flex-1 h-12 sm:flex-none ${secondaryButtonClass}`}
+                  >
+                    <RefreshCw className="mr-1.5 h-4 w-4 sm:mr-2 sm:h-5 sm:w-5 transition-transform group-hover:rotate-180" />
+                    <span className="text-sm sm:text-base">New</span>
+                  </Button>
+                </div>
               </div>
             </div>
           )}

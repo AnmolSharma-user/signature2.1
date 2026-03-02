@@ -3,6 +3,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollRestoration from "@/components/ScrollRestoration";
+import BackToTopButton from "@/components/BackToTopButton";
 import Index from "./pages/Index";
 import SignatureResize from "./pages/SignatureResize";
 import SignatureResize10to20KB from "./pages/SignatureResize10to20KB";
@@ -124,6 +126,8 @@ const App = () => (
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollRestoration />
+        <BackToTopButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
