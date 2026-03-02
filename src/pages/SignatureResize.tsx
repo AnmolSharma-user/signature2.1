@@ -84,6 +84,7 @@ const SignatureResize = () => {
         description="Resize signature to exact KB size for SSC, IBPS, RRB, UPSC, GATE, NEET exams. Free signature resizer trusted by 50,000+ students. JPG output, instant, no signup. Works on mobile."
         canonicalUrl="https://signatureresize.in/signature-resize"
         keywords="signature resize, signature resizer, resize signature online, signature resize online free, resize signature to 10kb, signature resize for exam, signature resizer for government exam, online signature resize tool"
+        ogImage="https://signatureresize.in/assest/signature-resize-online-free.png"
       />
 
       {/* Speakable Schema — AI Overview + Voice Search */}
@@ -320,6 +321,22 @@ const SignatureResize = () => {
                     <li>Click <strong className="text-foreground">Resize Now</strong> — results appear in 1–2 seconds</li>
                     <li>Download the JPG output and upload to your exam portal</li>
                   </ol>
+
+                  {/* How-it-works infographic */}
+                  <figure className="overflow-hidden rounded-xl border border-border shadow-md">
+                    <img
+                      src="/assest/signature-resize-how-it-works.png"
+                      alt="How to resize signature for government exam portal — step by step visual guide showing upload, KB target, binary search compression, and download"
+                      className="w-full object-cover"
+                      width="1200"
+                      height="600"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption className="bg-muted/50 px-4 py-2 text-xs text-muted-foreground text-center">
+                      Our free signature resizer compresses to your exact KB target using a binary search algorithm — no quality-percent guessing needed.
+                    </figcaption>
+                  </figure>
 
                   <h3 className="text-lg font-semibold text-foreground">
                     Signature Format Requirements — Common Mistakes to Avoid
