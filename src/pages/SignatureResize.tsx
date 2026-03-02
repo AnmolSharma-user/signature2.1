@@ -161,35 +161,47 @@ const SignatureResize = () => {
       <div className="min-h-screen bg-background">
         <Header />
 
-        {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-10 sm:py-14">
+        {/* ── Hero ── */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-accent to-background py-8 sm:py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <Breadcrumbs items={[{ name: "Signature Resize" }]} />
-            <div className="mx-auto max-w-4xl text-center mt-2">
-              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
-                <Star className="h-4 w-4" />
+
+            <div className="mx-auto mt-2 max-w-4xl text-center">
+              {/* Badge */}
+              <span className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary sm:mb-4 sm:px-4 sm:py-2 sm:text-sm">
+                <Star className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                 #1 Free Signature Resize Tool in India — 50,000+ Users
               </span>
-              <h1 className="mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-                <span className="text-primary">Signature Resize</span> Online Free —{" "}
-                <span className="block sm:inline">Resize to Exact KB Instantly</span>
+
+              {/* H1 — scales: 26px → 36px → 48px */}
+              <h1 className="mb-3 text-[1.6rem] font-bold leading-tight text-foreground sm:mb-4 sm:text-4xl lg:text-5xl">
+                <span className="text-primary">Signature Resize</span> Online Free
+                <span className="mt-1 block text-[1.3rem] font-bold sm:mt-0 sm:inline sm:text-4xl lg:text-5xl">
+                  {" "}— Resize to Exact KB
+                </span>
               </h1>
-              <p className="speakable-intro text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto">
-                The fastest free <strong>signature resizer</strong> for government exams. Resize your signature to{" "}
-                <strong>exact KB size</strong> for SSC, IBPS, RRB, UPSC, GATE, and NEET portals — in under 3 seconds,
-                entirely in your browser. No upload to any server.
+
+              {/* Intro paragraph */}
+              <p className="speakable-intro mx-auto max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+                The fastest free <strong>signature resizer</strong> for government exams. Resize to{" "}
+                <strong>exact KB</strong> for SSC, IBPS, RRB, UPSC, GATE &amp; NEET — in under 3 seconds,
+                entirely in your browser. No upload, no signup.
               </p>
 
-              {/* Trust stats */}
-              <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs sm:text-sm text-muted-foreground">
+              {/* Trust pill row — wraps gracefully on mobile */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-2 sm:mt-5 sm:gap-4">
                 {[
                   { icon: Users, label: "50,000+ Users" },
-                  { icon: Shield, label: "100% Browser-Only" },
-                  { icon: Zap, label: "Results in 3 Seconds" },
+                  { icon: Shield, label: "Browser-Only" },
+                  { icon: Zap, label: "3-Second Results" },
                   { icon: Star, label: "4.8/5 Rating" },
                 ].map(({ icon: Icon, label }) => (
-                  <span key={label} className="flex items-center gap-1.5 font-medium">
-                    <Icon className="h-4 w-4 text-primary" />{label}
+                  <span
+                    key={label}
+                    className="flex items-center gap-1 rounded-full bg-background/60 px-2.5 py-1 text-xs font-medium text-muted-foreground shadow-sm ring-1 ring-border sm:gap-1.5 sm:text-sm"
+                  >
+                    <Icon className="h-3.5 w-3.5 text-primary sm:h-4 sm:w-4" />
+                    {label}
                   </span>
                 ))}
               </div>
@@ -197,8 +209,11 @@ const SignatureResize = () => {
           </div>
         </section>
 
-        <main className="py-8 md:py-12">
+        {/* ── Main Content ── */}
+        <main className="py-6 sm:py-10 md:py-14">
           <div className="container mx-auto px-4">
+
+            {/* Tool */}
             <div className="mx-auto max-w-3xl">
               <SignatureResizer
                 title="Upload Your Signature to Resize"
@@ -207,16 +222,16 @@ const SignatureResize = () => {
                 maxKB={100}
               />
 
-              {/* Tips Box */}
-              <div className="mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-6">
-                <h2 className="mb-4 text-xl font-bold text-foreground">
+              {/* Tips — single col → 2-col at sm */}
+              <div className="mt-6 rounded-xl border-2 border-primary/20 bg-primary/5 p-4 sm:mt-8 sm:p-6">
+                <h2 className="mb-3 text-base font-bold text-foreground sm:mb-4 sm:text-xl">
                   6 Tips for a Perfect Signature Upload
                 </h2>
-                <div className="grid gap-3 md:grid-cols-2">
-                  {tips.map((tip, index) => (
-                    <div key={index} className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 shrink-0 text-primary" />
-                      <span className="text-muted-foreground text-sm">{tip}</span>
+                <div className="grid gap-2.5 sm:grid-cols-2 sm:gap-3">
+                  {tips.map((tip, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-primary sm:h-5 sm:w-5" />
+                      <span className="text-xs leading-snug text-muted-foreground sm:text-sm">{tip}</span>
                     </div>
                   ))}
                 </div>
@@ -226,22 +241,42 @@ const SignatureResize = () => {
               <AdContainer type="display" />
             </div>
 
-            {/* Exam KB Reference Table */}
-            <div className="mx-auto mt-14 max-w-4xl">
-              <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
-                <h2 className="mb-2 text-xl sm:text-2xl font-bold text-foreground">
+            {/* ── Exam KB Reference Table ── */}
+            <div className="mx-auto mt-10 max-w-4xl sm:mt-14">
+              <div className="rounded-xl border border-border bg-card p-4 sm:p-6 lg:p-8">
+                <h2 className="mb-1 text-lg font-bold text-foreground sm:mb-2 sm:text-2xl">
                   Signature KB Requirements — All Major 2026 Exams
                 </h2>
-                <p className="mb-5 text-sm text-muted-foreground">
-                  Use the midpoint of the allowed range as your target for the safest upload result.
+                <p className="mb-4 text-xs text-muted-foreground sm:mb-5 sm:text-sm">
+                  Use the midpoint of the allowed range for the safest upload result.
                 </p>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm border-collapse">
+
+                {/* Mobile: card-style list / Desktop: proper table */}
+                <div className="block sm:hidden space-y-2">
+                  {examPresets.map((row, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center justify-between rounded-lg border border-border bg-muted/30 px-3 py-2.5"
+                    >
+                      <div>
+                        <p className="text-xs font-semibold text-foreground">{row.exam}</p>
+                        <p className="text-[11px] text-muted-foreground">{row.sigRange}</p>
+                      </div>
+                      <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-bold text-primary">
+                        {row.target}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop table — hidden on mobile */}
+                <div className="hidden overflow-x-auto sm:block">
+                  <table className="w-full border-collapse text-sm">
                     <thead>
                       <tr className="bg-primary text-primary-foreground">
-                        <th className="p-3 text-left rounded-tl-lg">Exam</th>
+                        <th className="rounded-tl-lg p-3 text-left">Exam</th>
                         <th className="p-3 text-left">Signature Size</th>
-                        <th className="p-3 text-left rounded-tr-lg">Safe Target</th>
+                        <th className="rounded-tr-lg p-3 text-left">Safe Target</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
@@ -262,164 +297,195 @@ const SignatureResize = () => {
               </div>
             </div>
 
-            {/* Features Section */}
-            <div className="mx-auto mt-14 max-w-6xl">
-              <div className="mb-10 text-center">
-                <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
+            {/* ── Features ── */}
+            <div className="mx-auto mt-10 max-w-6xl sm:mt-14">
+              <div className="mb-6 text-center sm:mb-10">
+                <h2 className="mb-2 text-xl font-bold text-foreground sm:mb-4 sm:text-3xl">
                   Why Use Our Signature Resizer?
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-sm text-muted-foreground sm:text-base">
                   Built specifically for Indian government exam candidates — not a generic image tool
                 </p>
               </div>
               <FeatureGrid examName="Government Exam" />
             </div>
 
-            {/* SEO Content Block */}
-            <div className="mx-auto mt-14 max-w-4xl">
-              <div className="rounded-xl border border-border bg-card p-6 sm:p-8">
-                <h2 className="mb-6 text-2xl font-bold text-foreground">
+            {/* ── SEO Content Block ── */}
+            <div className="mx-auto mt-10 max-w-4xl sm:mt-14">
+              <div className="rounded-xl border border-border bg-card p-4 sm:p-6 lg:p-8">
+                <h2 className="mb-4 text-lg font-bold text-foreground sm:mb-6 sm:text-2xl">
                   How to Resize Your Signature for Government Exams — Complete Guide
                 </h2>
 
-                <AdContainer type="inarticle" className="mb-6" />
+                <AdContainer type="inarticle" className="mb-4 sm:mb-6" />
 
-                <div className="space-y-5 text-muted-foreground text-sm sm:text-base leading-relaxed">
+                <div className="space-y-4 text-sm leading-relaxed text-muted-foreground sm:space-y-5 sm:text-base">
                   <p>
                     <strong className="text-foreground">SignatureResize.in</strong> is India's most trusted free online
                     signature resize tool. Whether you need to resize your signature for GATE, SSC, UPSC, RRB, IBPS,
-                    NEET, or any other government examination, our <strong className="text-foreground">signature resizer</strong>{" "}
-                    helps you achieve the exact file size requirement in under 3 seconds.
+                    or NEET, our <strong className="text-foreground">signature resizer</strong> delivers the exact KB
+                    requirement in under 3 seconds.
                   </p>
 
-                  <h3 className="text-lg font-semibold text-foreground">Why Signature File Size Matters</h3>
-                  <p>
-                    Every Indian government exam portal enforces strict KB size limits for signature uploads. The portal
-                    automatically rejects any file that exceeds the maximum — even by 1KB. Submitting a signature that
-                    is too large OR too small leads to instant form rejection with no warning. This is why a precise
-                    <strong className="text-foreground"> signature resize tool</strong> that targets exact KB is essential,
-                    rather than generic image editors that only offer quality percentage sliders.
-                  </p>
+                  <div>
+                    <h3 className="mb-1.5 text-base font-semibold text-foreground sm:text-lg">
+                      Why Signature File Size Matters
+                    </h3>
+                    <p>
+                      Every Indian government exam portal enforces strict KB size limits. Even 1KB over the maximum
+                      leads to instant rejection with no warning. A precision{" "}
+                      <strong className="text-foreground">signature resize tool</strong> that targets exact KB is
+                      essential — quality-percent sliders in generic tools are unreliable.
+                    </p>
+                  </div>
 
-                  <h3 className="text-lg font-semibold text-foreground">
-                    How Our Signature Resizer Works — Binary Search Precision
-                  </h3>
-                  <p>
-                    Unlike tools that let you set a "quality %" (which doesn't map reliably to KB), our tool works the
-                    other way: you enter the target KB, and a <strong className="text-foreground">binary search algorithm</strong>{" "}
-                    iterates through JPEG compression levels until it finds the exact quality setting that produces your
-                    target file size within ±1KB. This guarantees consistent results regardless of the original image.
-                  </p>
+                  <div>
+                    <h3 className="mb-1.5 text-base font-semibold text-foreground sm:text-lg">
+                      How Our Signature Resizer Works — Binary Search Precision
+                    </h3>
+                    <p>
+                      You enter the target KB; a{" "}
+                      <strong className="text-foreground">binary search algorithm</strong> iterates through JPEG
+                      compression levels until it finds the exact quality setting that produces your target within ±1KB.
+                      Consistent results regardless of the original image — every time.
+                    </p>
+                  </div>
 
-                  <h3 className="text-lg font-semibold text-foreground">
-                    Step-by-Step: How to Resize Signature for Exam Portals
-                  </h3>
-                  <ol className="ml-6 list-decimal space-y-2">
-                    <li>Click <strong className="text-foreground">Upload Your Signature</strong> above and select your image</li>
-                    <li>Find your exam's signature KB requirement (see table above)</li>
-                    <li>Enter the <strong className="text-foreground">safe target KB</strong> (midpoint of allowed range)</li>
-                    <li>Click <strong className="text-foreground">Resize Now</strong> — results appear in 1–2 seconds</li>
-                    <li>Download the JPG output and upload to your exam portal</li>
-                  </ol>
+                  <div>
+                    <h3 className="mb-1.5 text-base font-semibold text-foreground sm:text-lg">
+                      Step-by-Step: How to Resize Signature for Exam Portals
+                    </h3>
+                    <ol className="ml-5 list-decimal space-y-1.5 sm:ml-6 sm:space-y-2">
+                      <li>Click <strong className="text-foreground">Upload Your Signature</strong> and select your image</li>
+                      <li>Find your exam's signature KB requirement (see table above)</li>
+                      <li>Enter the <strong className="text-foreground">safe target KB</strong> (midpoint of the range)</li>
+                      <li>Click <strong className="text-foreground">Resize Now</strong> — results in 1–2 seconds</li>
+                      <li>Download the JPG and upload to your exam portal</li>
+                    </ol>
+                  </div>
 
                   {/* How-it-works infographic */}
-                  <figure className="overflow-hidden rounded-xl border border-border shadow-md">
+                  <figure className="overflow-hidden rounded-xl border border-border shadow-sm">
                     <img
                       src="/assest/signature-resize-how-it-works.png"
-                      alt="How to resize signature for government exam portal — step by step visual guide showing upload, KB target, binary search compression, and download"
-                      className="w-full object-cover"
+                      alt="How to resize signature for government exam portal — step by step visual guide: upload, set KB target, binary search compression, download"
+                      className="h-auto w-full object-cover"
                       width="1200"
                       height="600"
                       loading="lazy"
                       decoding="async"
                     />
-                    <figcaption className="bg-muted/50 px-4 py-2 text-xs text-muted-foreground text-center">
-                      Our free signature resizer compresses to your exact KB target using a binary search algorithm — no quality-percent guessing needed.
+                    <figcaption className="bg-muted/50 px-3 py-1.5 text-center text-xs text-muted-foreground sm:px-4 sm:py-2">
+                      Our free signature resizer hits your exact KB target using binary search — no quality-percent guessing.
                     </figcaption>
                   </figure>
 
-                  <h3 className="text-lg font-semibold text-foreground">
-                    Signature Format Requirements — Common Mistakes to Avoid
-                  </h3>
-                  <ul className="ml-6 list-disc space-y-2">
-                    <li><strong className="text-foreground">Always use JPG/JPEG format</strong> — PNG files are rejected by SSC, IBPS, RRB portals even if they have the right KB size</li>
-                    <li><strong className="text-foreground">Sign in cursive/running hand</strong> — block letters are rejected at document verification</li>
-                    <li><strong className="text-foreground">White background only</strong> — grey, cream, or patterned backgrounds cause rejection</li>
-                    <li><strong className="text-foreground">Crop tightly</strong> — leave minimal white space around the signature</li>
-                  </ul>
-
-                  <h3 className="text-lg font-semibold text-foreground">Exam-Specific Signature Resize Tools</h3>
-                  <div className="grid sm:grid-cols-2 gap-3 mt-3">
-                    {[
-                      { to: "/ssc-mts-signature-resize", label: "SSC CGL / CHSL / MTS Signature Resize" },
-                      { to: "/ibps-photo-signature-resize", label: "IBPS PO / Clerk Signature Resize" },
-                      { to: "/upsc-signature-resize", label: "UPSC Civil Services Signature Resize" },
-                      { to: "/gate-signature-resize", label: "GATE Signature Resize" },
-                      { to: "/rrb-group-d-photo-signature-resize", label: "RRB Group D Photo & Signature Resize" },
-                      { to: "/neet-photo-signature-resize", label: "NEET Photo & Signature Resize" },
-                    ].map((link) => (
-                      <Link
-                        key={link.to}
-                        to={link.to}
-                        className="flex items-center gap-2 rounded-lg border border-border bg-muted/30 p-3 text-sm font-medium text-primary hover:border-primary hover:shadow-sm transition-all"
-                      >
-                        <ArrowRight className="h-4 w-4 shrink-0" />
-                        {link.label}
-                      </Link>
-                    ))}
+                  <div>
+                    <h3 className="mb-1.5 text-base font-semibold text-foreground sm:text-lg">
+                      Signature Format Requirements — Common Mistakes to Avoid
+                    </h3>
+                    <ul className="ml-5 list-disc space-y-1.5 sm:ml-6 sm:space-y-2">
+                      <li><strong className="text-foreground">Always use JPG/JPEG</strong> — PNG is rejected by SSC, IBPS, RRB portals even at the right KB size</li>
+                      <li><strong className="text-foreground">Sign in cursive/running hand</strong> — block letters are rejected at document verification</li>
+                      <li><strong className="text-foreground">White background only</strong> — grey, cream, or patterned backgrounds cause rejection</li>
+                      <li><strong className="text-foreground">Crop tightly</strong> — leave minimal white space around the signature</li>
+                    </ul>
                   </div>
 
-                  <h3 className="text-lg font-semibold text-foreground">From Our Blog</h3>
-                  <div className="grid sm:grid-cols-2 gap-3">
-                    {[
-                      { to: "/why-signature-rejected-10kb-20kb-fix-2026", label: "Why Signature Gets Rejected (10KB–20KB Fix)", tag: "Troubleshooting" },
-                      { to: "/rrb-ntpc-2026-photo-signature-upload-guide", label: "RRB NTPC 2026 Photo & Signature Guide", tag: "Exam Guide" },
-                    ].map((post) => (
-                      <Link
-                        key={post.to}
-                        to={post.to}
-                        className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm hover:border-primary hover:shadow-sm transition-all group"
-                      >
-                        <BookOpen className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                        <div>
-                          <span className="text-xs font-semibold text-primary">{post.tag}</span>
-                          <p className="font-medium text-foreground group-hover:text-primary">{post.label}</p>
-                        </div>
-                      </Link>
-                    ))}
+                  {/* Exam-specific tool links — single col mobile, 2-col sm */}
+                  <div>
+                    <h3 className="mb-2 text-base font-semibold text-foreground sm:text-lg">
+                      Exam-Specific Signature Resize Tools
+                    </h3>
+                    <div className="grid gap-2 sm:grid-cols-2">
+                      {[
+                        { to: "/ssc-mts-signature-resize", label: "SSC CGL / CHSL / MTS" },
+                        { to: "/ibps-photo-signature-resize", label: "IBPS PO / Clerk" },
+                        { to: "/upsc-signature-resize", label: "UPSC Civil Services" },
+                        { to: "/gate-signature-resize", label: "GATE" },
+                        { to: "/rrb-group-d-photo-signature-resize", label: "RRB Group D" },
+                        { to: "/neet-photo-signature-resize", label: "NEET UG" },
+                      ].map((link) => (
+                        <Link
+                          key={link.to}
+                          to={link.to}
+                          className="flex items-center gap-2 rounded-lg border border-border bg-muted/30 px-3 py-2.5 text-xs font-medium text-primary transition-all hover:border-primary hover:shadow-sm sm:text-sm"
+                        >
+                          <ArrowRight className="h-3.5 w-3.5 shrink-0 sm:h-4 sm:w-4" />
+                          {link.label} Signature Resize
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Blog links — single col mobile, 2-col sm */}
+                  <div>
+                    <h3 className="mb-2 text-base font-semibold text-foreground sm:text-lg">From Our Blog</h3>
+                    <div className="grid gap-2 sm:grid-cols-2">
+                      {[
+                        {
+                          to: "/why-signature-rejected-10kb-20kb-fix-2026",
+                          label: "Why Signature Gets Rejected (10KB–20KB Fix)",
+                          tag: "Troubleshooting",
+                        },
+                        {
+                          to: "/rrb-ntpc-2026-photo-signature-upload-guide",
+                          label: "RRB NTPC 2026 Photo & Signature Guide",
+                          tag: "Exam Guide",
+                        },
+                      ].map((post) => (
+                        <Link
+                          key={post.to}
+                          to={post.to}
+                          className="group flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-xs transition-all hover:border-primary hover:shadow-sm sm:text-sm"
+                        >
+                          <BookOpen className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary sm:h-4 sm:w-4" />
+                          <div>
+                            <span className="text-[10px] font-semibold uppercase tracking-wide text-primary sm:text-xs">
+                              {post.tag}
+                            </span>
+                            <p className="font-medium text-foreground group-hover:text-primary">{post.label}</p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Processing Section */}
-            <div className="mx-auto mt-14 max-w-3xl">
+            {/* Processing */}
+            <div className="mx-auto mt-10 max-w-3xl sm:mt-14">
               <ProcessingFeatures />
             </div>
 
             {/* Trust Badges */}
-            <div className="mx-auto mt-14 max-w-4xl">
+            <div className="mx-auto mt-10 max-w-4xl sm:mt-14">
               <TrustBadges />
             </div>
 
             {/* Author Bio — E-E-A-T */}
-            <div className="mx-auto mt-8 max-w-4xl">
-              <div className="rounded-xl border border-border bg-card/50 p-5 flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                  <span className="text-xl font-bold text-primary">SR</span>
+            <div className="mx-auto mt-6 max-w-4xl sm:mt-8">
+              <div className="flex items-start gap-3 rounded-xl border border-border bg-card/50 p-4 sm:gap-4 sm:p-5">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 sm:h-12 sm:w-12">
+                  <span className="text-base font-bold text-primary sm:text-xl">SR</span>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">Reviewed by SignatureResize Editorial Team</p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-xs font-semibold text-foreground sm:text-sm">
+                    Reviewed by SignatureResize Editorial Team
+                  </p>
+                  <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground sm:text-xs">
                     Last updated: March 3, 2026 · Based on official exam notifications from SSC.nic.in, IBPS.in,
                     UPSCONLINE.nic.in, and RRB OJAS portal.{" "}
-                    <Link to="/about-us" className="text-primary hover:underline">About us →</Link>
+                    <Link to="/about-us" className="text-primary hover:underline">
+                      About us →
+                    </Link>
                   </p>
                 </div>
               </div>
             </div>
 
-            <AdContainer type="infeed" className="mx-auto max-w-4xl mt-6" />
+            <AdContainer type="infeed" className="mx-auto mt-6 max-w-4xl" />
           </div>
         </main>
 
