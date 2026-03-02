@@ -92,10 +92,10 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Signature Resize | Free Online Signature Resizer for Exams"
-        description="Resize signature to exact KB for GATE, SSC, NTPC, UPSC exams. Free online signature resizer trusted by 50,000+ students. Instant, secure, no signup."
+        title="Free Signature & Photo Resize Tools for Government Exams 2026 | SignatureResize.in"
+        description="Free online tools to resize signature, photo, and thumb impression for SSC, IBPS, RRB, UPSC, GATE, NEET, Aadhaar exams. Trusted by 50,000+ students. Instant, accurate, no signup."
         canonicalUrl="https://signatureresize.in/"
-        keywords="signature resize, signature resizer, resize signature online, signature resize for exam, resize signature to 10kb"
+        keywords="signature resize tool, photo resize for exam, resize signature online, government exam photo signature, signature resizer india, signature photo resize 2026"
       />
 
       {/* Schema.org markup for website */}
@@ -165,8 +165,8 @@ const Index = () => {
               </div>
 
               <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-white">
-                Signature Resize Online Free{" "}
-                <span className="block sm:inline">to Exact KB Size</span>
+                Free Tools to <span className="block sm:inline">Resize Signature &amp; Photo</span>{" "}
+                <span className="block text-white/80">for Every Government Exam</span>
               </h1>
 
               <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto">
