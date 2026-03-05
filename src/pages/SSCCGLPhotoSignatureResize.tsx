@@ -55,7 +55,6 @@ const SSCCGLPhotoSignatureResize = () => {
                 keywords="ssc cgl photo resize, ssc cgl signature resize, ssc cgl photo compressor, ssc chsl photo resize, ssc cgl photo size kb, ssc signature resize online, ssc cgl 2026 photo size, ssc otrp photo upload"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo for SSC CGL Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "SSC CGL Photo Resize", url: "https://signatureresize.in/ssc-cgl-photo-signature-resize" },

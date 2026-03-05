@@ -32,7 +32,6 @@ const JEEMainPhotoResize = () => {
                 keywords="jee main photo resize, jee main signature resize, jee main photo compressor online, jee main photo size kb 2025, nta jee photo upload, jee main photo dimensions"
             />
             <SEOSchema type="HowTo" howToName="How to Resize JEE Main Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "JEE Main Photo Resize", url: "https://signatureresize.in/jee-main-photo-resize" },

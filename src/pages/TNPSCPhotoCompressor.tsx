@@ -333,10 +333,6 @@ const TNPSCPhotoCompressor = () => {
                 howToSteps={howToSteps}
             />
             <SEOSchema
-                type="FAQPage"
-                faqs={faqs}
-            />
-            <SEOSchema
                 type="BreadcrumbList"
                 breadcrumbs={[
                     { name: "Home", url: "https://signatureresize.in/" },

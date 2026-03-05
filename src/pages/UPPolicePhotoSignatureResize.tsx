@@ -32,7 +32,6 @@ const UPPolicePhotoSignatureResize = () => {
                 keywords="up police photo resize, up police signature resize, up police otr photo compressor, up police photo size kb, up police constable photo upload, up prpb photo resize"
             />
             <SEOSchema type="HowTo" howToName="How to Resize UP Police OTR Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "UP Police Photo Resize", url: "https://signatureresize.in/up-police-photo-signature-resize" },

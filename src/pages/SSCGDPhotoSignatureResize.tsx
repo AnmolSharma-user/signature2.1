@@ -43,7 +43,6 @@ const SSCGDPhotoSignatureResize = () => {
                 keywords="ssc gd photo resize, ssc gd constable photo size, ssc gd signature resize, ssc gd photo compressor online, ssc gd 2026 photo size kb, ssc gd constable photo upload"
             />
             <SEOSchema type="HowTo" howToName="How to Resize SSC GD Constable Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "SSC GD Photo Resize", url: "https://signatureresize.in/ssc-gd-photo-signature-resize" },

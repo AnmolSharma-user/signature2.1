@@ -119,7 +119,6 @@ const AddNameDateToPhoto = () => {
                 keywords="add name to photo online, add date to photo online free, name on photo online, date on photo online, exam photo name editor, add name date to exam photo, ssc photo with name, ibps photo name date, government exam photo editor"
             />
             <SEOSchema type="HowTo" howToName="How to Add Name and Date to Exam Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "Add Name & Date to Photo", url: "https://signatureresize.in/add-name-date-to-photo" },

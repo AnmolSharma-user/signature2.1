@@ -43,7 +43,6 @@ const SBIPOClerkPhotoSignatureResize = () => {
                 keywords="sbi po photo resize, sbi clerk photo resize, sbi po signature resize, sbi clerk signature compressor, sbi po photo size kb, sbi junior associate photo resize, sbi po 2026 photo upload"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo for SBI PO Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "SBI PO Photo Resize", url: "https://signatureresize.in/sbi-po-photo-signature-resize" },

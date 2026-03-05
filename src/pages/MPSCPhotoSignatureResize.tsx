@@ -32,7 +32,6 @@ const MPSCPhotoSignatureResize = () => {
                 keywords="mpsc photo resize, mpsc signature resize, mpsc photo compressor online, mpsc photo size kb, mpsc rajyaseva photo upload, maharashtra psc photo resize"
             />
             <SEOSchema type="HowTo" howToName="How to Resize MPSC Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "MPSC Photo Resize", url: "https://signatureresize.in/mpsc-photo-signature-resize" },

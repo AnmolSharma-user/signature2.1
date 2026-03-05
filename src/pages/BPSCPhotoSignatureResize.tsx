@@ -32,7 +32,6 @@ const BPSCPhotoSignatureResize = () => {
                 keywords="bpsc photo resize, bpsc signature resize, bpsc photo compressor online, bpsc photo size kb, bpsc 70th cce photo upload, bpsc otr photo resize"
             />
             <SEOSchema type="HowTo" howToName="How to Resize BPSC Photo Online" howToSteps={howToSteps} />
-            <SEOSchema type="FAQPage" faqs={faqs} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "BPSC Photo Resize", url: "https://signatureresize.in/bpsc-photo-signature-resize" },
