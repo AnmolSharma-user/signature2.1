@@ -62,6 +62,14 @@ import RRBNTPCPhotoGuide2026 from "./pages/RRBNTPCPhotoGuide2026";
 import SignatureRejection10KB20KBFix from "./pages/SignatureRejection10KB20KBFix";
 import TNPSCPhotoCompressor from "./pages/TNPSCPhotoCompressor";
 import SitemapPage from "./pages/SitemapPage";
+import SSCCGLPhotoSignatureResize from "./pages/SSCCGLPhotoSignatureResize";
+import SBIPOClerkPhotoSignatureResize from "./pages/SBIPOClerkPhotoSignatureResize";
+import SSCGDPhotoSignatureResize from "./pages/SSCGDPhotoSignatureResize";
+import BPSCPhotoSignatureResize from "./pages/BPSCPhotoSignatureResize";
+import UPPolicePhotoSignatureResize from "./pages/UPPolicePhotoSignatureResize";
+import MPSCPhotoSignatureResize from "./pages/MPSCPhotoSignatureResize";
+import JEEMainPhotoResize from "./pages/JEEMainPhotoResize";
+import AddNameDateToPhoto from "./pages/AddNameDateToPhoto";
 
 const queryClient = new QueryClient();
 
@@ -123,6 +131,14 @@ const App = () => (
           <Route path="/why-signature-rejected-10kb-20kb-fix-2026" element={<SignatureRejection10KB20KBFix />} />
           <Route path="/tnpsc-photo-compressor" element={<TNPSCPhotoCompressor />} />
           <Route path="/sitemap" element={<SitemapPage />} />
+          <Route path="/ssc-cgl-photo-signature-resize" element={<SSCCGLPhotoSignatureResize />} />
+          <Route path="/sbi-po-photo-signature-resize" element={<SBIPOClerkPhotoSignatureResize />} />
+          <Route path="/ssc-gd-photo-signature-resize" element={<SSCGDPhotoSignatureResize />} />
+          <Route path="/bpsc-photo-signature-resize" element={<BPSCPhotoSignatureResize />} />
+          <Route path="/up-police-photo-signature-resize" element={<UPPolicePhotoSignatureResize />} />
+          <Route path="/mpsc-photo-signature-resize" element={<MPSCPhotoSignatureResize />} />
+          <Route path="/jee-main-photo-resize" element={<JEEMainPhotoResize />} />
+          <Route path="/add-name-date-to-photo" element={<AddNameDateToPhoto />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

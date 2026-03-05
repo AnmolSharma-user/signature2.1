@@ -43,6 +43,28 @@ export const examPresets: ExamPreset[] = [
   { name: "thumb-impression", label: "Thumb Impression", targetSizeKB: 30, maxWidth: 240, maxHeight: 240, minKB: 10, maxKB: 50, description: "10KB - 50KB, 240×240 px" },
   { name: "tnpsc-photo", label: "TNPSC Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, White BG, JPG" },
   { name: "tnpsc-signature", label: "TNPSC Signature (OTR)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
+  // SSC CGL / CHSL
+  { name: "ssc-cgl-photo", label: "SSC CGL/CHSL Photo", targetSizeKB: 12, maxWidth: 100, maxHeight: 120, minKB: 4, maxKB: 20, description: "4KB - 20KB, 100×120 px, JPG" },
+  { name: "ssc-cgl-signature", label: "SSC CGL/CHSL Signature", targetSizeKB: 6, maxWidth: 140, maxHeight: 60, minKB: 1, maxKB: 12, description: "1KB - 12KB, 140×60 px, JPG" },
+  // SSC GD Constable
+  { name: "ssc-gd-photo", label: "SSC GD Constable Photo", targetSizeKB: 20, maxWidth: 160, maxHeight: 200, minKB: 4, maxKB: 40, description: "4KB - 40KB, 160×200 px, JPG" },
+  { name: "ssc-gd-signature", label: "SSC GD Constable Signature", targetSizeKB: 10, maxWidth: 140, maxHeight: 60, minKB: 1, maxKB: 20, description: "1KB - 20KB, 140×60 px, JPG" },
+  // SBI PO / Clerk
+  { name: "sbi-photo", label: "SBI PO/Clerk Photo", targetSizeKB: 50, maxWidth: 200, maxHeight: 200, minKB: 20, maxKB: 80, description: "20KB - 80KB, 200×200 px, JPG" },
+  { name: "sbi-signature", label: "SBI PO/Clerk Signature", targetSizeKB: 40, maxWidth: 200, maxHeight: 80, minKB: 10, maxKB: 80, description: "10KB - 80KB, 200×80 px, JPG" },
+  // UPSC Photo (triple signature handled separately)
+  { name: "upsc-photo", label: "UPSC CSE/IAS Photo", targetSizeKB: 250, maxWidth: 300, maxHeight: 400, minKB: 100, maxKB: 600, description: "100KB - 600KB, 300×400 px, JPG" },
+  // BPSC
+  { name: "bpsc-photo", label: "BPSC Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 50, description: "10KB - 50KB, 200×230 px, JPG" },
+  { name: "bpsc-signature", label: "BPSC Signature", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 5, maxKB: 30, description: "5KB - 30KB, 140×60 px, JPG" },
+  // UP Police
+  { name: "up-police-photo", label: "UP Police Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "up-police-signature", label: "UP Police Signature (OTR)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
+  // MPSC
+  { name: "mpsc-photo", label: "MPSC Photo", targetSizeKB: 50, maxWidth: 236, maxHeight: 307, minKB: 20, maxKB: 100, description: "20KB - 100KB, 236×307 px, JPG" },
+  { name: "mpsc-signature", label: "MPSC Signature", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 40, description: "10KB - 40KB, 140×60 px, JPG" },
+  // JEE Main Photo
+  { name: "jee-photo", label: "JEE Main Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, description: "10KB - 100KB, 200×230 px, JPG" },
   { name: "custom", label: "Custom Size", targetSizeKB: 20, maxWidth: 400, maxHeight: 200, minKB: 5, maxKB: 100, description: "Set your own parameters" }
 ];
 
