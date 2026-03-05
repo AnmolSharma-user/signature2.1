@@ -4,6 +4,7 @@ import AnimatedLogo from "./AnimatedLogo";
 
 const Footer = () => {
   const toolLinks = [
+    { href: "/tnpsc-photo-compressor", label: "TNPSC Photo Compressor" },
     { href: "/signature-resize", label: "Signature Resize" },
     { href: "/signature-resize-10-to-20-kb", label: "Resize 10-20 KB" },
     { href: "/gate-signature-resize", label: "GATE Signature" },
@@ -90,6 +91,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about-us" className="text-sm text-muted-foreground transition-colors hover:text-primary">About Us</Link></li>
               <li><Link to="/contact" className="text-sm text-muted-foreground transition-colors hover:text-primary">Contact</Link></li>
+              <li><Link to="/sitemap" className="text-sm text-muted-foreground transition-colors hover:text-primary">Sitemap</Link></li>
               <li><Link to="/privacy-policy" className="text-sm text-muted-foreground transition-colors hover:text-primary">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="text-sm text-muted-foreground transition-colors hover:text-primary">Terms of Service</Link></li>
               <li><Link to="/disclaimer" className="text-sm text-muted-foreground transition-colors hover:text-primary">Disclaimer</Link></li>
@@ -106,6 +108,7 @@ const Footer = () => {
             <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms</Link>
             <Link to="/disclaimer" className="hover:text-primary transition-colors">Disclaimer</Link>
+            <Link to="/sitemap" className="hover:text-primary transition-colors">Sitemap</Link>
             <a href="mailto:signatureresize.in@gmail.com" className="hover:text-primary transition-colors">Contact</a>
           </div>
         </div>

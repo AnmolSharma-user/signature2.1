@@ -41,6 +41,8 @@ export const examPresets: ExamPreset[] = [
   { name: "neet-signature", label: "NEET UG Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 4, maxKB: 30, description: "4KB - 30KB, 140×60 px" },
   { name: "ibps-photo", label: "IBPS Photo (PO/Clerk/RRB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px" },
   { name: "thumb-impression", label: "Thumb Impression", targetSizeKB: 30, maxWidth: 240, maxHeight: 240, minKB: 10, maxKB: 50, description: "10KB - 50KB, 240×240 px" },
+  { name: "tnpsc-photo", label: "TNPSC Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, White BG, JPG" },
+  { name: "tnpsc-signature", label: "TNPSC Signature (OTR)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
   { name: "custom", label: "Custom Size", targetSizeKB: 20, maxWidth: 400, maxHeight: 200, minKB: 5, maxKB: 100, description: "Set your own parameters" }
 ];
 

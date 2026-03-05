@@ -60,6 +60,8 @@ import AadhaarCardPhotoResize from "./pages/AadhaarCardPhotoResize";
 import CompressImageTo20KB from "./pages/CompressImageTo20KB";
 import RRBNTPCPhotoGuide2026 from "./pages/RRBNTPCPhotoGuide2026";
 import SignatureRejection10KB20KBFix from "./pages/SignatureRejection10KB20KBFix";
+import TNPSCPhotoCompressor from "./pages/TNPSCPhotoCompressor";
+import SitemapPage from "./pages/SitemapPage";
 
 const queryClient = new QueryClient();
 
@@ -119,6 +121,8 @@ const App = () => (
           <Route path="/compress-image-to-20kb-online" element={<CompressImageTo20KB />} />
           <Route path="/rrb-ntpc-2026-photo-signature-upload-guide" element={<RRBNTPCPhotoGuide2026 />} />
           <Route path="/why-signature-rejected-10kb-20kb-fix-2026" element={<SignatureRejection10KB20KBFix />} />
+          <Route path="/tnpsc-photo-compressor" element={<TNPSCPhotoCompressor />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -21,6 +21,7 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
+    { href: "/tnpsc-photo-compressor", title: "TNPSC Photo Compressor", description: "Compress TNPSC OTR photo (20–50KB), signature (10–30KB), and apply white background — all in one free tool.", icon: Camera, badge: "TNPSC" },
     { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
     { href: "/rrb-group-d-photo-signature-resize", title: "RRB Group D Resize", description: "Resize photo (20–50KB), signature (10–40KB) and thumb for RRB Group D 2026 recruitment.", icon: FileImage, badge: "2026" },
