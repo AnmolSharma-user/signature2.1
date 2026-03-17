@@ -70,6 +70,11 @@ import UPPolicePhotoSignatureResize from "./pages/UPPolicePhotoSignatureResize";
 import MPSCPhotoSignatureResize from "./pages/MPSCPhotoSignatureResize";
 import JEEMainPhotoResize from "./pages/JEEMainPhotoResize";
 import AddNameDateToPhoto from "./pages/AddNameDateToPhoto";
+import UPPSCROAROPhotoSignatureGuide from "./pages/UPPSCROAROPhotoSignatureGuide";
+import MobilePhotoCompress20KB from "./pages/MobilePhotoCompress20KB";
+import WhiteBackgroundExamRule from "./pages/WhiteBackgroundExamRule";
+import EPFOSSAThumbSignatureGuide from "./pages/EPFOSSAThumbSignatureGuide";
+import BlurryAdmitCardPhotoFix from "./pages/BlurryAdmitCardPhotoFix";
 
 const queryClient = new QueryClient();
 
@@ -139,6 +144,11 @@ const App = () => (
           <Route path="/mpsc-photo-signature-resize" element={<MPSCPhotoSignatureResize />} />
           <Route path="/jee-main-photo-resize" element={<JEEMainPhotoResize />} />
           <Route path="/add-name-date-to-photo" element={<AddNameDateToPhoto />} />
+          <Route path="/uppsc-ro-aro-photo-signature-rules-2026" element={<UPPSCROAROPhotoSignatureGuide />} />
+          <Route path="/mobile-photo-compress-20kb-no-app" element={<MobilePhotoCompress20KB />} />
+          <Route path="/white-background-exam-rule-explained" element={<WhiteBackgroundExamRule />} />
+          <Route path="/epfo-ssa-thumb-impression-signature-guide" element={<EPFOSSAThumbSignatureGuide />} />
+          <Route path="/blurry-admit-card-photo-fix" element={<BlurryAdmitCardPhotoFix />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

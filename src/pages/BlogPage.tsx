@@ -10,6 +10,46 @@ import AdContainer from "@/components/AdContainer";
 const BlogPage = () => {
     const posts = [
         {
+            title: "UPPSC RO/ARO 2026 Photo & Signature Upload Rules",
+            slug: "/uppsc-ro-aro-photo-signature-rules-2026",
+            desc: "Exact photo (10-50 KB) and composite signature requirements for UPPSC OTR portal 2026. Pass the strict AI validation.",
+            date: "Mar 2026",
+            readTime: "7 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "How to Compress Photo to 20KB for SSC on Your Phone",
+            slug: "/mobile-photo-compress-20kb-no-app",
+            desc: "Compress your passport photo to exactly 20KB using just your mobile browser. Fast, secure, and no external app required.",
+            date: "Mar 2026",
+            readTime: "5 min read",
+            category: "Tutorial",
+        },
+        {
+            title: "The 'White Background' Rule for Exams: Does Blue Work?",
+            slug: "/white-background-exam-rule-explained",
+            desc: "Learn why a purely white background is essential for government exam uploads and how to automatically remove shadows and gradients.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Troubleshooting",
+        },
+        {
+            title: "EPFO SSA 2026: Left Thumb Impression & Signature Guide",
+            slug: "/epfo-ssa-thumb-impression-signature-guide",
+            desc: "Learn the exact file size (10-20KB) and ink requirements for the EPFO SSA Left Thumb Impression and Signature.",
+            date: "Mar 2026",
+            readTime: "5 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "3 Reasons Your Admit Card Photo is Blurry (And Fix It)",
+            slug: "/blurry-admit-card-photo-fix",
+            desc: "Learn why aggressive KB compression ruins admit card printing quality and get actionable steps to prevent pixelated uploads.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Troubleshooting",
+        },
+        {
             title: "RRB NTPC 2026 Photo & Signature Upload Guide — Exact Specs & Common Errors",
             slug: "/rrb-ntpc-2026-photo-signature-upload-guide",
             desc: "Complete guide for RRB NTPC 11th Phase 2026: photo (20–50KB), signature (10–40KB), and thumb impression specs with step-by-step upload instructions.",

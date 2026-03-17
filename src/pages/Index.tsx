@@ -459,12 +459,12 @@ const Index = () => {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { title: "RRB NTPC 2026 Photo & Signature Upload Guide", link: "/rrb-ntpc-2026-photo-signature-upload-guide", desc: "Complete guide for RRB NTPC 11th Phase 2026: photo (20–50KB), signature specs, and step-by-step upload instructions." },
-                { title: "Why Signature Gets Rejected (10KB–20KB Fix)", link: "/why-signature-rejected-10kb-20kb-fix-2026", desc: "7 real reasons your signature upload fails even at the right KB size — and the exact fix for each error." },
-                { title: "Agniveer Photo & Signature Guide 2026", link: "/agniveer-agnipath-photo-signature-requirements-2026", desc: "New high-growth exam — exact photo and signature specs for Agnipath applications." },
+                { title: "UPPSC RO/ARO 2026 Rules", link: "/uppsc-ro-aro-photo-signature-rules-2026", desc: "Exact photo (10-50 KB) and composite signature requirements to pass AI validation." },
+                { title: "Mobile Photo Compress 20KB", link: "/mobile-photo-compress-20kb-no-app", desc: "Compress passport photo to exactly 20KB using just your phone browser — no app needed." },
+                { title: "White Background Rule Explained", link: "/white-background-exam-rule-explained", desc: "Why purely white background is essential and how to dodge the dreaded blue-gradient rejection." },
+                { title: "EPFO SSA 2026 Thumb & Sign", link: "/epfo-ssa-thumb-impression-signature-guide", desc: "Left thumb impression (10-20KB) specifications and black ink signature rules for NTA." },
+                { title: "Blurry Admit Card Photo Fix", link: "/blurry-admit-card-photo-fix", desc: "Learn why aggressive KB compression ruins printout quality and get the exact steps to prevent pixelation." },
                 { title: "US Visa DS-160 Photo Guide", link: "/resize-passport-photo-us-visa-ds-160", desc: "2×2 inch, under 240 KB — resize your photo for the US nonimmigrant visa form." },
-                { title: "CUET UG 2026 Photo Guide", link: "/cuet-ug-photo-signature-upload-guide-2026", desc: "15 lakh+ students apply — exact NTA portal specs for photo and signature." },
-                { title: "Why Photos Get Rejected", link: "/why-exam-portal-rejecting-photo-10-reasons", desc: "10 common mistakes and how to fix each one before uploading." },
               ].map((post, i) => (
                 <Link key={i} to={post.link} className="group block rounded-xl border border-border bg-card p-6 transition-all hover:border-primary hover:shadow-lg">
                   <h3 className="mb-2 text-lg font-bold group-hover:text-primary">{post.title}</h3>

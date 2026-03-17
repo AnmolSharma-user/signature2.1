@@ -81,6 +81,8 @@ const categories: Category[] = [
         icon: FileImage,
         color: "from-purple-500/20 to-purple-600/10 border-purple-400/40",
         pages: [
+            { href: "/uppsc-ro-aro-photo-signature-rules-2026", label: "UPPSC RO/ARO Guide 2026", desc: "UPPSC OTR photo & composite signature rules", badge: "New" },
+            { href: "/epfo-ssa-thumb-impression-signature-guide", label: "EPFO SSA LTI Guide 2026", desc: "Left thumb impression & signature specs", badge: "New" },
             { href: "/ssc-cgl-photo-signature-resize", label: "SSC CGL/CHSL Photo & Signature", desc: "Resize photo to 4–20 KB and signature to 1–12 KB for SSC CGL, CHSL", badge: "New" },
             { href: "/ssc-gd-photo-signature-resize", label: "SSC GD Constable Photo & Signature", desc: "Resize photo to 4–40 KB (160×200 px) for SSC GD Constable", badge: "New" },
             { href: "/sbi-po-photo-signature-resize", label: "SBI PO/Clerk Photo & Signature", desc: "Resize photo to 20–80 KB (200×200 px) for SBI PO & Clerk", badge: "New" },
@@ -102,6 +104,9 @@ const categories: Category[] = [
         icon: BookOpen,
         color: "from-teal-500/20 to-teal-600/10 border-teal-400/40",
         pages: [
+            { href: "/mobile-photo-compress-20kb-no-app", label: "Mobile Photo Compress 20KB", desc: "Compress photo without an app on phone", badge: "New" },
+            { href: "/white-background-exam-rule-explained", label: "White Background Rule", desc: "Why exams reject blue background photos", badge: "New" },
+            { href: "/blurry-admit-card-photo-fix", label: "Blurry Admit Card Photo Fix", desc: "Why compression causes blurry printouts", badge: "New" },
             { href: "/blog", label: "Blog & Guides", desc: "All expert guides for exam aspirants" },
             { href: "/how-to-scan-signature-for-online-forms", label: "How to Scan Signature", desc: "Phone & flatbed scanning guide" },
             { href: "/exam-photo-signature-requirements-2026", label: "Exam Requirements 2026", desc: "Photo & signature specs for all exams" },
