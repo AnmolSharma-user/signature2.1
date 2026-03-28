@@ -10,6 +10,46 @@ import AdContainer from "@/components/AdContainer";
 const BlogPage = () => {
     const posts = [
         {
+            title: "Passport Photo Size Guide for All Indian Exams 2026 — Master Chart",
+            slug: "/passport-photo-size-guide-all-indian-exams-2026",
+            desc: "SSC, IBPS, SBI, RRB, NEET, JEE, GATE, Agniveer — every exam's exact photo and signature specifications in one comparison chart.",
+            date: "Mar 2026",
+            readTime: "8 min read",
+            category: "Master Guide",
+        },
+        {
+            title: "How to Add Name & Date to Passport Photo for SSC/UPSC Exams (Free)",
+            slug: "/how-to-add-name-date-to-exam-photo-free",
+            desc: "Step-by-step guide on the confusing 'Name & Date on Photo' rule for SSC CGL, CHSL, and UPSC. Free online tool — no app needed.",
+            date: "Mar 2026",
+            readTime: "5 min read",
+            category: "Tutorial",
+        },
+        {
+            title: "RPF Constable & SI 2026 Photo & Signature Requirements",
+            slug: "/rpf-constable-si-photo-signature-guide-2026",
+            desc: "Complete photo (20–50 KB) and signature (10–20 KB) guide for RPF Railway Police Force 2026 recruitment. Includes cursive signature rule.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "IBPS PO & Clerk 2026 Photo & Signature Upload Guide",
+            slug: "/ibps-po-clerk-photo-signature-guide-2026",
+            desc: "Exact specs for IBPS photo (20–50 KB), signature (10–20 KB), plus the live webcam capture requirement most candidates don't know about.",
+            date: "Mar 2026",
+            readTime: "6 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "SSC CHSL 2026 Photo & Signature Upload Guide",
+            slug: "/ssc-chsl-photo-signature-guide-2026",
+            desc: "SSC CHSL 2026 official photo specs (20–50 KB, JPG) with the tricky name & date requirement clearly explained. Notification: April 30, 2026.",
+            date: "Mar 2026",
+            readTime: "7 min read",
+            category: "Exam Specific",
+        },
+        {
             title: "UPPSC RO/ARO 2026 Photo & Signature Upload Rules",
             slug: "/uppsc-ro-aro-photo-signature-rules-2026",
             desc: "Exact photo (10-50 KB) and composite signature requirements for UPPSC OTR portal 2026. Pass the strict AI validation.",

@@ -75,6 +75,11 @@ import MobilePhotoCompress20KB from "./pages/MobilePhotoCompress20KB";
 import WhiteBackgroundExamRule from "./pages/WhiteBackgroundExamRule";
 import EPFOSSAThumbSignatureGuide from "./pages/EPFOSSAThumbSignatureGuide";
 import BlurryAdmitCardPhotoFix from "./pages/BlurryAdmitCardPhotoFix";
+import SSCCHSLPhotoSignatureGuide from "./pages/SSCCHSLPhotoSignatureGuide";
+import IBPSPOClerkPhotoSignatureGuide from "./pages/IBPSPOClerkPhotoSignatureGuide";
+import RPFConstableSIPhotoSignatureGuide from "./pages/RPFConstableSIPhotoSignatureGuide";
+import HowToAddNameDateToExamPhoto from "./pages/HowToAddNameDateToExamPhoto";
+import PassportPhotoSizeGuideAllExams from "./pages/PassportPhotoSizeGuideAllExams";
 
 const queryClient = new QueryClient();
 
@@ -149,6 +154,11 @@ const App = () => (
           <Route path="/white-background-exam-rule-explained" element={<WhiteBackgroundExamRule />} />
           <Route path="/epfo-ssa-thumb-impression-signature-guide" element={<EPFOSSAThumbSignatureGuide />} />
           <Route path="/blurry-admit-card-photo-fix" element={<BlurryAdmitCardPhotoFix />} />
+          <Route path="/ssc-chsl-photo-signature-guide-2026" element={<SSCCHSLPhotoSignatureGuide />} />
+          <Route path="/ibps-po-clerk-photo-signature-guide-2026" element={<IBPSPOClerkPhotoSignatureGuide />} />
+          <Route path="/rpf-constable-si-photo-signature-guide-2026" element={<RPFConstableSIPhotoSignatureGuide />} />
+          <Route path="/how-to-add-name-date-to-exam-photo-free" element={<HowToAddNameDateToExamPhoto />} />
+          <Route path="/passport-photo-size-guide-all-indian-exams-2026" element={<PassportPhotoSizeGuideAllExams />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

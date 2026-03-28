@@ -29,6 +29,7 @@ The blog content must strictly adhere to the following standards:
 - **Interlinking:** Strategically interlink to existing tools (e.g., Signature Resize, Photo Resize) and previous related blog posts for fast indexing.
 - **Table of Contents (TOC):** Include a standard, clickable Table of Contents at the beginning of the post to improve user experience and SEO jump links.
 - **Google Guidelines:** Strictly follow Google's latest helpful content guidelines and AI content guidelines.
+- **image generation:** should have best discover freindly image generated.
 
 ---
 

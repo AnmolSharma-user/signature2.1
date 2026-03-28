@@ -104,6 +104,11 @@ const categories: Category[] = [
         icon: BookOpen,
         color: "from-teal-500/20 to-teal-600/10 border-teal-400/40",
         pages: [
+            { href: "/passport-photo-size-guide-all-indian-exams-2026", label: "Photo Size Guide — All Exams 2026", desc: "Master chart: SSC, IBPS, RRB, NEET, Agniveer specs in one table", badge: "New" },
+            { href: "/how-to-add-name-date-to-exam-photo-free", label: "Add Name & Date to Exam Photo", desc: "Step-by-step guide for SSC CGL, CHSL, UPSC photo rule", badge: "New" },
+            { href: "/rpf-constable-si-photo-signature-guide-2026", label: "RPF Constable/SI Photo Guide 2026", desc: "Railway Police Force photo & signature specs", badge: "New" },
+            { href: "/ibps-po-clerk-photo-signature-guide-2026", label: "IBPS PO & Clerk Guide 2026", desc: "IBPS photo (20-50 KB), signature, live webcam guide", badge: "New" },
+            { href: "/ssc-chsl-photo-signature-guide-2026", label: "SSC CHSL Photo & Signature Guide 2026", desc: "SSC CHSL specs with name & date on photo rule", badge: "New" },
             { href: "/mobile-photo-compress-20kb-no-app", label: "Mobile Photo Compress 20KB", desc: "Compress photo without an app on phone", badge: "New" },
             { href: "/white-background-exam-rule-explained", label: "White Background Rule", desc: "Why exams reject blue background photos", badge: "New" },
             { href: "/blurry-admit-card-photo-fix", label: "Blurry Admit Card Photo Fix", desc: "Why compression causes blurry printouts", badge: "New" },
