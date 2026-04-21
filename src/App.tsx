@@ -80,6 +80,8 @@ import IBPSPOClerkPhotoSignatureGuide from "./pages/IBPSPOClerkPhotoSignatureGui
 import RPFConstableSIPhotoSignatureGuide from "./pages/RPFConstableSIPhotoSignatureGuide";
 import HowToAddNameDateToExamPhoto from "./pages/HowToAddNameDateToExamPhoto";
 import PassportPhotoSizeGuideAllExams from "./pages/PassportPhotoSizeGuideAllExams";
+import RequestExam from "./pages/RequestExam";
+import AdvertiseWithUs from "./pages/AdvertiseWithUs";
 
 const queryClient = new QueryClient();
 
@@ -164,6 +166,8 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/request-exam" element={<RequestExam />} />
+          <Route path="/advertise" element={<AdvertiseWithUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollRestoration />

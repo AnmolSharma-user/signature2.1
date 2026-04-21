@@ -83,6 +83,7 @@ const Footer = () => {
               <li><Link to="/signature-upload-errors-and-fixes" className="text-sm text-muted-foreground transition-colors hover:text-primary">Upload Error Fixes</Link></li>
               <li><Link to="/upsc-triple-signature-guide" className="text-sm text-muted-foreground transition-colors hover:text-primary">UPSC Triple Signature</Link></li>
               <li><Link to="/how-to-take-passport-photo-at-home-for-exams" className="text-sm text-muted-foreground transition-colors hover:text-primary">Passport Photo at Home</Link></li>
+              <li><Link to="/request-exam" className="text-sm text-muted-foreground transition-colors hover:text-primary font-medium text-emerald-500">Request an Exam</Link></li>
             </ul>
           </div>
 
@@ -91,6 +92,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/about-us" className="text-sm text-muted-foreground transition-colors hover:text-primary">About Us</Link></li>
               <li><Link to="/contact" className="text-sm text-muted-foreground transition-colors hover:text-primary">Contact</Link></li>
+              <li><Link to="/advertise" className="text-sm text-muted-foreground transition-colors hover:text-primary font-medium text-amber-500">Advertise With Us</Link></li>
               <li><Link to="/sitemap" className="text-sm text-muted-foreground transition-colors hover:text-primary">Sitemap</Link></li>
               <li><Link to="/privacy-policy" className="text-sm text-muted-foreground transition-colors hover:text-primary">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="text-sm text-muted-foreground transition-colors hover:text-primary">Terms of Service</Link></li>
