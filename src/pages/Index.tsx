@@ -194,8 +194,8 @@ const Index = () => {
                   variant="outline"
                   className="w-full sm:w-auto border-white/30 bg-white/10 text-white hover:bg-white/20 dark:border-white/30 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 text-base sm:text-lg backdrop-blur-sm transition-all hover:scale-105"
                 >
-                  <Link to="/gate-signature-resize">
-                    GATE 2026 Tool
+                  <Link to="/signature-creator">
+                    Signature Creator
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Link>
                 </Button>
