@@ -485,12 +485,11 @@ const SignatureResize = () => {
               </div>
             </div>
 
-            <AdContainer type="infeed" className="mx-auto mt-6 max-w-4xl" />
+            <AdContainer type="inarticle" className="mx-auto mt-4 max-w-4xl" />
           </div>
         </main>
 
         <FAQSection faqs={faqs} />
-        <AdContainer type="multiplex" className="container mx-auto px-4 mb-6" />
         <Footer />
       </div>
     </>

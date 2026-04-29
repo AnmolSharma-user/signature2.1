@@ -154,7 +154,8 @@ const JEESignatureResize = () => {
           </section>
 
           {/* FAQ Section */}
-          <FAQSection faqs={faqs} title="JEE Signature FAQs" />
+          <AdContainer type="inarticle" className="container mx-auto px-4 mb-2" />
+        <FAQSection faqs={faqs} title="JEE Signature FAQs" />
         </main>
         <Footer />
       </div>

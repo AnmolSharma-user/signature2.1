@@ -381,7 +381,7 @@ const RRBGroupDPhotoSignatureResize = () => {
                 </main>
 
                 <FAQSection faqs={faqs} />
-                <AdContainer type="multiplex" className="container mx-auto px-4 mb-6" />
+                <AdContainer type="inarticle" className="container mx-auto px-4 mb-4" />
                 <Footer />
             </div>
         </>

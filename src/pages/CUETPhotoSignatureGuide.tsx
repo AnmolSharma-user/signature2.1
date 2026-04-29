@@ -291,7 +291,7 @@ const CUETPhotoSignatureGuide = () => {
                     </div>
                 </article>
 
-                <AdContainer type="multiplex" />
+                <AdContainer type="inarticle" className="container mx-auto px-4 mb-4" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />

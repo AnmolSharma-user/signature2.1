@@ -146,7 +146,8 @@ const PANCardPhotoResize = () => {
                         </div>
                     </div>
                 </article>
-                <FAQSection faqs={faqs} />
+                <AdContainer type="inarticle" className="container mx-auto px-4 mb-2" />
+        <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />
             </div>

@@ -184,6 +184,7 @@ const SSCMTSSignatureResize = () => {
           </div>
         </main>
 
+        <AdContainer type="inarticle" className="container mx-auto px-4 mb-2" />
         <FAQSection faqs={faqs} title="Frequently Asked Questions" />
         <Footer />
       </div>

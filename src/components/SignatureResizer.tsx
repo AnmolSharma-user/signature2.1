@@ -12,6 +12,7 @@ import { resizeImageToTargetSize, downloadImage, ResizeResult, examPresets, getF
 import StepIndicator from "./StepIndicator";
 import ImageCropper from "./ImageCropper";
 import PWADownloadPrompt from "./PWADownloadPrompt";
+import AdContainer from "./AdContainer";
 
 interface SignatureResizerProps {
   defaultTargetKB?: number;
@@ -56,6 +57,7 @@ const SignatureResizer = ({
   const [outputFormat, setOutputFormat] = useState<OutputFormat>('jpeg');
   const [showCropper, setShowCropper] = useState(false);
   const [showPWAPrompt, setShowPWAPrompt] = useState(false);
+  const [showPostDownloadAd, setShowPostDownloadAd] = useState(false);
   const pwaPromptShownThisSession = useRef(false);
 
   const handleFileSelect = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -152,6 +154,9 @@ const SignatureResizer = ({
       const extension = getFileExtension(outputFormat);
       downloadImage(result.dataUrl, `signature_${targetKB}kb.${extension}`);
       toast.success("Image downloaded successfully!");
+
+      // Show post-download ad after a short delay (task completed = highest intent moment)
+      setTimeout(() => setShowPostDownloadAd(true), 1000);
 
       // Show PWA install prompt after download (once per session, not if already installed/dismissed permanently)
       const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
@@ -640,6 +645,11 @@ const SignatureResizer = ({
                   </Button>
                 </div>
               </div>
+
+              {/* Post-Download Ad — highest CPC moment: task complete, user relaxed */}
+              {showPostDownloadAd && (
+                <AdContainer type="display" className="mt-2" />
+              )}
             </div>
           )}
         </div>

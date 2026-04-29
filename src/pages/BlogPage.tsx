@@ -270,10 +270,8 @@ const BlogPage = () => {
                     <div className="container mx-auto px-4">
                         <Breadcrumbs items={[{ name: "Blog" }]} />
 
-                        <AdContainer type="infeed" className="my-8" />
-
                         <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                            {posts.map((post, i) => (
+                            {posts.slice(0, 6).map((post, i) => (
                                 <article key={i} className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-lg">
                                     <div className="p-6 flex flex-col h-full">
                                         <div className="mb-4 flex items-center justify-between text-xs text-muted-foreground">
@@ -295,6 +293,35 @@ const BlogPage = () => {
                                             {post.desc}
                                         </p>
 
+                                        <div className="mt-auto flex items-center text-sm font-medium text-primary">
+                                            Read Article <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                        </div>
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
+
+                        {/* Mid-grid ad — high viewability after 6 posts */}
+                        <AdContainer type="inarticle" className="my-8" />
+
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            {posts.slice(6).map((post, i) => (
+                                <article key={i + 6} className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-lg">
+                                    <div className="p-6 flex flex-col h-full">
+                                        <div className="mb-4 flex items-center justify-between text-xs text-muted-foreground">
+                                            <span className="rounded-full bg-primary/10 px-2.5 py-1 font-medium text-primary">{post.category}</span>
+                                            <div className="flex items-center gap-2">
+                                                <span className="flex items-center gap-1"><Calendar className="h-3 w-3" /> {post.date}</span>
+                                                <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime}</span>
+                                            </div>
+                                        </div>
+                                        <h2 className="mb-3 text-xl font-bold leading-tight group-hover:text-primary">
+                                            <Link to={post.slug} className="outline-none focus:underline">
+                                                {post.title}
+                                                <span className="absolute inset-0" aria-hidden="true" />
+                                            </Link>
+                                        </h2>
+                                        <p className="mb-6 flex-1 text-muted-foreground">{post.desc}</p>
                                         <div className="mt-auto flex items-center text-sm font-medium text-primary">
                                             Read Article <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                         </div>

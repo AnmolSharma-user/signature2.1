@@ -318,6 +318,9 @@ const SignatureCreatorPage = () => {
                 </section>
 
                 {/* FAQ Section */}
+                <div className="container mx-auto px-4 pt-4">
+                  <AdContainer type="inarticle" className="mx-auto max-w-4xl" />
+                </div>
                 <section className="border-t border-border bg-muted/30 py-12">
                     <div className="container mx-auto px-4">
                         <FAQSection faqs={faqs} />

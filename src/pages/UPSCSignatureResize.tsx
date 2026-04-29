@@ -202,7 +202,8 @@ const UPSCSignatureResize = () => {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl">
               <h2 className="mb-6 text-xl sm:text-2xl font-bold text-center">Frequently Asked Questions</h2>
-              <FAQSection faqs={faqs} />
+              <AdContainer type="inarticle" className="container mx-auto px-4 mb-2" />
+        <FAQSection faqs={faqs} />
             </div>
           </div>
         </section>

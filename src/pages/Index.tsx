@@ -328,6 +328,11 @@ const Index = () => {
         {/* Comparison Table */}
         <ComparisonTable />
 
+        {/* Mid-page Ad — inarticle after tools grid, users in browse mode = high CTR */}
+        <div className="container mx-auto px-4 py-2">
+          <AdContainer type="inarticle" className="mx-auto max-w-4xl" />
+        </div>
+
         {/* Processing Features */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
@@ -481,9 +486,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Ad — In-Feed before FAQ */}
+        {/* Ad — In-article before FAQ — better mobile performance than infeed */}
         <div className="container mx-auto px-4 pb-4">
-          <AdContainer type="infeed" className="mx-auto max-w-4xl" />
+          <AdContainer type="inarticle" className="mx-auto max-w-4xl" />
         </div>
 
         <FAQSection faqs={faqs} />

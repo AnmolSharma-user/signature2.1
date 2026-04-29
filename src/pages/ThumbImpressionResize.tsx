@@ -180,6 +180,8 @@ const ThumbImpressionResize = () => {
                                         <li>Use our tool above to resize to 240×240px and 10-50KB for upload</li>
                                     </ul>
 
+                                    <AdContainer type="inarticle" className="my-4" />
+
                                     <h3 className="text-lg sm:text-xl font-semibold text-foreground pt-2">
                                         Exam-Specific Thumb Impression Requirements
                                     </h3>
@@ -279,6 +281,7 @@ const ThumbImpressionResize = () => {
                     </div>
                 </main>
 
+                <AdContainer type="inarticle" className="container mx-auto px-4 mb-2" />
                 <FAQSection faqs={faqs} />
                 <Footer />
             </div>

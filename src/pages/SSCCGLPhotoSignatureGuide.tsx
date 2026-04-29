@@ -291,6 +291,8 @@ const SSCCGLPhotoSignatureGuide = () => {
                                 </div>
                             </section>
 
+                            <AdContainer type="inarticle" className="my-8" />
+
                             {/* SSC CGL vs Other SSC Exams */}
                             <section className="mb-12">
                                 <h2 className="mb-4 text-xl sm:text-2xl font-bold text-foreground">
@@ -427,7 +429,7 @@ const SSCCGLPhotoSignatureGuide = () => {
                     </div>
                 </article>
 
-                <AdContainer type="multiplex" />
+                <AdContainer type="inarticle" className="container mx-auto px-4 mb-4" />
                 <FAQSection faqs={faqs} />
                 <AdSenseDisclaimer />
                 <Footer />
