@@ -17,7 +17,7 @@ const SSCCGLPhotoSignatureGuide = () => {
         },
         {
             question: "What is the exact signature size for SSC CGL 2026?",
-            answer: "The SSC CGL 2026 application requires a signature between 1KB and 12KB in JPG/JPEG format. The dimensions must be 40×60 pixels (width × height). The signature must be done with black ink on white paper.",
+            answer: "As per the SSC CGL 2026 official notification (released May 21, 2026), the signature must be between 10KB and 20KB in JPG/JPEG format. Dimensions should be approximately 140×60 pixels. Sign with black ink on white plain paper in running/cursive handwriting — block letters are rejected.",
         },
         {
             question: "Can I use a phone photo for SSC CGL registration?",
@@ -59,7 +59,7 @@ const SSCCGLPhotoSignatureGuide = () => {
         <>
             <SEOHead
                 title="SSC CGL 2026 Photo & Signature Upload Guide: Exact Size, Dimensions & Format"
-                description="Complete SSC CGL 2026 photo and signature size guide. Photo: 20-50KB, 100×120px, JPG. Signature: 1-12KB, 40×60px. Step-by-step upload instructions with free resize tool."
+                description="Complete SSC CGL 2026 photo and signature size guide. Photo: 20-50KB, 100×120px, JPG. Signature: 10-20KB, 140×60px, JPG. Step-by-step upload instructions with free resize tool. Application closes June 22, 2026."
                 canonicalUrl="https://signatureresize.in/ssc-cgl-photo-signature-upload-guide-2026"
                 keywords="SSC CGL 2026 photo size, SSC CGL signature upload, SSC CGL photo upload error, SSC CGL application photo requirement, SSC CGL photo dimensions 2026"
                 ogImage="https://signatureresize.in/assest/ssc-cgl-photo-signature-guide-2026.png"
@@ -155,11 +155,11 @@ const SSCCGLPhotoSignatureGuide = () => {
                                         <div className="space-y-3 text-sm">
                                             <div className="flex items-center gap-3">
                                                 <HardDrive className="h-4 w-4 shrink-0 text-muted-foreground" />
-                                                <span className="text-muted-foreground">File Size: <strong className="text-foreground">1KB – 12KB</strong></span>
+                                                <span className="text-muted-foreground">File Size: <strong className="text-foreground">10KB – 20KB</strong></span>
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <Ruler className="h-4 w-4 shrink-0 text-muted-foreground" />
-                                                <span className="text-muted-foreground">Dimensions: <strong className="text-foreground">40 × 60 pixels</strong></span>
+                                                <span className="text-muted-foreground">Dimensions: <strong className="text-foreground">140 × 60 pixels</strong></span>
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <FileImage className="h-4 w-4 shrink-0 text-muted-foreground" />
@@ -276,14 +276,14 @@ const SSCCGLPhotoSignatureGuide = () => {
                                         <div className="flex items-start gap-3">
                                             <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-red-500" />
                                             <div>
-                                                <h3 className="font-semibold text-foreground">"Signature file size below minimum"</h3>
+                                                <h3 className="font-semibold text-foreground">"Signature file size below minimum / exceeds limit"</h3>
                                                 <p className="mt-1 text-muted-foreground text-sm">
-                                                    <strong className="text-foreground">Cause:</strong> Signature image is below 1KB — this usually happens when the crop is too tight or the image is mostly white.
+                                                    <strong className="text-foreground">Cause:</strong> SSC CGL 2026 requires signature between <strong>10KB and 20KB</strong>. Files below 10KB or above 20KB are rejected. Old guides showing 1–12KB are outdated.
                                                 </p>
                                                 <p className="mt-1 text-muted-foreground text-sm">
-                                                    <strong className="text-foreground">Fix:</strong> Leave a small margin (2-3mm) around the signature when cropping. Use our{" "}
-                                                    <Link to="/signature-resize-10-to-20-kb" className="text-primary hover:underline">10-20KB resize tool</Link>{" "}
-                                                    which ensures the file stays within the accepted range.
+                                                    <strong className="text-foreground">Fix:</strong> Use our{" "}
+                                                    <Link to="/signature-resize-10-to-20-kb" className="text-primary hover:underline">10–20KB signature resize tool</Link>{" "}
+                                                    — it targets exactly 15KB, safely within the 10–20KB range.
                                                 </p>
                                             </div>
                                         </div>
@@ -318,25 +318,25 @@ const SSCCGLPhotoSignatureGuide = () => {
                                             <tr className="border-b border-border">
                                                 <td className="px-4 py-3 font-medium text-foreground">SSC CGL 2026</td>
                                                 <td className="px-4 py-3">20KB – 50KB</td>
-                                                <td className="px-4 py-3">1KB – 12KB</td>
+                                                <td className="px-4 py-3"><strong>10KB – 20KB</strong></td>
                                                 <td className="px-4 py-3">JPG</td>
                                             </tr>
                                             <tr className="border-b border-border bg-muted/20">
                                                 <td className="px-4 py-3 font-medium text-foreground">SSC MTS 2026</td>
                                                 <td className="px-4 py-3">20KB – 50KB</td>
-                                                <td className="px-4 py-3">1KB – 12KB</td>
+                                                <td className="px-4 py-3">10KB – 20KB</td>
                                                 <td className="px-4 py-3">JPG</td>
                                             </tr>
                                             <tr className="border-b border-border">
                                                 <td className="px-4 py-3 font-medium text-foreground">SSC CHSL 2026</td>
                                                 <td className="px-4 py-3">20KB – 50KB</td>
-                                                <td className="px-4 py-3">1KB – 12KB</td>
+                                                <td className="px-4 py-3">10KB – 20KB</td>
                                                 <td className="px-4 py-3">JPG</td>
                                             </tr>
                                             <tr>
                                                 <td className="px-4 py-3 font-medium text-foreground">SSC CPO 2026</td>
                                                 <td className="px-4 py-3">20KB – 50KB</td>
-                                                <td className="px-4 py-3">1KB – 12KB</td>
+                                                <td className="px-4 py-3">10KB – 20KB</td>
                                                 <td className="px-4 py-3">JPG</td>
                                             </tr>
                                         </tbody>
@@ -415,13 +415,13 @@ const SSCCGLPhotoSignatureGuide = () => {
                                     <strong className="text-foreground">SignatureResize.in</strong>.
                                     We process tens of thousands of SSC exam photos and signatures every
                                     registration cycle (CGL, MTS, CHSL combined). The specifications listed here are
-                                    based on the official SSC CGL 2026 notification and verified against the live SSC
-                                    registration portal. We update this guide every time SSC releases a fresh notification.
+                                    based on the <strong className="text-foreground">official SSC CGL 2026 notification released May 21, 2026</strong> and verified against the live SSC
+                                    OTRP registration portal. The signature requirement was updated to 10–20KB in the 2026 cycle — older guides showing 1–12KB are incorrect.
                                 </p>
                                 <p className="mt-3 text-sm text-muted-foreground">
-                                    <strong className="text-foreground">Published:</strong> February 2026 |
-                                    <strong className="text-foreground"> Source:</strong> SSC CGL Tier-I 2026 Official Notification |
-                                    <strong className="text-foreground"> Updated regularly</strong>
+                                    <strong className="text-foreground">Last Updated:</strong> June 13, 2026 |
+                                    <strong className="text-foreground"> Source:</strong> SSC CGL 2026 Official Notification (May 21, 2026), ssc.gov.in |
+                                    <strong className="text-foreground"> Application window closes June 22, 2026</strong>
                                 </p>
                             </section>
 

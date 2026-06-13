@@ -14,21 +14,21 @@ const SSCCGLPhotoSignatureResize = () => {
     const [activeTab, setActiveTab] = useState<"photo" | "signature">("photo");
 
     const tabs = [
-        { key: "photo" as const, label: "Photo Compressor", icon: Camera, desc: "4–20 KB | 100×120 px" },
-        { key: "signature" as const, label: "Signature Compressor", icon: Pen, desc: "1–12 KB | 140×60 px" },
+        { key: "photo" as const, label: "Photo Compressor", icon: Camera, desc: "20–50 KB | 100×120 px" },
+        { key: "signature" as const, label: "Signature Compressor", icon: Pen, desc: "10–20 KB | 140×60 px" },
     ];
 
     const requirements = [
-        { doc: "Photo", dimension: "100 × 120 px", size: "4 KB – 20 KB", format: "JPG", bg: "White" },
-        { doc: "Signature", dimension: "140 × 60 px", size: "1 KB – 12 KB", format: "JPG", bg: "White" },
+        { doc: "Photo", dimension: "100 × 120 px", size: "20 KB – 50 KB", format: "JPG", bg: "White" },
+        { doc: "Signature", dimension: "140 × 60 px", size: "10 KB – 20 KB", format: "JPG", bg: "White" },
     ];
 
     const faqs = [
-        { question: "What is the SSC CGL photo size in KB?", answer: "For SSC CGL 2025-26, the photo must be in JPG format, dimensions 100×120 pixels, and file size between 4 KB and 20 KB. Background must be white." },
-        { question: "What is the SSC CGL signature size requirement?", answer: "The SSC CGL signature must be in JPG format, dimensions 140×60 pixels, and file size between 1 KB and 12 KB, on a white background." },
-        { question: "Can I use the same tool for SSC CHSL?", answer: "Yes. SSC CHSL has the same photo and signature upload specifications as SSC CGL — 4–20 KB photo and 1–12 KB signature. This tool works for both." },
-        { question: "Why is my SSC photo getting rejected on the portal?", answer: "Common reasons: file size above 20 KB, wrong format (must be JPG, not PNG), background is not white, or dimensions don't match 100×120 px. Use this tool to fix all these in one step." },
-        { question: "Is this tool free for SSC CGL photo resize?", answer: "Yes, 100% free. No account needed. All processing happens in your browser — your photo is never uploaded to any server." },
+        { question: "What is the SSC CGL 2026 photo size in KB?", answer: "For SSC CGL 2026, the photo must be in JPG format, dimensions 100×120 pixels, and file size between 20 KB and 50 KB. Background must be white. Source: SSC CGL 2026 official notification, May 21, 2026." },
+        { question: "What is the SSC CGL 2026 signature size requirement?", answer: "As per the SSC CGL 2026 official notification (released May 21, 2026), the signature must be between 10 KB and 20 KB in JPG format, dimensions 140×60 pixels, on a white background with black ink. Previous guides showing 1–12 KB are outdated." },
+        { question: "Can I use the same tool for SSC CHSL 2026?", answer: "Yes. SSC CHSL 2026 has the same photo and signature upload specifications as SSC CGL — 20–50 KB photo and 10–20 KB signature. This tool works for both." },
+        { question: "Why is my SSC signature getting rejected on the portal?", answer: "The most common cause in 2026: using the old 1–12 KB range. SSC updated to 10–20 KB. Other causes: wrong format (PNG instead of JPG), block letters instead of cursive, or grey background. Use this tool with the SSC CGL preset — it outputs 15 KB JPG automatically." },
+        { question: "Is this tool free for SSC CGL photo and signature resize?", answer: "Yes, 100% free. No account needed. All processing happens in your browser — your photo and signature are never uploaded to any server." },
     ];
 
     const howToSteps = [
@@ -49,10 +49,10 @@ const SSCCGLPhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="SSC CGL Photo & Signature Resize Online Free 2025-26 | SSC CHSL Photo Compressor"
-                description="Free SSC CGL photo resize online: compress photo to 4–20 KB (100×120 px) and signature to 1–12 KB (140×60 px). Works for SSC CHSL, SSC GD. Instant, secure, browser-only."
+                title="SSC CGL 2026 Photo & Signature Resize Online Free | SSC CHSL Photo Compressor"
+                description="Free SSC CGL 2026 photo resize: compress photo to 20–50 KB (100×120 px) and signature to 10–20 KB (140×60 px) per official May 2026 notification. Works for SSC CHSL, SSC GD. Instant, secure, browser-only."
                 canonicalUrl="https://signatureresize.in/ssc-cgl-photo-signature-resize"
-                keywords="ssc cgl photo resize, ssc cgl signature resize, ssc cgl photo compressor, ssc chsl photo resize, ssc cgl photo size kb, ssc signature resize online, ssc cgl 2026 photo size, ssc otrp photo upload"
+                keywords="ssc cgl 2026 photo resize, ssc cgl signature resize 2026, ssc cgl photo compressor, ssc chsl photo resize, ssc cgl photo size kb 2026, ssc signature resize online, ssc cgl 2026 signature 10-20kb, ssc otrp photo upload"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo for SSC CGL Online" howToSteps={howToSteps} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
@@ -62,11 +62,12 @@ const SSCCGLPhotoSignatureResize = () => {
             <script type="application/ld+json" dangerouslySetInnerHTML={{
                 __html: JSON.stringify({
                     "@context": "https://schema.org", "@type": "WebApplication",
-                    name: "SSC CGL Photo & Signature Resize Online",
+                    name: "SSC CGL 2026 Photo & Signature Resize Online",
                     url: "https://signatureresize.in/ssc-cgl-photo-signature-resize",
-                    description: "Free online tool to resize SSC CGL photo to 4–20 KB and signature to 1–12 KB per OTRP portal requirements.",
+                    description: "Free online tool to resize SSC CGL 2026 photo to 20–50 KB and signature to 10–20 KB per official SSC OTRP portal requirements (May 2026 notification).",
                     applicationCategory: "UtilityApplication", operatingSystem: "Any",
                     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
+                    dateModified: "2026-06-13",
                 })
             }} />
 
@@ -82,7 +83,7 @@ const SSCCGLPhotoSignatureResize = () => {
                                 <span className="text-blue-500">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>SSC CGL photo to 4–20 KB</strong> (100×120 px) and <strong>signature to 1–12 KB</strong> (140×60 px) as per the official SSC OTRP portal requirements. Also works for <strong>SSC CHSL, SSC MTS</strong>. Browser-only — your image never leaves your device.
+                                Compress your <strong>SSC CGL 2026 photo to 20–50 KB</strong> (100×120 px) and <strong>signature to 10–20 KB</strong> (140×60 px) as per the official SSC OTRP portal requirements (May 2026 notification). Also works for <strong>SSC CHSL, SSC MTS</strong>. Browser-only — your image never leaves your device.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["SSC OTRP Specs", "JPG Output", "Mobile Friendly", "No Data Stored"].map((t) => (
@@ -111,10 +112,10 @@ const SSCCGLPhotoSignatureResize = () => {
                             </div>
 
                             {activeTab === "photo" && (
-                                <SignatureResizer title="SSC CGL Photo Compressor" defaultTargetKB={12} minKB={4} maxKB={20} maxWidth={100} maxHeight={120} defaultPreset="ssc-cgl-photo" />
+                                <SignatureResizer title="SSC CGL Photo Compressor" defaultTargetKB={35} minKB={20} maxKB={50} maxWidth={100} maxHeight={120} defaultPreset="ssc-cgl-photo" />
                             )}
                             {activeTab === "signature" && (
-                                <SignatureResizer title="SSC CGL Signature Compressor" defaultTargetKB={6} minKB={1} maxKB={12} maxWidth={140} maxHeight={60} defaultPreset="ssc-cgl-signature" />
+                                <SignatureResizer title="SSC CGL Signature Compressor" defaultTargetKB={15} minKB={10} maxKB={20} maxWidth={140} maxHeight={60} defaultPreset="ssc-cgl-signature" />
                             )}
                             <AdContainer type="display" />
                         </div>
@@ -122,7 +123,7 @@ const SSCCGLPhotoSignatureResize = () => {
                         {/* Requirements Table */}
                         <div className="mx-auto mt-12 max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm">
                             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                                <FileImage className="h-5 w-5 text-blue-500" /> SSC CGL / CHSL Photo & Signature Requirements 2025-26
+                                <FileImage className="h-5 w-5 text-blue-500" /> SSC CGL / CHSL Photo & Signature Requirements 2026
                             </h2>
                             <div className="overflow-x-auto rounded-xl border border-border">
                                 <table className="w-full text-sm border-collapse">
@@ -158,10 +159,10 @@ const SSCCGLPhotoSignatureResize = () => {
                         {/* Content */}
                         <div className="mx-auto mt-6 max-w-4xl space-y-8">
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-                                <h2 className="text-xl font-bold text-foreground mb-3">Why Does SSC CGL Reject Photos?</h2>
+                                <h2 className="text-xl font-bold text-foreground mb-3">Why Does SSC CGL Reject Photos & Signatures?</h2>
                                 <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                     {[
-                                        { icon: XCircle, color: "text-red-500", t: "File size above 20 KB", d: "The SSC OTRP portal hard-rejects any photo above 20 KB. This tool targets 12 KB by default — safely within range." },
+                                        { icon: XCircle, color: "text-red-500", t: "Signature outside 10–20 KB", d: "The SSC OTRP portal hard-rejects any signature below 10 KB or above 20 KB. This tool targets 15 KB by default — safely within range." },
                                         { icon: XCircle, color: "text-red-500", t: "PNG instead of JPG", d: "SSC only accepts JPG/JPEG. Even if you upload a PNG here, the output is always a clean JPG." },
                                         { icon: AlertTriangle, color: "text-amber-500", t: "Wrong dimensions", d: "Photo must be 100×120 pixels. The ssc-cgl-photo preset auto-enforces this." },
                                         { icon: AlertTriangle, color: "text-amber-500", t: "Non-white background", d: "SSC requires a plain white background. Use our TNPSC Background Changer for transparent/coloured backgrounds." },
@@ -177,10 +178,10 @@ const SSCCGLPhotoSignatureResize = () => {
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                                 <h2 className="text-xl font-bold text-foreground mb-3">SSC CGL vs CHSL vs GD — Same Requirements?</h2>
                                 <div className="space-y-3 text-sm text-muted-foreground leading-relaxed">
-                                    <p><strong className="text-foreground">SSC CGL, SSC CHSL:</strong> Identical specs — 4–20 KB photo, 1–12 KB signature. Use this page for both.</p>
+                                    <p><strong className="text-foreground">SSC CGL 2026, SSC CHSL 2026:</strong> Identical specs per the May 2026 notification — 20–50 KB photo, 10–20 KB signature (140×60 px). Use this page for both.</p>
                                     <p><strong className="text-foreground">SSC GD Constable:</strong> Slightly different — 4–40 KB photo (160×200 px). Use the dedicated <Link to="/ssc-gd-photo-signature-resize" className="text-primary hover:underline">SSC GD resize tool</Link>.</p>
-                                    <p><strong className="text-foreground">SSC MTS:</strong> Same as CGL/CHSL. Use <Link to="/ssc-mts-signature-resize" className="text-primary hover:underline">SSC MTS signature resize</Link>.</p>
-                                    <p>All SSC exams are processed through the unified <strong className="text-foreground">SSC OTRP (One Time Registration Portal)</strong>. Photo and signature uploaded here are used across all SSC applications.</p>
+                                    <p><strong className="text-foreground">SSC MTS:</strong> Same signature spec as CGL/CHSL (10–20 KB). Use <Link to="/ssc-mts-signature-resize" className="text-primary hover:underline">SSC MTS signature resize</Link>.</p>
+                                    <p>All SSC exams are processed through the unified <strong className="text-foreground">SSC OTRP (One Time Registration Portal)</strong>. Photo and signature uploaded here are used across all SSC applications. <strong className="text-foreground">SSC CGL 2026 application closes June 22, 2026.</strong></p>
                                 </div>
                             </div>
 

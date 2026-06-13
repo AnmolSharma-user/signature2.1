@@ -29,7 +29,7 @@ const NTAExamPhotoGuidelines = () => {
         },
         {
             question: "My signature is 3KB. Will NTA accept it?",
-            answer: "No. The minimum size for NTA signatures is 4KB. If your file is 3KB, the portal will reject it. Use our resize tool to ensure the file size is within the 4KB-30KB range.",
+            answer: "No. The minimum size for NTA signatures is 4KB. If your file is 3KB, the portal will reject it. Use our resize tool to ensure the file size is within the 4KB–50KB range (NTA updated upper limit to 50KB in 2026).",
         },
         {
             question: "Should I write my name and date on the photo?",
@@ -51,9 +51,9 @@ const NTAExamPhotoGuidelines = () => {
         <>
             <SEOHead
                 title="NTA Exam Photo & Signature Guidelines 2026 (NEET, JEE, CUET)"
-                description="Complete 2026 photo and signature guide for NTA exams (NEET, JEE Main, CUET). Passport photo (10-200KB), postcard photo, and signature (4-30KB) rules explained."
+                description="Complete 2026 photo and signature guide for NTA exams (NEET, JEE Main, CUET, CMAT). Passport photo (10-200KB), postcard photo, and signature (4-50KB) rules explained. Updated June 2026."
                 canonicalUrl="https://signatureresize.in/nta-exam-photo-signature-guidelines-2026"
-                keywords="NTA photo requirements 2026, NEET photo size, JEE Main photo size, CUET photo guidelines, NTA signature size 4kb-30kb"
+                keywords="NTA photo requirements 2026, NEET photo size, JEE Main photo size, CUET photo guidelines, NTA signature size 4kb-50kb, CMAT photo size 2026"
                 ogImage="https://signatureresize.in/assest/nta-exam-photo-signature-guidelines-2026.png"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo and Signature for NTA Exams (NEET, JEE, CUET)" howToSteps={howToSteps} />
@@ -131,7 +131,7 @@ const NTAExamPhotoGuidelines = () => {
                                             <h3 className="font-bold text-foreground">Signature</h3>
                                         </div>
                                         <div className="space-y-2 text-sm text-muted-foreground">
-                                            <p>Size: <strong className="text-foreground">4KB – 30KB</strong></p>
+                                            <p>Size: <strong className="text-foreground">4KB – 50KB</strong></p>
                                             <p>Format: <strong className="text-foreground">JPG / JPEG</strong></p>
                                             <p>Style: <strong className="text-foreground">Running hand (not ALL CAPS)</strong></p>
                                             <p>Ink: <strong className="text-foreground">Black pen on white paper</strong></p>
@@ -156,26 +156,32 @@ const NTAExamPhotoGuidelines = () => {
                                             <tr className="border-b border-border">
                                                 <td className="px-4 py-3 font-medium text-foreground">NEET UG 2026</td>
                                                 <td className="px-4 py-3">10-200 KB</td>
-                                                <td className="px-4 py-3">4-30 KB</td>
+                                                <td className="px-4 py-3">4-50 KB</td>
                                                 <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for NEET →</Link></td>
                                             </tr>
                                             <tr className="border-b border-border bg-muted/20">
                                                 <td className="px-4 py-3 font-medium text-foreground">JEE Main 2026</td>
                                                 <td className="px-4 py-3">10-200 KB</td>
-                                                <td className="px-4 py-3">4-30 KB</td>
-                                                <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for JEE →</Link></td>
+                                                <td className="px-4 py-3">4-50 KB</td>
+                                                <td className="px-4 py-3"><Link to="/jee-signature-resize" className="text-primary hover:underline">Resize for JEE →</Link></td>
                                             </tr>
                                             <tr className="border-b border-border">
-                                                <td className="px-4 py-3 font-medium text-foreground">CUET (UG/PG)</td>
+                                                <td className="px-4 py-3 font-medium text-foreground">CUET UG/PG 2026</td>
                                                 <td className="px-4 py-3">10-200 KB</td>
-                                                <td className="px-4 py-3">4-30 KB</td>
-                                                <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for CUET →</Link></td>
+                                                <td className="px-4 py-3">4-50 KB</td>
+                                                <td className="px-4 py-3"><Link to="/cuet-ug-photo-signature-upload-guide-2026" className="text-primary hover:underline">Resize for CUET →</Link></td>
+                                            </tr>
+                                            <tr className="border-b border-border bg-muted/20">
+                                                <td className="px-4 py-3 font-medium text-foreground">UGC NET 2026</td>
+                                                <td className="px-4 py-3">10-200 KB</td>
+                                                <td className="px-4 py-3">4-50 KB</td>
+                                                <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for NET →</Link></td>
                                             </tr>
                                             <tr>
-                                                <td className="px-4 py-3 font-medium text-foreground">UGC NET</td>
+                                                <td className="px-4 py-3 font-medium text-foreground">CMAT 2026</td>
                                                 <td className="px-4 py-3">10-200 KB</td>
-                                                <td className="px-4 py-3">4-30 KB</td>
-                                                <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for NET →</Link></td>
+                                                <td className="px-4 py-3">4-50 KB</td>
+                                                <td className="px-4 py-3"><Link to="/neet-photo-signature-resize" className="text-primary hover:underline">Resize for CMAT →</Link></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -194,6 +200,7 @@ const NTAExamPhotoGuidelines = () => {
                                         "Name & Date (Check Notification): NEET often requires name and date of photo printed at the bottom.",
                                         "No Caps/Masks: Do not wear caps or masks. Religious headgear is allowed but must not hide face.",
                                         "Same Photo for All Uses: Keep 6-8 copies of the same photo for admit card and counseling.",
+                                        "AI Face Comparison (New in 2026): NTA now uses AI-based face comparison and Aadhaar e-KYC on some portals. Ensure your uploaded photo matches your current appearance exactly.",
                                     ].map((rule, i) => (
                                         <div key={i} className="flex items-start gap-3 rounded-lg border border-border bg-card p-3">
                                             <CheckCircle className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
@@ -215,8 +222,8 @@ const NTAExamPhotoGuidelines = () => {
 
                             <section className="mb-8 rounded-xl border border-border bg-muted/30 p-6 md:p-8">
                                 <h2 className="mb-4 text-xl font-bold text-foreground">About This Guide</h2>
-                                <p className="text-muted-foreground leading-relaxed">Published by <strong className="text-foreground">SignatureResize.in</strong>. NTA guidelines are strict, and 1000s of forms get flagged annually for image issues. This specific guide is based on the 2026 Information Bulletins for NEET, JEE Main, and CUET.</p>
-                                <p className="mt-3 text-sm text-muted-foreground"><strong className="text-foreground">Published:</strong> February 2026 | <strong className="text-foreground">Updated regularly</strong></p>
+                                <p className="text-muted-foreground leading-relaxed">Published by <strong className="text-foreground">SignatureResize.in</strong>. NTA guidelines are strict, and 1000s of forms get flagged annually for image issues. This guide is based on the 2026 Information Bulletins for NEET, JEE Main, CUET, and CMAT. NTA updated the signature upper limit to 50KB and introduced AI-based face verification in 2026.</p>
+                                <p className="mt-3 text-sm text-muted-foreground"><strong className="text-foreground">Last Updated:</strong> June 13, 2026 | <strong className="text-foreground">Updated regularly</strong></p>
                             </section>
                         </div>
                     </div>

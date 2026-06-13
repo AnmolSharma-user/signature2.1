@@ -26,8 +26,8 @@ const MPSCPhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="MPSC Photo & Signature Resize Online Free 2025-26 | Maharashtra PSC Photo Compressor"
-                description="Free MPSC photo resize to 20–100 KB (236×307 px) and signature to 10–40 KB (140×60 px). Works for MPSC Rajyaseva and all Maharashtra PSC exams. Instant and browser-only."
+                title="MPSC Photo & Signature Resize Online Free 2026-27 | Maharashtra PSC Photo Compressor"
+                description="Free MPSC photo resize to 20–100 KB (236×307 px) and signature to 10–40 KB (140×60 px). Works for MPSC Rajyaseva 2026-27 and all Maharashtra PSC exams. Instant and browser-only."
                 canonicalUrl="https://signatureresize.in/mpsc-photo-signature-resize"
                 keywords="mpsc photo resize, mpsc signature resize, mpsc photo compressor online, mpsc photo size kb, mpsc rajyaseva photo upload, maharashtra psc photo resize"
             />
@@ -36,6 +36,19 @@ const MPSCPhotoSignatureResize = () => {
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "MPSC Photo Resize", url: "https://signatureresize.in/mpsc-photo-signature-resize" },
             ]} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "MPSC Photo & Signature Resize Online Free 2026-27",
+                    "url": "https://signatureresize.in/mpsc-photo-signature-resize",
+                    "description": "Free online tool to resize Maharashtra PSC (MPSC) photo to 20–100 KB and signature to 10–40 KB.",
+                    "applicationCategory": "UtilityApplication",
+                    "operatingSystem": "Any",
+                    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+                    "dateModified": "2026-06-13"
+                })
+            }} />
             <div className="min-h-screen bg-background">
                 <Header />
                 <section className="relative overflow-hidden bg-gradient-to-br from-purple-600/10 via-primary/5 to-background py-8 sm:py-14">

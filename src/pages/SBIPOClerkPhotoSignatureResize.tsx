@@ -19,7 +19,7 @@ const SBIPOClerkPhotoSignatureResize = () => {
     ];
 
     const faqs = [
-        { question: "What is the SBI PO photo size in KB?", answer: "For SBI PO 2025-26, the photo must be in JPG format, dimensions 200×200 pixels, file size between 20 KB and 80 KB, with a white background." },
+        { question: "What is the SBI PO photo size in KB?", answer: "For SBI PO 2026-27, the photo must be in JPG format, dimensions 200×200 pixels, file size between 20 KB and 80 KB, with a white background." },
         { question: "What is the SBI Clerk signature size requirement?", answer: "The SBI Clerk (Junior Associate) signature must be in JPG format, dimensions 200×80 pixels, and file size between 10 KB and 80 KB." },
         { question: "Is the SBI PO and SBI Clerk photo requirement the same?", answer: "Yes. SBI PO and SBI Clerk (Junior Associate) both require a JPG photo of 200×200 px at 20–80 KB and a signature of 200×80 px at 10–80 KB. This tool works for both." },
         { question: "Why is my SBI photo getting rejected?", answer: "Common reasons: file size above 80 KB, wrong dimensions (must be 200×200 px), PNG format instead of JPG, or non-white background. Use this tool to compress and resize correctly." },
@@ -37,7 +37,7 @@ const SBIPOClerkPhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="SBI PO & Clerk Photo Resize Online Free 2025-26 | SBI Signature Compressor"
+                title="SBI PO & Clerk Photo Resize Online Free 2026-27 | SBI Signature Compressor"
                 description="Free SBI PO and SBI Clerk photo resize: compress photo to 20–80 KB (200×200 px) and signature to 10–80 KB (200×80 px). Instant, secure, browser-only tool."
                 canonicalUrl="https://signatureresize.in/sbi-po-photo-signature-resize"
                 keywords="sbi po photo resize, sbi clerk photo resize, sbi po signature resize, sbi clerk signature compressor, sbi po photo size kb, sbi junior associate photo resize, sbi po 2026 photo upload"
@@ -47,6 +47,19 @@ const SBIPOClerkPhotoSignatureResize = () => {
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "SBI PO Photo Resize", url: "https://signatureresize.in/sbi-po-photo-signature-resize" },
             ]} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "SBI PO & Clerk Photo & Signature Resize Online Free 2026-27",
+                    "url": "https://signatureresize.in/sbi-po-photo-signature-resize",
+                    "description": "Free online tool to resize SBI PO and Clerk photo to 20–80 KB and signature to 10–80 KB.",
+                    "applicationCategory": "UtilityApplication",
+                    "operatingSystem": "Any",
+                    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+                    "dateModified": "2026-06-13"
+                })
+            }} />
 
             <div className="min-h-screen bg-background">
                 <Header />
@@ -97,7 +110,7 @@ const SBIPOClerkPhotoSignatureResize = () => {
 
                         <div className="mx-auto mt-12 max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm">
                             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                                <FileImage className="h-5 w-5 text-green-500" /> SBI PO & SBI Clerk Photo & Signature Requirements 2025-26
+                                <FileImage className="h-5 w-5 text-green-500" /> SBI PO & SBI Clerk Photo & Signature Requirements 2026-27
                             </h2>
                             <div className="overflow-x-auto rounded-xl border border-border">
                                 <table className="w-full text-sm border-collapse">

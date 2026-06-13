@@ -20,7 +20,7 @@ const SSCMTSSignatureResize = () => {
     },
     {
       question: "What are the rules for SSC signature upload?",
-      answer: "SSC requires signature between 1KB to 12KB in JPG format with dimensions around 140x60 pixels. The signature should be on white background with black or blue ink.",
+      answer: "SSC requires signature between 10KB to 20KB in JPG format with dimensions around 140x60 pixels. The signature should be on white background with black ink.",
     },
     {
       question: "Can I change my signature easily?",
@@ -32,7 +32,7 @@ const SSCMTSSignatureResize = () => {
     },
     {
       question: "What is the size of SSC candidate signature?",
-      answer: "The standard size for SSC candidate signature is 1KB to 12KB with dimensions of approximately 140x60 pixels in JPG format.",
+      answer: "The standard size for SSC candidate signature is 10KB to 20KB with dimensions of approximately 140x60 pixels in JPG format.",
     },
     {
       question: "How can I edit my SSC name?",
@@ -41,7 +41,7 @@ const SSCMTSSignatureResize = () => {
   ];
 
   const requirements = [
-    "File size: 1KB to 12KB",
+    "File size: 10KB to 20KB",
     "Format: JPG/JPEG only",
     "Dimensions: 140 × 60 pixels",
     "Background: White",
@@ -50,7 +50,7 @@ const SSCMTSSignatureResize = () => {
 
   const howToSteps = [
     { text: "Upload your signature image (JPG, JPEG, or PNG format)" },
-    { text: "Set the target size between 1KB-12KB using the slider" },
+    { text: "Set the target size between 10KB-20KB using the slider" },
     { text: "Click Resize to process your SSC signature" },
     { text: "Download and upload to SSC MTS/CGL/CHSL application portal" },
   ];
@@ -59,9 +59,9 @@ const SSCMTSSignatureResize = () => {
     <>
       <SEOHead
         title="SSC Signature Resize | MTS, CGL, CHSL Free Tool"
-        description="Resize signature for SSC MTS, CGL, CHSL exams to 1KB-12KB. Free tool with correct dimensions. Instant & SSC compliant."
+        description="Resize signature for SSC MTS, CGL, CHSL exams to 10KB-20KB. Free tool with correct dimensions. Instant & SSC compliant."
         canonicalUrl="https://signatureresize.in/ssc-mts-signature-resize"
-        keywords="SSC signature resize, SSC MTS signature size, SSC CGL signature"
+        keywords="SSC signature resize, SSC MTS signature size, SSC CGL signature, ssc signature 10 to 20 kb"
       />
 
       <SEOSchema
@@ -101,12 +101,12 @@ const SSCMTSSignatureResize = () => {
             <div className="mx-auto max-w-3xl">
               <SignatureResizer
                 title="Upload Your SSC Signature"
-                defaultTargetKB={8}
-                minKB={1}
-                maxKB={12}
-                maxWidth={200}
-                maxHeight={80}
-                defaultPreset="ssc"
+                defaultTargetKB={15}
+                minKB={10}
+                maxKB={20}
+                maxWidth={140}
+                maxHeight={60}
+                defaultPreset="ssc-cgl-signature"
               />
 
               {/* Requirements Box */}

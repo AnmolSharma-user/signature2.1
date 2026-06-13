@@ -113,7 +113,7 @@ const AddNameDateToPhoto = () => {
     return (
         <>
             <SEOHead
-                title="Add Name and Date to Photo Online Free 2025 | Exam Photo Name Editor"
+                title="Add Name and Date to Photo Online Free 2026 | Exam Photo Name Editor"
                 description="Free online tool to add name and date to exam photos for SSC, IBPS, SBI, and all government exams. Instant, browser-only, secure. No app needed."
                 canonicalUrl="https://signatureresize.in/add-name-date-to-photo"
                 keywords="add name to photo online, add date to photo online free, name on photo online, date on photo online, exam photo name editor, add name date to exam photo, ssc photo with name, ibps photo name date, government exam photo editor"

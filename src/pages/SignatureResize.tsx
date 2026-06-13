@@ -21,7 +21,7 @@ const SignatureResize = () => {
     },
     {
       question: "What is the best signature size for government exams?",
-      answer: "It depends on the exam. SSC CGL/CHSL requires 1–12KB. IBPS PO/Clerk needs 10–20KB. RRB NTPC/Group D needs 10–40KB. UPSC needs 20–100KB. GATE needs 4–30KB. NEET needs 4–30KB. Use our exam-specific tools for automatic preset sizing.",
+      answer: "It depends on the exam. SSC CGL/CHSL 2026 requires 10–20KB (updated from old 1–12KB per May 2026 notification). IBPS PO/Clerk needs 10–20KB. RRB NTPC/Group D needs 10–40KB. UPSC needs 20–100KB. GATE needs 4–30KB. NEET needs 4–50KB. Use our exam-specific tools for automatic preset sizing.",
     },
     {
       question: "What file formats are supported for signature resize?",
@@ -53,7 +53,7 @@ const SignatureResize = () => {
     },
     {
       question: "How do I resize a signature for SSC CGL 2026?",
-      answer: "SSC CGL 2026 signature must be 1KB to 12KB in JPG format, approximately 140×60 pixels. Use our SSC MTS Signature Resize tool which has the SSC preset ready. Target 10KB for best results.",
+      answer: "SSC CGL 2026 signature must be 10KB to 20KB in JPG format (updated per May 21, 2026 official notification), approximately 140×60 pixels. Use our SSC CGL Signature Resize tool which has the correct preset ready. Target 15KB for best results.",
     },
   ];
 
@@ -67,14 +67,16 @@ const SignatureResize = () => {
   ];
 
   const examPresets = [
-    { exam: "SSC CGL / CHSL", sigRange: "1–12 KB", target: "10 KB" },
+    { exam: "SSC CGL / CHSL 2026", sigRange: "10–20 KB", target: "15 KB" },
     { exam: "IBPS PO / Clerk", sigRange: "10–20 KB", target: "15 KB" },
     { exam: "RRB Group D / NTPC", sigRange: "10–40 KB", target: "20 KB" },
     { exam: "UPSC (all exams)", sigRange: "20–100 KB", target: "50 KB" },
-    { exam: "GATE / JEE", sigRange: "4–30 KB", target: "15 KB" },
-    { exam: "NEET UG", sigRange: "4–30 KB", target: "15 KB" },
+    { exam: "GATE / JEE 2026", sigRange: "4–30 KB", target: "15 KB" },
+    { exam: "NEET UG 2026", sigRange: "4–50 KB", target: "20 KB" },
     { exam: "SBI PO / Clerk", sigRange: "10–20 KB", target: "15 KB" },
     { exam: "India Post GDS", sigRange: "10–20 KB", target: "15 KB" },
+    { exam: "RRB ALP 2026", sigRange: "10–40 KB", target: "20 KB" },
+    { exam: "CUET UG 2026", sigRange: "4–50 KB", target: "20 KB" },
   ];
 
   return (
@@ -95,6 +97,7 @@ const SignatureResize = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Signature Resize Online Free — Signature Resizer to Exact KB",
+            "dateModified": "2026-06-13",
             "speakable": {
               "@type": "SpeakableSpecification",
               "cssSelector": [".speakable-intro", "h1", "h2"]
@@ -116,6 +119,7 @@ const SignatureResize = () => {
             "description": "Free online signature resize tool. Resize signature to exact KB for SSC, IBPS, RRB, UPSC, GATE, and NEET exams.",
             "applicationCategory": "UtilityApplication",
             "operatingSystem": "Any",
+            "dateModified": "2026-06-13",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -151,7 +155,7 @@ const SignatureResize = () => {
         howToName="How to Resize Signature for Government Exam Portals"
         howToSteps={[
           { text: "Click 'Upload Your Signature' and select your JPG, JPEG, or PNG file from your device or phone gallery" },
-          { text: "Check your exam's signature KB requirement (e.g., 10–20KB for IBPS, 10–40KB for RRB, 1–12KB for SSC)" },
+          { text: "Check your exam's signature KB requirement (e.g., 10–20KB for IBPS, 10–40KB for RRB, 10–20KB for SSC)" },
           { text: "Enter the target KB in the field provided — set it to the midpoint of your exam's allowed range" },
           { text: "Click 'Resize Now' — the tool processes in 1–2 seconds using binary search compression" },
           { text: "Preview the resized signature and click 'Download'. Upload to your exam portal immediately" },
@@ -246,6 +250,7 @@ const SignatureResize = () => {
               <div className="rounded-xl border border-border bg-card p-4 sm:p-6 lg:p-8">
                 <h2 className="mb-1 text-lg font-bold text-foreground sm:mb-2 sm:text-2xl">
                   Signature KB Requirements — All Major 2026 Exams
+                  <span className="ml-2 inline-block rounded-full bg-green-500/10 px-2 py-0.5 text-xs font-medium text-green-600">Updated June 2026</span>
                 </h2>
                 <p className="mb-4 text-xs text-muted-foreground sm:mb-5 sm:text-sm">
                   Use the midpoint of the allowed range for the safest upload result.
@@ -475,7 +480,7 @@ const SignatureResize = () => {
                     Reviewed by SignatureResize Editorial Team
                   </p>
                   <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground sm:text-xs">
-                    Last updated: March 3, 2026 · Based on official exam notifications from SSC.nic.in, IBPS.in,
+                    Last updated: June 13, 2026 · SSC CGL 2026 signature updated to 10–20 KB per May 21, 2026 notification. Based on official exam notifications from SSC.nic.in, IBPS.in,
                     UPSCONLINE.nic.in, and RRB OJAS portal.{" "}
                     <Link to="/about-us" className="text-primary hover:underline">
                       About us →

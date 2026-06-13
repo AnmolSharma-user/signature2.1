@@ -26,8 +26,8 @@ const UPPolicePhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="UP Police Photo & Signature Resize Online Free 2025-26 | UP Police OTR Photo Compressor"
-                description="Free UP Police photo resize to 20–50 KB and signature to 10–30 KB for UP Police OTR portal. Works for UP Police Constable and SI exams. Instant, secure, browser-only."
+                title="UP Police Photo & Signature Resize Online Free 2026-27 | UP Police OTR Photo Compressor"
+                description="Free UP Police photo resize to 20–50 KB and signature to 10–30 KB for UP Police OTR portal. Works for UP Police Constable and SI exams 2026-27. Instant, secure, browser-only."
                 canonicalUrl="https://signatureresize.in/up-police-photo-signature-resize"
                 keywords="up police photo resize, up police signature resize, up police otr photo compressor, up police photo size kb, up police constable photo upload, up prpb photo resize"
             />
@@ -36,6 +36,19 @@ const UPPolicePhotoSignatureResize = () => {
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "UP Police Photo Resize", url: "https://signatureresize.in/up-police-photo-signature-resize" },
             ]} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "UP Police Photo & Signature Resize Online Free 2026-27",
+                    "url": "https://signatureresize.in/up-police-photo-signature-resize",
+                    "description": "Free online tool to resize UP Police PRPB photo to 20–50 KB and signature to 10–30 KB.",
+                    "applicationCategory": "UtilityApplication",
+                    "operatingSystem": "Any",
+                    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+                    "dateModified": "2026-06-13"
+                })
+            }} />
             <div className="min-h-screen bg-background">
                 <Header />
                 <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600/10 via-primary/5 to-background py-8 sm:py-14">

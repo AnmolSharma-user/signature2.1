@@ -26,8 +26,8 @@ const BPSCPhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="BPSC Photo & Signature Resize Online Free 2025-26 | BPSC CCE Photo Compressor"
-                description="Free BPSC photo resize to 10–50 KB (200×230 px) and signature to 5–30 KB (140×60 px). Instant browser-only tool for BPSC 70th CCE and all BPSC exams."
+                title="BPSC Photo & Signature Resize Online Free 2026-27 | BPSC CCE Photo Compressor"
+                description="Free BPSC photo resize to 10–50 KB (200×230 px) and signature to 5–30 KB (140×60 px). Instant browser-only tool for BPSC 70th/71st CCE and all BPSC exams."
                 canonicalUrl="https://signatureresize.in/bpsc-photo-signature-resize"
                 keywords="bpsc photo resize, bpsc signature resize, bpsc photo compressor online, bpsc photo size kb, bpsc 70th cce photo upload, bpsc otr photo resize"
             />
@@ -36,6 +36,19 @@ const BPSCPhotoSignatureResize = () => {
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "BPSC Photo Resize", url: "https://signatureresize.in/bpsc-photo-signature-resize" },
             ]} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "BPSC Photo & Signature Resize Online Free 2026-27",
+                    "url": "https://signatureresize.in/bpsc-photo-signature-resize",
+                    "description": "Free online tool to resize BPSC CCE photo to 10–50 KB and signature to 5–30 KB.",
+                    "applicationCategory": "UtilityApplication",
+                    "operatingSystem": "Any",
+                    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+                    "dateModified": "2026-06-13"
+                })
+            }} />
             <div className="min-h-screen bg-background">
                 <Header />
                 <section className="relative overflow-hidden bg-gradient-to-br from-red-600/10 via-primary/5 to-background py-8 sm:py-14">

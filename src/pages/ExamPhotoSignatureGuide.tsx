@@ -13,7 +13,7 @@ const ExamPhotoSignatureGuide = () => {
     const faqs = [
         {
             question: "Which government exam has the strictest signature requirements?",
-            answer: "SSC exams (CGL, CHSL, MTS) have the strictest requirements with signatures needing to be between just 1KB to 12KB — a very narrow range. GATE is also strict with 4KB-30KB. NEET and IBPS are comparatively more lenient with ranges up to 30KB and 20KB respectively.",
+            answer: "SSC exams (CGL, CHSL, MTS) have strict requirements with signatures needing to be between 10KB to 20KB. GATE is also strict with 4KB-30KB. NEET and IBPS are comparatively more lenient with ranges up to 50KB and 20KB respectively.",
         },
         {
             question: "Do all government exams require JPG format for signature?",
@@ -25,7 +25,7 @@ const ExamPhotoSignatureGuide = () => {
         },
         {
             question: "Can I use the same signature for different exams?",
-            answer: "You can use the same original signature image, but you'll need to resize it differently for each exam since they have different KB and dimension requirements. For example, GATE needs 4-30KB while SSC needs 1-12KB. Our tool lets you resize the same image to different targets.",
+            answer: "You can use the same original signature image, but you'll need to resize it differently for each exam since they have different KB and dimension requirements. For example, GATE needs 4-30KB while SSC needs 10-20KB. Our tool lets you resize the same image to different targets.",
         },
         {
             question: "Are photo requirements the same across all exams?",
@@ -166,7 +166,7 @@ const ExamPhotoSignatureGuide = () => {
                                             </tr>
                                             <tr className="border-b border-border bg-muted/20">
                                                 <td className="px-3 py-3 font-medium text-foreground">SSC CGL/MTS/CHSL</td>
-                                                <td className="px-3 py-3">1KB – 12KB</td>
+                                                <td className="px-3 py-3">10KB – 20KB</td>
                                                 <td className="px-3 py-3">~140×60 px</td>
                                                 <td className="px-3 py-3">JPG</td>
                                                 <td className="px-3 py-3">Black</td>

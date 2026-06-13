@@ -21,7 +21,10 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
+    { href: "/delhi-police-photo-signature-resize", title: "Delhi Police Photo Resize", description: "Resize Delhi Police Constable 2026 photo (20–50KB), signature (10–20KB), and thumb impression instantly.", icon: Camera, badge: "Hot 🔥" },
+    { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL Photo & Sig", description: "Resize photo to 20–50KB and signature to 10–20KB for SSC CGL/CHSL 2026. Portal closes June 22!", icon: FileImage, badge: "Urgent" },
     { href: "/tnpsc-photo-compressor", title: "TNPSC Photo Compressor", description: "Compress TNPSC OTR photo (20–50KB), signature (10–30KB), and apply white background — all in one free tool.", icon: Camera, badge: "TNPSC" },
+    { href: "/hssc-photo-signature-resize", title: "HSSC Photo & Sig Resize", description: "Resize photo (10–40KB) and signature (10–30KB) for HSSC CET Group C, Group D, and Haryana Police 2026.", icon: Camera, badge: "New" },
     { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
     { href: "/rrb-group-d-photo-signature-resize", title: "RRB Group D Resize", description: "Resize photo (20–50KB), signature (10–40KB) and thumb for RRB Group D 2026 recruitment.", icon: FileImage, badge: "2026" },
@@ -31,8 +34,8 @@ const Index = () => {
     { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera, badge: "New" },
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
     { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
-    { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2025" },
-    { href: "/ssc-mts-signature-resize", title: "SSC MTS Signature", description: "Resize signature for SSC MTS, CGL, CHSL exams. 1KB to 12KB.", icon: FileImage },
+    { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2026" },
+    { href: "/ssc-mts-signature-resize", title: "SSC MTS Signature", description: "Resize signature for SSC MTS, CGL, CHSL exams. 10KB to 20KB (updated for 2026).", icon: FileImage },
     { href: "/ntpc-signature-resize", title: "NTPC Signature", description: "Resize signature for RRB NTPC recruitment. 10KB to 20KB.", icon: Pen },
     { href: "/gate-photo-resize", title: "GATE Photo Resize", description: "Resize photo for GATE exam. 5KB to 200KB with proper dimensions.", icon: FileImage, badge: "Photo" },
     { href: "/uti-pan-resize", title: "UTI PAN Resize", description: "Resize signature and photo for UTI PAN card application.", icon: Pen },
@@ -57,7 +60,7 @@ const Index = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "50,000+", label: "Happy Users" },
+    { icon: Users, value: "75,000+", label: "Happy Users" },
     { icon: Download, value: "100,000+", label: "Downloads" },
     { icon: Star, value: "4.8/5", label: "User Rating" },
     { icon: Award, value: "Free", label: "Forever Free" },
@@ -78,7 +81,7 @@ const Index = () => {
     },
     {
       question: "Can I resize signature for SSC exams?",
-      answer: "Yes, we have a dedicated SSC signature resize tool that supports the exact specifications required for SSC CGL, SSC CHSL, SSC MTS, and other SSC exams (typically 1KB-12KB).",
+      answer: "Yes, we have a dedicated SSC signature resize tool that supports the exact specifications required for SSC CGL, SSC CHSL, SSC MTS, and other SSC exams (updated to 10KB-20KB for the 2026 cycle).",
     },
     {
       question: "Is my signature data safe?",
@@ -138,10 +141,77 @@ const Index = () => {
         ]}
       />
 
+      {/* FAQPage Schema — enables People Also Ask rich results */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the SSC CGL 2026 signature size requirement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For SSC CGL 2026, the signature must be in JPG format, dimensions 140×60 pixels, and between 10 KB and 20 KB. Background must be white with black ink in cursive. This was updated from the old 1–12 KB range per the May 21, 2026 official notification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I resize a photo for Delhi Police Constable 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Delhi Police Constable 2026 requires a photo of 100×120 pixels, JPG format, between 20 KB and 50 KB with a white background. Use our free Delhi Police photo resize tool at signatureresize.in/delhi-police-photo-signature-resize to compress your photo to the exact size instantly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the NEET 2026 photo and signature size?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For NEET UG 2026 (NTA), the photo must be between 10 KB and 200 KB in JPG format with a white background. The signature must be between 4 KB and 30 KB. Dimensions are 3.5×4.5 cm for the photo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it safe to resize signature online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, signatureresize.in processes all images entirely in your browser using JavaScript. Your photo or signature is never uploaded to any server, ensuring complete privacy. No registration or login is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the IBPS PO 2026 photo size requirement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "IBPS PO 2026 requires a passport photo between 20 KB and 50 KB in JPG format with dimensions 200×230 pixels and a white background. The signature must be between 10 KB and 20 KB."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to resize photo for RRB NTPC 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RRB NTPC 2026 photo must be in JPG format, between 20 KB and 50 KB, approximately 130×150 pixels with a white background. The signature must be 10–40 KB and the thumb impression must be 10–40 KB. Use the free RRB NTPC resize tool on signatureresize.in."
+              }
+            }
+          ]
+        })
+      }} />
+
       <div className="min-h-screen bg-background">
         <MouseFollower />
         <AnimatedBackground />
         <Header />
+
+        {/* Urgency Notification Banner */}
+        <div className="bg-amber-500 text-amber-950 px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
+          <span className="bg-amber-900 text-amber-100 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Urgent</span>
+          <span>SSC CGL 2026 application closes on June 22! Signature requirement has been updated to 10–20 KB.</span>
+          <Link to="/ssc-cgl-photo-signature-resize" className="underline hover:text-amber-900 ml-1 inline-flex items-center gap-0.5">
+            Resize Now <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
+        </div>
 
         {/* Hero Section */}
         <section
@@ -161,7 +231,7 @@ const Index = () => {
               <div className="mb-4 sm:mb-6 inline-flex animate-pulse items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-sm">
                 <span className="h-2 w-2 animate-ping rounded-full bg-green-400" />
                 <span className="text-xs sm:text-sm font-medium text-white">
-                  #1 Free <strong> Signature Resize</strong> Tool in India • Trusted by 50,000+ Users
+                  #1 Free <strong> Signature Resize</strong> Tool in India • Trusted by 75,000+ Users
                 </span>
               </div>
 
@@ -173,7 +243,7 @@ const Index = () => {
               <p className="mb-6 sm:mb-8 text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-3xl mx-auto">
                 Struggling with signature file size for your GATE, SSC, or NTPC application?
                 Our tool resizes your signature to the exact KB requirement in seconds.
-                Trusted by over 50,000 students across India.
+                Trusted by over 75,000 students across India.
               </p>
 
               <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 sm:flex-row">

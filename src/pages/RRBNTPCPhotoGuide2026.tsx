@@ -82,7 +82,7 @@ const RRBNTPCPhotoGuide2026 = () => {
                         "author": { "@id": "https://signatureresize.in/#author" },
                         "publisher": { "@id": "https://signatureresize.in/#organization" },
                         "datePublished": "2026-03-03T00:50:00+05:30",
-                        "dateModified": "2026-03-03T00:50:00+05:30",
+                        "dateModified": "2026-06-13T12:00:00+05:30",
                         "mainEntityOfPage": "https://signatureresize.in/rrb-ntpc-2026-photo-signature-upload-guide",
                         "speakable": {
                             "@type": "SpeakableSpecification",

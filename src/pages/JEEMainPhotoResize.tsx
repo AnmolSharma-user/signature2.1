@@ -13,7 +13,7 @@ import { Camera, Pen, CheckCircle, Shield, Zap, FileImage } from "lucide-react";
 const JEEMainPhotoResize = () => {
     const [activeTab, setActiveTab] = useState<"photo" | "signature">("photo");
     const faqs = [
-        { question: "What is the JEE Main photo size requirement?", answer: "JEE Main 2025 requires a JPG photo of dimensions 200×230 pixels, file size between 10 KB and 100 KB, taken in front of a white background. The face must be clearly visible." },
+        { question: "What is the JEE Main photo size requirement?", answer: "JEE Main 2026 requires a JPG photo of dimensions 200×230 pixels, file size between 10 KB and 100 KB, taken in front of a white background. The face must be clearly visible." },
         { question: "What is the JEE Main signature size?", answer: "JEE Main requires a JPG signature of dimensions 230×60 pixels, file size between 10 KB and 100 KB. The signature must be done with a black/blue pen on white paper." },
         { question: "Can I use this for JEE Advanced too?", answer: "JEE Advanced uses different image upload portals, but the dimension and size requirements are similar. Check the official JEE Advanced notification for exact specs before uploading." },
         { question: "Why is the JEE portal rejecting my photo?", answer: "Common reasons: size above 100 KB, wrong dimensions (must be 200×230 px for photo), non-white background, or the face is not clearly visible or too small in the frame." },
@@ -26,10 +26,10 @@ const JEEMainPhotoResize = () => {
     return (
         <>
             <SEOHead
-                title="JEE Main Photo & Signature Resize Online Free 2025 | NTA JEE Photo Compressor"
-                description="Free JEE Main photo resize to 10–100 KB (200×230 px) and signature to 10–100 KB (230×60 px). Instant browser-only tool for NTA JEE Main 2025 portal upload."
+                title="JEE Main Photo & Signature Resize Online Free 2026 | NTA JEE Photo Compressor"
+                description="Free JEE Main photo resize to 10–100 KB (200×230 px) and signature to 10–100 KB (230×60 px). Instant browser-only tool for NTA JEE Main 2026 portal upload."
                 canonicalUrl="https://signatureresize.in/jee-main-photo-resize"
-                keywords="jee main photo resize, jee main signature resize, jee main photo compressor online, jee main photo size kb 2025, nta jee photo upload, jee main photo dimensions"
+                keywords="jee main photo resize, jee main signature resize, jee main photo compressor online, jee main photo size kb 2026, nta jee photo upload, jee main photo dimensions"
             />
             <SEOSchema type="HowTo" howToName="How to Resize JEE Main Photo Online" howToSteps={howToSteps} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
@@ -79,7 +79,7 @@ const JEEMainPhotoResize = () => {
                         </div>
                         <div className="mx-auto mt-12 max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm">
                             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                                <FileImage className="h-5 w-5 text-cyan-500" /> JEE Main Photo & Signature Requirements 2025
+                                <FileImage className="h-5 w-5 text-cyan-500" /> JEE Main Photo & Signature Requirements 2026
                             </h2>
                             <div className="overflow-x-auto rounded-xl border border-border">
                                 <table className="w-full text-sm border-collapse">
@@ -98,7 +98,7 @@ const JEEMainPhotoResize = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <p className="text-xs text-muted-foreground mt-3 flex items-center gap-1"><Shield className="h-3.5 w-3.5" /> Source: NTA JEE Main official information bulletin — 2025</p>
+                            <p className="text-xs text-muted-foreground mt-3 flex items-center gap-1"><Shield className="h-3.5 w-3.5" /> Source: NTA JEE Main official information bulletin — 2026</p>
                         </div>
                         <AdContainer type="inarticle" className="mx-auto max-w-4xl mt-6" />
                         <div className="mx-auto mt-6 max-w-4xl">

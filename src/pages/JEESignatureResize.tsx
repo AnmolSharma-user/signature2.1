@@ -44,9 +44,9 @@ const JEESignatureResize = () => {
   return (
     <>
       <SEOHead
-        title="JEE Main/Advanced Signature Resize - Free Online Tool 2025"
+        title="JEE Main/Advanced Signature Resize - Free Online Tool 2026"
         description="Resize your signature for JEE Main & Advanced application. Free tool to compress signature to 10-100KB, 230×60 pixels as per NTA requirements."
-        keywords="JEE signature resize, JEE Main signature size, JEE Advanced signature upload, NTA signature requirements, JEE 2025 signature"
+        keywords="JEE signature resize, JEE Main signature size, JEE Advanced signature upload, NTA signature requirements, JEE 2026 signature"
         canonicalUrl="https://signatureresize.in/jee-signature-resize"
       />
 
@@ -69,7 +69,7 @@ const JEESignatureResize = () => {
               />
               <div className="text-center mb-6 sm:mb-8">
                 <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                  JEE Main & Advanced 2025
+                  JEE Main & Advanced 2026
                 </span>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4">
                   JEE Signature Resize Tool

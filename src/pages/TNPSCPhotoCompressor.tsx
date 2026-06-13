@@ -308,7 +308,7 @@ const TNPSCPhotoCompressor = () => {
                         description: "Complete guide and free online tool to compress TNPSC OTR photo, signature, and change background to white.",
                         url: "https://signatureresize.in/tnpsc-photo-compressor",
                         datePublished: "2026-03-05",
-                        dateModified: "2026-03-05",
+                        dateModified: "2026-06-13",
                         author: {
                             "@type": "Organization",
                             name: "SignatureResize Editorial Team",

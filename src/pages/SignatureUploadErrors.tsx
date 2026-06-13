@@ -50,7 +50,7 @@ const SignatureUploadErrors = () => {
             icon: HardDrive,
             message: "File size exceeds the maximum limit",
             cause: "Your image file is larger than the portal allows. You scanned at high resolution or the photo is uncropped.",
-            fix: "Upload to our tool, pick your exam preset, and it will hit the exact KB. For example, SSC needs 1-12KB, GATE allows up to 30KB.",
+            fix: "Upload to our tool, pick your exam preset, and it will hit the exact KB. For example, SSC needs 10-20KB, GATE allows up to 30KB.",
             color: "red",
         },
         {

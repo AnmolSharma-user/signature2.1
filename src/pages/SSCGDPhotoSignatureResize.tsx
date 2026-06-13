@@ -37,8 +37,8 @@ const SSCGDPhotoSignatureResize = () => {
     return (
         <>
             <SEOHead
-                title="SSC GD Constable Photo & Signature Resize Online Free 2025-26"
-                description="Free SSC GD Constable photo resize to 4–40 KB (160×200 px) and signature to 1–20 KB (140×60 px). Instant browser-only tool for SSC GD 2025-26 OTRP portal upload."
+                title="SSC GD Constable Photo & Signature Resize Online Free 2026-27"
+                description="Free SSC GD Constable photo resize to 4–40 KB (160×200 px) and signature to 1–20 KB (140×60 px). Instant browser-only tool for SSC GD 2026-27 OTRP portal upload."
                 canonicalUrl="https://signatureresize.in/ssc-gd-photo-signature-resize"
                 keywords="ssc gd photo resize, ssc gd constable photo size, ssc gd signature resize, ssc gd photo compressor online, ssc gd 2026 photo size kb, ssc gd constable photo upload"
             />
@@ -47,6 +47,19 @@ const SSCGDPhotoSignatureResize = () => {
                 { name: "Home", url: "https://signatureresize.in/" },
                 { name: "SSC GD Photo Resize", url: "https://signatureresize.in/ssc-gd-photo-signature-resize" },
             ]} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebApplication",
+                    "name": "SSC GD Constable Photo & Signature Resize Online Free 2026-27",
+                    "url": "https://signatureresize.in/ssc-gd-photo-signature-resize",
+                    "description": "Free online tool to resize SSC GD Constable photo to 4–40 KB and signature to 1–20 KB.",
+                    "applicationCategory": "UtilityApplication",
+                    "operatingSystem": "Any",
+                    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+                    "dateModified": "2026-06-13"
+                })
+            }} />
 
             <div className="min-h-screen bg-background">
                 <Header />
@@ -97,7 +110,7 @@ const SSCGDPhotoSignatureResize = () => {
 
                         <div className="mx-auto mt-12 max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm">
                             <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                                <FileImage className="h-5 w-5 text-orange-500" /> SSC GD Constable Photo & Signature Requirements 2025-26
+                                <FileImage className="h-5 w-5 text-orange-500" /> SSC GD Constable Photo & Signature Requirements 2026-27
                             </h2>
                             <div className="overflow-x-auto rounded-xl border border-border">
                                 <table className="w-full text-sm border-collapse">

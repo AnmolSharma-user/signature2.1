@@ -41,9 +41,9 @@ const GATEPhotoResize = () => {
     <>
       <SEOHead
         title="GATE Photo Resize Online | 5KB-200KB Free Tool"
-        description="Resize photo for GATE 2025 exam to 5KB-200KB. Free tool with perfect dimensions & quality for your application."
+        description="Resize photo for GATE 2026 exam to 5KB-200KB. Free tool with perfect dimensions & quality for your application."
         canonicalUrl="https://signatureresize.in/gate-photo-resize"
-        keywords="GATE photo resize, GATE photograph size, GATE 2025 photo"
+        keywords="GATE photo resize, GATE photograph size, GATE 2026 photo"
       />
 
       <div className="min-h-screen bg-background">
@@ -80,7 +80,7 @@ const GATEPhotoResize = () => {
 
               <div className="mt-8 rounded-xl border-2 border-primary/20 bg-primary/5 p-6">
                 <h2 className="mb-4 text-xl font-bold text-foreground">
-                  GATE 2025 Photo Requirements
+                  GATE 2026 Photo Requirements
                 </h2>
                 <div className="grid gap-3 md:grid-cols-2">
                   {requirements.map((req, index) => (

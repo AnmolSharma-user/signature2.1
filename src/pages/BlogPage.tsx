@@ -10,6 +10,38 @@ import AdContainer from "@/components/AdContainer";
 const BlogPage = () => {
     const posts = [
         {
+            title: "Delhi Police Constable 2026 Photo & Signature Resize — Complete Guide",
+            slug: "/delhi-police-photo-signature-resize",
+            desc: "Official photo (20–50 KB, 100×120 px), signature (10–20 KB), and thumb impression requirements for Delhi Police Constable 2026. Free resize tool included.",
+            date: "June 2026",
+            readTime: "6 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "HSSC CET 2026 Photo & Signature Resize — Haryana SSC Group C & D",
+            slug: "/hssc-photo-signature-resize",
+            desc: "Exact photo (10–40 KB) and signature (10–30 KB) requirements for HSSC CET Group C, Group D, Haryana Police Constable, and HPSC HCS 2026. Free tool.",
+            date: "June 2026",
+            readTime: "5 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "SSC CGL 2026 Photo & Signature Guide: Application Closes June 22",
+            slug: "/ssc-cgl-photo-signature-upload-guide-2026",
+            desc: "Urgent update on SSC CGL 2026 photo and signature requirements. Avoid form rejection. Portal closes on June 22, 2026.",
+            date: "June 2026",
+            readTime: "6 min read",
+            category: "Exam Specific",
+        },
+        {
+            title: "RRB ALP 2026 Photo & Signature Upload Guide — Size & Rules",
+            slug: "/rrb-alp-2026-photo-signature-upload-guide",
+            desc: "Complete guidelines for RRB Assistant Loco Pilot 2026: photo size (20–50KB) with white background, and signature size (10–40KB) rules.",
+            date: "June 2026",
+            readTime: "5 min read",
+            category: "Exam Specific",
+        },
+        {
             title: "Passport Photo Size Guide for All Indian Exams 2026 — Master Chart",
             slug: "/passport-photo-size-guide-all-indian-exams-2026",
             desc: "SSC, IBPS, SBI, RRB, NEET, JEE, GATE, Agniveer — every exam's exact photo and signature specifications in one comparison chart.",
@@ -106,20 +138,28 @@ const BlogPage = () => {
             category: "Troubleshooting",
         },
         {
+            title: "How to Scan Your Signature for Online Application Forms (Phone & Scanner)",
+            slug: "/how-to-scan-signature-for-online-forms",
+            desc: "Step-by-step guide to scan or photograph your signature perfectly for SSC, IBPS, RRB, and UPSC forms. Covers phone camera, scanner, and editing techniques.",
+            date: "Feb 2026",
+            readTime: "5 min read",
+            category: "Tutorial",
+        },
+        {
+            title: "Government Exam Photo & Signature Requirements 2026 — Complete Master Guide",
+            slug: "/exam-photo-signature-requirements-2026",
+            desc: "All-in-one guide for photo and signature upload requirements for every major government exam in India — SSC, IBPS, RRB, UPSC, GATE, NEET, Agniveer and more.",
+            date: "Feb 2026",
+            readTime: "8 min read",
+            category: "Master Guide",
+        },
+        {
             title: "How to Create Digital Signature for Government Exams Without Scanner",
             slug: "/create-digital-signature-without-scanner",
             desc: "No scanner? No problem. Use your phone camera to create a perfect digital signature for any online application form.",
             date: "Feb 2026",
             readTime: "5 min read",
             category: "Guide",
-        },
-        {
-            title: "SSC CGL 2026 Photo & Signature Upload Guide",
-            slug: "/ssc-cgl-photo-signature-upload-guide-2026",
-            desc: "Exact size, dimensions, and format requirements for SSC CGL 2026 application. Avoid rejection with this guide.",
-            date: "Feb 2026",
-            readTime: "4 min read",
-            category: "Exam Specific",
         },
         {
             title: "JPG vs PNG vs JPEG for Government Exam Forms",
@@ -250,6 +290,8 @@ const BlogPage = () => {
                 description="Expert guides on resizing photos and signatures for government exams like SSC, IBPS, NEET, JEE, and GATE. Tutorials, troubleshooting, and exam-specific rules."
                 canonicalUrl="https://signatureresize.in/blog"
                 ogImage="https://signatureresize.in/assest/rrb-ntpc-2026-photo-signature-guide.png"
+                ogType="article"
+                modifiedTime="2026-06-13T12:00:00+05:30"
             />
 
             <div className="min-h-screen bg-background text-foreground">

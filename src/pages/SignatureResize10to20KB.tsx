@@ -112,6 +112,7 @@ const SignatureResize10to20KB = () => {
                   Exams Requiring 10-20 KB Signature
                 </h2>
                 <ul className="ml-6 list-disc space-y-2 text-muted-foreground">
+                  <li>SSC CGL / CHSL / MTS (Updated 2026) - 10KB to 20KB</li>
                   <li>RRB NTPC - 10KB to 20KB</li>
                   <li>RRB Group D - 10KB to 20KB</li>
                   <li>Various State PSC Exams</li>
