@@ -380,26 +380,199 @@ const Index = () => {
         {/* Video Tutorial Section */}
         <VideoTutorial />
 
-        {/* Tools Grid Section */}
+        {/* Categorized Tools Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="mb-10 text-center">
-              <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                ALL FREE TOOLS
-              </span>
-              <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-                Signature & Photo Resize Tools
-              </h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
-                Choose the right tool based on your exam or application requirements.
-                All tools are free and work instantly in your browser.
-              </p>
+              <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">FREE TOOLS — ALL EXAMS</span>
+              <h2 className="mb-3 text-2xl font-bold text-foreground md:text-3xl">Find Your Exam Tool Instantly</h2>
+              <p className="mx-auto max-w-2xl text-muted-foreground text-sm">Browse by exam category. Every tool is free, instant, and works in your browser — no uploads to any server.</p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {tools.map((tool) => (
-                <ToolCard key={tool.href} {...tool} />
-              ))}
+
+            {/* CATEGORY: Trending / Urgent */}
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-red-500/10 text-red-600 dark:text-red-400">
+                  <Zap className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">🔥 Trending — Apply Now</h3>
+                  <p className="text-xs text-muted-foreground">Active recruitments with upcoming deadlines</p>
+                </div>
+                <span className="ml-auto text-[10px] font-bold uppercase tracking-wider text-red-500 border border-red-500/30 bg-red-500/10 rounded-full px-2 py-0.5 animate-pulse">Live</span>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/sbi-po-2026-photo-signature-resize", title: "SBI PO 2026", desc: "Photo 20–50KB · Sig 10–20KB · Deadline July 8!", badge: "July 8 ⚠️", color: "border-red-400/60 hover:border-red-500" },
+                  { href: "/bihar-police-photo-signature-resize", title: "Bihar Police (CSBC)", desc: "Photo 20–50KB (200×230) · Sig 10–40KB", badge: "Active", color: "border-orange-400/60 hover:border-orange-500" },
+                  { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police", desc: "Photo 50–100KB · Sig 20–50KB · SSO Portal", badge: "Active", color: "border-orange-400/60 hover:border-orange-500" },
+                  { href: "/mp-police-photo-signature-resize", title: "MP Police (MPPEB)", desc: "Photo 20–50KB · Sig 10–30KB · peb.mp.gov.in", badge: "Active", color: "border-orange-400/60 hover:border-orange-500" },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className={`group flex flex-col rounded-xl border-2 bg-card p-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 ${t.color}`}>
+                    <div className="flex items-start justify-between mb-2">
+                      <Camera className="h-5 w-5 text-primary shrink-0" />
+                      <span className="text-[10px] font-bold uppercase bg-red-500/10 text-red-600 dark:text-red-400 border border-red-400/30 rounded-full px-1.5 py-0.5">{t.badge}</span>
+                    </div>
+                    <p className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Resize Now <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
             </div>
+
+            {/* CATEGORY: Banking Exams */}
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                  <Award className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">🏦 Banking Exams</h3>
+                  <p className="text-xs text-muted-foreground">SBI, IBPS, RBI — exact portal specs</p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/sbi-po-2026-photo-signature-resize", title: "SBI PO 2026", desc: "200×230 px · 20–50KB photo · 10–20KB signature" },
+                  { href: "/signature-resize", title: "SBI Clerk / IBPS", desc: "Resize signature to 10–20KB for all bank exams" },
+                  { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", desc: "Exact 20KB output for any banking portal" },
+                  { href: "/exam-photo-checker", title: "Exam Photo Checker", desc: "Verify your photo meets bank exam requirements" },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:border-blue-500 hover:shadow-md hover:-translate-y-0.5">
+                    <FileImage className="h-5 w-5 text-blue-600 mb-2" />
+                    <p className="text-sm font-bold text-foreground group-hover:text-blue-600 transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Open Tool <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* CATEGORY: Police Recruitment */}
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
+                  <Shield className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">👮 Police Recruitment</h3>
+                  <p className="text-xs text-muted-foreground">Delhi, UP, Bihar, Rajasthan, MP Police</p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/delhi-police-photo-signature-resize", title: "Delhi Police", desc: "Photo 20–50KB (100×120) · Sig 10–20KB · Thumb" },
+                  { href: "/up-police-photo-signature-resize", title: "UP Police (OTR)", desc: "Photo 20–50KB · Sig 10–30KB · uppolicerecruitment.in" },
+                  { href: "/bihar-police-photo-signature-resize", title: "Bihar Police (CSBC)", desc: "Photo 20–50KB (200×230) · Sig 10–40KB" },
+                  { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police", desc: "Photo 50–100KB · Sig 20–50KB · SSO Portal" },
+                  { href: "/mp-police-photo-signature-resize", title: "MP Police (MPPEB)", desc: "Photo 20–50KB · Sig 10–30KB · peb.mp.gov.in" },
+                  { href: "/hssc-photo-signature-resize", title: "HSSC / Haryana Police", desc: "Photo 10–40KB · Sig 10–30KB · CET Group C/D" },
+                  { href: "/ssc-gd-photo-signature-resize", title: "SSC GD Constable", desc: "Photo 4–40KB (160×200) · Sig 1–20KB" },
+                  { href: "/compress-image-to-20kb-online", title: "Compress Any Photo", desc: "Universal compressor — works for any police portal" },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:border-indigo-500 hover:shadow-md hover:-translate-y-0.5">
+                    <Camera className="h-5 w-5 text-indigo-600 mb-2" />
+                    <p className="text-sm font-bold text-foreground group-hover:text-indigo-600 transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Open Tool <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* CATEGORY: Teaching & Defence */}
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-green-500/10 text-green-600 dark:text-green-400">
+                  <BookOpen className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">🎓 Teaching & Defence</h3>
+                  <p className="text-xs text-muted-foreground">CTET, KVS, NDA, CAPF, Agniveer</p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/ctet-2026-photo-signature-resize", title: "CTET 2026", desc: "Photo 10–100KB (200×230) · Sig 3–30KB · NTA portal" },
+                  { href: "/kvs-teacher-photo-signature-resize", title: "KVS PGT / TGT / PRT", desc: "Photo 10–200KB · Sig 4–30KB · kvsangathan.nic.in" },
+                  { href: "/nda-2026-photo-signature-resize", title: "NDA 2026 (UPSC)", desc: "Square 350×350px · Photo 10–300KB · Sig 4–30KB" },
+                  { href: "/capf-ac-photo-signature-resize", title: "CAPF AC (BSF/CRPF)", desc: "Square 350×350px · Photo 10–300KB · UPSC portal" },
+                  { href: "/agniveer-agnipath-photo-signature-requirements-2026", title: "Agniveer 2026", desc: "Photo & signature requirements for all Agniveer posts" },
+                  { href: "/upsc-signature-resize", title: "UPSC Civil Services", desc: "Photo 100–600KB (300×400) · Sig 4–20KB" },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:border-green-500 hover:shadow-md hover:-translate-y-0.5">
+                    <BookOpen className="h-5 w-5 text-green-600 mb-2" />
+                    <p className="text-sm font-bold text-foreground group-hover:text-green-600 transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Open Tool <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* CATEGORY: SSC & Railway */}
+            <div className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400">
+                  <FileImage className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">📋 SSC & Railway</h3>
+                  <p className="text-xs text-muted-foreground">SSC CGL, CHSL, GD, MTS · RRB NTPC, Group D</p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL / CHSL", desc: "Photo 4–20KB (100×120) · Sig 1–12KB · SSC OTRP" },
+                  { href: "/ssc-gd-photo-signature-resize", title: "SSC GD Constable", desc: "Photo 4–40KB (160×200) · Sig 1–20KB" },
+                  { href: "/ssc-mts-signature-resize", title: "SSC MTS", desc: "Signature 10–20KB for SSC MTS 2026" },
+                  { href: "/rrb-group-d-photo-signature-resize", title: "RRB Group D", desc: "Photo 20–50KB · Sig 10–40KB · Thumb 10–40KB" },
+                  { href: "/ntpc-signature-resize", title: "RRB NTPC", desc: "Signature resize 10–20KB for NTPC application" },
+                  { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", desc: "SSC OTRP strict 20KB limit — use this for exact output" },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:border-amber-500 hover:shadow-md hover:-translate-y-0.5">
+                    <FileImage className="h-5 w-5 text-amber-600 mb-2" />
+                    <p className="text-sm font-bold text-foreground group-hover:text-amber-600 transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Open Tool <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* CATEGORY: General Tools */}
+            <div className="mb-4">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                  <PenTool className="h-5 w-5" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">🔧 General Tools</h3>
+                  <p className="text-xs text-muted-foreground">Signature creator, passport photo, Aadhaar, PAN, bulk resize</p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {[
+                  { href: "/signature-creator", title: "Signature Creator", desc: "Draw or type your signature — download as JPG instantly", icon: PenTool },
+                  { href: "/signature-resize", title: "Universal Sig Resize", desc: "Resize any signature to any KB — works for all exams", icon: Pen },
+                  { href: "/passport-photo-maker", title: "Passport Photo Maker", desc: "2×2 inch photo for US Visa, Indian exam portals", icon: Camera },
+                  { href: "/aadhaar-card-photo-resize", title: "Aadhaar Photo Resize", desc: "Under 35KB for UIDAI myAadhaar portal", icon: Camera },
+                  { href: "/uti-pan-resize", title: "UTI PAN Card", desc: "Photo & signature for UTI PAN card application", icon: Pen },
+                  { href: "/gate-photo-resize", title: "GATE Photo", desc: "5KB – 200KB photo for GATE 2026 application", icon: FileImage },
+                  { href: "/gate-signature-resize", title: "GATE Signature", desc: "4KB – 30KB · 160×60 px for GATE exam", icon: Pen },
+                  { href: "/bulk-resize", title: "Bulk Resize", desc: "Resize multiple signatures at once — batch processing", icon: FileImage },
+                ].map((t) => (
+                  <Link key={t.href} to={t.href} className="group flex flex-col rounded-xl border border-border bg-card p-4 transition-all duration-200 hover:border-purple-500 hover:shadow-md hover:-translate-y-0.5">
+                    <t.icon className="h-5 w-5 text-purple-600 mb-2" />
+                    <p className="text-sm font-bold text-foreground group-hover:text-purple-600 transition-colors">{t.title}</p>
+                    <p className="text-xs text-muted-foreground mt-1 flex-1">{t.desc}</p>
+                    <span className="mt-2 text-xs text-primary flex items-center gap-1 font-medium">Open Tool <ArrowRight className="h-3 w-3 group-hover:translate-x-0.5 transition-transform" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
           </div>
         </section>
 
