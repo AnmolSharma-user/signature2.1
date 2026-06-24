@@ -49,10 +49,13 @@ export const examPresets: ExamPreset[] = [
   // SSC GD Constable
   { name: "ssc-gd-photo", label: "SSC GD Constable Photo", targetSizeKB: 20, maxWidth: 160, maxHeight: 200, minKB: 4, maxKB: 40, description: "4KB - 40KB, 160×200 px, JPG" },
   { name: "ssc-gd-signature", label: "SSC GD Constable Signature", targetSizeKB: 10, maxWidth: 140, maxHeight: 60, minKB: 1, maxKB: 20, description: "1KB - 20KB, 140×60 px, JPG" },
-  // SBI PO / Clerk
-  { name: "sbi-photo", label: "SBI PO/Clerk Photo", targetSizeKB: 50, maxWidth: 200, maxHeight: 200, minKB: 20, maxKB: 80, description: "20KB - 80KB, 200×200 px, JPG" },
-  { name: "sbi-signature", label: "SBI PO/Clerk Signature", targetSizeKB: 40, maxWidth: 200, maxHeight: 80, minKB: 10, maxKB: 80, description: "10KB - 80KB, 200×80 px, JPG" },
-  // UPSC Photo (triple signature handled separately)
+  // SBI PO 2026 — official specs: photo 200×230px 20-50KB, signature 140×60px 10-20KB
+  { name: "sbi-po-photo", label: "SBI PO 2026 Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "sbi-po-signature", label: "SBI PO 2026 Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
+  // SBI PO / Clerk (legacy)
+  { name: "sbi-photo", label: "SBI PO/Clerk Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "sbi-signature", label: "SBI PO/Clerk Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
+  // UPSC Photo
   { name: "upsc-photo", label: "UPSC CSE/IAS Photo", targetSizeKB: 250, maxWidth: 300, maxHeight: 400, minKB: 100, maxKB: 600, description: "100KB - 600KB, 300×400 px, JPG" },
   // BPSC
   { name: "bpsc-photo", label: "BPSC Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 50, description: "10KB - 50KB, 200×230 px, JPG" },
@@ -65,8 +68,34 @@ export const examPresets: ExamPreset[] = [
   { name: "mpsc-signature", label: "MPSC Signature", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 40, description: "10KB - 40KB, 140×60 px, JPG" },
   // JEE Main Photo
   { name: "jee-photo", label: "JEE Main Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, description: "10KB - 100KB, 200×230 px, JPG" },
+  // Bihar Police — CSBC: photo 200×230px 20-50KB, signature 140×60px 10-40KB
+  { name: "bihar-police-photo", label: "Bihar Police Photo (CSBC)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "bihar-police-signature", label: "Bihar Police Signature (CSBC)", targetSizeKB: 25, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 40, description: "10KB - 40KB, 140×60 px, JPG" },
+  // Rajasthan Police — SSO portal: photo 200×230px 50-100KB, signature 140×60px 20-50KB
+  { name: "rajasthan-police-photo", label: "Rajasthan Police Photo (SSO)", targetSizeKB: 75, maxWidth: 200, maxHeight: 230, minKB: 50, maxKB: 100, description: "50KB - 100KB, 200×230 px, JPG" },
+  { name: "rajasthan-police-signature", label: "Rajasthan Police Signature (SSO)", targetSizeKB: 35, maxWidth: 140, maxHeight: 60, minKB: 20, maxKB: 50, description: "20KB - 50KB, 140×60 px, JPG" },
+  // MP Police — MPPEB: photo 200×230px 20-50KB, signature 140×60px 10-30KB
+  { name: "mp-police-photo", label: "MP Police Photo (MPPEB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "mp-police-signature", label: "MP Police Signature (MPPEB)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
+  // CTET 2026 — NTA: photo 200×230px 10-100KB, signature 140×60px 3-30KB
+  { name: "ctet-photo", label: "CTET 2026 Photo (NTA)", targetSizeKB: 50, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, description: "10KB - 100KB, 200×230 px, JPG" },
+  { name: "ctet-signature", label: "CTET 2026 Signature (NTA)", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 3, maxKB: 30, description: "3KB - 30KB, 140×60 px, JPG" },
+  // NDA 2026 — UPSC: photo 350×350px square 10-300KB, signature 350×90px 4-30KB
+  { name: "nda-photo", label: "NDA 2026 Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, description: "10KB - 300KB, 350×350 px square, JPG" },
+  { name: "nda-signature", label: "NDA 2026 Signature (UPSC)", targetSizeKB: 15, maxWidth: 350, maxHeight: 90, minKB: 4, maxKB: 30, description: "4KB - 30KB, 350×90 px, JPG" },
+  // KVS Teacher — kvsangathan.nic.in: photo 200×230px 10-200KB, signature 140×60px 4-30KB
+  { name: "kvs-photo", label: "KVS Teacher Photo", targetSizeKB: 80, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 200, description: "10KB - 200KB, 200×230 px, JPG" },
+  { name: "kvs-signature", label: "KVS Teacher Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 4, maxKB: 30, description: "4KB - 30KB, 140×60 px, JPG" },
+  // CAPF AC — UPSC: photo 350×350px square 10-300KB, signature 350×90px 4-30KB
+  { name: "capf-photo", label: "CAPF AC Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, description: "10KB - 300KB, 350×350 px square, JPG" },
+  { name: "capf-signature", label: "CAPF AC Signature (UPSC)", targetSizeKB: 15, maxWidth: 350, maxHeight: 90, minKB: 4, maxKB: 30, description: "4KB - 30KB, 350×90 px, JPG" },
+  // Delhi Police
+  { name: "delhi-police-photo", label: "Delhi Police Photo", targetSizeKB: 35, maxWidth: 100, maxHeight: 120, minKB: 20, maxKB: 50, description: "20KB - 50KB, 100×120 px, JPG" },
+  { name: "delhi-police-signature", label: "Delhi Police Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
+  { name: "delhi-police-thumb", label: "Delhi Police Thumb Impression", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
   { name: "custom", label: "Custom Size", targetSizeKB: 20, maxWidth: 400, maxHeight: 200, minKB: 5, maxKB: 100, description: "Set your own parameters" }
 ];
+
 
 export function getFileExtension(format: string): string {
   if (format === 'png') return 'png';
