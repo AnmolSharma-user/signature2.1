@@ -85,6 +85,14 @@ import RequestExam from "./pages/RequestExam";
 import AdvertiseWithUs from "./pages/AdvertiseWithUs";
 import DelhiPolicePhotoSignatureResize from "./pages/DelhiPolicePhotoSignatureResize";
 import HSPCPhotoSignatureResize from "./pages/HSPCPhotoSignatureResize";
+import SBIPOPhotoSignatureResize2026 from "./pages/SBIPOPhotoSignatureResize2026";
+import BiharPolicePhotoSignatureResize from "./pages/BiharPolicePhotoSignatureResize";
+import RajasthanPolicePhotoSignatureResize from "./pages/RajasthanPolicePhotoSignatureResize";
+import MPPolicePhotoSignatureResize from "./pages/MPPolicePhotoSignatureResize";
+import CTETPhotoSignatureResize2026 from "./pages/CTETPhotoSignatureResize2026";
+import NDAPhotoSignatureResize2026 from "./pages/NDAPhotoSignatureResize2026";
+import KVSTeacherPhotoSignatureResize from "./pages/KVSTeacherPhotoSignatureResize";
+import CAPFACPhotoSignatureResize from "./pages/CAPFACPhotoSignatureResize";
 
 const queryClient = new QueryClient();
 
@@ -174,6 +182,14 @@ const App = () => (
           <Route path="/advertise" element={<AdvertiseWithUs />} />
           <Route path="/delhi-police-photo-signature-resize" element={<DelhiPolicePhotoSignatureResize />} />
           <Route path="/hssc-photo-signature-resize" element={<HSPCPhotoSignatureResize />} />
+          <Route path="/sbi-po-2026-photo-signature-resize" element={<SBIPOPhotoSignatureResize2026 />} />
+          <Route path="/bihar-police-photo-signature-resize" element={<BiharPolicePhotoSignatureResize />} />
+          <Route path="/rajasthan-police-photo-signature-resize" element={<RajasthanPolicePhotoSignatureResize />} />
+          <Route path="/mp-police-photo-signature-resize" element={<MPPolicePhotoSignatureResize />} />
+          <Route path="/ctet-2026-photo-signature-resize" element={<CTETPhotoSignatureResize2026 />} />
+          <Route path="/nda-2026-photo-signature-resize" element={<NDAPhotoSignatureResize2026 />} />
+          <Route path="/kvs-teacher-photo-signature-resize" element={<KVSTeacherPhotoSignatureResize />} />
+          <Route path="/capf-ac-photo-signature-resize" element={<CAPFACPhotoSignatureResize />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollRestoration />
