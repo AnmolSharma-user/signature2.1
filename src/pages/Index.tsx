@@ -21,23 +21,31 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
-    { href: "/delhi-police-photo-signature-resize", title: "Delhi Police Photo Resize", description: "Resize Delhi Police Constable 2026 photo (20–50KB), signature (10–20KB), and thumb impression instantly.", icon: Camera, badge: "Hot 🔥" },
-    { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL Photo & Sig", description: "Resize photo to 20–50KB and signature to 10–20KB for SSC CGL/CHSL 2026. Portal closes June 22!", icon: FileImage, badge: "Urgent" },
+    { href: "/sbi-po-2026-photo-signature-resize", title: "SBI PO 2026 Photo & Sig", description: "Resize SBI PO photo to 20–50KB (200×230px) and signature to 10–20KB. Apply before July 8, 2026!", icon: Camera, badge: "Apply Now 🔥" },
+    { href: "/bihar-police-photo-signature-resize", title: "Bihar Police Photo & Sig", description: "Resize Bihar Police CSBC photo to 20–50KB and signature to 10–40KB. Free, instant, browser-only.", icon: Camera, badge: "Hot 🔥" },
+    { href: "/delhi-police-photo-signature-resize", title: "Delhi Police Photo Resize", description: "Resize Delhi Police Constable 2026 photo (20–50KB), signature (10–20KB), and thumb impression instantly.", icon: Camera, badge: "Popular" },
+    { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police Photo", description: "Resize Rajasthan Police photo to 50–100KB and signature to 20–50KB for SSO portal.", icon: Camera, badge: "New" },
+    { href: "/mp-police-photo-signature-resize", title: "MP Police Photo & Sig", description: "Resize MP Police MPPEB photo to 20–50KB and signature to 10–30KB for peb.mp.gov.in.", icon: Camera, badge: "New" },
+    { href: "/ctet-2026-photo-signature-resize", title: "CTET 2026 Photo & Sig", description: "Resize CTET photo to 10–100KB (200×230px) and signature to 3–30KB for NTA ctet.nic.in.", icon: FileImage, badge: "New" },
+    { href: "/nda-2026-photo-signature-resize", title: "NDA 2026 Photo & Sig", description: "Resize NDA photo to square 350×350px (10–300KB) and signature to 350×90px for UPSC portal.", icon: Camera, badge: "New" },
+    { href: "/kvs-teacher-photo-signature-resize", title: "KVS Teacher Photo & Sig", description: "Resize KVS PGT/TGT/PRT photo to 10–200KB and signature to 4–30KB for kvsangathan.nic.in.", icon: Camera, badge: "New" },
+    { href: "/capf-ac-photo-signature-resize", title: "CAPF AC Photo & Sig", description: "Resize CAPF AC (BSF/CRPF/CISF) photo to 350×350px square and signature to 350×90px.", icon: Camera, badge: "New" },
+    { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL Photo & Sig", description: "Resize photo to 20–50KB and signature to 10–20KB for SSC CGL 2026-27. Correction window active.", icon: FileImage, badge: "SSC" },
     { href: "/tnpsc-photo-compressor", title: "TNPSC Photo Compressor", description: "Compress TNPSC OTR photo (20–50KB), signature (10–30KB), and apply white background — all in one free tool.", icon: Camera, badge: "TNPSC" },
-    { href: "/hssc-photo-signature-resize", title: "HSSC Photo & Sig Resize", description: "Resize photo (10–40KB) and signature (10–30KB) for HSSC CET Group C, Group D, and Haryana Police 2026.", icon: Camera, badge: "New" },
-    { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "New" },
+    { href: "/hssc-photo-signature-resize", title: "HSSC Photo & Sig Resize", description: "Resize photo (10–40KB) and signature (10–30KB) for HSSC CET Group C, Group D, and Haryana Police 2026.", icon: Camera, badge: "HSSC" },
+    { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "Popular" },
     { href: "/signature-resize", title: "Signature Resize", description: "Resize signature to any KB size. Perfect for all government exam applications.", icon: Pen, badge: "Popular" },
     { href: "/rrb-group-d-photo-signature-resize", title: "RRB Group D Resize", description: "Resize photo (20–50KB), signature (10–40KB) and thumb for RRB Group D 2026 recruitment.", icon: FileImage, badge: "2026" },
-    { href: "/aadhaar-card-photo-resize", title: "Aadhaar Photo Resize", description: "Resize your photo to under 35KB for the UIDAI myAadhaar portal. Instant & free.", icon: Camera, badge: "New" },
+    { href: "/aadhaar-card-photo-resize", title: "Aadhaar Photo Resize", description: "Resize your photo to under 35KB for the UIDAI myAadhaar portal. Instant & free.", icon: Camera },
     { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", description: "Compress any photo or signature to exactly 20KB for SSC, IBPS, UPSC, RRB exams.", icon: Zap, badge: "Hot" },
-    { href: "/exam-photo-checker", title: "Exam Photo Checker", description: "Upload your photo and instantly verify if it meets exam requirements (SSC, IBPS, DS-160 & more).", icon: CheckCircle, badge: "New" },
-    { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera, badge: "New" },
+    { href: "/exam-photo-checker", title: "Exam Photo Checker", description: "Upload your photo and instantly verify if it meets exam requirements (SSC, IBPS, DS-160 & more).", icon: CheckCircle },
+    { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera },
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
-    { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
+    { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS, CAPF. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
     { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2026" },
     { href: "/ssc-mts-signature-resize", title: "SSC MTS Signature", description: "Resize signature for SSC MTS, CGL, CHSL exams. 10KB to 20KB (updated for 2026).", icon: FileImage },
     { href: "/ntpc-signature-resize", title: "NTPC Signature", description: "Resize signature for RRB NTPC recruitment. 10KB to 20KB.", icon: Pen },
-    { href: "/gate-photo-resize", title: "GATE Photo Resize", description: "Resize photo for GATE exam. 5KB to 200KB with proper dimensions.", icon: FileImage, badge: "Photo" },
+    { href: "/gate-photo-resize", title: "GATE Photo Resize", description: "Resize photo for GATE exam. 5KB to 200KB with proper dimensions.", icon: FileImage },
     { href: "/uti-pan-resize", title: "UTI PAN Resize", description: "Resize signature and photo for UTI PAN card application.", icon: Pen },
   ];
 
@@ -60,8 +68,8 @@ const Index = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "75,000+", label: "Happy Users" },
-    { icon: Download, value: "100,000+", label: "Downloads" },
+    { icon: Users, value: "1,00,000+", label: "Happy Users" },
+    { icon: Download, value: "2,00,000+", label: "Downloads" },
     { icon: Star, value: "4.8/5", label: "User Rating" },
     { icon: Award, value: "Free", label: "Forever Free" },
   ];
@@ -205,10 +213,10 @@ const Index = () => {
         <Header />
 
         {/* Urgency Notification Banner */}
-        <div className="bg-amber-500 text-amber-950 px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
-          <span className="bg-amber-900 text-amber-100 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Urgent</span>
-          <span>SSC CGL 2026 application closes on June 22! Signature requirement has been updated to 10–20 KB.</span>
-          <Link to="/ssc-cgl-photo-signature-resize" className="underline hover:text-amber-900 ml-1 inline-flex items-center gap-0.5">
+        <div className="bg-red-600 text-white px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
+          <span className="bg-white text-red-600 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Urgent</span>
+          <span>SBI PO 2026 application closes <strong>July 8, 2026</strong> — Resize your photo &amp; signature now!</span>
+          <Link to="/sbi-po-2026-photo-signature-resize" className="underline hover:text-red-200 ml-1 inline-flex items-center gap-0.5">
             Resize Now <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>

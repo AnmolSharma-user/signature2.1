@@ -26,9 +26,9 @@ const BlogPage = () => {
             category: "Exam Specific",
         },
         {
-            title: "SSC CGL 2026 Photo & Signature Guide: Application Closes June 22",
+            title: "SSC CGL 2026 Photo & Signature Guide: Updated Requirements",
             slug: "/ssc-cgl-photo-signature-upload-guide-2026",
-            desc: "Urgent update on SSC CGL 2026 photo and signature requirements. Avoid form rejection. Portal closes on June 22, 2026.",
+            desc: "Complete SSC CGL 2026 photo and signature requirements: photo 20–50KB (100×120px), signature 10–20KB (140×60px). Avoid form rejection with step-by-step guide.",
             date: "June 2026",
             readTime: "6 min read",
             category: "Exam Specific",

@@ -59,7 +59,7 @@ const SSCCGLPhotoSignatureGuide = () => {
         <>
             <SEOHead
                 title="SSC CGL 2026 Photo & Signature Upload Guide: Exact Size, Dimensions & Format"
-                description="Complete SSC CGL 2026 photo and signature size guide. Photo: 20-50KB, 100×120px, JPG. Signature: 10-20KB, 140×60px, JPG. Step-by-step upload instructions with free resize tool. Application closes June 22, 2026."
+                description="Complete SSC CGL 2026 photo and signature size guide. Photo: 20-50KB, 100×120px, JPG. Signature: 10-20KB, 140×60px, JPG. Step-by-step upload instructions with free resize tool. Updated June 2026."
                 canonicalUrl="https://signatureresize.in/ssc-cgl-photo-signature-upload-guide-2026"
                 keywords="SSC CGL 2026 photo size, SSC CGL signature upload, SSC CGL photo upload error, SSC CGL application photo requirement, SSC CGL photo dimensions 2026"
                 ogImage="https://signatureresize.in/assest/ssc-cgl-photo-signature-guide-2026.png"
@@ -421,7 +421,7 @@ const SSCCGLPhotoSignatureGuide = () => {
                                 <p className="mt-3 text-sm text-muted-foreground">
                                     <strong className="text-foreground">Last Updated:</strong> June 13, 2026 |
                                     <strong className="text-foreground"> Source:</strong> SSC CGL 2026 Official Notification (May 21, 2026), ssc.gov.in |
-                                    <strong className="text-foreground"> Application window closes June 22, 2026</strong>
+                                    <strong className="text-foreground"> SSC CGL 2026-27 correction window — check ssc.gov.in for latest dates</strong>
                                 </p>
                             </section>
 

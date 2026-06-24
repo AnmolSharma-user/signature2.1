@@ -181,7 +181,7 @@ const SSCCGLPhotoSignatureResize = () => {
                                     <p><strong className="text-foreground">SSC CGL 2026, SSC CHSL 2026:</strong> Identical specs per the May 2026 notification — 20–50 KB photo, 10–20 KB signature (140×60 px). Use this page for both.</p>
                                     <p><strong className="text-foreground">SSC GD Constable:</strong> Slightly different — 4–40 KB photo (160×200 px). Use the dedicated <Link to="/ssc-gd-photo-signature-resize" className="text-primary hover:underline">SSC GD resize tool</Link>.</p>
                                     <p><strong className="text-foreground">SSC MTS:</strong> Same signature spec as CGL/CHSL (10–20 KB). Use <Link to="/ssc-mts-signature-resize" className="text-primary hover:underline">SSC MTS signature resize</Link>.</p>
-                                    <p>All SSC exams are processed through the unified <strong className="text-foreground">SSC OTRP (One Time Registration Portal)</strong>. Photo and signature uploaded here are used across all SSC applications. <strong className="text-foreground">SSC CGL 2026 application closes June 22, 2026.</strong></p>
+                                    <p>All SSC exams are processed through the unified <strong className="text-foreground">SSC OTRP (One Time Registration Portal)</strong>. Photo and signature uploaded here are used across all SSC applications. <strong className="text-foreground">SSC CGL 2026-27 correction window active — check ssc.gov.in for latest dates.</strong></p>
                                 </div>
                             </div>
 
