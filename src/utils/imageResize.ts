@@ -5,6 +5,7 @@ export interface ResizeOptions {
   minWidth?: number;
   minHeight?: number;
   format?: 'jpeg' | 'png' | 'jpg';
+  forceExactDimensions?: boolean;
 }
 
 export interface ResizeResult {
@@ -25,6 +26,7 @@ export interface ExamPreset {
   minKB: number;
   maxKB: number;
   description: string;
+  forceExactDimensions?: boolean;
 }
 
 export const examPresets: ExamPreset[] = [
@@ -35,62 +37,62 @@ export const examPresets: ExamPreset[] = [
   { name: "uti-pan", label: "UTI PAN Card", targetSizeKB: 20, maxWidth: 160, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 160×60 px" },
   { name: "ibps", label: "IBPS Bank Exams", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px" },
   { name: "jee", label: "JEE Main/Advanced", targetSizeKB: 50, maxWidth: 230, maxHeight: 60, minKB: 10, maxKB: 100, description: "10KB - 100KB, 230×60 px" },
-  { name: "gds-photo", label: "GDS Photo (India Post)", targetSizeKB: 60, maxWidth: 320, maxHeight: 400, minKB: 30, maxKB: 100, description: "30KB - 100KB, 320×400 px" },
+  { name: "gds-photo", label: "GDS Photo (India Post)", targetSizeKB: 60, maxWidth: 320, maxHeight: 400, minKB: 30, maxKB: 100, forceExactDimensions: true, description: "30KB - 100KB, 320×400 px" },
   { name: "gds-signature", label: "GDS Signature (India Post)", targetSizeKB: 50, maxWidth: 300, maxHeight: 120, minKB: 20, maxKB: 100, description: "20KB - 100KB, 300×120 px" },
-  { name: "neet-photo", label: "NEET UG Photo", targetSizeKB: 100, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 200, description: "10KB - 200KB, 200×230 px" },
+  { name: "neet-photo", label: "NEET UG Photo", targetSizeKB: 100, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 200, forceExactDimensions: true, description: "10KB - 200KB, 200×230 px" },
   { name: "neet-signature", label: "NEET UG Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 4, maxKB: 30, description: "4KB - 30KB, 140×60 px" },
-  { name: "ibps-photo", label: "IBPS Photo (PO/Clerk/RRB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px" },
-  { name: "thumb-impression", label: "Thumb Impression", targetSizeKB: 30, maxWidth: 240, maxHeight: 240, minKB: 10, maxKB: 50, description: "10KB - 50KB, 240×240 px" },
-  { name: "tnpsc-photo", label: "TNPSC Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, White BG, JPG" },
+  { name: "ibps-photo", label: "IBPS Photo (PO/Clerk/RRB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px" },
+  { name: "thumb-impression", label: "Thumb Impression", targetSizeKB: 30, maxWidth: 240, maxHeight: 240, minKB: 10, maxKB: 50, forceExactDimensions: true, description: "10KB - 50KB, 240×240 px" },
+  { name: "tnpsc-photo", label: "TNPSC Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, White BG, JPG" },
   { name: "tnpsc-signature", label: "TNPSC Signature (OTR)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
   // SSC CGL / CHSL
-  { name: "ssc-cgl-photo", label: "SSC CGL/CHSL Photo", targetSizeKB: 12, maxWidth: 100, maxHeight: 120, minKB: 4, maxKB: 20, description: "4KB - 20KB, 100×120 px, JPG" },
+  { name: "ssc-cgl-photo", label: "SSC CGL/CHSL Photo", targetSizeKB: 12, maxWidth: 100, maxHeight: 120, minKB: 4, maxKB: 20, forceExactDimensions: true, description: "4KB - 20KB, 100×120 px, JPG" },
   { name: "ssc-cgl-signature", label: "SSC CGL/CHSL Signature", targetSizeKB: 6, maxWidth: 140, maxHeight: 60, minKB: 1, maxKB: 12, description: "1KB - 12KB, 140×60 px, JPG" },
   // SSC GD Constable
-  { name: "ssc-gd-photo", label: "SSC GD Constable Photo", targetSizeKB: 20, maxWidth: 160, maxHeight: 200, minKB: 4, maxKB: 40, description: "4KB - 40KB, 160×200 px, JPG" },
+  { name: "ssc-gd-photo", label: "SSC GD Constable Photo", targetSizeKB: 20, maxWidth: 160, maxHeight: 200, minKB: 4, maxKB: 40, forceExactDimensions: true, description: "4KB - 40KB, 160×200 px, JPG" },
   { name: "ssc-gd-signature", label: "SSC GD Constable Signature", targetSizeKB: 10, maxWidth: 140, maxHeight: 60, minKB: 1, maxKB: 20, description: "1KB - 20KB, 140×60 px, JPG" },
   // SBI PO 2026 — official specs: photo 200×230px 20-50KB, signature 140×60px 10-20KB
-  { name: "sbi-po-photo", label: "SBI PO 2026 Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "sbi-po-photo", label: "SBI PO 2026 Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, JPG" },
   { name: "sbi-po-signature", label: "SBI PO 2026 Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
   // SBI PO / Clerk (legacy)
-  { name: "sbi-photo", label: "SBI PO/Clerk Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "sbi-photo", label: "SBI PO/Clerk Photo", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, JPG" },
   { name: "sbi-signature", label: "SBI PO/Clerk Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
   // UPSC Photo
-  { name: "upsc-photo", label: "UPSC CSE/IAS Photo", targetSizeKB: 250, maxWidth: 300, maxHeight: 400, minKB: 100, maxKB: 600, description: "100KB - 600KB, 300×400 px, JPG" },
+  { name: "upsc-photo", label: "UPSC CSE/IAS Photo", targetSizeKB: 250, maxWidth: 300, maxHeight: 400, minKB: 100, maxKB: 600, forceExactDimensions: true, description: "100KB - 600KB, 300×400 px, JPG" },
   // BPSC
-  { name: "bpsc-photo", label: "BPSC Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 50, description: "10KB - 50KB, 200×230 px, JPG" },
+  { name: "bpsc-photo", label: "BPSC Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 50, forceExactDimensions: true, description: "10KB - 50KB, 200×230 px, JPG" },
   { name: "bpsc-signature", label: "BPSC Signature", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 5, maxKB: 30, description: "5KB - 30KB, 140×60 px, JPG" },
   // UP Police
-  { name: "up-police-photo", label: "UP Police Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "up-police-photo", label: "UP Police Photo (OTR)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, JPG" },
   { name: "up-police-signature", label: "UP Police Signature (OTR)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
   // MPSC
-  { name: "mpsc-photo", label: "MPSC Photo", targetSizeKB: 50, maxWidth: 236, maxHeight: 307, minKB: 20, maxKB: 100, description: "20KB - 100KB, 236×307 px, JPG" },
+  { name: "mpsc-photo", label: "MPSC Photo", targetSizeKB: 50, maxWidth: 236, maxHeight: 307, minKB: 20, maxKB: 100, forceExactDimensions: true, description: "20KB - 100KB, 236×307 px, JPG" },
   { name: "mpsc-signature", label: "MPSC Signature", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 40, description: "10KB - 40KB, 140×60 px, JPG" },
   // JEE Main Photo
-  { name: "jee-photo", label: "JEE Main Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, description: "10KB - 100KB, 200×230 px, JPG" },
+  { name: "jee-photo", label: "JEE Main Photo", targetSizeKB: 30, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, forceExactDimensions: true, description: "10KB - 100KB, 200×230 px, JPG" },
   // Bihar Police — CSBC: photo 200×230px 20-50KB, signature 140×60px 10-40KB
-  { name: "bihar-police-photo", label: "Bihar Police Photo (CSBC)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "bihar-police-photo", label: "Bihar Police Photo (CSBC)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, JPG" },
   { name: "bihar-police-signature", label: "Bihar Police Signature (CSBC)", targetSizeKB: 25, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 40, description: "10KB - 40KB, 140×60 px, JPG" },
   // Rajasthan Police — SSO portal: photo 200×230px 50-100KB, signature 140×60px 20-50KB
-  { name: "rajasthan-police-photo", label: "Rajasthan Police Photo (SSO)", targetSizeKB: 75, maxWidth: 200, maxHeight: 230, minKB: 50, maxKB: 100, description: "50KB - 100KB, 200×230 px, JPG" },
+  { name: "rajasthan-police-photo", label: "Rajasthan Police Photo (SSO)", targetSizeKB: 75, maxWidth: 200, maxHeight: 230, minKB: 50, maxKB: 100, forceExactDimensions: true, description: "50KB - 100KB, 200×230 px, JPG" },
   { name: "rajasthan-police-signature", label: "Rajasthan Police Signature (SSO)", targetSizeKB: 35, maxWidth: 140, maxHeight: 60, minKB: 20, maxKB: 50, description: "20KB - 50KB, 140×60 px, JPG" },
   // MP Police — MPPEB: photo 200×230px 20-50KB, signature 140×60px 10-30KB
-  { name: "mp-police-photo", label: "MP Police Photo (MPPEB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, description: "20KB - 50KB, 200×230 px, JPG" },
+  { name: "mp-police-photo", label: "MP Police Photo (MPPEB)", targetSizeKB: 35, maxWidth: 200, maxHeight: 230, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 200×230 px, JPG" },
   { name: "mp-police-signature", label: "MP Police Signature (MPPEB)", targetSizeKB: 20, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 30, description: "10KB - 30KB, 140×60 px, JPG" },
   // CTET 2026 — NTA: photo 200×230px 10-100KB, signature 140×60px 3-30KB
-  { name: "ctet-photo", label: "CTET 2026 Photo (NTA)", targetSizeKB: 50, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, description: "10KB - 100KB, 200×230 px, JPG" },
+  { name: "ctet-photo", label: "CTET 2026 Photo (NTA)", targetSizeKB: 50, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 100, forceExactDimensions: true, description: "10KB - 100KB, 200×230 px, JPG" },
   { name: "ctet-signature", label: "CTET 2026 Signature (NTA)", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 3, maxKB: 30, description: "3KB - 30KB, 140×60 px, JPG" },
   // NDA 2026 — UPSC: photo 350×350px square 10-300KB, signature 350×90px 4-30KB
-  { name: "nda-photo", label: "NDA 2026 Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, description: "10KB - 300KB, 350×350 px square, JPG" },
+  { name: "nda-photo", label: "NDA 2026 Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, forceExactDimensions: true, description: "10KB - 300KB, 350×350 px square, JPG" },
   { name: "nda-signature", label: "NDA 2026 Signature (UPSC)", targetSizeKB: 15, maxWidth: 350, maxHeight: 90, minKB: 4, maxKB: 30, description: "4KB - 30KB, 350×90 px, JPG" },
   // KVS Teacher — kvsangathan.nic.in: photo 200×230px 10-200KB, signature 140×60px 4-30KB
-  { name: "kvs-photo", label: "KVS Teacher Photo", targetSizeKB: 80, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 200, description: "10KB - 200KB, 200×230 px, JPG" },
+  { name: "kvs-photo", label: "KVS Teacher Photo", targetSizeKB: 80, maxWidth: 200, maxHeight: 230, minKB: 10, maxKB: 200, forceExactDimensions: true, description: "10KB - 200KB, 200×230 px, JPG" },
   { name: "kvs-signature", label: "KVS Teacher Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 4, maxKB: 30, description: "4KB - 30KB, 140×60 px, JPG" },
   // CAPF AC — UPSC: photo 350×350px square 10-300KB, signature 350×90px 4-30KB
-  { name: "capf-photo", label: "CAPF AC Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, description: "10KB - 300KB, 350×350 px square, JPG" },
+  { name: "capf-photo", label: "CAPF AC Photo (UPSC)", targetSizeKB: 100, maxWidth: 350, maxHeight: 350, minKB: 10, maxKB: 300, forceExactDimensions: true, description: "10KB - 300KB, 350×350 px square, JPG" },
   { name: "capf-signature", label: "CAPF AC Signature (UPSC)", targetSizeKB: 15, maxWidth: 350, maxHeight: 90, minKB: 4, maxKB: 30, description: "4KB - 30KB, 350×90 px, JPG" },
   // Delhi Police
-  { name: "delhi-police-photo", label: "Delhi Police Photo", targetSizeKB: 35, maxWidth: 100, maxHeight: 120, minKB: 20, maxKB: 50, description: "20KB - 50KB, 100×120 px, JPG" },
+  { name: "delhi-police-photo", label: "Delhi Police Photo", targetSizeKB: 35, maxWidth: 100, maxHeight: 120, minKB: 20, maxKB: 50, forceExactDimensions: true, description: "20KB - 50KB, 100×120 px, JPG" },
   { name: "delhi-police-signature", label: "Delhi Police Signature", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
   { name: "delhi-police-thumb", label: "Delhi Police Thumb Impression", targetSizeKB: 15, maxWidth: 140, maxHeight: 60, minKB: 10, maxKB: 20, description: "10KB - 20KB, 140×60 px, JPG" },
   { name: "custom", label: "Custom Size", targetSizeKB: 20, maxWidth: 400, maxHeight: 200, minKB: 5, maxKB: 100, description: "Set your own parameters" }
@@ -116,43 +118,74 @@ export async function resizeImageToTargetSize(
   file: File,
   options: ResizeOptions
 ): Promise<ResizeResult> {
-  const { targetSizeKB, maxWidth = 400, maxHeight = 200, minWidth = 100, minHeight = 50, format = 'jpeg' } = options;
+  const { targetSizeKB, maxWidth = 400, maxHeight = 200, minWidth = 100, minHeight = 50, format = 'jpeg', forceExactDimensions = false } = options;
 
   const img = await loadImage(file);
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d')!;
 
-  let width = img.width;
-  let height = img.height;
-
-  if (width > maxWidth) { height = (height * maxWidth) / width; width = maxWidth; }
-  if (height > maxHeight) { width = (width * maxHeight) / height; height = maxHeight; }
-  if (width < minWidth) { height = (height * minWidth) / width; width = minWidth; }
-  if (height < minHeight) { width = (width * minHeight) / height; height = minHeight; }
-
-  canvas.width = Math.round(width);
-  canvas.height = Math.round(height);
-  ctx.imageSmoothingEnabled = true;
-  ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-
   const mimeType = format === 'png' ? 'image/png' : 'image/jpeg';
   const targetBytes = targetSizeKB * 1024;
 
-  let minQuality = 0.1, maxQuality = 1.0, bestBlob: Blob | null = null, bestQuality = 0.5;
+  if (forceExactDimensions) {
+    // EXACT MODE: center-crop source to target aspect ratio, then scale to exact target size.
+    // This guarantees output is always exactly maxWidth × maxHeight pixels.
+    const targetAspect = maxWidth / maxHeight;
+    const srcAspect = img.width / img.height;
 
-  for (let i = 0; i < 10; i++) {
+    let srcX = 0, srcY = 0, srcW = img.width, srcH = img.height;
+    if (srcAspect > targetAspect) {
+      // Source is wider — crop sides
+      srcW = Math.round(img.height * targetAspect);
+      srcX = Math.round((img.width - srcW) / 2);
+    } else if (srcAspect < targetAspect) {
+      // Source is taller — crop top/bottom
+      srcH = Math.round(img.width / targetAspect);
+      srcY = Math.round((img.height - srcH) / 2);
+    }
+
+    canvas.width = maxWidth;
+    canvas.height = maxHeight;
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+    // Fill with white background (for JPEGs without transparency)
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(img, srcX, srcY, srcW, srcH, 0, 0, maxWidth, maxHeight);
+  } else {
+    // ASPECT-RATIO MODE: fit within maxWidth × maxHeight, preserve ratio (used for signatures)
+    let width = img.width;
+    let height = img.height;
+    if (width > maxWidth) { height = (height * maxWidth) / width; width = maxWidth; }
+    if (height > maxHeight) { width = (width * maxHeight) / height; height = maxHeight; }
+    if (width < minWidth) { height = (height * minWidth) / width; width = minWidth; }
+    if (height < minHeight) { width = (width * minHeight) / height; height = minHeight; }
+    canvas.width = Math.round(width);
+    canvas.height = Math.round(height);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  }
+
+  // Binary search for best JPEG quality to hit target KB
+  let minQuality = 0.1, maxQuality = 1.0, bestBlob: Blob | null = null, bestQuality = 0.8;
+
+  for (let i = 0; i < 12; i++) {
     const quality = (minQuality + maxQuality) / 2;
     const blob = await new Promise<Blob>((resolve) => { canvas.toBlob((b) => resolve(b!), mimeType, quality); });
     if (blob.size <= targetBytes) { bestBlob = blob; bestQuality = quality; minQuality = quality; }
     else { maxQuality = quality; }
   }
 
-  if (!bestBlob || bestBlob.size > targetBytes) {
+  // If quality alone isn't enough (very large image even at lowest quality)
+  // and we are NOT in exact-dimensions mode, scale down canvas
+  if ((!bestBlob || bestBlob.size > targetBytes) && !forceExactDimensions) {
+    const savedW = canvas.width;
+    const savedH = canvas.height;
     let scale = 0.9;
     while (scale > 0.1) {
-      canvas.width = Math.round(width * scale);
-      canvas.height = Math.round(height * scale);
+      canvas.width = Math.round(savedW * scale);
+      canvas.height = Math.round(savedH * scale);
       ctx.imageSmoothingEnabled = true;
       ctx.imageSmoothingQuality = 'high';
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);

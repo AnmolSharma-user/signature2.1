@@ -138,6 +138,7 @@ const SignatureResizer = ({
         maxWidth: currentMaxWidth,
         maxHeight: currentMaxHeight,
         format: outputFormat === 'jpg' ? 'jpeg' : outputFormat,
+        forceExactDimensions: examPresets.find(p => p.name === selectedPreset)?.forceExactDimensions ?? false,
       });
       setResult(resized);
       setCurrentStep(4);
