@@ -74,7 +74,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                 canonicalUrl="https://signatureresize.in/sbi-po-2026-photo-signature-resize"
                 keywords="sbi po 2026 photo size, sbi po photo resize, sbi po signature size kb, sbi po 2026 application photo, sbi po photo 200x230 pixels, sbi po 2026 signature kb, sbi probationary officer photo resize free"
                 ogType="article"
-                modifiedTime="2026-06-24T08:00:00+05:30"
+                modifiedTime="2026-07-02T08:00:00+05:30"
             />
             <SEOSchema type="HowTo" howToName="How to Resize Photo for SBI PO 2026" howToSteps={howToSteps} />
             <SEOSchema type="BreadcrumbList" breadcrumbs={[
@@ -89,7 +89,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                     description: "Free online tool to resize SBI PO 2026 photo to 20–50 KB (200×230 px) and signature to 10–20 KB (140×60 px). Meets SBI portal requirements.",
                     applicationCategory: "UtilityApplication", operatingSystem: "Any",
                     offers: { "@type": "Offer", price: "0", priceCurrency: "INR" },
-                    dateModified: "2026-06-24",
+                    dateModified: "2026-07-02",
                 })
             }} />
 
@@ -106,6 +106,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                 <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
                                 SBI PO 2026 — Apply by July 8, 2026
                             </div>
+                            <p className="text-xs text-muted-foreground mb-3">Last updated: <strong>July 2, 2026</strong> · Verified against <a href="https://sbi.co.in/careers" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">SBI official notification</a></p>
                             <h1 className="mb-4 text-2xl sm:text-4xl font-bold text-foreground leading-tight">
                                 SBI PO 2026 Photo &amp; Signature{" "}
                                 <span className="text-blue-600">Resize Online Free</span>
@@ -247,7 +248,92 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                 </div>
                             </div>
 
-                            {/* Related Tools */}
+                            {/* Deep Content: Eligibility + Exam Pattern + Checklist */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">SBI PO 2026 — Eligibility &amp; Key Facts</h2>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "State Bank of India (SBI)" },
+                                            { label: "Post", value: "Probationary Officer (JMG Scale-I)" },
+                                            { label: "Age Limit", value: "21–30 years (relaxation for SC/ST/OBC/PWD)" },
+                                            { label: "Education", value: "Any graduate degree from a recognised university" },
+                                            { label: "Application Window", value: "June 18, 2026 – July 8, 2026" },
+                                            { label: "Official Portal", value: "sbi.co.in/careers" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">SBI PO 2026 Exam Pattern — Phase I (Prelims)</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Section</th>
+                                                    <th className="p-3 text-left">Questions</th>
+                                                    <th className="p-3 text-left">Marks</th>
+                                                    <th className="p-3 text-left">Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { s: "English Language", q: "30", m: "30", t: "20 min" },
+                                                    { s: "Quantitative Aptitude", q: "35", m: "35", t: "20 min" },
+                                                    { s: "Reasoning Ability", q: "35", m: "35", t: "20 min" },
+                                                    { s: "Total", q: "100", m: "100", t: "60 min" },
+                                                ].map(({ s, q, m, t }) => (
+                                                    <tr key={s} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-medium text-foreground">{s}</td>
+                                                        <td className="p-3 text-muted-foreground">{q}</td>
+                                                        <td className="p-3 text-muted-foreground">{m}</td>
+                                                        <td className="p-3 text-muted-foreground">{t}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground mt-2">Negative marking: 0.25 marks deducted per wrong answer. Phase II (Mains) includes Reasoning, Data Analysis, General Economy &amp; Banking, English, and a Descriptive Paper.</p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">Photo Preparation Checklist — Before You Apply</h2>
+                                    <ul className="space-y-2 text-sm">
+                                        {[
+                                            "✅ Photo taken within the last 3–6 months (not old ID photo)",
+                                            "✅ Plain white or off-white background — no patterns or colours",
+                                            "✅ Face covers at least 70% of the frame — no full-body shots",
+                                            "✅ No spectacles, caps, or head coverings (except for religious reasons)",
+                                            "✅ Neutral expression, both ears visible",
+                                            "✅ File in JPG/JPEG format — NOT PNG, HEIC, or WEBP",
+                                            "✅ File size between 20 KB and 50 KB (use this tool to ensure accuracy)",
+                                            "✅ Dimensions exactly 200×230 pixels (this tool forces exact dimensions)",
+                                            "✅ Signature in black ink on plain white unlined paper",
+                                            "✅ Cursive running hand — no block capitals or printed letters",
+                                            "✅ Signature size: 10–20 KB, 140×60 px JPG",
+                                            "✅ Keep a stable internet connection ready for live photo capture on the portal",
+                                        ].map((item) => (
+                                            <li key={item} className="flex gap-2 items-start">
+                                                <span className="text-foreground leading-relaxed">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 Privacy — Your Images Never Leave Your Device</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        This tool processes your photo and signature 100% in your browser using JavaScript canvas API.
+                                        No image data is uploaded to any server, stored, or transmitted anywhere.
+                                        You can verify this by turning off your internet after the page loads — the tool still works.
+                                    </p>
+                                </div>
+                            </div>
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
