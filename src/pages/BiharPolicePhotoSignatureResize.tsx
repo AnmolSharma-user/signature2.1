@@ -215,6 +215,89 @@ const BiharPolicePhotoSignatureResize = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: Recruitment Details + Physical Standards + Checklist */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">Bihar Police Recruitment 2026 — Key Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://csbc.bihar.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">csbc.bihar.gov.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "CSBC Bihar (Central Selection Board of Constables)" },
+                                            { label: "Posts", value: "Constable, Driver-Constable, Fireman, Home Guard" },
+                                            { label: "Exam Type", value: "Written Test + Physical Efficiency Test (PET) + Document Verification" },
+                                            { label: "Application Portal", value: "csbc.bihar.gov.in" },
+                                            { label: "Photo Requirement", value: "200×230 px, JPG, 20–50 KB, white background" },
+                                            { label: "Signature Requirement", value: "140×60 px, JPG, 10–40 KB, black/blue ink on white" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">Bihar Police Constable — Physical Standards (Male/Female)</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Standard</th>
+                                                    <th className="p-3 text-left">Male (General)</th>
+                                                    <th className="p-3 text-left">Female (General)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { s: "Height", m: "165 cm", f: "155 cm" },
+                                                    { s: "Chest (Male)", m: "81–86 cm (5 cm expansion)", f: "N/A" },
+                                                    { s: "Weight (Female)", m: "N/A", f: "48 kg minimum" },
+                                                    { s: "Running", m: "1 mile in 6 min 30 sec", f: "1 mile in 8 min" },
+                                                ].map(({ s, m, f }) => (
+                                                    <tr key={s} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-medium text-foreground">{s}</td>
+                                                        <td className="p-3 text-muted-foreground">{m}</td>
+                                                        <td className="p-3 text-muted-foreground">{f}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground mt-2">SC/ST/OBC candidates may have relaxation in physical standards as per Bihar government rules. Check official notification for updated relaxation norms.</p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">Photo &amp; Signature Checklist — Bihar Police Application</h2>
+                                    <ul className="space-y-2 text-sm">
+                                        {[
+                                            "✅ Recent passport-size photo — taken within last 6 months",
+                                            "✅ Plain white background — no coloured walls or patterns",
+                                            "✅ Face must fill 70–80% of the photo frame",
+                                            "✅ No sunglasses, caps, or head coverings",
+                                            "✅ JPG format only — NOT PNG, HEIC, or WEBP",
+                                            "✅ Photo: 200×230 pixels, 20–50 KB (this tool applies exact specs)",
+                                            "✅ Signature on plain white unlined paper with black or blue ink",
+                                            "✅ Signature: 140×60 pixels, 10–40 KB JPG",
+                                            "✅ Keep same photo for written test, PET, and document verification",
+                                            "✅ Upload to csbc.bihar.gov.in — save acknowledgement after submission",
+                                        ].map((item) => (
+                                            <li key={item} className="flex gap-2 items-start">
+                                                <span className="text-foreground leading-relaxed">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 Your Photo Stays on Your Device</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        This Bihar Police photo resize tool runs 100% in your browser. Your photo and signature are never sent to any server or stored anywhere.
+                                        The resizing uses the HTML5 Canvas API directly in your browser — you can confirm this by checking Network requests in your browser developer tools.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

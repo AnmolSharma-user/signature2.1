@@ -185,6 +185,94 @@ const SSCCGLPhotoSignatureResize = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: Exam Pattern + Checklist + Key Details */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">SSC CGL 2026-27 — Key Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://ssc.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ssc.gov.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "Staff Selection Commission (SSC)" },
+                                            { label: "Full Form", value: "Combined Graduate Level Examination" },
+                                            { label: "Qualification", value: "Any graduate degree from a recognised university" },
+                                            { label: "Application Portal", value: "ssc.gov.in (OTRP — One Time Registration)" },
+                                            { label: "Photo Size (OTRP)", value: "100×120 px, 20–50 KB, JPG, white background" },
+                                            { label: "Signature Size (OTRP)", value: "140×60 px, 10–20 KB, JPG, black ink on white" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">SSC CGL 2026-27 Exam Pattern — Tier I</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Section</th>
+                                                    <th className="p-3 text-left">Questions</th>
+                                                    <th className="p-3 text-left">Marks</th>
+                                                    <th className="p-3 text-left">Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { s: "General Intelligence & Reasoning", q: "25", m: "50", t: "" },
+                                                    { s: "General Awareness", q: "25", m: "50", t: "" },
+                                                    { s: "Quantitative Aptitude", q: "25", m: "50", t: "" },
+                                                    { s: "English Comprehension", q: "25", m: "50", t: "" },
+                                                    { s: "Total", q: "100", m: "200", t: "60 min" },
+                                                ].map(({ s, q, m, t }) => (
+                                                    <tr key={s} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-medium text-foreground">{s}</td>
+                                                        <td className="p-3 text-muted-foreground">{q}</td>
+                                                        <td className="p-3 text-muted-foreground">{m}</td>
+                                                        <td className="p-3 text-muted-foreground">{t}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground mt-2">Negative marking: 0.50 marks per wrong answer in Tier I. Tier II has sections for Mathematics, Reasoning, English, and Computer Knowledge. PWD candidates get 80 minutes for Tier I.</p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">SSC OTRP Photo Upload Checklist</h2>
+                                    <p className="text-xs text-muted-foreground mb-3">The SSC One Time Registration Portal (OTRP) is used for ALL SSC exams — CGL, CHSL, MTS, GD, CPO. Your uploaded photo and signature are reused across all SSC applications.</p>
+                                    <ul className="space-y-2 text-sm">
+                                        {[
+                                            "✅ Photo: 100×120 pixels exactly — do NOT use 200×230 px (that is for IBPS/SBI)",
+                                            "✅ File size: 20 KB to 50 KB — below 20 KB or above 50 KB will be rejected",
+                                            "✅ Format: JPG/JPEG only — PNG files are rejected by SSC OTRP",
+                                            "✅ Background: plain white or very light background only",
+                                            "✅ Face must occupy 70–80% of the frame — no full-body shots",
+                                            "✅ Photo taken within last 3 months — old passport photos may be flagged",
+                                            "✅ No spectacles, caps, or head coverings (except religious)",
+                                            "✅ Signature: 140×60 px, 10–20 KB, JPG, black ink on white paper",
+                                            "✅ Signature must be cursive — block letters are NOT accepted",
+                                            "✅ Once uploaded to OTRP, your photo is used for all SSC applications — upload carefully",
+                                        ].map((item) => (
+                                            <li key={item} className="flex gap-2 items-start">
+                                                <span className="text-foreground leading-relaxed">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 100% Secure — No Server Upload</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        This SSC CGL photo resize tool processes your images entirely in your browser using the HTML5 Canvas API.
+                                        Your photo and signature are never sent to any server. Since SSC OTRP uploads are permanent,
+                                        we recommend resizing with this tool, previewing carefully, then uploading to ssc.gov.in.
+                                    </p>
+                                </div>
+                            </div>
+
                             {/* Related Tools */}
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools</h2>
