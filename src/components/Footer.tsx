@@ -30,8 +30,8 @@ const Footer = () => {
             </Link>
             <p className="mt-4 max-w-md text-sm text-muted-foreground">
               Free online signature and photo resize tool for government exams.
-              Resize your signature to exact KB size for GATE, SSC, NTPC, UTI PAN,
-              and other competitive exams.
+              Supports SBI PO, SSC, IBPS, Bihar Police, Rajasthan Police, CTET, NDA, KVS, CAPF, and 100+ more exams.
+              All processing is 100% in your browser — we never store your images.
             </p>
             <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
               <Mail className="h-4 w-4 text-primary" />
@@ -71,6 +71,20 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-4 font-semibold text-foreground">Exam Tools</h3>
+            <ul className="space-y-2">
+              <li><Link to="/sbi-po-2026-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">SBI PO 2026</Link></li>
+              <li><Link to="/bihar-police-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">Bihar Police</Link></li>
+              <li><Link to="/rajasthan-police-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">Rajasthan Police</Link></li>
+              <li><Link to="/mp-police-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">MP Police</Link></li>
+              <li><Link to="/ctet-2026-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">CTET 2026</Link></li>
+              <li><Link to="/nda-2026-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">NDA 2026</Link></li>
+              <li><Link to="/kvs-teacher-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">KVS Teacher</Link></li>
+              <li><Link to="/capf-ac-photo-signature-resize" className="text-sm text-muted-foreground transition-colors hover:text-primary">CAPF AC</Link></li>
             </ul>
           </div>
 

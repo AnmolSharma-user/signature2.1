@@ -36,12 +36,17 @@
   <!-- Web Manifest -->
   <link rel="manifest" href="favicon/site.webmanifest" />
 
-  <!-- Google Fonts for Signature Creator -->
+  <!-- Google Fonts for Signature Creator — loaded async to avoid render-blocking (LCP fix) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Sacramento&family=Satisfy&family=Pacifico&family=Allura&display=swap"
-    rel="stylesheet" />
+    rel="preload"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Sacramento&family=Satisfy&family=Pacifico&family=Allura&display=swap" rel="stylesheet" />
+  </noscript>
 
   <meta property="og:title" content="Signature Resize | Free Online Signature Resizer for Exams" />
   <meta property="og:description"
