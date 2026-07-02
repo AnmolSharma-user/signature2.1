@@ -198,6 +198,11 @@ const DelhiPolicePhotoSignatureResize = () => {
                             {/* Rejection Reasons */}
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                                 <h2 className="text-xl font-bold text-foreground mb-3">Why Delhi Police Application Rejects Photos &amp; Signatures</h2>
+                                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                                    With three uploads required — photo, signature, and thumb impression — there are more places for rejections than most other recruitments.
+                                    The thumb impression is where most people hit errors: a blurry ink print, low-resolution camera crop, or one that's cropped too tightly
+                                    and loses the ridge detail that the portal checks. The photo errors are mostly the same as other SSC-format exams: background and file size.
+                                </p>
                                 <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                     {[
                                         { icon: XCircle, color: "text-red-500", t: "File size outside 20–50 KB (photo)", d: "The portal hard-rejects any photo below 20 KB or above 50 KB. This tool targets 35 KB by default — safely within range." },

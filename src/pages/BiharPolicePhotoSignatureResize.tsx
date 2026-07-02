@@ -184,6 +184,11 @@ const BiharPolicePhotoSignatureResize = () => {
                         <div className="mx-auto mt-6 max-w-4xl space-y-8">
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                                 <h2 className="text-xl font-bold text-foreground mb-3">Why Bihar Police Portal Rejects Photos</h2>
+                                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                                    The CSBC portal shows a generic "invalid file" error that doesn't tell you what's actually wrong. From what applicants have reported,
+                                    the most common cause isn't the file format — it's the photo being <em>too light</em> in file size (shot on an old phone at low quality) or
+                                    having a slightly grey background that looks white on your screen but isn't neutral enough for the portal scanner.
+                                </p>
                                 <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                     {[
                                         { icon: XCircle, color: "text-red-500", t: "File size above 50 KB", d: "CSBC portal strictly rejects photos above 50 KB. Always compress before uploading." },

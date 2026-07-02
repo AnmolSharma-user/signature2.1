@@ -192,6 +192,11 @@ const SBIPOPhotoSignatureResize2026 = () => {
                             {/* Rejection Reasons */}
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
                                 <h2 className="text-xl font-bold text-foreground mb-3">Why SBI PO Portal Rejects Photos &amp; Signatures</h2>
+                                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                                    The SBI portal doesn't explain <em>why</em> it rejected your file — it just throws an error and clears the upload field.
+                                    Most candidates spend 20–30 minutes re-uploading the same image in different formats before realising the issue is the file size, not the image itself.
+                                    The six problems below cover roughly 95% of all rejections on the SBI PO form.
+                                </p>
                                 <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                     {[
                                         { icon: XCircle, color: "text-red-500", t: "File size outside 20–50 KB (photo)", d: "The SBI portal hard-rejects any photo below 20 KB or above 50 KB. This tool targets 35 KB by default — safely within range." },
