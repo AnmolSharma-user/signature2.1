@@ -108,9 +108,7 @@ const CTETPhotoSignatureResize2026 = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>CTET photo to 10–100 KB</strong> (200×230 px) and{" "}
-                                <strong>signature to 3–30 KB</strong> (140×60 px) — as per NTA ctet.nic.in portal requirements.
-                                Browser-only processing — your images never leave your device.
+                                CTET has one spec that surprises teachers who've applied for bank exams before: NTA only requires your face to fill <strong>50% of the photo frame</strong>, not 70% like IBPS or SBI PO. The file size window is also wide — <strong>10 to 100 KB</strong> — so most decent smartphone photos pass without much adjustment. The tricky part is usually the signature: 3 to 30 KB at 140×60 px, and block letters will get flagged on the ctet.nic.in portal.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["NTA Portal Specs", "JPG Output", "Instant Processing", "No Data Stored"].map((t) => (

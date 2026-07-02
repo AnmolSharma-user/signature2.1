@@ -108,9 +108,7 @@ const NDAPhotoSignatureResize2026 = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>NDA photo to 10–300 KB</strong> (350×350 px) and{" "}
-                                <strong>signature to 4–30 KB</strong> (350×90 px) — exactly as required by UPSC's online application portal.
-                                Browser-only: your image never leaves your device.
+                                The most common NDA application mistake is uploading a rectangular passport-size photo. <strong>UPSC requires a square 350×350 px photo</strong> — not the 200×230 px format used for banking exams. Candidates who paste their IBPS or SBI PO photo directly into the UPSC form get a distorted or rejected upload. The signature is also wider than usual: 350×90 px instead of the standard 140×60. This tool has the exact NDA presets pre-loaded.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["UPSC Portal Specs", "Square Photo Format", "JPG Output", "No Data Stored"].map((t) => (

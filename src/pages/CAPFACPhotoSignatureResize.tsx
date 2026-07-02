@@ -108,8 +108,7 @@ const CAPFACPhotoSignatureResize = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>CAPF AC photo to 10–300 KB</strong> (350×350 px square) and{" "}
-                                <strong>signature to 4–30 KB</strong> (350×90 px) — as required by UPSC's online portal for CAPF Assistant Commandant.
+                                CAPF AC is an officer-level post — graduates joining as Assistant Commandants in BSF, CRPF, CISF, ITBP, or SSB. The UPSC portal uses the same <strong>square 350×350 px photo</strong> format as NDA, which surprises most applicants used to rectangular passport-size photos. The signature is also wider: 350×90 px. Getting this wrong means your application form shows a stretched or cropped image — a bad start for a gazetted officer application.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["UPSC Portal Specs", "Square 350×350 Format", "JPG Output", "No Data Stored"].map((t) => (

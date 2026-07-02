@@ -83,7 +83,7 @@ const SSCCGLPhotoSignatureResize = () => {
                                 <span className="text-blue-500">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>SSC CGL 2026 photo to 20–50 KB</strong> (100×120 px) and <strong>signature to 10–20 KB</strong> (140×60 px) as per the official SSC OTRP portal requirements (May 2026 notification). Also works for <strong>SSC CHSL, SSC MTS</strong>. Browser-only — your image never leaves your device.
+                                SSC's OTRP (One Time Registration Portal) stores your photo and signature permanently — every future SSC application you file reuses them. That's why getting it right the first time matters more here than on most portals. The photo is <strong>100×120 px</strong>, which is narrower than the banking format (200×230 px), and the signature was updated in May 2026 to <strong>10–20 KB</strong> — older guides showing 1–12 KB are wrong. This tool applies the current specs.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["SSC OTRP Specs", "JPG Output", "Mobile Friendly", "No Data Stored"].map((t) => (

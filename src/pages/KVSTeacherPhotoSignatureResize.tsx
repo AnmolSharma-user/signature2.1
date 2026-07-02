@@ -108,8 +108,7 @@ const KVSTeacherPhotoSignatureResize = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>KVS photo to 10–200 KB</strong> (200×230 px) and{" "}
-                                <strong>signature to 4–30 KB</strong> (140×60 px) — as required by kvsangathan.nic.in application portal.
+                                KVS gives you more room on file size — <strong>10 to 200 KB</strong> for photos — which is generous compared to banking portals. What catches people out is the CTET requirement: if you're applying for PRT or TGT posts, you need a valid CTET certificate before even reaching the photo upload step. The photo itself goes onto your admit card and gets checked again at the demo lesson and interview, so it has to be a recent, clear shot on white background.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["KVS Portal Specs", "PGT / TGT / PRT", "JPG Output", "No Data Stored"].map((t) => (

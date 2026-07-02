@@ -114,10 +114,7 @@ const DelhiPolicePhotoSignatureResize = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>Delhi Police photo to 20–50 KB</strong> (100×120 px),{" "}
-                                <strong>signature to 10–20 KB</strong> (140×60 px), and{" "}
-                                <strong>thumb impression to 10–20 KB</strong> — all per SSC/DSSSB portal requirements.
-                                Browser-only: your image never leaves your device.
+                                Delhi Police is one of the only central government recruitments that asks for three separate uploads: photo, signature, and a <strong>thumb impression</strong>. Most candidates read the photo and signature specs correctly but either skip the thumb or upload a blurry scan that the portal flags. This tool handles all three — the photo at 100×120 px (SSC format, narrower than banking exams), signature at 140×60 px, and thumb impression at 140×60 px.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["SSC Portal Specs", "JPG Output", "Thumb Impression", "No Data Stored"].map((t) => (

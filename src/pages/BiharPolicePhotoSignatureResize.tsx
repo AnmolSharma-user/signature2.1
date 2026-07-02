@@ -109,9 +109,7 @@ const BiharPolicePhotoSignatureResize = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>Bihar Police photo to 20–50 KB</strong> (200×230 px) and{" "}
-                                <strong>signature to 10–40 KB</strong> (140×60 px) — as per CSBC Bihar portal requirements.
-                                Browser-only: your image never leaves your device.
+                                One thing that trips up Bihar Police applicants: the CSBC portal accepts a <strong>wider signature range — 10 to 40 KB</strong> — which is more forgiving than SBI or IBPS, but the photo is still strict at 20–50 KB and must be JPG. The same photo you upload gets cross-checked at the Physical Efficiency Test and Document Verification stages, so it needs to look clearly like you.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["CSBC Portal Specs", "JPG Output", "Instant Processing", "No Data Stored"].map((t) => (

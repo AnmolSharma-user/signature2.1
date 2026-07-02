@@ -112,9 +112,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                 <span className="text-blue-600">Resize Online Free</span>
                             </h1>
                             <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                                Compress your <strong>SBI PO photo to 20–50 KB</strong> (200×230 px) and{" "}
-                                <strong>signature to 10–20 KB</strong> (140×60 px) — as per SBI official notification.
-                                Browser-only: your image never leaves your device.
+                                The SBI PO 2026 portal is strict about two things that catch most candidates off guard: the photo needs to land <strong>between 20 KB and 50 KB</strong> (not just "under 50 KB" — below 20 KB is also rejected), and the signature absolutely cannot be block letters. SBI calls it "cursive running hand" and their portal flags printed signatures during upload.
                             </p>
                             <div className="mt-5 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
                                 {["SBI Portal Specs", "JPG Output", "Live Photo Ready", "No Data Stored"].map((t) => (
