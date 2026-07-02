@@ -194,6 +194,95 @@ const CAPFACPhotoSignatureResize = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: CAPF-specific — differentiates from NDA page */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">CAPF AC 2026 — Key Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://upsc.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">upsc.gov.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "UPSC (Union Public Service Commission)" },
+                                            { label: "Full Form", value: "Central Armed Police Forces (Assistant Commandant)" },
+                                            { label: "Eligibility", value: "Graduate degree; Age 20–25 years" },
+                                            { label: "Forces Covered", value: "BSF, CRPF, CISF, ITBP, SSB (5 forces)" },
+                                            { label: "Photo Size — SQUARE", value: "350×350 px, 10–300 KB, JPG" },
+                                            { label: "Application Portal", value: "upsconline.nic.in" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">CAPF Forces — What Each Force Does</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Force</th>
+                                                    <th className="p-3 text-left">Full Name</th>
+                                                    <th className="p-3 text-left">Primary Role</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { f: "BSF", n: "Border Security Force", r: "India–Pakistan & India–Bangladesh border security" },
+                                                    { f: "CRPF", n: "Central Reserve Police Force", r: "Internal security, counter-insurgency, elections" },
+                                                    { f: "CISF", n: "Central Industrial Security Force", r: "Security of airports, PSUs, government buildings" },
+                                                    { f: "ITBP", n: "Indo-Tibetan Border Police", r: "India–China (Tibet) border patrolling & security" },
+                                                    { f: "SSB", n: "Sashastra Seema Bal", r: "India–Nepal & India–Bhutan border security" },
+                                                ].map(({ f, n, r }) => (
+                                                    <tr key={f} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-bold text-foreground">{f}</td>
+                                                        <td className="p-3 text-muted-foreground">{n}</td>
+                                                        <td className="p-3 text-muted-foreground">{r}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div className="rounded-xl border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/20 p-4">
+                                    <p className="text-sm font-bold text-amber-800 dark:text-amber-300 mb-2">⚠️ CAPF AC vs NDA — Same Photo Size, Different Exam</p>
+                                    <p className="text-sm text-amber-700 dark:text-amber-400 leading-relaxed">
+                                        CAPF AC and NDA both use a <strong>350×350 px square photo</strong> on the UPSC portal — but they are entirely different exams.
+                                        CAPF AC is for graduate-level candidates (20–25 years) joining as officers in paramilitary forces.
+                                        NDA is for 10+2 students (16.5–19.5 years) joining the National Defence Academy for armed forces.
+                                        Use this tool's CAPF AC preset — it outputs the exact 350×350 px square photo required.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">CAPF AC Photo &amp; Signature Checklist</h2>
+                                    <ul className="space-y-1.5 text-sm">
+                                        {[
+                                            "✅ Photo: SQUARE 350×350 px — same UPSC portal format as NDA",
+                                            "✅ File size: 10 KB to 300 KB, JPG format only",
+                                            "✅ Signature: 350×90 px, 4–30 KB, JPG, black ink on white paper",
+                                            "✅ Background: white or light-coloured",
+                                            "✅ Apply at upsconline.nic.in — same portal as all UPSC exams",
+                                            "✅ CAPF AC selection: Written exam → Physical test → Medical → Interview/Personality Test",
+                                            "✅ Minimum height: 165 cm (male), 157 cm (female) — check official notification",
+                                            "✅ CAPF AC officers are gazetted officers — different from Constable-level recruitment",
+                                        ].map((item) => (
+                                            <li key={item} className="text-foreground leading-relaxed">{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 Browser-Only Processing — UPSC Portal Ready</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        Your photo and signature are resized 100% in your browser using the HTML5 Canvas API.
+                                        No server upload. Download your 350×350 px square photo and upload directly to upsconline.nic.in for the CAPF AC application.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

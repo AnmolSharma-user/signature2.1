@@ -214,6 +214,89 @@ const CTETPhotoSignatureResize2026 = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: Unique CTET content */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">CTET 2026 — Key Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://ctet.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ctet.nic.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "NTA (National Testing Agency)" },
+                                            { label: "Full Form", value: "Central Teacher Eligibility Test" },
+                                            { label: "Exam Cycles", value: "Twice yearly — July cycle and December cycle" },
+                                            { label: "Application Portal", value: "ctet.nic.in" },
+                                            { label: "Photo Requirement", value: "200×230 px, 10–100 KB, JPG, face covers 50% of frame" },
+                                            { label: "Signature Requirement", value: "140×60 px, 3–30 KB, JPG, black ink on white paper" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">CTET Paper I vs Paper II — Which Should You Apply For?</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Aspect</th>
+                                                    <th className="p-3 text-left">Paper I (Primary)</th>
+                                                    <th className="p-3 text-left">Paper II (Upper Primary)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { a: "Classes", p1: "Class 1–5", p2: "Class 6–8" },
+                                                    { a: "Qualification", p1: "D.El.Ed / B.El.Ed", p2: "B.Ed degree" },
+                                                    { a: "Questions", p1: "150 MCQs", p2: "150 MCQs" },
+                                                    { a: "Duration", p1: "2.5 hours", p2: "2.5 hours" },
+                                                    { a: "Passing Marks", p1: "90/150 (60%) General", p2: "82/150 (55%) OBC/SC/ST" },
+                                                    { a: "Certificate Valid", p1: "Lifetime (permanent)", p2: "Lifetime (permanent)" },
+                                                ].map(({ a, p1, p2 }) => (
+                                                    <tr key={a} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-medium text-foreground">{a}</td>
+                                                        <td className="p-3 text-muted-foreground">{p1}</td>
+                                                        <td className="p-3 text-muted-foreground">{p2}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground mt-2">CTET is mandatory for teaching in KVS, NVS, Army Schools, and Central Government-aided schools. State government schools require the respective State TET (STET).</p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-2">⚠️ CTET Photo Rule: 50% Face — Not 70%</h2>
+                                    <p className="text-sm text-muted-foreground mb-3">Most exams (SBI PO, IBPS, SSC) require your face to cover <strong>70%</strong> of the photo. CTET is different — NTA requires only <strong>50% face coverage</strong>. This means a slightly more zoomed-out shot is acceptable. Other specs remain the same: white background, no glasses, recent photo.</p>
+                                    <ul className="space-y-1.5 text-sm">
+                                        {[
+                                            "✅ Photo: 200×230 px, 10–100 KB, JPG (wide range — easier to pass)",
+                                            "✅ Face must cover at least 50% of the photo frame (not 70% like IBPS/SBI)",
+                                            "✅ Plain white or light-coloured background",
+                                            "✅ No spectacles, caps, or head coverings (exceptions for religious reasons)",
+                                            "✅ Signature: 140×60 px, 3–30 KB, JPG, black ink, cursive hand",
+                                            "✅ Apply separately for Paper I and Paper II if needed",
+                                            "✅ Upload at ctet.nic.in — confirm preview before final submission",
+                                            "✅ CTET certificate is now valid for lifetime — no renewal needed",
+                                        ].map((item) => (
+                                            <li key={item} className="text-foreground leading-relaxed">{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 NTA Portal Tip — Preview Before Upload</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        NTA's CTET portal shows a live preview of your photo/signature after upload.
+                                        Always check the preview before clicking Submit. This tool processes your image in your browser —
+                                        no server upload, no data retention. Download, preview, then upload to ctet.nic.in.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

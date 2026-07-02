@@ -254,6 +254,106 @@ const DelhiPolicePhotoSignatureResize = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: Unique to Delhi Police */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">Delhi Police Constable 2026 — Recruitment Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://delhipolice.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">delhipolice.gov.in</a> / <a href="https://ssc.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ssc.gov.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "Delhi Police via SSC (Staff Selection Commission)" },
+                                            { label: "Posts", value: "Constable (Executive), Head Constable (Ministerial)" },
+                                            { label: "Qualification", value: "10+2 (Intermediate) for Constable Executive" },
+                                            { label: "Age Limit", value: "18–25 years (Constable Executive); relaxation for SC/ST/OBC" },
+                                            { label: "Application Portal", value: "delhipolice.gov.in / ssc.gov.in" },
+                                            { label: "Unique Requirement", value: "Thumb impression (Left for Male, Right for Female)" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">Delhi Police Constable — Selection Process</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Stage</th>
+                                                    <th className="p-3 text-left">Details</th>
+                                                    <th className="p-3 text-left">Qualifying</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { s: "Written Exam (CBT)", d: "100 MCQs — GK, Reasoning, Maths, English, Computer", q: "Merit-based" },
+                                                    { s: "Physical Endurance Test", d: "Running 1 mile, long jump, high jump, shot put (male)", q: "Qualifying" },
+                                                    { s: "Medical Examination", d: "Vision, fitness, hearing check", q: "Qualifying" },
+                                                    { s: "Document Verification", d: "Original photo, signature, thumb, certificates", q: "Qualifying" },
+                                                ].map(({ s, d, q }) => (
+                                                    <tr key={s} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-medium text-foreground">{s}</td>
+                                                        <td className="p-3 text-muted-foreground">{d}</td>
+                                                        <td className="p-3 text-muted-foreground">{q}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-2">How to Prepare Thumb Impression for Delhi Police</h2>
+                                    <p className="text-sm text-muted-foreground mb-3">Delhi Police is one of the few recruitments that requires a <strong>digitized thumb impression</strong> upload in addition to photo and signature. Here is how to do it correctly:</p>
+                                    <ol className="space-y-2 text-sm">
+                                        {[
+                                            "Press your left thumb (male) or right thumb (female) firmly on a clean blue or black ink stamp pad",
+                                            "Press the inked thumb onto the center of a plain white A4 paper — do not smudge",
+                                            "Let it dry for 30 seconds — do not blow on it",
+                                            "Take a high-resolution photo of the thumb impression from directly above with even lighting",
+                                            "Crop the photo to show only the thumb print with a white border",
+                                            "Use the 'Thumb Impression' tab above to resize to 140×60 px, 10–20 KB JPG",
+                                            "Upload to the Delhi Police portal — ensure the impression ridges are clearly visible",
+                                        ].map((step, i) => (
+                                            <li key={i} className="flex gap-3">
+                                                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white text-xs font-bold">{i + 1}</span>
+                                                <span className="text-foreground">{step}</span>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">Photo, Signature &amp; Thumb Checklist</h2>
+                                    <ul className="space-y-1.5 text-sm">
+                                        {[
+                                            "✅ Photo: 100×120 px, 20–50 KB, JPG, white background, face 70–80% of frame",
+                                            "✅ Signature: 140×60 px, 10–20 KB, JPG, cursive ink on white paper",
+                                            "✅ Thumb impression: 140×60 px, 10–20 KB, JPG — left (male) / right (female)",
+                                            "✅ All three files in JPG format — PNG is rejected",
+                                            "✅ Photo taken within last 6 months — recent, clear, no blur",
+                                            "✅ Same photo must match at PET, Medical, and Document Verification stages",
+                                            "✅ No dark/coloured backgrounds, no sunglasses, no caps",
+                                            "✅ Upload all three at once on the Delhi Police portal — do not leave any blank",
+                                        ].map((item) => (
+                                            <li key={item} className="text-foreground leading-relaxed">{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 All Three Files Processed in Your Browser</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        Your photo, signature, and thumb impression are all resized 100% in your browser.
+                                        No files are uploaded to any server. This is especially important for thumb impressions —
+                                        biometric data should never be shared with third-party servers.
+                                    </p>
+                                </div>
+                            </div>
+
                             {/* Related Tools */}
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>

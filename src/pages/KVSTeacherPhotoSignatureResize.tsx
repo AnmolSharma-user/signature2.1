@@ -194,6 +194,89 @@ const KVSTeacherPhotoSignatureResize = () => {
                                 </div>
                             </div>
 
+                            {/* Deep Content: KVS-specific */}
+                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-1">KVS Teacher Recruitment 2026 — Key Details</h2>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://kvsangathan.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">kvsangathan.nic.in</a></p>
+                                    <div className="grid sm:grid-cols-2 gap-4 text-sm">
+                                        {[
+                                            { label: "Conducting Body", value: "Kendriya Vidyalaya Sangathan (KVS), MHRD" },
+                                            { label: "Schools", value: "1,200+ Kendriya Vidyalayas across India & abroad" },
+                                            { label: "Post Types", value: "PGT (Post Graduate Teacher), TGT, PRT, Librarian, Admin" },
+                                            { label: "Application Portal", value: "kvsangathan.nic.in" },
+                                            { label: "Photo Size", value: "200×230 px, 10–200 KB, JPG, white background" },
+                                            { label: "Signature Size", value: "140×60 px, 4–30 KB, JPG, black ink" },
+                                        ].map(({ label, value }) => (
+                                            <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">
+                                                <p className="text-xs text-muted-foreground">{label}</p>
+                                                <p className="font-semibold text-foreground text-sm mt-0.5">{value}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">KVS Post-wise Eligibility — PGT vs TGT vs PRT</h2>
+                                    <div className="overflow-x-auto rounded-xl border border-border">
+                                        <table className="w-full text-sm border-collapse">
+                                            <thead>
+                                                <tr className="bg-gradient-to-r from-blue-700 to-blue-800 text-white">
+                                                    <th className="p-3 text-left">Post</th>
+                                                    <th className="p-3 text-left">Classes Taught</th>
+                                                    <th className="p-3 text-left">Qualification</th>
+                                                    <th className="p-3 text-left">CTET Required</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-border">
+                                                {[
+                                                    { post: "PRT", cls: "Class 1–5", qual: "Senior Secondary + D.El.Ed/B.El.Ed", ctet: "Paper I mandatory" },
+                                                    { post: "TGT", cls: "Class 6–10", qual: "Graduate + B.Ed in relevant subject", ctet: "Paper II mandatory" },
+                                                    { post: "PGT", cls: "Class 11–12", qual: "Post Graduate + B.Ed", ctet: "Not mandatory" },
+                                                    { post: "Librarian", cls: "All classes", qual: "B.Lib.Sc / M.Lib.Sc", ctet: "Not required" },
+                                                ].map(({ post, cls, qual, ctet }) => (
+                                                    <tr key={post} className="hover:bg-muted/40">
+                                                        <td className="p-3 font-bold text-foreground">{post}</td>
+                                                        <td className="p-3 text-muted-foreground">{cls}</td>
+                                                        <td className="p-3 text-muted-foreground">{qual}</td>
+                                                        <td className="p-3 text-muted-foreground">{ctet}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p className="text-xs text-muted-foreground mt-2">
+                                        CTET qualification is mandatory for PRT and TGT posts. If you haven't cleared CTET yet, use our <a href="/ctet-2026-photo-signature-resize" className="text-primary underline underline-offset-2">CTET 2026 photo resize tool</a> to prepare for the CTET application first.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <h2 className="text-xl font-bold text-foreground mb-3">KVS Photo &amp; Signature Upload Checklist</h2>
+                                    <ul className="space-y-1.5 text-sm">
+                                        {[
+                                            "✅ Photo: 200×230 px, 10–200 KB, JPG — wider size range than most exams",
+                                            "✅ Signature: 140×60 px, 4–30 KB, JPG, black ink on white paper",
+                                            "✅ Background: white or light-coloured only",
+                                            "✅ Photo taken within last 3–6 months — no old passport photos",
+                                            "✅ No sunglasses, no caps, no head coverings (except religious)",
+                                            "✅ CTET certificate (Paper I for PRT, Paper II for TGT) must be ready before applying",
+                                            "✅ Documents needed: Mark sheets, B.Ed/D.El.Ed certificate, CTET/STET, experience certificate",
+                                            "✅ Selection: Written test → Demo class (teaching demonstration) → Interview",
+                                        ].map((item) => (
+                                            <li key={item} className="text-foreground leading-relaxed">{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                <div className="rounded-xl border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 p-4">
+                                    <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">🔒 Secure — Your Teaching Career Documents Stay Private</p>
+                                    <p className="text-xs text-green-700 dark:text-green-400 leading-relaxed">
+                                        This KVS photo resize tool processes your photo and signature 100% in your browser.
+                                        No files are sent to any external server. Download the resized files and upload directly to kvsangathan.nic.in.
+                                    </p>
+                                </div>
+                            </div>
+
                             <div className="rounded-2xl border border-border bg-muted/30 p-6">
                                 <h2 className="text-lg font-bold text-foreground mb-4">Related Tools &amp; Guides</h2>
                                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
