@@ -216,7 +216,7 @@ const CTETPhotoSignatureResize2026 = () => {
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
                                 <div>
                                     <h2 className="text-xl font-bold text-foreground mb-1">CTET 2026 — Key Details</h2>
-                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://ctet.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ctet.nic.in</a></p>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 10, 2026</strong> · Source: <a href="https://ctet.nic.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ctet.nic.in</a></p>
                                     <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                         {[
                                             { label: "Conducting Body", value: "NTA (National Testing Agency)" },

@@ -35,7 +35,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
         },
         {
             question: "What is the last date to apply for SBI PO 2026?",
-            answer: "The SBI PO 2026 online application window is open from June 18, 2026 to July 8, 2026. Apply well before the deadline on the official SBI website (sbi.co.in/careers). Upload your resized photo and signature during registration."
+            answer: "The SBI PO 2026 online application window ran from June 18 to July 8, 2026. Applications are now closed. Phase I (Prelims) is expected in August–September 2026. Keep your resized photo and signature ready for the admit card download and document verification stages."
         },
         {
             question: "Does SBI PO 2026 require a live photograph?",
@@ -70,7 +70,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
         <>
             <SEOHead
                 title="SBI PO 2026 Photo & Signature Resize Online Free — 200×230 px, 20–50 KB"
-                description="Free SBI PO 2026 photo resize tool: compress photo to 20–50 KB (200×230 px) and signature to 10–20 KB (140×60 px). Meets SBI official portal requirements. Apply before July 8, 2026. Instant, browser-only, no upload needed."
+                description="Free SBI PO 2026 photo resize tool: compress photo to 20–50 KB (200×230 px) and signature to 10–20 KB (140×60 px). Meets SBI official portal requirements. Prelims expected August–September 2026. Instant, browser-only, no upload needed."
                 canonicalUrl="https://signatureresize.in/sbi-po-2026-photo-signature-resize"
                 keywords="sbi po 2026 photo size, sbi po photo resize, sbi po signature size kb, sbi po 2026 application photo, sbi po photo 200x230 pixels, sbi po 2026 signature kb, sbi probationary officer photo resize free"
                 ogType="article"
@@ -104,9 +104,9 @@ const SBIPOPhotoSignatureResize2026 = () => {
                         <div className="mx-auto max-w-3xl text-center mt-4">
                             <div className="inline-flex items-center gap-2 rounded-full bg-red-600/10 border border-red-500/30 px-3 py-1 text-xs font-semibold text-red-600 dark:text-red-400 mb-4">
                                 <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse" />
-                                SBI PO 2026 — Apply by July 8, 2026
+                                SBI PO 2026 — Prelims Expected Aug–Sep 2026
                             </div>
-                            <p className="text-xs text-muted-foreground mb-3">Last updated: <strong>July 2, 2026</strong> · Verified against <a href="https://sbi.co.in/careers" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">SBI official notification</a></p>
+                            <p className="text-xs text-muted-foreground mb-3">Last updated: <strong>July 10, 2026</strong> · Verified against <a href="https://sbi.co.in/careers" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">SBI official notification</a></p>
                             <h1 className="mb-4 text-2xl sm:text-4xl font-bold text-foreground leading-tight">
                                 SBI PO 2026 Photo &amp; Signature{" "}
                                 <span className="text-blue-600">Resize Online Free</span>
@@ -224,7 +224,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                         { step: "3", title: "Sign on plain white paper", detail: "Use black ink pen. Sign in cursive running hand — not block letters. Sign on a clean unlined white sheet." },
                                         { step: "4", title: "Photograph or scan your signature", detail: "Click a photo of your signature from directly above with good lighting. Crop to show only the signature with white margin." },
                                         { step: "5", title: "Upload to this tool — Signature tab", detail: "Switch to Signature Compressor tab, upload your signature. Output will be 140×60 px JPG at 10–20 KB." },
-                                        { step: "6", title: "Apply at sbi.co.in/careers before July 8", detail: "Open the SBI PO 2026 application, upload your resized photo and signature in the respective fields. Also complete the live photo capture step." },
+                                        { step: "6", title: "Document Verification Ready", detail: "Keep your resized photo and signature saved. The same files will be needed for admit card verification and document submission during the interview phase." },
                                     ].map(({ step, title, detail }) => (
                                         <li key={step} className="flex gap-4">
                                             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-white text-sm font-bold">{step}</span>
@@ -244,7 +244,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                     <div className="text-sm">
                                         <p className="font-bold text-blue-800 dark:text-blue-300 mb-1">SBI PO 2026 — Key Dates</p>
                                         <p className="text-blue-700 dark:text-blue-400 leading-relaxed">
-                                            Application Open: June 18, 2026 | <strong>Last Date: July 8, 2026</strong> | Exam: Phase I (Prelims) expected August–September 2026.
+                                            Application window: June 18 – July 8, 2026 (Closed) | <strong>Phase I Prelims: August–September 2026</strong> | Mains & Interview: Late 2026.
                                             SBI PO (Probationary Officer) is one of India's most competitive banking exams with over 6 lakh applicants annually. Apply at <strong>sbi.co.in/careers</strong>.
                                         </p>
                                     </div>
@@ -261,7 +261,7 @@ const SBIPOPhotoSignatureResize2026 = () => {
                                             { label: "Post", value: "Probationary Officer (JMG Scale-I)" },
                                             { label: "Age Limit", value: "21–30 years (relaxation for SC/ST/OBC/PWD)" },
                                             { label: "Education", value: "Any graduate degree from a recognised university" },
-                                            { label: "Application Window", value: "June 18, 2026 – July 8, 2026" },
+                                            { label: "Application Window", value: "June 18 – July 8, 2026 (Closed)" },
                                             { label: "Official Portal", value: "sbi.co.in/careers" },
                                         ].map(({ label, value }) => (
                                             <div key={label} className="rounded-lg border border-border bg-muted/30 p-3">

@@ -260,7 +260,7 @@ const DelhiPolicePhotoSignatureResize = () => {
                             <div className="rounded-2xl border border-border bg-card p-6 shadow-sm space-y-6">
                                 <div>
                                     <h2 className="text-xl font-bold text-foreground mb-1">Delhi Police Constable 2026 — Recruitment Details</h2>
-                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 2, 2026</strong> · Source: <a href="https://delhipolice.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">delhipolice.gov.in</a> / <a href="https://ssc.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ssc.gov.in</a></p>
+                                    <p className="text-xs text-muted-foreground mb-4">Last updated: <strong>July 10, 2026</strong> · Source: <a href="https://delhipolice.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">delhipolice.gov.in</a> / <a href="https://ssc.gov.in" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2">ssc.gov.in</a></p>
                                     <div className="grid sm:grid-cols-2 gap-4 text-sm">
                                         {[
                                             { label: "Conducting Body", value: "Delhi Police via SSC (Staff Selection Commission)" },
