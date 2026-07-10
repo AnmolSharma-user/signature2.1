@@ -61,6 +61,7 @@ const PassportPhotoMakerTool = lazy(() => import("./pages/PassportPhotoMakerTool
 const RRBGroupDPhotoSignatureResize = lazy(() => import("./pages/RRBGroupDPhotoSignatureResize"));
 const AadhaarCardPhotoResize = lazy(() => import("./pages/AadhaarCardPhotoResize"));
 const CompressImageTo20KB = lazy(() => import("./pages/CompressImageTo20KB"));
+const CompressImageToKB = lazy(() => import("./pages/CompressImageToKB"));
 const RRBNTPCPhotoGuide2026 = lazy(() => import("./pages/RRBNTPCPhotoGuide2026"));
 const RRBAlpPhotoSignatureGuide2026 = lazy(() => import("./pages/RRBAlpPhotoSignatureGuide2026"));
 const SignatureRejection10KB20KBFix = lazy(() => import("./pages/SignatureRejection10KB20KBFix"));
@@ -161,6 +162,7 @@ const App = () => (
             <Route path="/rrb-group-d-photo-signature-resize" element={<RRBGroupDPhotoSignatureResize />} />
             <Route path="/aadhaar-card-photo-resize" element={<AadhaarCardPhotoResize />} />
             <Route path="/compress-image-to-20kb-online" element={<CompressImageTo20KB />} />
+            <Route path="/compress-image-to-kb" element={<CompressImageToKB />} />
             <Route path="/rrb-ntpc-2026-photo-signature-upload-guide" element={<RRBNTPCPhotoGuide2026 />} />
             <Route path="/rrb-alp-2026-photo-signature-upload-guide" element={<RRBAlpPhotoSignatureGuide2026 />} />
             <Route path="/why-signature-rejected-10kb-20kb-fix-2026" element={<SignatureRejection10KB20KBFix />} />

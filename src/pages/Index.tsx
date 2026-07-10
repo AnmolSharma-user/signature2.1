@@ -22,7 +22,7 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
-    { href: "/sbi-po-2026-photo-signature-resize", title: "SBI PO 2026 Photo & Sig", description: "Resize SBI PO photo to 20–50KB (200×230px) and signature to 10–20KB. Application closed — Prelims expected Aug–Sep 2026.", icon: Camera, badge: "Prelims Soon" },
+    { href: "/ibps-photo-signature-resize", title: "IBPS PO 2026 Photo & Sig", description: "Resize IBPS PO XVI photo to 20–50KB (200×230px) and signature to 10–20KB. Registration closes July 21, 2026!", icon: Camera, badge: "Apply Now 🔥" },
     { href: "/bihar-police-photo-signature-resize", title: "Bihar Police Photo & Sig", description: "Resize Bihar Police CSBC photo to 20–50KB and signature to 10–40KB. Free, instant, browser-only.", icon: Camera, badge: "Hot 🔥" },
     { href: "/delhi-police-photo-signature-resize", title: "Delhi Police Photo Resize", description: "Resize Delhi Police Constable 2026 photo (20–50KB), signature (10–20KB), and thumb impression instantly.", icon: Camera, badge: "Popular" },
     { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police Photo", description: "Resize Rajasthan Police photo to 50–100KB and signature to 20–50KB for SSO portal.", icon: Camera, badge: "New" },
@@ -214,10 +214,10 @@ const Index = () => {
         <Header />
 
         {/* Urgency Notification Banner */}
-        <div className="bg-blue-700 text-white px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
-          <span className="bg-white text-blue-700 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Live</span>
-          <span>NDA II 2026 notification out — Square 350×350 px photo required for UPSC portal</span>
-          <Link to="/nda-2026-photo-signature-resize" className="underline hover:text-blue-200 ml-1 inline-flex items-center gap-0.5">
+        <div className="bg-red-600 text-white px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
+          <span className="bg-white text-red-600 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Urgent</span>
+          <span>IBPS PO XVI 2026 registration closes <strong>July 21</strong> — 6,715 vacancies — Resize photo &amp; signature now!</span>
+          <Link to="/ibps-photo-signature-resize" className="underline hover:text-red-200 ml-1 inline-flex items-center gap-0.5">
             Resize Now <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
