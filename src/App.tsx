@@ -15,6 +15,7 @@ const SignatureResize = lazy(() => import("./pages/SignatureResize"));
 const SignatureResize10to20KB = lazy(() => import("./pages/SignatureResize10to20KB"));
 const GATESignatureResize = lazy(() => import("./pages/GATESignatureResize"));
 const SSCMTSSignatureResize = lazy(() => import("./pages/SSCMTSSignatureResize"));
+const SSCSignatureResize = lazy(() => import("./pages/SSCSignatureResize"));
 const NTPCSignatureResize = lazy(() => import("./pages/NTPCSignatureResize"));
 const GATEPhotoResize = lazy(() => import("./pages/GATEPhotoResize"));
 const UTIPANResize = lazy(() => import("./pages/UTIPANResize"));
@@ -123,6 +124,7 @@ const App = () => (
             <Route path="/signature-resize-10-to-20-kb" element={<SignatureResize10to20KB />} />
             <Route path="/gate-signature-resize" element={<GATESignatureResize />} />
             <Route path="/ssc-mts-signature-resize" element={<SSCMTSSignatureResize />} />
+            <Route path="/ssc-signature-resize" element={<SSCSignatureResize />} />
             <Route path="/ntpc-signature-resize" element={<NTPCSignatureResize />} />
             <Route path="/gate-photo-resize" element={<GATEPhotoResize />} />
             <Route path="/uti-pan-resize" element={<UTIPANResize />} />
