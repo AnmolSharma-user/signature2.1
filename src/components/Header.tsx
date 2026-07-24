@@ -36,8 +36,8 @@ const Header = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/passport-size-photo-maker", label: "Passport Photo" },
-    { href: "/compress-image-to-kb", label: "Compress to KB" },
+    { href: "/signature-creator", label: "Signature Creator" },
+    { href: "/blog", label: "Blog" },
     { href: "/about-us", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
