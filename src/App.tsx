@@ -58,6 +58,7 @@ const USVisaPhotoResize = lazy(() => import("./pages/USVisaPhotoResize"));
 const USCISPhotoSignatureGuide = lazy(() => import("./pages/USCISPhotoSignatureGuide"));
 const ExamPhotoCheckerTool = lazy(() => import("./pages/ExamPhotoCheckerTool"));
 const PassportPhotoMakerTool = lazy(() => import("./pages/PassportPhotoMakerTool"));
+const PassportSizePhotoMaker = lazy(() => import("./pages/PassportSizePhotoMaker"));
 const RRBGroupDPhotoSignatureResize = lazy(() => import("./pages/RRBGroupDPhotoSignatureResize"));
 const AadhaarCardPhotoResize = lazy(() => import("./pages/AadhaarCardPhotoResize"));
 const CompressImageTo20KB = lazy(() => import("./pages/CompressImageTo20KB"));
@@ -159,6 +160,7 @@ const App = () => (
             <Route path="/resize-photo-signature-uscis-immigration-forms" element={<USCISPhotoSignatureGuide />} />
             <Route path="/exam-photo-checker" element={<ExamPhotoCheckerTool />} />
             <Route path="/passport-photo-maker" element={<PassportPhotoMakerTool />} />
+            <Route path="/passport-size-photo-maker" element={<PassportSizePhotoMaker />} />
             <Route path="/rrb-group-d-photo-signature-resize" element={<RRBGroupDPhotoSignatureResize />} />
             <Route path="/aadhaar-card-photo-resize" element={<AadhaarCardPhotoResize />} />
             <Route path="/compress-image-to-20kb-online" element={<CompressImageTo20KB />} />
