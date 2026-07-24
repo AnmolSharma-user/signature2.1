@@ -22,8 +22,9 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
-    { href: "/ibps-photo-signature-resize", title: "IBPS PO 2026 Photo & Sig", description: "Resize IBPS PO XVI photo to 20–50KB (200×230px) and signature to 10–20KB. Registration closes July 21, 2026!", icon: Camera, badge: "Apply Now 🔥" },
-    { href: "/bihar-police-photo-signature-resize", title: "Bihar Police Photo & Sig", description: "Resize Bihar Police CSBC photo to 20–50KB and signature to 10–40KB. Free, instant, browser-only.", icon: Camera, badge: "Hot 🔥" },
+    { href: "/ibps-po-clerk-photo-signature-guide-2026", title: "IBPS PO & Clerk 2026", description: "Complete photo & signature guide for IBPS PO XVI and Clerk XVI 2026. Check specs, upload rules & common errors.", icon: Camera, badge: "July 2026" },
+    { href: "/passport-size-photo-maker", title: "Passport Size Photo Maker", description: "Professional passport photo maker with crop editor, background changer, print layout (4, 6, 12 photos). India, USA, Schengen presets. Free.", icon: Camera, badge: "New ✨" },
+    { href: "/bihar-police-photo-signature-resize", title: "Bihar Police Photo & Sig", description: "Resize Bihar Police CSBC photo to 20–50KB and signature to 10–40KB. Free, instant, browser-only.", icon: Camera, badge: "Active" },
     { href: "/delhi-police-photo-signature-resize", title: "Delhi Police Photo Resize", description: "Resize Delhi Police Constable 2026 photo (20–50KB), signature (10–20KB), and thumb impression instantly.", icon: Camera, badge: "Popular" },
     { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police Photo", description: "Resize Rajasthan Police photo to 50–100KB and signature to 20–50KB for SSO portal.", icon: Camera, badge: "New" },
     { href: "/mp-police-photo-signature-resize", title: "MP Police Photo & Sig", description: "Resize MP Police MPPEB photo to 20–50KB and signature to 10–30KB for peb.mp.gov.in.", icon: Camera, badge: "New" },
@@ -31,7 +32,7 @@ const Index = () => {
     { href: "/nda-2026-photo-signature-resize", title: "NDA 2026 Photo & Sig", description: "Resize NDA photo to square 350×350px (10–300KB) and signature to 350×90px for UPSC portal.", icon: Camera, badge: "New" },
     { href: "/kvs-teacher-photo-signature-resize", title: "KVS Teacher Photo & Sig", description: "Resize KVS PGT/TGT/PRT photo to 10–200KB and signature to 4–30KB for kvsangathan.nic.in.", icon: Camera, badge: "New" },
     { href: "/capf-ac-photo-signature-resize", title: "CAPF AC Photo & Sig", description: "Resize CAPF AC (BSF/CRPF/CISF) photo to 350×350px square and signature to 350×90px.", icon: Camera, badge: "New" },
-    { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL Photo & Sig", description: "Resize photo to 20–50KB and signature to 10–20KB for SSC CGL 2026-27. Correction window active.", icon: FileImage, badge: "SSC" },
+    { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL Photo & Sig", description: "Resize photo to 20–50KB and signature to 10–20KB for SSC CGL 2026-27. Tier-I exam Aug–Sept 2026.", icon: FileImage, badge: "SSC" },
     { href: "/tnpsc-photo-compressor", title: "TNPSC Photo Compressor", description: "Compress TNPSC OTR photo (20–50KB), signature (10–30KB), and apply white background — all in one free tool.", icon: Camera, badge: "TNPSC" },
     { href: "/hssc-photo-signature-resize", title: "HSSC Photo & Sig Resize", description: "Resize photo (10–40KB) and signature (10–30KB) for HSSC CET Group C, Group D, and Haryana Police 2026.", icon: Camera, badge: "HSSC" },
     { href: "/signature-creator", title: "Signature Creator", description: "Create a digital signature by drawing or typing. Download & resize instantly.", icon: PenTool, badge: "Popular" },
@@ -40,7 +41,7 @@ const Index = () => {
     { href: "/aadhaar-card-photo-resize", title: "Aadhaar Photo Resize", description: "Resize your photo to under 35KB for the UIDAI myAadhaar portal. Instant & free.", icon: Camera },
     { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", description: "Compress any photo or signature to exactly 20KB for SSC, IBPS, UPSC, RRB exams.", icon: Zap, badge: "Hot" },
     { href: "/exam-photo-checker", title: "Exam Photo Checker", description: "Upload your photo and instantly verify if it meets exam requirements (SSC, IBPS, DS-160 & more).", icon: CheckCircle },
-    { href: "/passport-photo-maker", title: "Passport Photo Maker", description: "Create 2×2 passport photos for US Visa, USCIS, Indian exam portals. White background included.", icon: Camera },
+    { href: "/compress-image-to-kb", title: "Compress Image to Any KB", description: "Compress any image to an exact KB target — 50KB, 100KB, 200KB or custom. Binary-search precision.", icon: Zap, badge: "New" },
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
     { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS, CAPF. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
     { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2026" },
@@ -214,11 +215,11 @@ const Index = () => {
         <Header />
 
         {/* Urgency Notification Banner */}
-        <div className="bg-red-600 text-white px-4 py-2 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-inner relative z-20">
-          <span className="bg-white text-red-600 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse">Urgent</span>
-          <span>IBPS PO XVI 2026 registration closes <strong>July 21</strong> — 6,715 vacancies — Resize photo &amp; signature now!</span>
-          <Link to="/ibps-photo-signature-resize" className="underline hover:text-red-200 ml-1 inline-flex items-center gap-0.5">
-            Resize Now <ArrowRight className="h-3.5 w-3.5" />
+        <div className="bg-gradient-to-r from-violet-700 via-primary to-purple-700 text-white px-4 py-2.5 text-center text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 shadow-lg relative z-20 flex-wrap">
+          <span className="bg-yellow-400 text-yellow-900 text-[10px] uppercase px-1.5 py-0.5 rounded font-bold animate-pulse shrink-0">New</span>
+          <span>Passport Size Photo Maker — crop, adjust background, download 300 DPI JPG & print sheet.</span>
+          <Link to="/passport-size-photo-maker" className="underline hover:text-yellow-200 ml-1 inline-flex items-center gap-0.5 font-bold shrink-0">
+            Try Free <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
 

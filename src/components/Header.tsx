@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Menu, X, Moon, Sun } from "lucide-react";
+import { Menu, X, Moon, Sun, Camera } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import AnimatedLogo from "./AnimatedLogo";
@@ -36,8 +36,8 @@ const Header = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/signature-creator", label: "Signature Creator" },
-    { href: "/blog", label: "Blog" },
+    { href: "/passport-size-photo-maker", label: "Passport Photo" },
+    { href: "/compress-image-to-kb", label: "Compress to KB" },
     { href: "/about-us", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
@@ -72,8 +72,10 @@ const Header = () => {
             >
               {isDarkMode ? <Sun className="h-5 w-5 transition-transform hover:rotate-180" /> : <Moon className="h-5 w-5 transition-transform hover:-rotate-12" />}
             </Button>
-            <Button asChild size="sm" className="hover-scale">
-              <Link to="/signature-creator">Signature Creator ✨</Link>
+            <Button asChild size="sm" className="hover-scale flex items-center gap-1.5">
+              <Link to="/passport-size-photo-maker" className="flex items-center gap-1.5">
+                <Camera className="h-4 w-4" /> Passport Photo Free
+              </Link>
             </Button>
           </div>
 
@@ -112,8 +114,8 @@ const Header = () => {
               </Link>
             ))}
             <Button asChild size="sm" className="w-full mt-2">
-              <Link to="/signature-creator" onClick={() => setIsMenuOpen(false)}>
-                Signature Creator ✨
+              <Link to="/passport-size-photo-maker" onClick={() => setIsMenuOpen(false)} className="flex items-center justify-center gap-1.5">
+                <Camera className="h-4 w-4" /> Passport Photo Free
               </Link>
             </Button>
           </div>
