@@ -98,6 +98,9 @@ const CTETPhotoSignatureResize2026 = lazy(() => import("./pages/CTETPhotoSignatu
 const NDAPhotoSignatureResize2026 = lazy(() => import("./pages/NDAPhotoSignatureResize2026"));
 const KVSTeacherPhotoSignatureResize = lazy(() => import("./pages/KVSTeacherPhotoSignatureResize"));
 const CAPFACPhotoSignatureResize = lazy(() => import("./pages/CAPFACPhotoSignatureResize"));
+const NICLPhotoSignatureResize = lazy(() => import("./pages/NICLPhotoSignatureResize"));
+const NICLSignatureResize = lazy(() => import("./pages/NICLSignatureResize"));
+const NICLPhotoResizer = lazy(() => import("./pages/NICLPhotoResizer"));
 
 const queryClient = new QueryClient();
 
@@ -208,6 +211,9 @@ const App = () => (
             <Route path="/nda-2026-photo-signature-resize" element={<NDAPhotoSignatureResize2026 />} />
             <Route path="/kvs-teacher-photo-signature-resize" element={<KVSTeacherPhotoSignatureResize />} />
             <Route path="/capf-ac-photo-signature-resize" element={<CAPFACPhotoSignatureResize />} />
+            <Route path="/nicl" element={<NICLPhotoSignatureResize />} />
+            <Route path="/nicl-signature-resize" element={<NICLSignatureResize />} />
+            <Route path="/nicl-photo-resizer" element={<NICLPhotoResizer />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

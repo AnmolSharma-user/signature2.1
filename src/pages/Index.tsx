@@ -45,6 +45,7 @@ const Index = () => {
     { href: "/bulk-resize", title: "Bulk Resize", description: "Resize multiple signatures at once. Perfect for batch processing.", icon: FileImage },
     { href: "/upsc-signature-resize", title: "UPSC Signature", description: "Resize signature for UPSC Civil Services, NDA, CDS, CAPF. 4KB to 20KB.", icon: Pen, badge: "UPSC" },
     { href: "/gate-signature-resize", title: "GATE Signature", description: "Resize signature as per GATE exam specifications. 4KB to 30KB.", icon: Pen, badge: "GATE 2026" },
+    { href: "/ssc-signature-resize", title: "SSC Signature Resize", description: "Auto-resize signature to 10–20KB at 140×60px for all SSC exams (CGL, CHSL, GD, MTS).", icon: Pen, badge: "Popular" },
     { href: "/ssc-mts-signature-resize", title: "SSC MTS Signature", description: "Resize signature for SSC MTS, CGL, CHSL exams. 10KB to 20KB (updated for 2026).", icon: FileImage },
     { href: "/ntpc-signature-resize", title: "NTPC Signature", description: "Resize signature for RRB NTPC recruitment. 10KB to 20KB.", icon: Pen },
     { href: "/gate-photo-resize", title: "GATE Photo Resize", description: "Resize photo for GATE exam. 5KB to 200KB with proper dimensions.", icon: FileImage },

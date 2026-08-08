@@ -39,6 +39,7 @@ const tools: Tool[] = [
   { href: "/agniveer-agnipath-photo-signature-requirements-2026", title: "Agniveer 2026", desc: "Photo & signature specs for all Agniveer army / navy posts", category: "Teaching & Defence" },
   { href: "/upsc-signature-resize", title: "UPSC Civil Services", desc: "Photo 100–600KB (300×400px) · Sig 4–20KB", category: "Teaching & Defence" },
   // SSC & Railway
+  { href: "/ssc-signature-resize", title: "SSC Signature Resize", desc: "Auto-compress to 10–20KB at 140×60px for all SSC exams", category: "SSC & Railway", badge: "Popular" },
   { href: "/ssc-cgl-photo-signature-resize", title: "SSC CGL / CHSL", desc: "Photo 4–20KB (100×120px) · Sig 1–12KB · SSC OTRP", category: "SSC & Railway" },
   { href: "/ssc-gd-photo-signature-resize", title: "SSC GD Constable", desc: "Photo 4–40KB (160×200px) · Sig 1–20KB", category: "SSC & Railway" },
   { href: "/ssc-mts-signature-resize", title: "SSC MTS", desc: "Signature 10–20KB for SSC MTS 2026 application", category: "SSC & Railway" },
