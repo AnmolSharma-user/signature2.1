@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FileImage, Pen, PenTool, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen, Camera } from "lucide-react";
+import { FileImage, Pen, PenTool, Zap, Shield, CheckCircle, ArrowRight, Users, Download, Star, Award, BookOpen, Camera, Landmark, BadgeCheck } from "lucide-react";
 import SignatureResizer from "@/components/SignatureResizer";
 import AdContainer from "@/components/AdContainer";
 import { Button } from "@/components/ui/button";
@@ -22,6 +22,7 @@ import heroBg from "@/assets/hero-bg.png";
 
 const Index = () => {
   const tools = [
+    { href: "/nicl", title: "NICL Assistant & AO", description: "Resize photo (20–50KB, 200×230px) and signature (10–20KB) for NICL Assistant & AO 2026. Insurance PSU specs.", icon: Camera, badge: "New ✨" },
     { href: "/ibps-po-clerk-photo-signature-guide-2026", title: "IBPS PO & Clerk 2026", description: "Complete photo & signature guide for IBPS PO XVI and Clerk XVI 2026. Check specs, upload rules & common errors.", icon: Camera, badge: "July 2026" },
     { href: "/passport-size-photo-maker", title: "Passport Size Photo Maker", description: "Professional passport photo maker with crop editor, background changer, print layout (4, 6, 12 photos). India, USA, Schengen presets. Free.", icon: Camera, badge: "New ✨" },
     { href: "/bihar-police-photo-signature-resize", title: "Bihar Police Photo & Sig", description: "Resize Bihar Police CSBC photo to 20–50KB and signature to 10–40KB. Free, instant, browser-only.", icon: Camera, badge: "Active" },
@@ -327,6 +328,96 @@ const Index = () => {
         <div className="container mx-auto px-4 pb-4">
           <AdContainer type="display" className="mx-auto max-w-4xl" />
         </div>
+
+        {/* NICL Highlight Section */}
+        <section className="py-12 md:py-16 bg-gradient-to-br from-primary/5 via-background to-blue-500/5 border-y border-border">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-5xl">
+              <div className="mb-8 text-center">
+                <span className="mb-2 inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                  <Landmark className="h-3.5 w-3.5" /> NEW · INSURANCE PSU TOOLS
+                </span>
+                <h2 className="mb-3 text-2xl font-bold text-foreground md:text-3xl">
+                  NICL Assistant &amp; AO 2026 — Photo &amp; Signature Resize
+                </h2>
+                <p className="mx-auto max-w-2xl text-sm md:text-base text-muted-foreground">
+                  National Insurance Company recruitment is open. Resize your photo and signature to the exact
+                  NICL portal requirements — free, instant, and private.
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                {/* Photo Card */}
+                <Link
+                  to="/nicl-photo-resizer"
+                  className="group relative overflow-hidden rounded-2xl border-2 border-primary bg-card p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:border-primary/80"
+                >
+                  <div className="absolute -top-3 -right-3 rounded-full bg-primary px-3 py-1 text-[10px] font-bold text-primary-foreground shadow">
+                    NEW
+                  </div>
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110">
+                    <Camera className="h-7 w-7" />
+                  </div>
+                  <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    NICL Photo Resizer
+                  </h3>
+                  <p className="mb-4 text-sm text-muted-foreground">
+                    Compress passport photo to <strong className="text-foreground">20–50KB at 200×230px</strong> for NICL Assistant, AO &amp; all insurance PSU portals.
+                  </p>
+                  <div className="mb-5 flex flex-wrap gap-2 text-[11px] font-medium">
+                    {["200×230 px", "20–50 KB", "JPG", "White BG"].map(s => (
+                      <span key={s} className="flex items-center gap-1 rounded-full bg-muted px-2.5 py-1 text-foreground">
+                        <CheckCircle className="h-3 w-3 text-green-500" /> {s}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    Resize Photo Now <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+
+                {/* Signature Card */}
+                <Link
+                  to="/nicl-signature-resize"
+                  className="group relative overflow-hidden rounded-2xl border-2 border-primary bg-card p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:border-primary/80"
+                >
+                  <div className="absolute -top-3 -right-3 rounded-full bg-primary px-3 py-1 text-[10px] font-bold text-primary-foreground shadow">
+                    NEW
+                  </div>
+                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110">
+                    <Pen className="h-7 w-7" />
+                  </div>
+                  <h3 className="mb-2 text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    NICL Signature Resize
+                  </h3>
+                  <p className="mb-4 text-sm text-muted-foreground">
+                    Resize handwritten signature to <strong className="text-foreground">10–20KB at 140×60px</strong> — accepted by the NICL application portal.
+                  </p>
+                  <div className="mb-5 flex flex-wrap gap-2 text-[11px] font-medium">
+                    {["140×60 px", "10–20 KB", "JPG", "Black Ink"].map(s => (
+                      <span key={s} className="flex items-center gap-1 rounded-full bg-muted px-2.5 py-1 text-foreground">
+                        <CheckCircle className="h-3 w-3 text-green-500" /> {s}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    Resize Signature Now <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Link>
+              </div>
+
+              <div className="mt-6 text-center">
+                <Link
+                  to="/nicl"
+                  className="inline-flex items-center gap-2 rounded-xl border-2 border-primary/20 bg-card px-6 py-3 text-sm font-bold text-primary transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-lg"
+                >
+                  <BadgeCheck className="h-4 w-4" /> View All NICL Tools &amp; Requirements
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Stats Section */}
         <section className="py-8">

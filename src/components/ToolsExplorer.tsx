@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Search, ArrowRight, X } from "lucide-react";
 
-type Category = "All" | "Trending" | "Banking" | "Police" | "Teaching & Defence" | "SSC & Railway" | "General";
+type Category = "All" | "Trending" | "Banking" | "Insurance" | "Police" | "Teaching & Defence" | "SSC & Railway" | "General";
 
 interface Tool {
   href: string;
@@ -14,6 +14,7 @@ interface Tool {
 
 const tools: Tool[] = [
   // Trending
+  { href: "/nicl", title: "NICL Assistant / AO", desc: "Photo 20–50KB (200×230px) · Sig 10–20KB · All insurance PSUs", category: "Trending", badge: "New" },
   { href: "/sbi-po-2026-photo-signature-resize", title: "SBI PO 2026", desc: "Photo 20–50KB (200×230px) · Sig 10–20KB · Deadline July 8, 2026", category: "Trending", badge: "July 8" },
   { href: "/bihar-police-photo-signature-resize", title: "Bihar Police (CSBC)", desc: "Photo 20–50KB · Sig 10–40KB · csbc.bih.nic.in", category: "Trending", badge: "Active" },
   { href: "/rajasthan-police-photo-signature-resize", title: "Rajasthan Police", desc: "Photo 50–100KB · Sig 20–50KB · Raj SSO Portal", category: "Trending", badge: "Active" },
@@ -23,6 +24,10 @@ const tools: Tool[] = [
   { href: "/signature-resize", title: "SBI Clerk / IBPS Signature", desc: "Resize signature to 10–20KB for any banking portal", category: "Banking" },
   { href: "/compress-image-to-20kb-online", title: "Compress to 20KB", desc: "Exact 20KB output — IBPS, SBI strict limit", category: "Banking" },
   { href: "/exam-photo-checker", title: "Exam Photo Checker", desc: "Instantly verify your photo meets bank exam specs", category: "Banking" },
+  // Insurance PSU
+  { href: "/nicl", title: "NICL Assistant / AO", desc: "Photo 20–50KB (200×230px) · Sig 10–20KB · NICL portal", category: "Insurance", badge: "New" },
+  { href: "/nicl-photo-resizer", title: "NICL Photo Resizer", desc: "200×230px · 20–50KB for NICL Assistant, AO application", category: "Insurance", badge: "New" },
+  { href: "/nicl-signature-resize", title: "NICL Signature Resize", desc: "140×60px · 10–20KB for all NICL recruitments", category: "Insurance", badge: "New" },
   // Police
   { href: "/delhi-police-photo-signature-resize", title: "Delhi Police", desc: "Photo 20–50KB (100×120px) · Sig 10–20KB · Thumb", category: "Police" },
   { href: "/up-police-photo-signature-resize", title: "UP Police (OTR)", desc: "Photo 20–50KB · Sig 10–30KB · uppolicerecruitment.in", category: "Police" },
@@ -57,7 +62,7 @@ const tools: Tool[] = [
   { href: "/bulk-resize", title: "Bulk Resize", desc: "Resize multiple signatures at once — batch processing", category: "General" },
 ];
 
-const CATEGORIES: Category[] = ["All", "Trending", "Banking", "Police", "Teaching & Defence", "SSC & Railway", "General"];
+const CATEGORIES: Category[] = ["All", "Trending", "Banking", "Insurance", "Police", "Teaching & Defence", "SSC & Railway", "General"];
 
 const ToolsExplorer = () => {
   const [query, setQuery] = useState("");
